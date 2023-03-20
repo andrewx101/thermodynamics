@@ -1,0 +1,61 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+\subsection{化学势的引入}
+按照热力学公理，多组份孤立体系的内能$U$是$\left(S, V,\left\{n_i\right\}\right)$的函数，$U=U\left(S,V,\left\{n_i\right\}\right)$，其全微分是
+\[dU=\left.\frac{\partial U}{\partial S}\right|_{V,\left\{n_i\right\}}dS+\left.\frac{\partial U}{\partial V}\right|_{S,\left\{n_i\right\}}dV+\sum_i\left.\frac{\partial U}{\partial n_i}\right|_{S,V,\left\{n_{j\neq i}\right\}}dn_i\]
+由第一、二定律得到的式子$dU=TdS-pdV+\sum_i\mu_idn_i$（可逆过程），比较得
+\[T=\left.\frac{\partial U}{\partial S}\right|_{V,\left\{n_i\right\}},\quad-p=\left.\frac{\partial U}{\partial V}\right|_{S,\left\{n_i\right\}},\quad\mu_i\equiv\left.\frac{\partial U}{\partial n_i}\right|_{S,V,\left\{n_{j\neq i}\right\}}\]
+其中$\mu_i$是此处引入的，表示由于组份$i$的分子数变化$dn_i$所造成的内能变化，称为组份$i$的\CJKunderdot{化学势}（chemical potential）。
+\subsection{恒温恒压开放体系的一般热力学关系}
+由条件$\left\{T,p,\left\{n_i\right\}\right\}$约束的体系（恒温恒压开放体系）的热力学势是吉布斯自由能。由定义：
+\[G\equiv U-TS+pV\]
+其全微分
+\begin{align*}
+dG&=dU-TdS-SdT+pdV+Vdp&\text{（}&\text{由定义式）}\\
+&=TdS-pdV+\sum_i\mu_idn_i-TdS-SdT+pdV+Vdp&\text{（}&\text{代入$dU$）}\\
+&=-SdT+Vdp+\sum_i\mu_idn_i\\
+&=\left.\frac{\partial G}{\partial T}\right|_{p,\left\{n_i\right\}}dT+\left.\frac{\partial G}{\partial p}\right|_{T,\left\{n_i\right\}}dp+\sum_i\left.\frac{\partial G}{\partial n_i}\right|{T,p,\left\{n_{j\neq i}\right\}}dn_i&\text{（}&\text{由$G=G\left(T,p,\left\{n_i\right\}\right)$）}\\
+\Rightarrow -S&=\left.\frac{\partial G}{\partial T}\right|_{p,\left\{n_i\right\}},\quad V=\left.\frac{\partial G}{\partial p}\right|_{T,\left\{n_i\right\}},\quad\mu_i=\left.\frac{\partial G}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}
+\end{align*}
+进一步可给出以下Maxwell关系：
+\begin{align*}
+\left.\frac{\partial S}{\partial p}\right|_{T,\left\{n_i\right\}}&=-\left.\frac{\partial V}{\partial T}\right|_{p,\left\{n_i\right\}},&\left.\frac{\partial S}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}&=-\left.\frac{\partial\mu_i}{\partial T}\right|_{p,\left\{n_i\right\}}\\
+\left.\frac{\partial V}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}&=\left.\frac{\partial \mu_i}{\partial p}\right|_{T,\left\{n_i\right\}},&\left.\frac{\partial\mu_i}{\partial n_j}\right|_{T,p,\left\{n_{k\neq j}\right\}}&=\left.\frac{\partial\mu_j}{\partial n_i}\right|_{T,p,\left\{n_{k\neq i}\right\}}
+\end{align*}
+若定义
+\[V_i\equiv\left.\frac{\partial V}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}},\quad S_i\equiv\left.\frac{\partial S}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\]
+分别为体系中组分$i$在约束条件$\left(T,p,\left\{n_i\right\}\right)$平衡态下的\CJKunderdot{偏摩尔体积}（partial molar volume）和\CJKunderdot{偏摩尔熵}（partial molar entropy），则相关Maxwell关系可表示为
+\[V_i=\left.\frac{\partial\mu_i}{\partial p}\right|_{T,\left\{n_i\right\}},\quad S_i=\left.\frac{\partial\mu_i}{\partial T}\right|_{p,\left\{n_i\right\}}\]
+有了上述两个偏摩尔量的定义，可以进一步考虑体系在平衡态下组份$i$的化学势全微分
+\begin{align*}
+d\mu_i&=\left.\frac{\partial\mu_i}{\partial T}\right|_{p,\left\{n_i\right\}}dT+\left.\frac{\partial\mu_i}{\partial p}\right|_{T,\left\{n_i\right\}}+\sum_j\left.\frac{\partial\mu_i}{\partial n_j}\right|_{T,p,\left\{n_{k\neq j}\right\}}dn_j\\
+&=-S_idT+V_idp+\sum_j\left.\frac{\partial\mu_i}{\partial n_j}\right|_{T,p,\left\{n_{k\neq j}\right\}}dn_j
+\end{align*}
+
+\subsection{理想与非理想气体混合物}
+我们通过温度计只能知道温度的变化，为了用确定的数值来表示温度，我们还需要选定温标。类似地，按照热力学理论，只有热力学状态函数的变化是可实验测量的，因此我们常常选定一组条件作为标准状态。按照类似的思想，我们也常以理想体系作为一种标准，用偏离理想的程度来表征真实体系。
+
+考虑单组份体系化学势全微分$d\mu=-S_\mathrm{m}dT+V_\mathrm{m}dp$，其中$S_\mathrm{m}$和$V_\mathrm{m}$分别是气体的摩尔熵和摩尔体积。若该经历体系恒温可逆变压过程，从$\left(T,p_1\right)$下的状态变为$\left(T,p_2\right)$下的状态，有
+\[
+\mu\left(T,p_2\right)-\mu\left(T,p_1\right)=\int_{p1}^{p2}\left.\frac{\partial\mu}{\partial p}\right|_Tdp=\int_{p_1}^{p_2}V_\mathrm{m}\left(T,p\right)dp\]
+记标准状态$p\stst\equiv\qty{e5}{\pascal}$下理想气体的化学势（常量）为$\mu\stst\left(T\right)\equiv\mu\left(T,p\stst\right)$，则任一条件$\left(T,p\right)$下理想气体的化学$\mu^\mathrm{id}$为
+\begin{align*}
+\mu^\mathrm{id}\left(T,p\right)&=\mu\stst\left(T\right)+\int_{p_1}^{p_2}V_\mathrm{m}\left(T,p\right)dp\\
+&=\mu\stst\left(T\right)+RT\ln\frac{p}{p\stst}
+\end{align*}
+其中用到了理想气体$V_\mathrm{m}=RT/p$。我们定义真实气体的\CJKunderdot{逸度}（fugacity）$f$，使得真实气体在任一条件$\left(T,p\right)$下的化学势$\mu$也形如上式，即
+\[\mu\left(T,p\right)=\mu\stst\left(T\right)+RT\ln\frac{f}{p\stst}\]
+因此
+\[f\left(T,p\right)\equiv p\stst\exp\frac{\mu\left(T,p\right)-\mu\stst\left(T\right)}{RT}\]
+可见真实气体的逸度就是相同条件下与其化学势相同的理想气体的压强。真实气体的逸度一般不等于它的压强（否则它就是理想气体）。因此，可定义真实气体的\CJKunderdot{逸度因子}（ijlfugacity coefficient）
+\[\gamma\left(T,p\right)\equiv\frac{f\left(T,p\right)}{p}\]
+从而
+\[\mu\left(T,p\right)=\mu^\mathrm{id}\left(T,p\right)+RT\ln\gamma\]
+由于真实气体在$p\rightarrow 0$时趋于理想气体，因此$\lim_{p\to 0}\gamma=1$。
+
+下面考虑气体混合物。我们的任务是给出混合物中组分$i$的化学势的表达式。我们上一段已经掌握了单组分气体的化学势了。为了利用这一知识，我们考虑气体混合物与单组分$i$气体之间的相平衡。这就需要用一种只允许组份$i$的膜把混合物包起来，以保持膜外是纯的组份$i$。设膜内组各组份的分压是$p_1,p_2,\cdots$，化学势是$\mu_1,\mu_2,\cdots$，膜外气体压强是$p^\prime_i$，化学势是$\mu^\prime_i$。相平衡时，$\mu_i=\mu^\prime_i$。而$\mu^\prime_i$满足单组份气体化学势表达式，所以
+\[\mu_i=\mu^\prime_i\left(T,p\right)=\mu\stst_i\left(T\right)+RT\ln\frac{f}{p\stst}\]
+同时，
+
+
+\end{document}

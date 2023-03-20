@@ -1,0 +1,114 @@
+\documentclass[zihao=-4,linespread=1.5,heading=true,a4paper,twoside]{ctexart}
+\usepackage[utf8]{inputenc}
+\pagestyle{empty}
+% packages for page layout
+\usepackage{geometry}
+\geometry{
+a4paper,
+total={171.8mm,246.2mm},
+left=19.1mm,
+top=25.4mm,
+}
+
+% package for standard state symbol
+\usepackage{plimsoll}
+
+% package for units
+\usepackage{siunitx}
+
+% package for Chinese formatting
+\usepackage{CJKfntef}
+
+% package for colors
+\usepackage{xcolor}
+
+% packages for fonts
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+
+% packages for graphics
+\usepackage{graphicx}
+\graphicspath{ {./images/}{./images/} }
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{capt-of}
+\usepackage{cutwin}
+
+% packages for page layout
+\usepackage{geometry}
+\geometry{
+a4paper,
+total={171.8mm,246.2mm},
+left=19.1mm,
+top=25.4mm,
+}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[LE,RO]{\leftmark}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[LO,RE]{更新至\today}
+
+% package for quotes
+\usepackage{csquotes}
+
+% redefine itemize
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+\setlist{nosep}
+
+
+
+% package for hyperlinks
+\usepackage{hyperref}
+\hypersetup{colorlinks=true}
+
+% packages for footnotes
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\usepackage{perpage}
+\MakePerPage{footnote} 
+
+% packages for bibliography
+\usepackage[
+backend=biber,
+style=gb7714-2015,
+gbpub=false,
+sorting=none
+]{biblatex}
+\addbibresource{./ref/ref.bib}
+
+% packages for definitions, theorems, proofs.
+\usepackage{amsthm}
+
+% counter controlling
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
+\counterwithin{equation}{section}
+\counterwithin{section}{part}
+\setcounter{tocdepth}{1}
+
+% package for subfiles
+\usepackage{subfiles}
+
+\usepackage{datetime2}
+
+\title{热力学讲义}
+\author{孙尉翔\\mswxsun@scut.edu.cn}
+%=====================================================================================================================
+\begin{document}
+
+\part*{前言}\label{sec:preface}
+\subfile{preface.tex}
+
+\newpage\tableofcontents
+
+\part{热力学基础}
+\section{混合物的热力学}
+\subfile{mixture.tex}
+\part{高分子热力学}
+
+
+\newpage\part*{参考文献}
+\printbibliography[heading=none]
+\end{document}
