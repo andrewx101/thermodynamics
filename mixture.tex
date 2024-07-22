@@ -1,12 +1,12 @@
 \documentclass[main.tex]{subfiles}
 \begin{document}
-\subsection{化学势的引入}
+\section{化学势的引入}
 按照热力学公理，多组份孤立体系的内能$U$是$\left(S, V,\left\{n_i\right\}\right)$的函数，$U=U\left(S,V,\left\{n_i\right\}\right)$，其全微分是
 \[dU=\left.\frac{\partial U}{\partial S}\right|_{V,\left\{n_i\right\}}dS+\left.\frac{\partial U}{\partial V}\right|_{S,\left\{n_i\right\}}dV+\sum_i\left.\frac{\partial U}{\partial n_i}\right|_{S,V,\left\{n_{j\neq i}\right\}}dn_i\]
 由第一、二定律得到的式子$dU=TdS-pdV+\sum_i\mu_idn_i$（可逆过程），比较得
 \[T=\left.\frac{\partial U}{\partial S}\right|_{V,\left\{n_i\right\}},\quad-p=\left.\frac{\partial U}{\partial V}\right|_{S,\left\{n_i\right\}},\quad\mu_i\equiv\left.\frac{\partial U}{\partial n_i}\right|_{S,V,\left\{n_{j\neq i}\right\}}\]
 其中$\mu_i$是此处引入的，表示由于组份$i$的分子数变化$dn_i$所造成的内能变化，称为组份$i$的\CJKunderdot{化学势}（chemical potential）。
-\subsection{恒温恒压开放体系的一般热力学关系}
+\section{恒温恒压开放体系的一般热力学关系}
 由条件$\left\{T,p,\left\{n_i\right\}\right\}$约束的体系（恒温恒压开放体系）的热力学势是吉布斯自由能。由定义：
 \[G\equiv U-TS+pV\]
 其全微分
@@ -32,7 +32,7 @@ d\mu_i&=\left.\frac{\partial\mu_i}{\partial T}\right|_{p,\left\{n_i\right\}}dT+\
 &=-S_idT+V_idp+\sum_j\left.\frac{\partial\mu_i}{\partial n_j}\right|_{T,p,\left\{n_{k\neq j}\right\}}dn_j
 \end{align*}
 
-\subsection{理想与非理想气体混合物}
+\section{理想与非理想气体混合物}
 我们通过温度计只能知道温度的变化，为了用确定的数值来表示温度，我们还需要选定温标。类似地，按照热力学理论，只有热力学状态函数的变化是可实验测量的，因此我们常常选定一组条件作为标准状态。按照类似的思想，我们也常以理想体系作为一种标准，用偏离理想的程度来表征真实体系。
 
 考虑单组份体系化学势全微分$d\mu=-S_\mathrm{m}dT+V_\mathrm{m}dp$，其中$S_\mathrm{m}$和$V_\mathrm{m}$分别是气体的摩尔熵和摩尔体积。若该经历体系恒温可逆变压过程，从$\left(T,p_1\right)$下的状态变为$\left(T,p_2\right)$下的状态，有

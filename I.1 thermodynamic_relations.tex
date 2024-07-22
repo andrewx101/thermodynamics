@@ -1,0 +1,43 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+\subsection{化学势的引入}
+热力学能$U$作为特性函数\footnote{请回顾《物理化学》\S 3.13、\S 4.4。}，是以$\left(S, V,\left\{n_i\right\}\right)$为特征变量的函数，$U=U\left(S,V,\left\{n_i\right\}\right)$，其全微分是
+\[dU=\left.\frac{\partial U}{\partial S}\right|_{V,\left\{n_i\right\}}dS+\left.\frac{\partial U}{\partial V}\right|_{S,\left\{n_i\right\}}dV+\sum_i\left.\frac{\partial U}{\partial n_i}\right|_{S,V,\left\{n_{j\neq i}\right\}}dn_i\]
+其中$\left\{n_i\right\}$表示$n_1,n_2,\cdots$。与由第一、二定律得到的式子$dU=TdS-pdV+\sum_i\mu_idn_i$（可逆过程）比较得
+\[T=\left.\frac{\partial U}{\partial S}\right|_{V,\left\{n_i\right\}},\quad-p=\left.\frac{\partial U}{\partial V}\right|_{S,\left\{n_i\right\}},\quad\mu_i\equiv\left.\frac{\partial U}{\partial n_i}\right|_{S,V,\left\{n_{j\neq i}\right\}}\]
+其中$\mu_i$是此处引入的，表示由于组份$i$的分子数变化$dn_i$所造成的混合物体系热力学能的变化，称为组份$i$在混合物中的\CJKunderdot{化学势}（chemical potential）。
+
+化学势恰好同时是其他几个特性函数对组份的偏导数：
+\[\mu_i=\left.\frac{\partial U}{\partial n_i}\right|_{S,V,\left\{n_{j\neq i}\right\}}=\left.\frac{\partial H}{\partial n_i}\right|_{S,p,\left\{n_{j\neq i}\right\}}=\left.\frac{\partial A}{\partial n_i}\right|_{T,V,\left\{n_{j\neq i}\right\}}=\left.\frac{\partial G}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\]
+
+
+
+
+
+
+\section{恒温恒压开放体系的一般热力学关系}
+由条件$\left\{T,p,\left\{n_i\right\}\right\}$约束的体系（恒温恒压开放体系）的热力学势是吉布斯自由能。由定义：
+\[G\equiv U-TS+pV\]
+其全微分
+\begin{align*}
+dG&=dU-TdS-SdT+pdV+Vdp&\text{（}&\text{由定义式）}\\
+&=TdS-pdV+\sum_i\mu_idn_i-TdS-SdT+pdV+Vdp&\text{（}&\text{代入$dU$）}\\
+&=-SdT+Vdp+\sum_i\mu_idn_i\\
+&=\left.\frac{\partial G}{\partial T}\right|_{p,\left\{n_i\right\}}dT+\left.\frac{\partial G}{\partial p}\right|_{T,\left\{n_i\right\}}dp+\sum_i\left.\frac{\partial G}{\partial n_i}\right|{T,p,\left\{n_{j\neq i}\right\}}dn_i&\text{（}&\text{由$G=G\left(T,p,\left\{n_i\right\}\right)$）}\\
+\Rightarrow -S&=\left.\frac{\partial G}{\partial T}\right|_{p,\left\{n_i\right\}},\quad V=\left.\frac{\partial G}{\partial p}\right|_{T,\left\{n_i\right\}},\quad\mu_i=\left.\frac{\partial G}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}
+\end{align*}
+进一步可给出以下Maxwell关系：
+\begin{align*}
+\left.\frac{\partial S}{\partial p}\right|_{T,\left\{n_i\right\}}&=-\left.\frac{\partial V}{\partial T}\right|_{p,\left\{n_i\right\}},&\left.\frac{\partial S}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}&=-\left.\frac{\partial\mu_i}{\partial T}\right|_{p,\left\{n_i\right\}}\\
+\left.\frac{\partial V}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}&=\left.\frac{\partial \mu_i}{\partial p}\right|_{T,\left\{n_i\right\}},&\left.\frac{\partial\mu_i}{\partial n_j}\right|_{T,p,\left\{n_{k\neq j}\right\}}&=\left.\frac{\partial\mu_j}{\partial n_i}\right|_{T,p,\left\{n_{k\neq i}\right\}}
+\end{align*}
+若定义
+\[V_i\equiv\left.\frac{\partial V}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}},\quad S_i\equiv\left.\frac{\partial S}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\]
+分别为体系中组分$i$在约束条件$\left(T,p,\left\{n_i\right\}\right)$平衡态下的\CJKunderdot{偏摩尔体积}（partial molar volume）和\CJKunderdot{偏摩尔熵}（partial molar entropy），则相关Maxwell关系可表示为
+\[V_i=\left.\frac{\partial\mu_i}{\partial p}\right|_{T,\left\{n_i\right\}},\quad S_i=\left.\frac{\partial\mu_i}{\partial T}\right|_{p,\left\{n_i\right\}}\]
+有了上述两个偏摩尔量的定义，可以进一步考虑体系在平衡态下组份$i$的化学势全微分
+\begin{align*}
+d\mu_i&=\left.\frac{\partial\mu_i}{\partial T}\right|_{p,\left\{n_i\right\}}dT+\left.\frac{\partial\mu_i}{\partial p}\right|_{T,\left\{n_i\right\}}+\sum_j\left.\frac{\partial\mu_i}{\partial n_j}\right|_{T,p,\left\{n_{k\neq j}\right\}}dn_j\\
+&=-S_idT+V_idp+\sum_j\left.\frac{\partial\mu_i}{\partial n_j}\right|_{T,p,\left\{n_{k\neq j}\right\}}dn_j
+\end{align*}
+\end{document}

@@ -1,4 +1,4 @@
-\documentclass[zihao=-4,linespread=1.5,heading=true,a4paper,twoside]{ctexart}
+\documentclass[zihao=-4,linespread=1.5,a4paper,heading=true,twoside]{ctexbook}
 \usepackage[utf8]{inputenc}
 \pagestyle{empty}
 % packages for page layout
@@ -58,8 +58,6 @@ top=25.4mm,
 \usepackage{enumitem}% http://ctan.org/pkg/enumitem
 \setlist{nosep}
 
-
-
 % package for hyperlinks
 \usepackage{hyperref}
 \hypersetup{colorlinks=true}
@@ -98,15 +96,21 @@ sorting=none
 %=====================================================================================================================
 \begin{document}
 
-\part*{前言}\label{sec:preface}
+\chapter*{前言}\label{sec:preface}
 \subfile{preface.tex}
 
 \newpage\tableofcontents
 
 \part{热力学基础}
-\section{混合物的热力学}
-\subfile{mixture.tex}
+\chapter{混合物的热力学}
+\section{基本热力学关系}
+\subfile{I.1 thermodynamic_relations.tex}
+
+
 \part{高分子热力学}
+\part{统计力学}
+\chapter{链统计}
+
 
 
 \newpage\part*{参考文献}
