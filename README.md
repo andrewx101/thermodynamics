@@ -1,7 +1,7 @@
-# rheology_lecture_note
-这是一个流变学讲义的项目。作者：孙尉翔。邮箱：mswxsun@scut.edu.cn
-这个流变学讲义是在Overleaf上创作的。
-Overleaf公共查看链接：https://www.overleaf.com/read/tvjsqgbxpywf
+# 高分子热力学讲义
+作者：孙尉翔。邮箱：mswxsun@scut.edu.cn
+这个讲义是在Overleaf上创作的。
+Overleaf公共查看链接：[https://www.overleaf.com/read/tvjsqgbxpywf](https://www.overleaf.com/read/hczkzwmbytmg#bf2de4)
 通过上面的Overleaf链接，你同样可以浏览tex原代码和编译PDF文件。
 完整讲义的主文件是根目录下的main.tex，直接编译这个文件可以获得完整讲义的pdf。
 讲义的每节都可以被独立编译成一个pdf文件，但是跨节引用链接将会失效。
