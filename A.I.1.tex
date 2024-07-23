@@ -1,0 +1,29 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+\subsection{欧拉齐次函数定理的证明}
+\begin{definition}
+    设$k$是整数，$\mathcal{V}$、$\mathcal{W}$是同数域$\mathbb{F}$上的向量空间，$C$是$\mathcal{V}$的一个满足$\forall\mathbf{r}\in C,s\in\mathbb{F}\setminus 0\wedge s\mathbf{r}\in C$的凸锥。若函数$f:\mathcal{V}\rightarrow\mathcal{W}$有一个以$C$为定义域的偏函数满足
+    \[
+    \forall \mathbf{r}\in C\forall s\in\mathbb{F}\setminus 0,f\left(s\mathbf{r}\right)=s^k\mathbf{r}
+    \]
+    则称$f$是一个\emph{$k$次齐函数（homogeneous function of degree $k$）}。
+\end{definition}
+
+留意到，0次齐函数就是恒等映射。
+
+若$\mathbb{F}=\mathbb{R}$，我们常考虑正次齐函数，即限制$s>0$。此时$k$可推广至实数。此时留意到，有些正次齐函数不是齐函数。例如，若$\mathcal{V}$、$\mathcal{W}$是赋范向量空间，函数$f\left(\mathbf{r}\right)=\left\|\mathbf{r}\right\|$是正次齐函数，但不是齐函数。
+
+\begin{theorem}[齐函数的欧拉定理]\label{thm:Euler_theorem_for_homogeneous_function}
+设$k$是实数、$n$是正整数，函数$f:\mathbb{R}^n\rightarrow\mathbb{R}$在$\mathbb{R}^n$的开子集$D$上可微分，且为$k$次齐函数，则$f$在$D$上满足偏微分方程
+\[kf\left(\mathbf{r}\right)=\mathbf{r}\cdot\nabla f\left(\mathbf{r}\right)\]
+\end{theorem}
+\begin{proof}
+    因为$f$是正次齐函数，故在$D$上有
+    \[\forall s>0,f\left(s\mathbf{r}\right)=s^kf\left(\mathbf{r}\right)\]
+    两边对$s$求导下式在开集$D$上仍成立
+    \[\forall s>0,s\mathbf{r}\cdot\nabla f\left(s\mathbf{r}\right)=ks^{k-1}f\left(\mathbf{r}\right)\]
+    当$s=1$时命题得证。
+\end{proof}
+
+不太严格但较易懂的版本可见《物理化学》上册附录I.8。
+\end{document}

@@ -70,7 +70,7 @@ top=25.4mm,
 % packages for bibliography
 \usepackage[
 backend=biber,
-style=gb7714-2015,
+style=gb7714-2015,        
 gbpub=false,
 sorting=none
 ]{biblatex}
@@ -78,6 +78,20 @@ sorting=none
 
 % packages for definitions, theorems, proofs.
 \usepackage{amsthm}
+
+% set styles for definitions, lemmata, theorems, proofs, examples
+\theoremstyle{definition}
+\newtheorem{definition}{定义}
+\newtheorem*{definition*}{定义}
+\newtheorem{theorem}{定理}
+\newtheorem*{theorem*}{定理}
+\newtheorem{lemma}{引理}
+\newtheorem{corollary}{推论}[theorem]
+\let\oldproof\proof
+\renewcommand{\proof}{\color{gray}\oldproof}
+
+\theoremstyle{plain}
+\newtheorem{example}{例}
 
 % counter controlling
 \usepackage{chngcntr}
@@ -91,7 +105,7 @@ sorting=none
 
 \usepackage{datetime2}
 
-\title{热力学讲义}
+\title{高分子热力学讲义}
 \author{孙尉翔\\mswxsun@scut.edu.cn}
 %=====================================================================================================================
 \begin{document}
@@ -105,12 +119,18 @@ sorting=none
 \chapter{混合物的热力学}
 \section{基本热力学关系}
 \subfile{I.1 thermodynamic_relations.tex}
+\section{逸度}
+\subfile{I.2 fugacity.tex}
 
 
 \part{高分子热力学}
 \part{统计力学}
 \chapter{链统计}
 
+\part{附录}
+\chapter{数学}
+\section{多元函数微积分}
+\subfile{A.I.1.tex}
 
 
 \newpage\part*{参考文献}

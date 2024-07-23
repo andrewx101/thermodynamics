@@ -1,0 +1,33 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+\subsection{气体混合物的分压}
+气体的压强$p$是容器壁单位面积受到的法向分力。气体混合物中，某组份$i$的分压（partial pressure）是
+\[p_i\equiv x_i^\text{(g)}p\]
+其中$x_i^\text{(g)}$表示组份$i$在气相中的摩尔分数。对于理想气体混合物，组份$i$的分压是同样摩尔数的纯组份$i$在相同体积下和其余条件下的压强。但对于真实气体混合物，$x_i^\text{(g)}p$没有如此直接的物理意义，因此我们以下不写“$p_i$”而写“$x_i^\text{(g)}p$
+”，以表示这个量只是个乘积。上述分压的定义保证了，无论是理想还是真实气体混合物，都有“分压定律”$p=\sum_i p_i$。
+
+\subsection{压缩因子}
+气体混合物的压缩因子由下式定义
+\[pV_\text{m}=ZRT\]
+其中$R$是气体常数。$V_m$是气体混合物的摩尔体积。自此，字母$Z$有了特定的物理意义（不同于上节）。由该定义可知，压缩因子是一个摩尔量，但按照《物理化学》的符号，我们没有用$Z_\text{m}$表示。与压缩因子相对应的偏摩尔量应由下式给出：
+\[z_i\equiv\left.\frac{\partial\left(n Z\right)}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\]
+称为组份$i$在气体混合物中的偏摩尔压缩因子。由偏摩尔量的加和性有
+\[Z=\sum_i x_i^\text{(g)}z_i\]
+注意，压缩因子是仅针对气态物质而提出的概念。
+
+压缩因子定义式中含摩尔体积，我们进一步推导偏摩尔压缩因子与偏摩尔体积的关系：
+\begin{align*}
+v_i^\text{(g)}&=\left.\frac{\partial V}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\\
+&=\left.\frac{\partial\left(n V_\text{m}\right)}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\\
+&=\left.\frac{\partial n}{\partial n_i}\right|_{\left\{n_{j\neq i}\right\}}V_\text{m}+n\left.\frac{\partial V_\text{m}}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\\
+&=\frac{ZRT}{p}+\frac{nRT}{p}\left.\frac{\partial Z}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\\
+&=\frac{RT}{p}\left.\frac{\partial\left(nZ\right)}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}=\frac{RTz_i}{p}
+\end{align*}
+即对气体混合物的任一组份$i$，有
+\[p v_i^\text{(g)}=z_iRT\]
+
+
+
+
+
+\end{document}
