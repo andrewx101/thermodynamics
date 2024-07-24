@@ -1,30 +1,69 @@
 \documentclass[main.tex]{subfiles}
 \begin{document}
+在《物理化学》课本当中，真实体系的性质是直接与另行举出的理想气体“比较”而定义的，二者之间的热力学过程联系并不清楚，因而会造成误解。
+
+经典条件下，我们认为任一处于凝聚态的真实体系在压强$p$小到一定程度时都会是气态，且在$p=0$邻近接近理想气体。因此我们常对真实体系取$p\rightarrow 0$极限，以便为同一个（真实）体系构造出“从理想气体（$p=0$）变成当前状态”的过程。这样才能利用热力学基本关系，严格地把真实体系的性质写成对理想气体的偏离形式。当然，如果所讨论的（假想的）体系的气态就是理想气体，那在它处于气态的压强范围内的任一压强下都有理想气体的性质，而不必限制在$p=0$邻近。
+
+由于上述观念是“我们认为”的，它是热力学理论中的规定。这种规定当然是来自经验总结的，旨在使所建立的理论与经验相符，而非相悖。皆因它除了来自经验总结之外，无法再由更基本的原则推出（在不借助统计力学的情况下），才只好在热力学理论中作为公设“规定”而提出。本节我们将介绍若干用于描述真实体系的概念和相应的物理量。它们的定义都包括在理想气体极限下趋于理想气体值的要求。
+
 \subsection{气体混合物的分压}
 气体的压强$p$是容器壁单位面积受到的法向分力。气体混合物中，某组份$i$的分压（partial pressure）是
 \[p_i\equiv x_i^\text{(g)}p\]
 其中$x_i^\text{(g)}$表示组份$i$在气相中的摩尔分数。对于理想气体混合物，组份$i$的分压是同样摩尔数的纯组份$i$在相同体积下和其余条件下的压强。但对于真实气体混合物，$x_i^\text{(g)}p$没有如此直接的物理意义，因此我们以下不写“$p_i$”而写“$x_i^\text{(g)}p$
-”，以表示这个量只是个乘积。上述分压的定义保证了，无论是理想还是真实气体混合物，都有“分压定律”$p=\sum_i p_i$。
+”，以表示这个量只是个乘积；对于真实气体，我们只是拿实验可知量$x_i$和$p$相乘得出一个被标为$p_i$的量。但这种分压的定义保证了，无论是理想还是真实气体混合物，都有“分压定律”$p=\sum_i p_i$。
 
-\subsection{压缩因子}
-气体混合物的压缩因子由下式定义
+\subsection{气体的压缩因子}
+气体混合物的压缩因子（compressibility factor）由下式定义
 \[pV_\text{m}=ZRT\]
-其中$R$是气体常数。$V_m$是气体混合物的摩尔体积。自此，字母$Z$有了特定的物理意义（不同于上节）。由该定义可知，压缩因子是一个摩尔量，但按照《物理化学》的符号，我们没有用$Z_\text{m}$表示。与压缩因子相对应的偏摩尔量应由下式给出：
+且
+\[\lim_{p\to 0}Z=1\]
+其中$R$是气体常数。$V_m$是气体混合物的摩尔体积。自此，字母$Z$有了特定的物理意义（不同于上节）。由定义可知，压缩因子表示的是，给定温度$T$和压强$p$下，气体的摩尔体积与理想气体值之比。压缩因子是一个摩尔量，但按照《物理化学》的符号惯例，我们没有用$Z_\text{m}$表示。与压缩因子相对应的偏摩尔量应由下式给出：
 \[z_i\equiv\left.\frac{\partial\left(n Z\right)}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\]
 称为组份$i$在气体混合物中的偏摩尔压缩因子。由偏摩尔量的加和性有
 \[Z=\sum_i x_i^\text{(g)}z_i\]
 注意，压缩因子是仅针对气态物质而提出的概念。
 
+$\lim_{p\to 0}Z=1$的规定来自经验总结，可参考《物理化学》图1.21。
+
 压缩因子定义式中含摩尔体积，我们进一步推导偏摩尔压缩因子与偏摩尔体积的关系：
 \begin{align*}
-v_i^\text{(g)}&=\left.\frac{\partial V}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\\
-&=\left.\frac{\partial\left(n V_\text{m}\right)}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\\
-&=\left.\frac{\partial n}{\partial n_i}\right|_{\left\{n_{j\neq i}\right\}}V_\text{m}+n\left.\frac{\partial V_\text{m}}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\\
-&=\frac{ZRT}{p}+\frac{nRT}{p}\left.\frac{\partial Z}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\\
-&=\frac{RT}{p}\left.\frac{\partial\left(nZ\right)}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}=\frac{RTz_i}{p}
+    v_i^\text{(g)} & =\left.\frac{\partial V}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}                                                                                               \\
+                   & =\left.\frac{\partial\left(n V_\text{m}\right)}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}                                                                        \\
+                   & =\left.\frac{\partial n}{\partial n_i}\right|_{\left\{n_{j\neq i}\right\}}V_\text{m}+n\left.\frac{\partial V_\text{m}}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}} \\
+                   & =\frac{ZRT}{p}+\frac{nRT}{p}\left.\frac{\partial Z}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}                                                                    \\
+                   & =\frac{RT}{p}\left.\frac{\partial\left(nZ\right)}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}=\frac{RTz_i}{p}
 \end{align*}
 即对气体混合物的任一组份$i$，有
 \[p v_i^\text{(g)}=z_iRT\]
+
+\subsection{气体的残余体积}
+气体混合物的残余体积（residual volume）是给定温度和压强下，实际气体的体积与理想气体值之差，具体定义为
+\[\alpha\equiv \frac{RT}{p}-V_\text{m}\]
+可见，$\alpha$是一个摩尔量。与其相应的偏摩尔量（称偏摩尔残余体积）是
+\[\alpha_i\equiv\left.\frac{\partial\left(n\alpha\right)}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\]
+从而有
+\[\alpha=\sum_i x_i^\text{(g)}\alpha_i\]
+与气体的压缩因子类似，气体的残余体积是仅针对气态体系而提出的概念。由定义易得$\alpha$与$Z$的关系
+\[\alpha=\frac{RT}{p}\left(1-Z\right)\]
+
+在理想气体极限下，气体的残余体积不为零。具体地
+\begin{align*}
+    \lim_{p\to 0}\alpha & =RT\lim_{p\to 0}\frac{1-Z}{p}                                                                             \\
+                        & =-RT\left.\frac{\partial Z}{\partial p}\right|_{T,p\to 0,\left\{n_i\right\}} & \text{（} & \text{利用洛比达法则)}
+\end{align*}
+也就是说，在理想气体极限下，气体的残余体积是压缩因子在$p\to 0$的渐近斜率，一般不为零。
+
+\subsection{逸度}
+组份$i$纯物质（无论气态还是液态）的逸度（fugacity）$f_i^*$的现代的定义是满足：
+\[\mathrm{d}\mu_i^*\equiv RT\mathrm{d}\ln f_i^*,\quad\text{恒定$T$}\]
+且
+\[\lim_{p\to 0}\frac{f_i^*}{p}=1\]
+
+逸义定义的第一个微分式是恒定$T$下的微变化，所以不是全微分式。在所给定的温度$T$下，$f_i^*$是压强和摩尔数的函数$f_i^*=f_i^*\left(p,n_i;T\right)$。所以，可用文字表达上述定义：在给定温度$T$下，由压强和组分变化造成的化学势变化，若用逸度表示，则总是上述形式。
+
+逸度定义的第二个含有极限的条件，其实是要求如此定义的逸度在理想气体极限（$p\rightarrow 0$）附近等于压强。严格地，该极限表达式说，$f_i^*$是$p$的同阶无穷小。在给定温度$T$下，$f_i$关于$p$的函数形式可写成展开式：$f_i^*\left(p;T\right)=p+o\left(p^2\right)$。所以，虽然当$p=0$时$f_i^*=0$，但当$p$足够接近零时，$f_i^*\approx p$，且$p$越接近零越接近。
+
+由于这种基于微分关系的定义方式，显式地写下$f_i^*$的“定义式”需要选定参考状态（即“积分常数”的确定）。
 
 
 
