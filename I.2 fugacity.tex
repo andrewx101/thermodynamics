@@ -16,14 +16,14 @@
 气体混合物的压缩因子（compressibility factor）由下式定义
 \[pV_\text{m}=ZRT\]
 且
-\[\lim_{p\to 0}Z=1\]
+\[\lim_{p\to 0}Z\left(p;T,\left\{n_i\right\}\right)\equiv 1\]
 其中$R$是气体常数。$V_m$是气体混合物的摩尔体积。自此，字母$Z$有了特定的物理意义（不同于上节）。由定义可知，压缩因子表示的是，给定温度$T$和压强$p$下，气体的摩尔体积与理想气体值之比。压缩因子是一个摩尔量，但按照《物理化学》的符号惯例，我们没有用$Z_\text{m}$表示。与压缩因子相对应的偏摩尔量应由下式给出：
-\[z_i\equiv\left.\frac{\partial\left(n Z\right)}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\]
+\[z_i\equiv\left.\frac{\partial\left(n Z\right)}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}=z_i\left(T,p,\left\{n_i\right\}\right)\]
 称为组份$i$在气体混合物中的偏摩尔压缩因子。由偏摩尔量的加和性有
 \[Z=\sum_i x_i^\text{(g)}z_i\]
 注意，压缩因子是仅针对气态物质而提出的概念。
 
-$\lim_{p\to 0}Z=1$的规定来自经验总结，可参考《物理化学》图1.21。
+$\lim_{p\to 0}Z=1$的规定是来自经验总结的，可参考《物理化学》图1.21。
 
 压缩因子定义式中含摩尔体积，我们进一步推导偏摩尔压缩因子与偏摩尔体积的关系：
 \begin{align*}
@@ -38,15 +38,15 @@ $\lim_{p\to 0}Z=1$的规定来自经验总结，可参考《物理化学》图1.
 
 \subsection{气体的残余体积}
 气体混合物的残余体积（residual volume）是给定温度和压强下，实际气体的体积与理想气体值之差，具体定义为
-\[\alpha\equiv \frac{RT}{p}-V_\text{m}\]
-可见，$\alpha$是一个摩尔量。与其相应的偏摩尔量（称偏摩尔残余体积）是
-\[\alpha_i\equiv\left.\frac{\partial\left(n\alpha\right)}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\]
+\[\alpha\equiv \frac{RT}{p}-V_\text{m}=\alpha\left(T,p,\left\{n_i\right\}\right)\]
+可见，$\alpha$是一个摩尔量。与其相应的偏摩尔量（称偏摩尔残余体积）应是
+\[\alpha_i\equiv\left.\frac{\partial\left(n\alpha\right)}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}=\alpha\left(T,p,\left\{n_i\right\}\right)\]
 从而有
 \[\alpha=\sum_i x_i^\text{(g)}\alpha_i\]
 与气体的压缩因子类似，气体的残余体积是仅针对气态体系而提出的概念。由定义易得$\alpha$与$Z$的关系
 \[\alpha=\frac{RT}{p}\left(1-Z\right)\]
 
-在理想气体极限下，气体的残余体积不为零。具体地
+在理想气体极限，气体的残余体积不为零。具体地
 \begin{align*}
     \lim_{p\to 0}\alpha & =RT\lim_{p\to 0}\frac{1-Z}{p}                                                                             \\
                         & =-RT\left.\frac{\partial Z}{\partial p}\right|_{T,p\to 0,\left\{n_i\right\}} & \text{（} & \text{利用洛比达法则)}
@@ -54,16 +54,85 @@ $\lim_{p\to 0}Z=1$的规定来自经验总结，可参考《物理化学》图1.
 也就是说，在理想气体极限下，气体的残余体积是压缩因子在$p\to 0$的渐近斜率，一般不为零。
 
 \subsection{逸度}
-组份$i$纯物质（无论气态还是液态）的逸度（fugacity）$f_i^*$的现代的定义是满足：
-\[\mathrm{d}\mu_i^*\equiv RT\mathrm{d}\ln f_i^*,\quad\text{恒定$T$}\]
+无论气态还是液态混合物，我们定义混合物体系的平均逸度（简称逸度）$f$和组份$i$在混合物中的逸度$f_i$。混合物体系的逸度$f$满足
+\[\mathrm{d}G_\text{m}=RT\mathrm{d}\ln f,\quad\text{恒定$T$}\]
 且
-\[\lim_{p\to 0}\frac{f_i^*}{p}=1\]
+\[\lim_{p^\prime\to 0}\frac{f\left(p^\prime;T,\left\{n_i\right\}\right)}{p^\prime}\equiv 1\]
+组份$i$在混合物中的逸度$f_i$满足
+\[\mathrm{d}\mu_i=RT\mathrm{d}\ln f_i,\quad\text{恒定$T$}\]
+且
+\[\lim_{p^\prime\to 0}\frac{f_i\left(p^\prime;T,\left\{n_i\right\}\right)}{p^\prime}\equiv 1\]
 
-逸义定义的第一个微分式是恒定$T$下的微变化，所以不是全微分式。在所给定的温度$T$下，$f_i^*$是压强和摩尔数的函数$f_i^*=f_i^*\left(p,n_i;T\right)$。所以，可用文字表达上述定义：在给定温度$T$下，由压强和组分变化造成的化学势变化，若用逸度表示，则总是上述形式。
+这两个逸度定义的第一个微分式是恒定$T$下的微变化，所以不是全微分式。在所给定的温度$T$下，$f$或$f_i$是压强和组成的函数。
 
-逸度定义的第二个含有极限的条件，其实是要求如此定义的逸度在理想气体极限（$p\rightarrow 0$）附近等于压强。严格地，该极限表达式说，$f_i^*$是$p$的同阶无穷小。在给定温度$T$下，$f_i$关于$p$的函数形式可写成展开式：$f_i^*\left(p;T\right)=p+o\left(p^2\right)$。所以，虽然当$p=0$时$f_i^*=0$，但当$p$足够接近零时，$f_i^*\approx p$，且$p$越接近零越接近。
+逸度定义的第二个含有极限的条件，其实是要求如此定义的逸度在理想气体极限（$p\rightarrow 0$）附近等于压强$p$。这是基于大量经验的总结。严格地，该极限表达式说，$f_i^*$是$p$的同阶无穷小。在给定温度$T$下，$f_i$关于$p$的函数形式可写成展开式：$f_i^*\left(p;T,n_i\right)=p+o\left(p^2\right)$。所以，虽然当$p=0$时$f_i^*=0$，但当$p$足够接近零时，$f_i^*\approx p$，且$p$越接近零$f_i^*$越接近$p$。
 
-由于这种基于微分关系的定义方式，显式地写下$f_i^*$的“定义式”需要选定参考状态（即“积分常数”的确定）。
+组份$i$在混合物中的逸度定义的第二个含有极限的条件，是想说，在压强极小时，组份$i$的逸度接近$x_i p$，亦即气体接近遵守道尔顿分压定律。这是缺乏实验基础的，因此这一规定甚至不能说是来自经验的总结，而是纯粹为了使理论自洽而而构造出来的。因为，道尔顿分压定律是理想气体的性质，如果认为$p\rightarrow 0$时纯物质气体接近理想气体，则必须同时认为$p\rightarrow 0$时气体混合物接近遵循道尔顿分压定律。
+
+由于这种基于微分关系的定义方式，想要显定地写下其定义表达式，就需要求定积分，需要选定一个状态作为参考初态。一个自然的选择就是理想气体极限（$p\rightarrow 0$）。由Gibbs--Duhem方程，在恒定$T$下，有
+\[\sum_i x_i\mathrm{d}\mu_i=V_m\mathrm{d}p\]
+用等号左边代入逸度定义，等号右边用压缩因子表示（即仅考虑体系呈气态压强$p$范围），上式变为
+\[\sum_i x_i\mathrm{d}\ln f_i=RTZ\mathrm{d}\ln p\]
+我们考虑从$p\rightarrow 0$极限到当前压强$p$的等温、恒定组成的变化过程，即对上式进行如下广义积分
+\begin{align*}
+    \lim_{p^\prime\to 0}\sum_ix_i\ln\frac{f\left(p;T,\left\{n_i\right\}\right)}{f\left(p^\prime;T,\left\{n_i\right\}\right)} & =\lim_{p^\prime\to 0}\sum_ix_i\ln\frac{f\left(p;T,\left\{n_i\right\}\right)}{p^\prime} & \text{（} & \text{用到了逸度定义的极限规定）} \\
+                                                                                                                             & =\int_0^p Z\left(p^\prime;T,\left\{n_i\right\}\right)\mathrm{d}\ln p^\prime            &          &
+\end{align*}
+若所考虑的体系是一个气态总是理想气体的假想体系，即$Z\equiv 1$，则上式变为
+\begin{align*}
+                    & \lim_{p^\prime\to 0}\left[\sum_i x_i\ln\frac{f\left(p;T,\left\{n_i\right\}\right)}{p^\prime}-\ln\frac{p}{p^\prime}\right]=0 \\
+    \Leftrightarrow & \lim_{p^\prime\to 0}\left[\sum_ix_i\ln f\left(p;T,\left\{n_i\right\}\right)-\ln p\right]=0                                  \\
+    \Leftrightarrow & f\left(p\right)=p,\quad\text{理想气体}
+\end{align*}
+——正如其所应当的那样。
+
+我们可以继续证明，组份$i$在混合物中的逸度$f_i$，在假想理想气体的情况中就等于$x_i p$，即满足道尔顿分压定律。但在这么做之前，先要认识清楚，$f_i$不是与$nf$对应的偏摩尔量（这是易知的）。实际上，$\ln\left(f_i/x_i\right)$是对应于$n\ln f$的偏摩尔量。下面是推导过程。考虑从$p\rightarrow 0$极限到当前压强$p$的等温过程，由$f$的定义式，
+\begin{align*}
+    \lim_{p^\prime\to 0}\left[G_\text{m}\left(p;T,\left\{n_i\right\}\right)-G_\text{m}\left(p^\prime;T,\left\{n_i\right\}\right)\right] & =RT\lim_{p^\prime\to 0}\left[\ln\frac{f\left(p;T,\left\{n_i\right\}\right)}{f\left(p^\prime;T,\left\{n_i\right\}\right)}\right] \\
+                                                                                                                                        & =RT\lim_{p^\prime\to 0}\ln\frac{f\left(p;T,\left\{n_i\right\}\right)}{p^\prime}
+\end{align*}
+其中用到了逸度定义的极限规定。乘以$n$，并对$n_i$求偏导数：
+\begin{align*}
+      & \left.\frac{\partial}{\partial n_i}\lim_{p^\prime\to 0}\left[G\left(p;T,\left\{n_k\right\}\right)-G\left(p^\prime;T,\left\{n_k\right\}\right)\right]\right|_{T,p,\left\{n_{j\neq i}\right\}} \\
+    = & RT\left.\frac{\partial}{\partial n_i}\lim_{p^\prime\to 0}\left[n\ln f\left(p;T,\left\{n_k\right\}\right)-n\ln p^\prime\right]\right|_{T,p,\left\{n_{j\neq i}\right\}}
+\end{align*}
+这时，我们需要假定，热力学函数对组份的偏导函数具有一致收敛性，这样的话，我们才能交换求$p^\prime\rightarrow 0$极限与求$\partial/\partial n_i$偏导的顺序，得到
+\begin{align*}
+      & \lim_{p^\prime\to 0}\left[\mu_i\left(p;T,\left\{n_k\right\}\right)-\mu_i\left(p^\prime;T,\left\{n_k\right\}\right)\right]                                                                                                       \\
+    = & RT\lim_{p^\prime\to 0}\left[\left.\frac{\partial\left(n\ln f\left(p;T,\left\{n_k\right\}\right)\right)}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}-\frac{\mathrm{d}}{\mathrm{d}n_i}\left(n\ln p^\prime\right)\right]
+\end{align*}
+上式等号左边可用组份$i$在混合物中的逸度$f_i$的定义表示出来，即
+\begin{align*}
+    \lim_{p^\prime\to 0}\left[\mu_i\left(p;T,\left\{n_k\right\}\right)-\mu_i\left(p^\prime;T,\left\{n_k\right\}\right)\right] & =\int_0^p\mathrm{d}\mu_i                                                                                               \\
+                                                                                                                              & =RT\lim_{p^\prime\to 0}\ln\frac{f_i\left(p;T,\left\{n_k\right\}\right)}{f_i\left(p^\prime;T,\left\{n_k\right\}\right)} \\
+                                                                                                                              & =RT\lim_{p^\prime\to 0}\ln\frac{f_i\left(p;T,\left\{n_k\right\}\right)}{x_ip^\prime}
+\end{align*}
+其中利用到组份$i$在混合物中的逸度定义的极限规定。因此有
+\begin{align*}
+                    & \lim_{p^\prime\to 0}\ln\frac{f_i\left(p;T,\left\{n_k\right\}\right)}{x_ip^\prime}=\lim_{p^\prime\to 0}\left[\left.\frac{\partial\left(n\ln f\left(p;T,\left\{n_k\right\}\right)\right)}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}-\ln p^\prime\right] \\
+    \Leftrightarrow & \lim_{p^\prime\to 0}\left[\ln\frac{f_i\left(p;T,\left\{n_k\right\}\right)}{x_i}-\left.\frac{\partial}{\partial n_i}\left(n\ln f\left(p;T,\left\{n_k\right\}\right)\right)\right|_{T,p,\left\{n_{j\neq i}\right\}}\right]=0                                        \\
+    \Leftrightarrow & \ln\frac{f_i\left(p;T,\left\{n_k\right\}\right)}{x_i}=\left.\frac{\partial}{\partial n_i}\left(n\ln f\left(p;T,\left\{n_k\right\}\right)\right)\right|_{T,p,\left\{n_{j\neq i}\right\}}
+\end{align*}
+可见，$\ln \left(f_i/x_i\right)$是对应于$n\ln f$的偏摩尔量。进一步，由偏摩尔量的加和性有
+\[n\ln f=\sum_i n_i \ln\left(\frac{f_i}{x_i}\right)\Leftrightarrow\ln f=\sum_ix_i\ln\frac{f_i}{x_i}\]
+其中为了简洁省去了函数自变量的表示。有了这一关系，由理想气体$f=p$可得出理想气体混合物中$f_i=x_ip$，即满足道尔顿分压定律——正如其所应当的那样。
+
+考虑恒定$T$和$p$下，组份从纯物质$i$（$x_i=1$）到组份$i$的摩尔分数为$x_i$的混合过程。这一过程的化学势变化
+\begin{align*}
+    \mu_i\left(x_i;T,p\right)-\mu_i^*\left(T,p\right) & =\int_1^{x_i}\mathrm{d}\mu_i                               \\
+                                                      & =RT\ln\frac{f_i\left(x_i;T,p\right)}{fi^*\left(T,p\right)}
+\end{align*}
+因此有
+\[\mu_i\left(x_i;T,p\right)=\mu_i^*\left(T,p\right)+RT\ln\frac{f_i\left(x_i;T,p\right)}{f_i^*\left(T,p\right)}\]
+这是混合物的化学势的逸度表达式。在$p\rightarrow 0$极限下，
+\begin{align*}
+    \lim_{p\to 0}\left[\mu_i\left(x_i;T,p\right)-\mu_i^*\left(T,p\right)\right] & =RT\lim_{p\to 0}\ln\frac{f_i\left(x_i;T,p\right)}{f_i^*\left(T,p\right)}                                   \\
+                                                                                & =RT\lim_{p\to 0}\left[\ln\frac{f_i\left(x_i;T,p\right)}{x_ip}-\ln\frac{f_i^*\left(T,p\right)}{x_ip}\right] \\
+                                                                                & =RT\ln x_i,\quad p\rightarrow 0
+\end{align*}
+故在$p\rightarrow 0$极限，
+\[\mu_i\left(x_i;T,p\right)\approx\mu_i^*\left(T,p\right)+RT\ln x_i,\quad p\rightarrow 0\]
+
 
 
 
