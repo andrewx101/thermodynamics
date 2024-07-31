@@ -26,8 +26,8 @@
 由于真实体系和模型体系一般不同，既然在$\left(T,V_\text{m},\left\{n_i\right\}\right)$和$\left(T,p,\left\{n_i\right\}\right)$下这一真实体系处于相同的状态，则对模型体系未必是，故上式等号右边不为零。由微积分原理，它可写成
 \[M^\text{mod}_\text{m}\left(T,p,\left\{n_i\right\}\right)-M^\text{mod}_\text{m}\left(T,V_\text{m},\left\{n_i\right\}\right)=\int_{p^*}^p\left.\frac{\partial M^\text{mod}_\text{m}\left(T,p^\prime,\left\{n_i\right\}\right)}{\partial p^\prime}\right|_{T,\left\{n_i\right\}}\mathrm{d}p^\prime\]
 其中$p^*$是使模型体系在条件$T$、$\left\{n_i\right\}$下摩尔体积为$V_\text{m}$的压强。因此有
-\begin{equation}\label{eq:rel_M~D_M~d}
-    M^\text{d}_\text{m}=M^\text{D}_\text{m}+\int_{p^*}^p\left.\frac{\partial M^\text{mod}_\text{m}}{\partial p^\prime}\right|_{T,\left\{n_i\right\}}\mathrm{d}p^\prime
+\begin{equation}\label{eq:rel_MD_Md}
+M^\text{d}_\text{m}=M^\text{D}_\text{m}+\int_{p^*}^p\left.\frac{\partial M^\text{mod}_\text{m}}{\partial p^\prime}\right|_{T,\left\{n_i\right\}}\mathrm{d}p^\prime
 \end{equation}
 
 \subsection{残余函数}
@@ -38,18 +38,33 @@
 \begin{equation}\label{eq:def_residual_function_r}
     M^\text{R}_\text{m}\left(T,p,\left\{n_i\right\}\right)\equiv M_\text{m}\left(T,p,\left\{n_i\right\}\right)-M^\text{ig}\left(T,p,\left\{n_i\right\}\right)
 \end{equation}
-利用式\eqref{eq:rel_M~D_M~d}，对于处于$\left(p,V_\text{m},T\right)$下的某真实体系，有
+
+\setlength\LTleft{0pt}
+\setlength\LTright{0pt}
+\begin{longtable}{m{\textwidth}}
+\caption{基于压强状态方程的残余函数表达式}\label{table:residual_functions_Mr}\\
+\hline
+\begin{align}
+p^\text{r}=\rho RT\left(Z-1\right)
+\end{align}\\[-10ex]
+\begin{align}
+U^\text{r}_\text{m}=-RT^2\int_0^\rho\left.\frac{\partial Z}{\partial T}\right|_{\rho^\prime,\left\{n_i\right\}}\mathrm{d}\ln\rho^\prime
+    \end{align}\\
+\hline
+\end{longtable}
+
+
+利用式\eqref{eq:rel_MD_Md}，对于处于$\left(p,V_\text{m},T\right)$下的某真实体系，有
 \begin{equation}
-    \label{eq:rel_M~R_M~r}
-    M^\text{r}_\text{m}=M^\text{R}+\int_{RT/V_\text{m}}^p\left.\frac{\partial M^\text{ig}_\text{m}}{\partial p^\prime}\right|_{T,\left\{n_i\right\}}\mathrm{d}p^\prime
+    \label{eq:rel_MR_Mr}    M^\text{r}_\text{m}=M^\text{R}+\int_{RT/V_\text{m}}^p\left.\frac{\partial M^\text{ig}_\text{m}}{\partial p^\prime}\right|_{T,\left\{n_i\right\}}\mathrm{d}p^\prime
 \end{equation}
 
-理想气体的内能、焓、等容热容和等压热容均不依赖压强，因此这些量的摩尔量的相应两种残余函数之间是相等的（即式\eqref{eq:rel_M~R_M~r}的积分为零）。但是理想气体的熵、亥姆霍兹自由能和吉布斯自由能是压强的函数，具体地
+理想气体的内能、焓、等容热容和等压热容均不依赖压强，因此这些量的摩尔量的相应两种残余函数之间是相等的（即式\eqref{eq:rel_MR_Mr}的积分为零）。但是理想气体的熵、亥姆霍兹自由能和吉布斯自由能是压强的函数，具体地
 \begin{align*}
     \left.\frac{\partial S^\text{ig}_\text{m}}{\partial p}\right|_{T,\left\{n_i\right\}} & =-\frac{R}{p}                                                                                      \\
     \left.\frac{\partial A^\text{ig}_\text{m}}{\partial p}\right|_{T,\left\{n_i\right\}} & =\left.\frac{\partial G^\text{ig}_\text{m}}{\partial p}\right|_{T,\left\{n_i\right\}}=\frac{RT}{p}
 \end{align*}
-把这些代入式\eqref{eq:rel_M~R_M~r}得
+把这些代入式\eqref{eq:rel_MR_Mr}得
 \begin{align}
     S^\text{r}_\text{m} & =S^\text{R}_\text{m}-R\ln Z  \\
     A^\text{r}_\text{m} & =A^\text{R}_\text{m}+RT\ln Z \\
