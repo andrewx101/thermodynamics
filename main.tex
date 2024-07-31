@@ -1,13 +1,19 @@
-\documentclass[zihao=-4,linespread=1.5,a4paper,heading=true,twoside]{ctexbook}
-\usepackage[utf8]{inputenc}
+\documentclass[zihao=5,linespread=1.3,b5paper,heading=true,twoside]{ctexbook}
+%\usepackage[utf8]{inputenc}
 \pagestyle{empty}
 % packages for page layout
 \usepackage{geometry}
 \geometry{
-a4paper,
-total={171.8mm,246.2mm},
+b5paper,
+total={137.8mm,199.2mm},
 left=19.1mm,
 top=25.4mm,
+}
+
+% package for Chinese style
+%\usepackage{ctex}
+\ctexset{
+    punct=kaiming
 }
 
 % package for standard state symbol
@@ -34,22 +40,6 @@ top=25.4mm,
 \usepackage{subcaption}
 \usepackage{capt-of}
 \usepackage{cutwin}
-
-% packages for page layout
-\usepackage{geometry}
-\geometry{
-a4paper,
-total={171.8mm,246.2mm},
-left=19.1mm,
-top=25.4mm,
-}
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhead{}
-\fancyhead[LE,RO]{\leftmark}
-\fancyfoot{}
-\fancyfoot[LE,RO]{\thepage}
-\fancyfoot[LO,RE]{更新至\today}
 
 % package for quotes
 \usepackage{csquotes}
