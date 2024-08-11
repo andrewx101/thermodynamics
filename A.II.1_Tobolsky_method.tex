@@ -1,0 +1,96 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+在运用经典热力学解决实际问题时，按照微积分理论经常会推导到一个热力学状态函数（如内能、熵、焓等自由能）在给定环境约束条件（如温度、压强、体积）下的偏导数，作为我们关注的焦点。要使理论能应用于实际，我们必须写出这一偏导数的表达式，它只含可测量的体系性质。
+
+有些偏导数，本身是好测的。比如橡胶弹性热力学中涉及到$\left(\partial F/\partial T\right)_{p,L}$，即恒定压强$p$和长度$L$下试样受力$F$随温度$T$的变化率，这直接对应着一个不难实现的实验要求。但是当我们关心的偏导数不好测，例如恒熵$S$下焓$H$随力$F$的变化率$\left(\partial H/\partial F\right)_{S}$，必须通过热力学关系转化成仅含可测量的表达式，才能指导我们设计实验去测量它。本节介绍的是解决这类问题的一般套路，最早是由A. Tobolsky提出的，因此也叫Tobolsky方法。
+
+不同的物理化学课本，都重点介绍过实现上述的目标的方法。比如在傅献彩、侯文华编的第六版上册\cite{傅献彩2022I}中，在附录I.1至附录I.6的基础上，第\S 3.13节介绍了这个内容。
+
+首先写下热力学第一、二定律适用于准静态过程的微分式：
+\[\mathrm{d}U=T\mathrm{d}S+\sum_iY_i\mathrm{d}X_i+\sum_j\mu_i\mathrm{d}n_i\]
+其中$Y_i$和$X_i$是分别是一对广义力和广义位移。例如，橡胶弹性热力学中，我们如果认为试样的形变除了在拉伸方向有伸长长度$L$的变化外，还有体积的变化，则外界对体系做的功，除了拉伸动作造成的$F\mathrm{d}L$之外，还应加上（负的）体积功$-p\mathrm{d}V$。在这里，$L$、$V$是广义位移，$F$、$p$是广义力\footnote{在连续介质热力学的角度，所有机械力造成体系形变所做的功都能统一写出来，但最终形式总能呈现为若干标量乘积的求和。哪怕我们再考虑重力、电、磁效应等外场所做的功，最终也能写成若干标量乘积的求和。}。为简单起见，我们暂设体系只做体积功。故上式变为
+\begin{equation}\label{eq:A.II.1_first_second_law}
+    \mathrm{d}U=T\mathrm{d}S-p\mathrm{d}V+\sum_j\mu_j\mathrm{d}n_j
+\end{equation}
+
+现在就以$U$为例，具体解释一下，我们具体面临什么计算问题。
+
+一方面，形如$\mathrm{d}U$的符号，数学上是指$U$作为某个函数$U=U\left(x,y,z,\cdots\right)$的微分。在物理化学中我们还已经规定了$U$和$S$是状态函数，平衡态下体系的体积$V$和组成$\left\{n_i\right\}$当然也是状态函数。也就是说它们必须是一组完全确定体系平衡态的条件的、互相独立的变量的函数。所以$U$、$S$、$V$作为要进行微分的函数，它们的自变量虽然没有绝对确定，但总必是一组能完全确定体系平衡状态的条件的、互相独立的变量。
+
+另一方面，上式本身又形如函数$U=U\left(S,V,\left\{n_j\right\}\right)$的全微分。$\left(S,V,\left\{n_j\right\}\right)$确实是其中一组确定体系状态的变量。但我们所关心的体系在实际问题往往并不方便由这组变量控制其状态。比如，实验上更易通过$\left(T,V,\left\{n_i\right\}\right)$或$\left(T,p,\left\{n_i\right\}\right)$确定体系状态。由状态函数的概念，也可以写成$U=U\left(T,V,\left\{n_i\right\}\right)$或$U=U\left(T,p,\left\{n_i\right\}\right)$，$S$、$V$和$\left\{n_i\right\}$也类似。函数$U$按实验方便控制的状态变量来写出其全微分，才可以具体算出，实验上可实施的热力学过程所造成的变化量。以$\left(T,p,\left\{n_i\right\}\right)$为例：
+\begin{equation}\label{eq:A.II.1_change_of_function_value}
+    \begin{aligned}
+        \Delta U & =\int_{\left(T_1,p_1,\left\{n_{i,1}\right\}\right)\rightarrow\left(T_2,p_2,\left\{n_{i,2}\right\}\right)} dU                                                                                                                                \\
+                 & =\int_{T_1}^{T_2}\left.\frac{\partial U}{\partial T}\right|_{p,\left\{n_i\right\}}\mathrm{d}T+\int_{p_1}^{p_2}\left.\frac{\partial U}{\partial p}\right|_{T,\left\{n_i\right\}}\mathrm{d}p+\sum_i\int_{n_{i,1}}^{n_{i,2}}\mu_i\mathrm{d}n_i
+    \end{aligned}
+\end{equation}
+因此需要知道上式中相应的偏微分和各组分化学势。
+
+原则上，如果我们已知体系的性质，我们就应该能够知道体系的行为，比如它在给定的过程的热力学状态函数变化量。所谓知道体系的性质，在经典热力学理论当中就是知道状态方程的具体表达式。体系的状态方程总是可实验测量确定的。对于本例中只做体积功的情况，可用压缩因子$Z\equiv pV_\text{m}/\left(RT\right)=Z\left(T,p\right)$函数表示。函数可由其偏导函数刻划。具体地，可由体积膨胀系数
+\[\alpha\equiv V^{-1}\left.\frac{\partial V}{\partial T}\right|_{p,\left\{n_i\right\}} \]
+等温压缩系数
+\[\kappa_T\equiv-V^{-1}\left.\frac{\partial V}{\partial p}\right|_{T,\left\{n_i\right\}}\]
+和压力系数
+\[\beta\equiv p^{-1}\left.\frac{\partial p}{\partial T}\right|_{V,\left\{n_i\right\}}\]
+来刻划。且可证$\alpha\equiv\kappa_T\beta p$。除这些响应函数外，还有体系的热性质，由两个热容确定（准静态过程），它们可通过量热实验独立测量，而由第二定律它们反映以下熵的偏微分：
+\[C_p=T\left.\frac{\partial S}{\partial T}\right|_{p,\left\{n_i\right\}},\quad C_V=T\left.\frac{\partial S}{\partial T}\right|_{V}\]
+
+因此，当我们说，知道体系的性质，就应该能确定体系的热力学状态函数的变化量时，实际是要求式\eqref{eq:A.II.1_change_of_function_value}中各偏导数关于$C_p$、$C_V$、$\alpha$、$\kappa_T$、$\beta$等可测量的表达式。
+
+上述仅以要求内能的偏导数为例来说明问题所在。其实，对以下各热力学势函数都可提出类似的问题。由它们的定义
+\begin{align}
+    H & \equiv U+pV    \\
+    A & \equiv U-TS    \\
+    G & \equiv U-TS+pV
+\end{align}
+可得它们的微分关系
+\begin{align}
+    \mathrm{d}H & =T\mathrm{d}S+V\mathrm{d}p+\sum_i\mu_i\mathrm{d}n_i  \label{eq:A.II.1_derivative_H} \\
+    \mathrm{d}A & =-S\mathrm{d}T-p\mathrm{d}V+\sum_i\mu_i\mathrm{d}n_i \label{eq:A.II.1_derivative_A} \\
+    \mathrm{d}G & =-S\mathrm{d}T+V\mathrm{d}p+\sum_i\mu_i\mathrm{d}n_i\label{eq:A.II.1_derivative_G}
+\end{align}
+这些微分关系可按式\eqref{eq:A.II.1_change_of_function_value}作与上述内容类似的理解。
+
+通过与这些函数作为特性函数全微分式比较可得
+\begin{align}
+    -S & =\left.\frac{\partial G}{\partial T}\right|_{p,\left\{n_i\right\}}=\left.\frac{\partial A}{\partial T}\right|_{V,\left\{n_i\right\}} \\
+    V  & =\left.\frac{\partial G}{\partial p}\right|_{T,\left\{n_i\right\}}=\left.\frac{\partial H}{\partial p}\right|_{S,\left\{n_i\right\}} \\
+    -p & =\left.\frac{\partial A}{\partial V}\right|_{T,\left\{n_i\right\}}=\left.\frac{\partial U}{\partial V}\right|_{S,\left\{n_i\right\}}
+\end{align}
+利用这些关系，进一步对共享同一量的偏导数求交叉导，可以得到一系列Maxwell关系。例如
+\[\left.\frac{\partial S}{\partial V}\right|_{T,\left\{n_i\right\}}=-\left.\frac{\partial}{\partial V}\left(\left.\frac{\partial A}{\partial T}\right|_{T,\left\{n_i\right\}}\right)\right|_{T,\left\{n_i\right\}}=-\left.\frac{\partial}{\partial T}\left(\left.\frac{\partial A}{\partial V}\right|_{T,\left\{n_i\right\}}\right)\right|_{V,\left\{n_i\right\}}=\left.\frac{\partial p}{\partial T}\right|_{V}=p\beta\]
+同理有
+\[\left.\frac{\partial S}{\partial p}\right|_{T,\left\{n_i\right\}}=-\alpha V\]
+等等。
+
+有了以上一般关系，我们可以具体推导任一偏导数的表达式。例如，假定组份不变的情况下，想要求$\left(\partial H/\partial G\right)_{S}$。这一偏微分是来自$H=H\left(G,S\right)$的全微分
+\[\mathrm{d}H=\left.\frac{\partial H}{\partial G}\right|_{S}\mathrm{d}G+\left.\frac{\partial H}{\partial S}\right|_{G}\mathrm{d}S\]
+的。我们简记$P\equiv\left(\partial H/\partial G\right)_{S}$、$Q\equiv\left(\partial H/\partial S\right)_{G}$。假定我们实验方便控制的状态变量是$\left(T,p\right)$，这说明我们的目标是把函数自变量换成$H=H\left(T,p\right)$并把$H$的微分式写成关于$\mathrm{d}T$和$\mathrm{d}p$的形式。为此我们有意选择式\eqref{eq:A.II.1_derivative_H}和\eqref{eq:A.II.1_derivative_G}，得到
+\begin{equation*}
+    \begin{aligned}
+        T\mathrm{d}S+V\mathrm{d}p                     & =P\mathrm{d}G+Q\mathrm{d}S                             \\
+                                                      & =P\left(-S\mathrm{d}T+V\mathrm{d}p\right)+Q\mathrm{d}S \\
+        \Leftrightarrow  -SP\mathrm{d}T+PV\mathrm{d}p & =T\mathrm{d}S+V\mathrm{d}p
+    \end{aligned}
+\end{equation*}
+另外，把熵也表示成$S=S\left(T,p\right)$，利用相应的Maxwell关系和热容定义，有
+\begin{equation*}
+    \begin{aligned}
+        \mathrm{d}S & =\left.\frac{\partial S}{\partial T}\right|_{p}\mathrm{d}T+\left.\frac{\partial S}{\partial p}\right|_{T}\mathrm{d}p \\
+                    & =T^{-1}C_p\mathrm{d}T-V\alpha\mathrm{d}p
+    \end{aligned}
+\end{equation*}
+代入上式中的$\mathrm{d}S$得到只含$\mathrm{d}T$和$\mathrm{d}p$的等式
+\[-SP\mathrm{d}T+PV\mathrm{d}p+Y\left(T^{-1}C_p\mathrm{d}T-V\alpha\mathrm{d}p\right)=T\left(T^{-1}C_p\mathrm{d}T-V\alpha\mathrm{d}p\right)+V\mathrm{d}p\]
+由于$T$和$p$是相互独立的变量，因此有
+\begin{equation*}
+    \left\{\begin{array}{l}
+        -SP+T^{-1}QC_p=C_p \\
+        PV-QV\alpha=-TV\alpha+V
+    \end{array}\right.
+\end{equation*}
+解得
+\[P=\frac{C_p}{C_p-ST\alpha},\quad Q=T+\frac{ST}{C_p-ST\alpha}\]
+$P$的表达式就是我们想要的结果。其中熵总是可由状态方程和热容求得的
+\[S\left(T,p\right)=\int_{\left(0,0\right)\rightarrow\left(T,p\right)}\left(T^{-1}C_p\mathrm{d}T-V\alpha\mathrm{d}p\right)\]
+\end{document}

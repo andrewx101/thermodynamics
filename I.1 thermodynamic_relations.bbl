@@ -19,149 +19,70 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
-    \entry{Callen1985}{book}{}{}
+    \entry{Tobolsky1942}{article}{}{}
       \name{author}{1}{}{%
-        {{hash=fcbca29015ee1b510dd48a7df9eef49d}{%
-           family={Callen},
-           familyi={C\bibinitperiod},
-           given={Herbert\bibnamedelima B.},
-           giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=18494e7675927efcb2d30dd67e9920fa}{%
+           family={Tobolsky},
+           familyi={T\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod}}}%
       }
       \name{namea}{1}{}{%
-        {{hash=fcbca29015ee1b510dd48a7df9eef49d}{%
-           family={Callen},
-           familyi={C\bibinitperiod},
-           given={Herbert\bibnamedelima B.},
-           giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=18494e7675927efcb2d30dd67e9920fa}{%
+           family={Tobolsky},
+           familyi={T\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {english}%
       }
-      \list{location}{1}{%
-        {New York}%
-      }
-      \list{publisher}{1}{%
-        {Wiley}%
-      }
-      \strng{namehash}{fcbca29015ee1b510dd48a7df9eef49d}
-      \strng{fullhash}{fcbca29015ee1b510dd48a7df9eef49d}
-      \strng{fullhashraw}{fcbca29015ee1b510dd48a7df9eef49d}
-      \strng{bibnamehash}{fcbca29015ee1b510dd48a7df9eef49d}
-      \strng{authorbibnamehash}{fcbca29015ee1b510dd48a7df9eef49d}
-      \strng{authornamehash}{fcbca29015ee1b510dd48a7df9eef49d}
-      \strng{authorfullhash}{fcbca29015ee1b510dd48a7df9eef49d}
-      \strng{authorfullhashraw}{fcbca29015ee1b510dd48a7df9eef49d}
-      \strng{nameabibnamehash}{fcbca29015ee1b510dd48a7df9eef49d}
-      \strng{nameanamehash}{fcbca29015ee1b510dd48a7df9eef49d}
-      \strng{nameafullhash}{fcbca29015ee1b510dd48a7df9eef49d}
-      \strng{nameafullhashraw}{fcbca29015ee1b510dd48a7df9eef49d}
+      \strng{namehash}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{fullhash}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{fullhashraw}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{bibnamehash}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{authorbibnamehash}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{authornamehash}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{authorfullhash}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{authorfullhashraw}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{nameabibnamehash}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{nameanamehash}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{nameafullhash}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{nameafullhashraw}{18494e7675927efcb2d30dd67e9920fa}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{edition}{2nd}
-      \field{isbn}{9780471862567}
+      \field{abstract}{{An elementary systematic method for obtaining the relations between thermodynamic coefficients is presented. This method is applicable for any desired set of independent variables, and is also easily adapted to obtain the derivatives of any functions of the thermodynamic variables.}}
+      \field{issn}{0021-9606}
+      \field{journaltitle}{The Journal of Chemical Physics}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
-      \field{note}{Hier auch später erschienene, unveränderte Nachdrucke}
-      \field{pagetotal}{493}
-      \field{title}{Thermodynamics and an introduction to thermostatistics}
-      \field{usera}{M}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{{A Systematic Method of Obtaining the Relations Between Thermodynamic Derivatives}}
+      \field{usera}{J}
       \field{userd}{english}
       \field{userf}{english}
-      \field{year}{1985}
+      \field{volume}{10}
+      \field{year}{1942}
       \field{dateera}{ce}
-      \keyw{Callen1985}
-    \endentry
-    \entry{王竹溪1960}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=b267ec37bb220f65db7815b98d42656d}{%
-           family={王竹溪},
-           familyi={王\bibinitperiod}}}%
-      }
-      \name{namea}{1}{}{%
-        {{hash=b267ec37bb220f65db7815b98d42656d}{%
-           family={王竹溪},
-           familyi={王\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {chinese}%
-      }
-      \list{publisher}{1}{%
-        {高等教育出版社}%
-      }
-      \strng{namehash}{b267ec37bb220f65db7815b98d42656d}
-      \strng{fullhash}{b267ec37bb220f65db7815b98d42656d}
-      \strng{fullhashraw}{b267ec37bb220f65db7815b98d42656d}
-      \strng{bibnamehash}{b267ec37bb220f65db7815b98d42656d}
-      \strng{authorbibnamehash}{b267ec37bb220f65db7815b98d42656d}
-      \strng{authornamehash}{b267ec37bb220f65db7815b98d42656d}
-      \strng{authorfullhash}{b267ec37bb220f65db7815b98d42656d}
-      \strng{authorfullhashraw}{b267ec37bb220f65db7815b98d42656d}
-      \strng{nameabibnamehash}{b267ec37bb220f65db7815b98d42656d}
-      \strng{nameanamehash}{b267ec37bb220f65db7815b98d42656d}
-      \strng{nameafullhash}{b267ec37bb220f65db7815b98d42656d}
-      \strng{nameafullhashraw}{b267ec37bb220f65db7815b98d42656d}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{english}
-      \field{languageid}{chinese}
-      \field{lansortorder}{1}
-      \field{title}{热力学（第二版）}
-      \field{usera}{M}
-      \field{userd}{chinese}
-      \field{userf}{chinese}
-      \field{year}{1960}
-      \field{dateera}{ce}
-      \keyw{王竹溪1960}
-    \endentry
-    \entry{傅献彩2022I}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=711474ade92790bf03de47d1cce95997}{%
-           family={傅献彩;侯文华},
-           familyi={傅\bibinitperiod}}}%
-      }
-      \name{namea}{1}{}{%
-        {{hash=711474ade92790bf03de47d1cce95997}{%
-           family={傅献彩;侯文华},
-           familyi={傅\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {chinese}%
-      }
-      \list{publisher}{1}{%
-        {高等教育出版社}%
-      }
-      \strng{namehash}{711474ade92790bf03de47d1cce95997}
-      \strng{fullhash}{711474ade92790bf03de47d1cce95997}
-      \strng{fullhashraw}{711474ade92790bf03de47d1cce95997}
-      \strng{bibnamehash}{711474ade92790bf03de47d1cce95997}
-      \strng{authorbibnamehash}{711474ade92790bf03de47d1cce95997}
-      \strng{authornamehash}{711474ade92790bf03de47d1cce95997}
-      \strng{authorfullhash}{711474ade92790bf03de47d1cce95997}
-      \strng{authorfullhashraw}{711474ade92790bf03de47d1cce95997}
-      \strng{nameabibnamehash}{711474ade92790bf03de47d1cce95997}
-      \strng{nameanamehash}{711474ade92790bf03de47d1cce95997}
-      \strng{nameafullhash}{711474ade92790bf03de47d1cce95997}
-      \strng{nameafullhashraw}{711474ade92790bf03de47d1cce95997}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9787040586046}
-      \field{langid}{english}
-      \field{languageid}{chinese}
-      \field{lansortorder}{1}
-      \field{title}{物理化学（第六版）上册}
-      \field{usera}{M}
-      \field{userd}{chinese}
-      \field{userf}{chinese}
-      \field{year}{2022}
-      \field{dateera}{ce}
-      \keyw{傅献彩2022I}
+      \field{pages}{644\bibrangedash 645}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1063/1.1723632
+      \endverb
+      \verb{eprint}
+      \verb https://pubs.aip.org/aip/jcp/article-pdf/10/10/644/18792815/644\_1\_online.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1063/1.1723632
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.1723632
+      \endverb
+      \keyw{Tobolsky1942}
     \endentry
   \enddatalist
 \endrefsection

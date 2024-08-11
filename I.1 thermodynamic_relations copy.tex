@@ -1,0 +1,208 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+\subsection{偏离函数}
+在《物理化学》课本中我们已经接受，凡状态函数$M$，决定其的变量就是决定体系状态的变量\footnote{p.81。}。对于所谓的“简单的系统”\footnote{这里“简单的系统”宜参考\cite[p.9]{Callen1985}：“systems that are macroscopically homogeneous, isotropic, and uncharged, that are large enough so that surface effects can be neglected, and that are not acted on by electric, magnetic, or gravitational fields.”或参考\cite[p.17]{王竹溪1960}中的概念体系，定义为仅用几何、力学和化学变数描写的单相系，且只有单相系才有物态方程。}，在$p$，$V$，$T$中任选两个独立变量，再加上组成（比如用各组份物质的量表示$\left\{n_i\right\}$），就可以决定系统的状态。能说只需“$p$、$V$、$T$任选两个”，是因为简单体系的状态方程形式总能写成$f=f\left(T,p,V,\left\{n_i\right\}\right)$的形式。除组份$\left\{n_i\right\}$外，$T$，$p$，$V$定了任意两个的值，第三个量理论上就作为状态方程的解而被确定，体系的状态亦被确定。
+
+由于热力学能和熵是广度性质，热力学基本理论中由它们经数学关系衍生出来的状态函数也都是广度性质。按广度性质的定义，状态函数又必是一次齐函数\cite[p.75]{傅献彩2022I}。若记体系的（总）摩尔数$n\equiv\sum_i n_i$，其中$n_i$表示体系中组份$i$的摩尔数，则任一状态函数$M$都有其平均摩尔量（简称摩尔量），$M_\text{m}\equiv M/n$，其中，正体下标“m”加在表示原广度性质状态函数的字母$M$上，就表示相应广度性质状态函数的摩尔量。由定义，摩尔量都是强度性质。以下我们谈到一种性质$M$时，常直接讨论其摩尔量$M_\text{m}$。
+
+在热力学理论中，我们往往无法知道状态函数的表达式。这很大程度是来自，体系的状态方程是事物的特殊性，不同类型的体系，状态方程的形式不同，更何况所谓状态方程只是对真实事物的数学抽象。真实事物的性质只能通过实验测量来获知，而许多状态函数又不能直接测量。为了使问题可以被仔细讨论，我们常常先举出一种模型体系作为参照，把真实体系的性质表示为对模型体系的偏离。具体地，选定某模型（model），为所研究的实际（actual）体系的任一状态函数$M_\text{m}$，皆可定义相应的偏离函数（deviation function）
+\[M^\text{dev}_\text{m}\equiv M^\text{act}_\text{m}-M^\text{mod}_\text{m}\]
+其中$M^\text{act}_\text{m}$和$M^\text{mod}_\text{m}$分别是相同状态下真实体系与模型体系的性质。
+
+这个模型体系的选择原则上是任意的，但为了使理论便于应用，应作如下考虑。首先，所选择模型体系应具有清晰的微观机理背景，以便我们可以把实际体系对其的偏离作出一种微观物理意义层面的解读。其次，所选择的模型体系应是真实体系在某种明确定义概念下的“极限”。也就是说，要能说得出，到底在哪些条件、如何逐渐变化的过程中，任何真实体系就趋于这一模型体系。如果一个模型体系是真实体系无论如何都达不到的，那它的意义也不大。最后，模型体系本身的状态方程应该具有明确的且尽可能简单的数学形式。我们将会看到，理想气体是其中一种比较好的选择。
+
+偏离函数应拿同一状态下真实体系与模型体系的性质比较得到。这里的“同一状态”就是指“确定体系状态的变量取值都相等”的要求。我们经常讨论的两组同样都能确定体系状态的变量是：$\left(T,V_\text{m},\left\{n_i\right\}\right)$和$\left(T,p,\left\{n_i\right\}\right)$。我们具体记
+\begin{equation}\label{eq:def_deviation_function_D}
+    M^\text{D}_\text{m}\left(T,p,\left\{n_i\right\}\right)\equiv M_\text{m}\left(T,p,\left\{n_i\right\}\right)-M^\text{mod}_\text{m}\left(T,p,\left\{n_i\right\}\right)
+\end{equation}
+和
+\begin{equation}\label{eq:def_deviation_function_d}
+    M^\text{d}_\text{m}\left(T,V_\text{m},\left\{n_i\right\}\right)\equiv M_\text{m}\left(T,V_\text{m},\left\{n_i\right\}\right)-M^\text{mod}_\text{m}\left(T,V_\text{m},\left\{n_i\right\}\right)
+\end{equation}
+以区别这两组变量确定状态的情况。有时我们把$V_\text{m}$换成摩尔密度$\rho\equiv V^{-1}_\text{m}$，仍属于第二种情况。
+
+这两种偏离函数之间的关系是不难推出的。假设在$\left(T,V_\text{m},\left\{n_i\right\}\right)$下，我们所关心的实际体系压强是$p$，则可试求
+\[M^\text{d}_\text{m}\left(T,V_\text{m},\left\{n_i\right\}\right)-M^\text{D}_\text{m}\left(T,p,\left\{n_i\right\}\right)=M^\text{mod}_\text{m}\left(T,p,\left\{n_i\right\}\right)-M^\text{mod}_\text{m}\left(T,V_\text{m},\left\{n_i\right\}\right)\]
+由于真实体系和模型体系一般不同，既然在$\left(T,V_\text{m},\left\{n_i\right\}\right)$和$\left(T,p,\left\{n_i\right\}\right)$下这一真实体系处于相同的状态，则对模型体系未必是，故上式等号右边不为零。由微积分原理，它可写成
+\[M^\text{mod}_\text{m}\left(T,p,\left\{n_i\right\}\right)-M^\text{mod}_\text{m}\left(T,V_\text{m},\left\{n_i\right\}\right)=\int_{p^*}^p\left.\frac{\partial M^\text{mod}_\text{m}\left(T,p^\prime,\left\{n_i\right\}\right)}{\partial p^\prime}\right|_{T,\left\{n_i\right\}}\mathrm{d}p^\prime\]
+其中$p^*$是使模型体系在条件$T$、$\left\{n_i\right\}$下摩尔体积为$V_\text{m}$的压强。因此有
+\begin{equation}\label{eq:rel_MD_Md}
+    M^\text{d}_\text{m}=M^\text{D}_\text{m}+\int_{p^*}^p\left.\frac{\partial M^\text{mod}_\text{m}}{\partial p^\prime}\right|_{T,\left\{n_i\right\}}\mathrm{d}p^\prime
+\end{equation}
+
+\subsection{剩余函数}
+选用理想气体为模型体系（mod=ig）构建的偏离函数特称为剩余函数（residual functions），它们用上标R或r表示。
+\begin{equation}\label{eq:def_residual_function_R}
+    M^\text{R}_\text{m}\left(T,p,\left\{n_i\right\}\right)\equiv M_\text{m}\left(T,p,\left\{n_i\right\}\right)-M^\text{ig}\left(T,p,\left\{n_i\right\}\right)
+\end{equation}
+\begin{equation}\label{eq:def_residual_function_r}
+    M^\text{r}_\text{m}\left(T,V_\text{m},\left\{n_i\right\}\right)\equiv M_\text{m}\left(T,V_\text{m},\left\{n_i\right\}\right)-M^\text{ig}\left(T,V_\text{m},\left\{n_i\right\}\right)
+\end{equation}
+第二种剩余函数也可简单地把关于$V_\text{m}$换成关于$\rho$的形式。利用理想气体的状态方程，其各状态函数$M^\text{ig}$均是凭《物理化学》课本的知识可以得到的。从真实体系状态方程的压缩因子表达式出发，不难推导出相应的一系列剩余函数，分别列在表\ref{table:residual_functions_Mr}和表\ref{table:residual_functions_MR}。其中，其中$Z\equiv pV_\text{m}/\left(RT\right)$是体系的压缩因子。涉及$\rho\rightarrow 0$或$p\rightarrow 0$的广义积分，可由$Z$关于$\rho$或$p$的表达式得出。也就是说，想要具体写出这些剩余函数的确切表达式，就只差再知道真实体系的状态方程$Z=Z\left(T,\rho\right)$或$Z=Z\left(T,p\right)$了。
+
+% 表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格
+\setlength\LTleft{0.125\textwidth}
+%\setlength\LTright{0pt}
+\begin{longtable}{m{0.75\textwidth}}
+    \caption{基于压强状态方程的剩余函数表达式}\label{table:residual_functions_Mr}                                                                                                                                                                             \\
+    \hline
+    \begin{equation}
+        p^\text{r}  =\rho RT\left(Z-1\right)
+    \end{equation}                                                                                                                                                                                                       \\[-5ex]
+    \begin{equation}
+        U^\text{r}_\text{m}  =-RT^2\int_0^\rho\left.\frac{\partial Z}{\partial T}\right|_{\rho^\prime,\left\{n_i\right\}}\mathrm{d}\ln\rho^\prime
+    \end{equation}                                                                                                  \\[- 5 ex]
+
+    \begin{equation}
+        H^\text{r}_\text{m}  =-R T^2\int_0^\rho\left.\frac{\partial Z}{\partial T}\right|_{\rho^\prime,\left\{n_i\right\}}\mathrm{d}\ln\rho^\prime
+    \end{equation}                                                                                                 \\[-5ex]
+    \begin{equation}
+        S^\text{r}_\text{m}  =-R\int_0^\rho\left(T\left.\frac{\partial Z}{\partial T}\right|_{\rho^\prime,\left\{n_i\right\}}+Z-1\right)\mathrm{d}\ln\rho^\prime
+    \end{equation}                                                                                   \\ [-5ex]
+    \begin{equation}
+        A^\text{r}_\text{m}  =RT\int_0^\rho\left(Z-1\right)\mathrm{d}\ln\rho^\prime
+    \end{equation}                                                                                                                                                                \\ [-5ex]
+    \begin{equation}
+        G^\text{r}_\text{m}  =RT\int_0^\rho\left(Z-1\right)\mathrm{d}\ln\rho^\prime+RT\left(Z-1\right)
+    \end{equation}                                                                                                                                             \\ [-5ex]
+    \begin{equation}
+        C^\text{r}_{V,\text{m}}  =-RT\int_0^\rho\left(T\left.\frac{\partial^2 Z}{\partial T^2}\right|_{\rho^\prime,\left\{n_i\right\}}+2\left.\frac{\partial Z}{\partial T}\right|_{\rho^\prime,\left\{n_i\right\}}\right)\mathrm{d}\ln\rho^\prime
+    \end{equation} \\ [-5ex]
+    \begin{equation}
+        \begin{aligned}
+            C^\text{r}_{p,\text{m}}  = & C^\text{r}_{V,\text{m}}-R                                                                          \\
+                                       & +R\left(Z+T\left.\frac{\partial Z}{\partial T}\right|_{\rho,\left\{n_i\right\}}\right)^2           \\
+                                       & \times\left(Z+\rho\left.\frac{\partial Z}{\partial \rho}\right|_{T,\left\{n_i\right\}}\right)^{-1}
+        \end{aligned}
+    \end{equation}                                                                                                                                                                                                                 \\
+    \hline
+\end{longtable}
+% ==============================================================
+
+% 表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格
+\setlength\LTleft{0.125\textwidth}
+\begin{longtable}{m{0.75\textwidth}}
+    \caption{基于体积状态方程的剩余函数表达式}\label{table:residual_functions_MR}
+    \\\hline \\
+    \begin{equation}
+        V^\text{R}_\text{m}=\frac{RT}{p}\left(Z-1\right)
+    \end{equation}                                                                                                                                                                              \\ [-5ex]
+    \begin{equation}
+        U^\text{R}_\text{m}=-RT^2\int_0^p\left.\frac{\partial Z}{\partial T}\right|_{p^\prime,\left\{n_i\right\}}\mathrm{d}\ln p^\prime-RT\left(Z-1\right)
+    \end{equation}                                                                            \\ [-5ex]
+    \begin{equation}
+        H^\text{R}_\text{m}=-RT^2\int_0^p\left.\frac{\partial Z}{\partial T}\right|_{p^\prime,\left\{n_i\right\}}\mathrm{d}\ln p^\prime
+    \end{equation}                                                                                               \\ [-5ex]
+    \begin{equation}
+        S^\text{R}_\text{m}=-R\int_0^p\left(T\left.\frac{\partial Z}{\partial T}\right|_{p^\prime,\left\{n_i\right\}}+Z-1\right)\mathrm{d}\ln p^\prime
+    \end{equation}                                                                                \\ [-5ex]
+    \begin{equation}
+        A^\text{R}_\text{m}=RT\int_0^p\left(Z-1\right)\mathrm{d}\ln p^\prime-RT\left(Z-1\right)
+    \end{equation}                                                                                                                                       \\ [-5ex]
+    \begin{equation}
+        G^\text{R}_\text{m}=RT\int_0^p\left(Z-1\right)\mathrm{d}\ln p^\prime
+    \end{equation}                                                                                                                                                          \\ [-5ex]
+    \begin{equation}
+        C^\text{r}_{p,\text{m}}=-RT\int_0^p\left(T\left.\frac{\partial^2 Z}{\partial T^2}\right|_{p^\prime,\left\{n_i\right\}}+2\left.\frac{\partial Z}{\partial T}\right|_{p^\prime,\left\{n_i\right\}}\right)\mathrm{d}\ln p^\prime
+    \end{equation} \\ [-5ex]
+    \begin{equation}
+        \begin{aligned}
+            C^\text{R}_{V,\text{m}}= & C^\text{R}_{p,\text{m}}+R                                                                    \\
+                                     & -R\left(Z+T\left.\frac{\partial Z}{\partial T}\right|_{p,\left\{n_i\right\}}\right)^2        \\
+                                     & \times\left(Z-p\left.\frac{\partial Z}{\partial p}\right|_{T,\left\{n_i\right\}}\right)^{-1}
+        \end{aligned}
+    \end{equation}                                                                                                                                                                                                    \\
+    \hline
+\end{longtable}
+% ==================================================
+
+利用式\eqref{eq:rel_MD_Md}，对于处于$\left(p,V_\text{m},T\right)$下的某真实体系，有
+\begin{equation}
+    \label{eq:rel_MR_Mr}    M^\text{r}_\text{m}=M^\text{R}_\text{m}+\int_{RT/V_\text{m}}^p\left.\frac{\partial M^\text{ig}_\text{m}}{\partial p^\prime}\right|_{T,\left\{n_i\right\}}\mathrm{d}p^\prime
+\end{equation}
+理想气体的内能、焓、等容热容和等压热容均不依赖压强，因此这些量的摩尔量的相应两种剩余函数之间是相等的（即式\eqref{eq:rel_MR_Mr}的积分为零）。但是理想气体的熵、亥姆霍兹自由能和吉布斯自由能是压强的函数，具体地
+\begin{align*}
+    \left.\frac{\partial S^\text{ig}_\text{m}}{\partial p}\right|_{T,\left\{n_i\right\}} & =-\frac{R}{p}                                                                                      \\
+    \left.\frac{\partial A^\text{ig}_\text{m}}{\partial p}\right|_{T,\left\{n_i\right\}} & =\left.\frac{\partial G^\text{ig}_\text{m}}{\partial p}\right|_{T,\left\{n_i\right\}}=\frac{RT}{p}
+\end{align*}
+把这些代入式\eqref{eq:rel_MR_Mr}得
+\begin{align}
+    S^\text{r}_\text{m} & =S^\text{R}_\text{m}-R\ln Z  \\
+    A^\text{r}_\text{m} & =A^\text{R}_\text{m}+RT\ln Z \\
+    G^\text{r}_\text{m} & =G^\text{R}_\text{m}+RT\ln Z
+\end{align}
+
+由表\ref{table:residual_functions_Mr}和表\ref{table:residual_functions_MR}中的公式形式可以发现，选用理想气体作为模型，各剩余函数都表现为真实体系从$\rho\rightarrow 0$或$p\rightarrow 0$极限状态等温压缩至压强为$p$的状态函数变化量。因此我们也可以认为，为了写下真实体系的各状态函数表达式，我们为其构建了所述的热力学过程。因为无论任何真实体系，我们认为在所讨论的温度范围内摩尔密密度或压强足够小时必处于气态，且在它们趋于零时趋于理想气体行为。这亦可用压缩因子表示为$\lim_{\rho\to 0}Z\equiv 1$或$\lim_{p\to 0}Z\equiv1$。这一个默认条件的理由是来自经验总结。诚然，回顾《物理化学》课本中大量气体的压缩因子实验数据（图1.20）可以看到这并不违反经验。
+
+我们往往并不容易写下一个真实体系的状态方程的压缩因子表达式。例如，设一个真实体系满足范德华状态方程
+\[\left(p+\frac{a}{V_\text{m}^2}\right)\left(V_\text{m}-b\right)=RT\]
+其中$a$、$b$是不依赖$T$和$\rho$（或$p$）仅依赖组成$\left\{n_i\right\}$的参数。要利用上面的式子，必须写成$Z=Z\left(T,\rho\right)$或$Z=Z\left(T,p\right)$的形式。把$V_\text{m}=ZRT/p$代入上式得
+\[Z=1+\frac{pb}{RT}-\frac{ap^2}{Z^2R^2T^3}\]
+这是关于$Z$的一元三次方程，它的实根表达式很繁琐。此时，直接利用表\ref{table:residual_functions_Mr}或表\ref{table:residual_functions_Mr}的公式是不现实的（除非利用数值方法计算）。我们可以试从亥姆霍兹自由能出发来计算其他状态函数的剩余函数，因为大部分状态方程是写成显含$\left(p,T,V_\text{m}\right)$的形式的，而这又恰是亥姆霍兹自由能函数作为特性函数的特征变量。从亥姆霍兹自由能的剩余函数出发得到其余剩余函数的表达式不难从基本热力学关系得出，列于表\ref{table:residual_functions_from_Ar}，其中为形式简洁我们把函数表示为$\left(T^{-1},\rho,\left\{n_i\right\}\right)$的函数。
+
+% 表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格表格
+\setlength\LTleft{0.125\textwidth}
+\begin{longtable}{m{0.75\textwidth}}
+    \caption{由亥姆霍兹自由能剩余函数出发得到其他剩余函数的表达式}\label{table:residual_functions_from_Ar}
+    \\\hline \\
+    \begin{equation}
+        p^\text{r}=\rho^2\left.\frac{\partial A^\text{r}_\text{m}}{\partial \rho}\right|_{T^{-1},\left\{n_i\right\}}
+    \end{equation}                                                                                                                                                                                  \\ [-5ex]
+    \begin{equation}
+        S^\text{r}_\text{m}=T^{-2}\left.\frac{\partial A^\text{r}_\text{m}}{\partial T^{-1}}\right|_{\rho,\left\{n_i\right\}}
+    \end{equation}                                                                                                                                                  \\ [-5ex]
+    \begin{equation}
+        U^\text{r}_\text{m}=\left.\frac{\partial A^\text{r}_\text{m}}{\partial T^{-1}}\right|_{\rho,\left\{n_i\right\}}
+    \end{equation}                                                                                                                                                        \\ [-5 ex]
+    \begin{equation}
+        G^\text{r}_\text{m}=\left.\frac{\partial\left(\rho A^\text{r}_\text{m}\right)}{\partial\rho}\right|_{T^{-1},\left\{n_i\right\}}
+    \end{equation}                                                                                                                                                                                                           \\ [-5ex]
+    \begin{equation}
+        H^\text{r}_\text{m}=A^\text{r}_\text{m}+T^{-1}\left.\frac{\partial A^\text{r}_\text{m}}{\partial T^{-1}}\right|_{\rho,\left\{n_i\right\}}+\rho\left.\frac{\partial A^\text{r}_\text{m}}{\partial\rho}\right|_{T^{-1},\left\{n_i\right\}}
+    \end{equation} \\ [-5ex]
+    \begin{equation}
+        C^\text{r}_{V,\text{m}}=-T^{-2}\left.\frac{\partial^2\left(T^{-1}A^\text{r}_\text{m}\right)}{\partial T^{-2}}\right|_{\rho,\left\{n_i\right\}}
+    \end{equation}                                                                                                                                                                      \\
+    \hline
+\end{longtable}
+
+仍以范德华状态方程为例，我们由亥姆霍兹自由能的定义和基本热力学关系，不直接通过表\ref{table:residual_functions_Mr}，也不难得出其相应的剩余亥姆霍兹自由能为
+\[A^\text{r}_\text{m}=-RT\ln\left(1-b\rho\right)-a\rho\]
+故其剩余压强为
+\[p^\text{r}=\frac{b\rho^2RT}{1-b\rho}-a\rho^2\]
+确实，由此得出的状态方程表达式
+\[p=\frac{\rho RT}{1-b\rho}-a\rho^2\]
+恰为范德华方程——正如其所应当那般。而其他剩余函数也可方便得出，例如
+\begin{align*}
+    S^\text{r}_\text{m} & =R\ln\left(1-b\rho\right) \\
+    U^\text{r}_\text{m} & =-a\rho
+\end{align*}
+分别是范德华状态方程的剩余熵和剩余内能。其表达式也突出了参数$b$和$a$的物理意义。
+
+
+
+
+
+\subsection{超额函数}
+我们常常也选用“理想混合物”作为模型体系来构建偏离函数。理想混合物的定义是，各组份的活度系数均为1的混合物。其中一个后果是，混合前、后体积不变。我们用上标“id”来表示理想混合物模型（即mod=id）。这样构建的偏离函数特称之为超额函数（excess functions），用上标E或e表示为
+\begin{align}
+    \label{eq:def_excess_functions_E}
+    M^\text{E}_\text{m}\left(T,p,\left\{n_i\right\}\right)          & \equiv M_\text{m}\left(T,p,\left\{n_i\right\}\right)-M^\text{id}_\text{m}\left(T,p,\left\{n_i\right\}\right)                   \\
+    \label{eq:def_excess_functions_e}
+    M^\text{e}_\text{m}\left(T,V_\text{m},\left\{n_i\right\}\right) & \equiv M_\text{m}\left(T,V_\text{m},\left\{n_i\right\}\right)-M^\text{id}_\text{m}\left(T,V_\text{m},\left\{n_i\right\}\right)
+\end{align}
+且它们的关系是
+\begin{equation}
+    \label{eq:rel_ME_Me}
+    M^\text{e}_\text{m}=M^\text{E}_\text{m}+\int_{p^*}^p\left.\frac{\partial M^\text{id}_\text{m}}{\partial p^\prime}\right|_{T,\left\{n_i\right\}}\mathrm{d}p^\prime
+\end{equation}
+但是，这里的$p^*$表达式并不明确。按道理，它是在我们所关心的温度$T$、组份$\left\{n_i\right\}$下，摩尔体积为$V_\text{m}$的理想混合物压强。由理想混合物性质，
+\[V_\text{m}=\sum_i x_i V^*_{\text{m},i}\]
+其中$V^*_{\text{m},i}$是组份$i$组物质的摩尔体积。故$p^*$满足方程
+\[\sum_i x_i V^*_{\text{m},i}\left(T,p^*\right)=V_\text{m}\left(T,p,\left\{n_i\right\}\right)\]
+仍须已知各组份纯物质的状态方程（即$V^*_{\text{m},i}\left(T,p\right)$的函数形式）以及混合物的状态方程（即$V_\text{m}\left(T,p,\left\{n_i\right\}\right)$的函数形式）。而且，一般地我们并不规定这些组份的纯物质是理想气体或其他理想的模型体系（这不与“理想混合物”的条件相冲突，因为理想混合物的定义只管混合前后的变化问题）。
+
+
+
+
+\end{document}

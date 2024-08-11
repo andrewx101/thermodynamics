@@ -19,6 +19,12 @@ top=25.4mm,
 % package for standard state symbol
 \usepackage{plimsoll}
 
+% define inexact differential symbol
+\newcommand{\dbar}{d\hspace*{-0.08em}\bar{}\hspace*{0.1em}}
+
+% define defining equation symbol
+\newcommand{\eqdef}{\overset{\text{def}}{=}}
+
 % package for units
 \usepackage{siunitx}
 
@@ -99,32 +105,38 @@ sorting=none
 
 \usepackage{datetime2}
 
-\title{高分子热力学讲义}
+\title{高分子物理补充讲义}
 \author{孙尉翔\\mswxsun@scut.edu.cn}
 %=====================================================================================================================
 \begin{document}
-
+\maketitle
 \chapter*{前言}\label{sec:preface}
 \subfile{preface.tex}
 
 \newpage\tableofcontents
 
 \part{热力学基础}
+\chapter{热力学从理论到应用}
+\subfile{I thermodynamic_relations.tex}
+
 \chapter{混合物的热力学}
-\section{基本热力学关系}
-\subfile{I.1 thermodynamic_relations.tex}
-\section{真实体系的热力学刻划}
-\subfile{I.2 fugacity.tex}
+\section{混合物组成的定量描述方法}
+\section{理想混合物}
+\section{真实混合物}
+\section{气液共存}
 
 
 \part{高分子热力学}
-\part{统计力学}
+\part{高分子平衡态统计力学}
 \chapter{链统计}
+\part{高分子动力学和流变学}
 
 \part{附录}
 \chapter{数学}
 \section{多元函数微积分}
 \subfile{A.I.1.tex}
+\chapter{物理学}
+\section{平衡态统计进阶}
 
 
 \newpage\part*{参考文献}
