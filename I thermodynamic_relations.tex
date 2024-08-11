@@ -36,18 +36,20 @@
 \begin{align}
     \mathrm{d}H & = T\mathrm{d}S+V\mathrm{d}p+\sum_i\mu_i\mathrm{d}n_i\label{eq:I.1_dH} \\
     \mathrm{d}A & =-S\mathrm{d}T-p\mathrm{d}V+\sum_i\mu_i\mathrm{d}n_i\label{eq:I.1_dA} \\
-    \mathrm{d}G & =-S\mathrm{d}T+V\mathrm{d}p+\sum_i\mu_i\mathrm{d}n_i\label{eq:I.1_dG} \\
+    \mathrm{d}G & =-S\mathrm{d}T+V\mathrm{d}p+\sum_i\mu_i\mathrm{d}n_i\label{eq:I.1_dG}
 \end{align}
 例如，对吉布斯自由能定义式作全微分，就有
 \[\mathrm{d}G=\mathrm{d}U+p\mathrm{d}V+V\mathrm{d}p-T\mathrm{d}S-S\mathrm{d}T\]
 把式\eqref{eq:I.1_first_law_multicomp}代入上式就能得到相应的微分式。
 
 由于特性函数的用处，体系在两个我们关心的状态之间变化的可逆性和方向性就可以判断了。例如体系状态由$\left(X,Y,\left\{n_i\right\}\right)$独立、完整地确定，且对照特性函数与特征变量的对应关系应选用$M=M\left(X,Y,\left\{n_i\right\}\right)$，则两个状态——$\left(X_1,Y_1,\left\{n_{i,1}\right\}\right)$到$\left(X_2,Y_2,\left\{n_{i,2}\right\}\right)$——的$M$值变化不依赖路径（因$M$是状态函数），故总可找到一条可逆路径，将$M$的微分式$\mathrm{d}M=X\mathrm{d}Y+Y\mathrm{d}X+\sum_i\mu_i\mathrm{d}n_i$用于以下积分
-\begin{align}\label{eq:I.1_integral_of_function}
-    \Delta M & =M\left(X_2,Y_2,\left\{n_{i,2}\right\}\right)-M\left(X_1,Y_1,\left\{n_{i,1}\right\}\right)                                      \\
-             & =\int_{\left(X_1,Y_1,\left\{n_{i,1}\right\}\right)\rightarrow_\text{rev}\left(X_2,Y_2,\left\{n_{i,2}\right\}\right)}\mathrm{d}M \\
-             & =\int_{Y_1}^{Y_2}X\mathrm{d}Y+\int_{X_1}^{X_2}Y\mathrm{d}X+\sum_i\int_{n_{i,1}}^{n_{i,2}}\mu_i\mathrm{d}n_i
-\end{align}
+\begin{equation}
+    \begin{aligned}\label{eq:I.1_integral_of_function}
+        \Delta M & =M\left(X_2,Y_2,\left\{n_{i,2}\right\}\right)-M\left(X_1,Y_1,\left\{n_{i,1}\right\}\right)                                      \\
+                 & =\int_{\left(X_1,Y_1,\left\{n_{i,1}\right\}\right)\rightarrow_\text{rev}\left(X_2,Y_2,\left\{n_{i,2}\right\}\right)}\mathrm{d}M \\
+                 & =\int_{Y_1}^{Y_2}X\mathrm{d}Y+\int_{X_1}^{X_2}Y\mathrm{d}X+\sum_i\int_{n_{i,1}}^{n_{i,2}}\mu_i\mathrm{d}n_i
+    \end{aligned}
+\end{equation}
 知道$\Delta M$还有许多其他应用，在《物理化学》课的学习中我们已有深刻体会。而$\Delta M$全是靠$dM$在两个状态之间的积分算出来。所以在热力学中我们主要的篇幅都是在讨论$\mathrm{d}M$的表达式和它们之间的关系。
 
 式\eqref{eq:I.1_dH}至\eqref{eq:I.1_dG}与它们的全微分式比较可得
@@ -75,8 +77,8 @@ $U$、$S$、$H$、$A$、$G$等热力学函数（及其偏导数）是无法直�
 \[C_V\eqdef\left.\frac{\partial U}{\partial T}\right|_{V,\left\{n_i\right\}},\quad C_p\eqdef\left.\frac{\partial H}{\partial T}\right|_{p,\left\{n_i\right\}}\]
 但更有用的是由可逆过程熵变的热温商式得到的
 \begin{align}
-    C_p & =T\left.\frac{\partial S}{\partial T}\right|_{p,\left\{n_i\right\}} \\
-    C_V & =T\left.\frac{\partial S}{\partial T}\right|_{V,\left\{n_i\right\}}
+    C_p & =T\left.\frac{\partial S}{\partial T}\right|_{p,\left\{n_i\right\}}\label{eq:I.1_heat_capacity_entropy_p} \\
+    C_V & =T\left.\frac{\partial S}{\partial T}\right|_{V,\left\{n_i\right\}}\label{eq:I.1_heat_capacity_entropy_V}
 \end{align}
 
 体系状态参数之间的偏导数，可称之为$pVT$响应函数。它们之所以能有相互的偏导数是因为它们数学上由体系的状态方程所联系。组份不变时，有——
@@ -119,37 +121,43 @@ $U$、$S$、$H$、$A$、$G$等热力学函数（及其偏导数）是无法直�
 
 运用Tobolsky方法\cite{Tobolsky1942}，可以把任意热力学函数偏导数表示成仅由上列可测量的形式，从而打通热力学理论和实验应用的道路。这个方法需要使用Maxwell关系\footnote{参见《物理化学》\S 3.13。}。具体地，对式\eqref{eq:I.1_first_order_partial_mu}至式\eqref{eq:I.1_first_order_partial_S}中的偏导数再作不同变量的交叉二阶导数，并由于这些状态函数都假定连续可微而可交换偏导数顺序，可以得到一系列Maxwell关系式。其中将会出现很多$pVT$响应函数。由内能的交叉偏导数得到：
 \begin{align}
-    \left.\frac{\partial^2 U}{\partial S\partial V}\right|_{\left\{n_i\right\}}             & =\left.\frac{\partial T}{\partial V}\right|_{S,\left\{n_i\right\}}=\left(\alpha_S V\right)^{-1}=-\left.\frac{\partial p}{\partial S}\right|_{V,\left\{n_i\right\}} \\
-    \left.\frac{\partial ^2U}{\partial n_i\partial S}\right|_{V,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial \mu_i}{\partial S}\right|_{V,\left\{n_i\right\}}=\left.\frac{\partial T}{\partial n_i}\right|_{S,V,\left\{n_{j\neq i}\right\}}               \\
-    \left.\frac{\partial ^2U}{\partial n_i\partial V}\right|_{S,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial \mu_i}{\partial V}\right|_{S,\left\{n_i\right\}}=-\left.\frac{\partial p}{\partial n_i}\right|_{S,V,\left\{n_{j\neq i}\right\}}
+    \left.\frac{\partial^2 U}{\partial S\partial V}\right|_{\left\{n_i\right\}}             & =\left.\frac{\partial T}{\partial V}\right|_{S,\left\{n_i\right\}}=\left(\alpha_S V\right)^{-1}=-\left.\frac{\partial p}{\partial S}\right|_{V,\left\{n_i\right\}}\label{eq:I.1_Maxwell_USV} \\
+    \left.\frac{\partial ^2U}{\partial n_i\partial S}\right|_{V,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial \mu_i}{\partial S}\right|_{V,\left\{n_i\right\}}=\left.\frac{\partial T}{\partial n_i}\right|_{S,V,\left\{n_{j\neq i}\right\}}\label{eq:I.1_Maxwell_UnS}               \\
+    \left.\frac{\partial ^2U}{\partial n_i\partial V}\right|_{S,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial \mu_i}{\partial V}\right|_{S,\left\{n_i\right\}}=-\left.\frac{\partial p}{\partial n_i}\right|_{S,V,\left\{n_{j\neq i}\right\}}\label{eq:I.1_Maxwell_UnV}
 \end{align}
 由焓的交叉偏导数得到
 \begin{align}
-    \left.\frac{\partial^2 H}{\partial S\partial p}\right|_{\left\{n_i\right\}}             & =\left.\frac{\partial T}{\partial p}\right|_{S,\left\{n_i\right\}}=\beta_S^{-1}=\left.\frac{\partial V}{\partial S}\right|_{p,\left\{n_i\right\}}    \\
-    \left.\frac{\partial ^2H}{\partial n_i\partial S}\right|_{p,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial \mu_i}{\partial S}\right|_{p,\left\{n_i\right\}}=\left.\frac{\partial T}{\partial n_i}\right|_{S,p,\left\{n_{j\neq i}\right\}} \\
-    \left.\frac{\partial ^2H}{\partial n_i\partial p}\right|_{S,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial \mu_i}{\partial p}\right|_{S,\left\{n_i\right\}}=\left.\frac{\partial V}{\partial n_i}\right|_{S,p,\left\{n_{j\neq i}\right\}}
+    \left.\frac{\partial^2 H}{\partial S\partial p}\right|_{\left\{n_i\right\}}             & =\left.\frac{\partial T}{\partial p}\right|_{S,\left\{n_i\right\}}=\beta_S^{-1}=\left.\frac{\partial V}{\partial S}\right|_{p,\left\{n_i\right\}}\label{eq:I.1_Maxwell_HSp}    \\
+    \left.\frac{\partial ^2H}{\partial n_i\partial S}\right|_{p,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial \mu_i}{\partial S}\right|_{p,\left\{n_i\right\}}=\left.\frac{\partial T}{\partial n_i}\right|_{S,p,\left\{n_{j\neq i}\right\}}\label{eq:I.1_Maxwell_HnS} \\
+    \left.\frac{\partial ^2H}{\partial n_i\partial p}\right|_{S,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial \mu_i}{\partial p}\right|_{S,\left\{n_i\right\}}=\left.\frac{\partial V}{\partial n_i}\right|_{S,p,\left\{n_{j\neq i}\right\}}\label{eq:I.1_Maxwell_Hnp}
 \end{align}
 由亥姆霍兹自由能的交叉偏导数得到：
 \begin{align}
-    \left.\frac{\partial^2 A}{\partial T\partial V}\right|_{\left\{n_i\right\}}             & =\left.\frac{\partial S}{\partial V}\right|_{T,\left\{n_i\right\}}=\left.\frac{\partial p}{\partial T}\right|_{V,\left\{n_i\right\}}=\beta_V^{-1}     \\
-    \left.\frac{\partial ^2A}{\partial n_i\partial T}\right|_{V,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial \mu_i}{\partial T}\right|_{V,\left\{n_i\right\}}=-\left.\frac{\partial S}{\partial n_i}\right|_{T,V,\left\{n_{j\neq i}\right\}} \\
-    \left.\frac{\partial ^2A}{\partial n_i\partial V}\right|_{T,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial \mu_i}{\partial V}\right|_{T,\left\{n_i\right\}}=-\left.\frac{\partial p}{\partial n_i}\right|_{T,V,\left\{n_{j\neq i}\right\}}
+    \left.\frac{\partial^2 A}{\partial T\partial V}\right|_{\left\{n_i\right\}}             & =\left.\frac{\partial S}{\partial V}\right|_{T,\left\{n_i\right\}}=\left.\frac{\partial p}{\partial T}\right|_{V,\left\{n_i\right\}}=\beta_V^{-1}\label{eq:I.1_Maxwell_ATV}     \\
+    \left.\frac{\partial ^2A}{\partial n_i\partial T}\right|_{V,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial \mu_i}{\partial T}\right|_{V,\left\{n_i\right\}}=-\left.\frac{\partial S}{\partial n_i}\right|_{T,V,\left\{n_{j\neq i}\right\}}\label{eq:I.1_Maxwell_AnT} \\
+    \left.\frac{\partial ^2A}{\partial n_i\partial V}\right|_{T,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial \mu_i}{\partial V}\right|_{T,\left\{n_i\right\}}=-\left.\frac{\partial p}{\partial n_i}\right|_{T,V,\left\{n_{j\neq i}\right\}}\label{eq:I.1_Maxwell_AnV}
 \end{align}
 由吉布斯自由能的交叉偏导数得到：
 \begin{align}
-    \left.\frac{\partial^2 G}{\partial T\partial p}\right|_{\left\{n_i\right\}}             & =\left.\frac{\partial S}{\partial p}\right|_{T,\left\{n_i\right\}}=-\left.\frac{\partial V}{\partial T}\right|_{p,\left\{n_i\right\}}=-\alpha_p V     \\
-    \left.\frac{\partial ^2G}{\partial n_i\partial T}\right|_{p,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial \mu_i}{\partial T}\right|_{p,\left\{n_i\right\}}=-\left.\frac{\partial S}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}} \\
-    \left.\frac{\partial ^2G}{\partial n_i\partial p}\right|_{T,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial \mu_i}{\partial p}\right|_{T,\left\{n_i\right\}}=\left.\frac{\partial V}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}
+    \left.\frac{\partial^2 G}{\partial T\partial p}\right|_{\left\{n_i\right\}}             & =\left.\frac{\partial S}{\partial p}\right|_{T,\left\{n_i\right\}}=-\left.\frac{\partial V}{\partial T}\right|_{p,\left\{n_i\right\}}=-\alpha_p V\label{eq:I.1_Maxwell_GTp}     \\
+    \left.\frac{\partial ^2G}{\partial n_i\partial T}\right|_{p,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial \mu_i}{\partial T}\right|_{p,\left\{n_i\right\}}=-\left.\frac{\partial S}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\label{eq:I.1_Maxwell_GnT} \\
+    \left.\frac{\partial ^2G}{\partial n_i\partial p}\right|_{T,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial \mu_i}{\partial p}\right|_{T,\left\{n_i\right\}}=\left.\frac{\partial V}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\label{eq:I.1_Maxwell_GnV}
 \end{align}
 
 最后，从上述Maxwell关系可归纳出，除了$C_p$、$C_V$、各$pVT$（等温或等熵）响应函数和（等压或等容）偏摩尔体积之外，还有两种量必须知道，才能得出混合物体系的完整热力学性质，那就是等压或等容偏摩尔熵。具体地，它们分别是含在视熵为$\left(T,V,\left\{n_i\right\}\right)$或$\left(T,p,\left\{n_i\right\}\right)$的全微分中的：
-\begin{align}
-    \mathrm{d}S & =\left.\frac{\partial S}{\partial T}\right|_{V,\left\{n_i\right\}}\mathrm{d}T+\left.\frac{\partial S}{\partial V}\right|_{T,\left\{n_i\right\}}\mathrm{d}V+\sum_i\left.\frac{\partial S}{\partial n_i}\right|_{T,V,\left\{n_{j\neq i}\right\}} \\
-                & =\frac{C_V}{T}\mathrm{d}T+\beta_V^{-1}\mathrm{d}V+\sum_i\left.\frac{\partial S}{\partial n_i}\right|_{T,V,\left\{n_{j\neq i}\right\}} \label{eq:I.1_dS_T_V}                                                                                    \\
-    \mathrm{d}S & =\left.\frac{\partial S}{\partial T}\right|_{p,\left\{n_i\right\}}\mathrm{d}T+\left.\frac{\partial S}{\partial p}\right|_{T,\left\{n_i\right\}}\mathrm{d}p+\sum_i\left.\frac{\partial S}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}} \\
-                & =\frac{C_p}{T}\mathrm{d}T-\alpha_pV\mathrm{d}p+\sum_i\left.\frac{\partial S}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\label{eq:I.1_dS_T_p}
-\end{align}
-这些偏摩尔熵的实验测量，跟熵本身一样，最终是落实到相应的偏摩尔热容
+\begin{equation}
+    \begin{aligned}
+        \mathrm{d}S & =\left.\frac{\partial S}{\partial T}\right|_{V,\left\{n_i\right\}}\mathrm{d}T+\left.\frac{\partial S}{\partial V}\right|_{T,\left\{n_i\right\}}\mathrm{d}V+\sum_i\left.\frac{\partial S}{\partial n_i}\right|_{T,V,\left\{n_{j\neq i}\right\}} \\
+                    & =\frac{C_V}{T}\mathrm{d}T+\beta_V^{-1}\mathrm{d}V+\sum_i\left.\frac{\partial S}{\partial n_i}\right|_{T,V,\left\{n_{j\neq i}\right\}} \label{eq:I.1_dS_T_V}
+    \end{aligned}
+\end{equation}
+\begin{equation}
+    \begin{aligned}
+        \mathrm{d}S & =\left.\frac{\partial S}{\partial T}\right|_{p,\left\{n_i\right\}}\mathrm{d}T+\left.\frac{\partial S}{\partial p}\right|_{T,\left\{n_i\right\}}\mathrm{d}p+\sum_i\left.\frac{\partial S}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}} \\
+                    & =\frac{C_p}{T}\mathrm{d}T-\alpha_pV\mathrm{d}p+\sum_i\left.\frac{\partial S}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\label{eq:I.1_dS_T_p}
+    \end{aligned}
+\end{equation}
+其中用到了式\eqref{eq:I.1_heat_capacity_entropy_p}和\eqref{eq:I.1_heat_capacity_entropy_V}。这些偏摩尔熵的实验测量，跟熵本身一样，最终是落实到相应的偏摩尔热容
 \begin{align}
     C_{p,i} & \eqdef\left.\frac{\partial C_p}{\partial n_i}\right|_{T,p\left\{n_{j\neq i}\right\}} \\
     C_{V,i} & \eqdef\left.\frac{\partial C_V}{\partial n_i}\right|_{T,V\left\{n_{j\neq i}\right\}}
@@ -160,7 +168,7 @@ $U$、$S$、$H$、$A$、$G$等热力学函数（及其偏导数）是无法直�
     \kappa_{T,i} & \eqdef\left.\frac{\partial \kappa_T}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}} \\
     \beta_{V,i}  & \eqdef\left.\frac{\partial \beta_V}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}
 \end{align}
-的测量上。而偏摩尔$pVT$等温响应函数又可由偏摩尔体积得到。需要额外测量的就是偏摩尔热容，这可以用一系列不同组成的试样在同温同压下的热容数据得到\footnote{关于偏摩尔量，还有很多重要的热力学关系，将在后续章节专门介绍。}。故总而言之，想要完整确定体系的热力学性质，与单组份体系相比，混合物体系的热力学性质，需要额外测定（等压或等容）偏摩尔体积和偏摩尔热容。
+的测量上。而偏摩尔$pVT$等温响应函数又可由偏摩尔体积得到。需要额外测量的就是偏摩尔热容，这可以用一系列不同组成的试样在同温同压下的热容数据得到\footnote{关于偏摩尔量，还有很多重要的热力学关系，将在后续章节专门介绍。}。故总而言之，想要完整确定体系的热力学性质，需要测定体系的热容和$pVT$响应函数；若是混合物体系，还需测定偏摩尔热容和偏摩尔体系。
 
 有了这些关系，就总是能从已知体系的状态方程出发（无论是来自实验测量或者理论模型），把式\eqref{eq:I.1_first_law_multicomp}至\eqref{eq:I.1_dG}表示成仅含可测量的形式，再由式\eqref{eq:I.1_integral_of_function}得到体系的任何平衡态热力学行为，实现“想算什么就算什么”。
 
@@ -168,7 +176,7 @@ $U$、$S$、$H$、$A$、$G$等热力学函数（及其偏导数）是无法直�
 \[\mathrm{d}H=X\mathrm{d}A+Y\mathrm{d}S\]
 但是$H$自己有作为特性函数的微分式\eqref{eq:I.1_dH}（单组分体系$\mathrm{d}n_i=0$），故可联系得以下式子：
 \[X\mathrm{d}A+Y\mathrm{d}S=T\mathrm{d}S+V\mathrm{d}p\]
-然后，我们需要确定，我们的实验是在什么特性参数条件下做的。例如，我们的实验是恒温恒压下做的，那么我们就需要把上列的微分式中的$\mathrm{d}A$、$\mathrm{d}S$换成$\mathrm{d}T$和$\mathrm{d}p$。这需要恰当选用相应的式子。比如，如果我们用式\eqref{eq:I.1_dA}把$\mathrm{d}A$换掉，就会新增我们所不需要的一个$\mathrm{d}V$项，这时只需通过状态方程按$V=V\left(T,p\right)$的形式就可以把$\mathrm{d}V=\alpha_pV\mathrm{d}T-\kappa_TV\mathrm{d}p$再代进去就只含$\mathrm{d}T$和$\mathrm{d}p$的项了。类似地$\mathrm{d}S$用式\eqref{eq:I.1_dS_T_p}代入，最终可得到：
+然后，我们需要确定，我们的实验是在什么特性参数条件下做的。例如，我们的实验是恒温恒压下做的，那么我们就需要把上列的微分式中的$\mathrm{d}A$、$\mathrm{d}S$换成$\mathrm{d}T$和$\mathrm{d}p$。这需要恰当选用相应的式子。比如，如果我们用式\eqref{eq:I.1_dA}把$\mathrm{d}A$换掉，就会新增我们所不需要的一个$\mathrm{d}V$项。这时只需再通过状态方程按$V=V\left(T,p\right)$，可以把$\mathrm{d}V=\alpha_pV\mathrm{d}T-\kappa_TV\mathrm{d}p$再代进去，就得到只含$\mathrm{d}T$和$\mathrm{d}p$的项了。类似地$\mathrm{d}S$用式\eqref{eq:I.1_dS_T_p}代入，最终可得到：
 \[\left(-SX-pX\alpha_pV+\frac{YC_p}{T}-C_p\right)\mathrm{d}T+\left(pX\kappa_TV-Y\alpha_pV+T\alpha_pV-V\right)\mathrm{d}p=0\]
 由于上式是热力学关系推出来的，总成立，故有
 \begin{align*}
@@ -180,5 +188,5 @@ $U$、$S$、$H$、$A$、$G$等热力学函数（及其偏导数）是无法直�
     X & =\frac{C_p}{C_p p \kappa_T-T\alpha_p\left(S+pV\alpha_p\right)}
     Y=T\left(1-\frac{S+p V \alpha_p}{T\alpha_p\left(S+pV\alpha_p\right)-C_pp\kappa_T}\right)
 \end{align*}
-其中$X$是我们想要的。我们发现，这些表达式中除了只含有可测量之外，还含有熵值$S$。这是不用担心的。将来在最后应用式\eqref{eq:I.1_integral_of_function}时，可转化成同状态间的熵变$\Delta S$，又可通过式\eqref{eq:I.1_dS_T_p}由积分\eqref{eq:I.1_integral_of_function}得到。此例说明，我们总是能用我们方便实验的条件（恒温恒压）测量的结果，去计算任意一个也许在特定理论分析中碰到的，又很难实验直接测量的偏导数（“恒熵下含随亥姆霍兹自由能的变化量”）。因此，热力学在实操层面上的重点在于体系的热容和状态方程的确定（多组份情况下还包括必要的偏摩尔热容和偏摩尔体积）。
+其中$X$是我们想要的。我们发现，这些表达式中除了含有之前说到的各种可测量响应函数之外，还含有熵值$S$。这也是不用担心的。将来在最后应用式\eqref{eq:I.1_integral_of_function}时，可转化成同状态间的熵变$\Delta S$，又可通过式\eqref{eq:I.1_dS_T_p}由积分\eqref{eq:I.1_integral_of_function}得到。此例说明，我们总是能用我们方便实验的条件（恒温恒压）测量的结果，去计算任意一个也许在特定理论分析中碰到的，又很难实验直接测量的偏导数（“恒熵下含随亥姆霍兹自由能的变化量”）。因此，热力学在实操层面上的重点在于体系的热容和状态方程的确定（多组份情况下还包括必要的偏摩尔热容和偏摩尔体积）。
 \end{document}

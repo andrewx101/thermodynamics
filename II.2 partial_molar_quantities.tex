@@ -1,0 +1,101 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+设一混合物体系的某广度性质$M$是状态函数，不妨记作$M=M\left(X,Y,\left\{n_i\right\}\right)$,其中$X$、$Y$表示除组成$\left\{n_i\right\}$外，独立、完整确定体系状态的其他强度性质。组份$i$在体系中的偏摩尔性质（partial molar property）定义为\footnote{大部分资料中的偏摩尔量定义规定为$X=T$、$Y=p$的情况，但这并不是必要的。我们将看到，推广为一般情况并不增加难度，且所有偏摩尔量的规律仍成立。本节的推导过程是跟《物理化学》\S4.3很像的。}
+\[M_i\eqdef\left.\frac{\partial M}{\partial n_i}\right|_{X,Y,\left\{n_{j\neq i}\right\}}\]
+仅由该定义和热力学基本关系，可依次推出两个重要知识：偏摩尔量的加和性和吉布斯--杜亥姆方程。
+
+\subsection{偏摩尔量的加和性}
+在本小节我们将证明
+\begin{equation}\label{eq:II.2_additivity_partial_molar_quantity_1}
+    M=\sum_in_iM_i
+\end{equation}
+这件事称为偏摩尔量的加和性。
+
+由广度性质的定义可知， $M$与$n\equiv\sum_in_i$成正比。故对每一$X$、$Y$有
+\[M\left(X,Y,\left\{\lambda n_i\right\}\right)=\lambda M\left(X,Y,\left\{n_i\right\}\right)\]
+其中$\lambda$为任意正实数。该性质又可说成是：混合物体系的广度性质，是体系各组份摩尔数的1次齐函数\footnote{见《物理化学》附录I.8，或者\S\ref{sec:A.1_Euler_theorem_homogeneous_function}。}。由欧拉齐函数定理可直接得到偏摩尔量的加和性结论。
+
+定义混合物体系的摩尔量（molar porperty）为
+\[M_\text{m}\eqdef \frac{M}{n}\]
+则式\eqref{eq:II.2_additivity_partial_molar_quantity_1}又可写成
+\begin{equation}\label{eq:II.2_additivity_partial_molar_quantity_2}
+    M_\text{m}=\sum_ix_iM_i
+\end{equation}
+
+式\eqref{eq:II.2_additivity_partial_molar_quantity_2}又可以这样推导。由全微分式
+\[\mathrm{d}M=\left.\frac{\partial M}{\partial X}\right|_{Y,\left\{n_i\right\}}\mathrm{d}X+\left.\frac{\partial M}{\partial Y}\right|_{X,\left\{n_i\right\}}\mathrm{d}Y+\sum_i M_i\mathrm{d}n_i\]
+和以下系列微分关系式
+\begin{align*}
+    \mathrm{d}M                                                       & =\mathrm{d}\left(nM_\text{m}\right)=n\mathrm{d}M_\text{m}+M_\text{m}\mathrm{d}n                                                                                       \\
+    \mathrm{d}n_i                                                     & =\mathrm{d}\left(x_i n\right)=x_i\mathrm{d}n_i+n\mathrm{d}x_i                                                                                                         \\
+    \left.\frac{\partial M}{\partial X}\right|_{Y,\left\{n_i\right\}} & =\left.\frac{\partial \left(nM_\text{m}\right)}{\partial X}\right|_{Y,\left\{n_i\right\}}=n\left.\frac{\partial M_\text{m}}{\partial X}\right|_{Y,\left\{x_i\right\}} \\
+    \left.\frac{\partial M}{\partial Y}\right|_{Y,\left\{n_i\right\}} & =\left.\frac{\partial\left(nM_\text{m}\right)}{\partial Y}\right|_{X,\left\{n_i\right\}}=n\left.\frac{\partial M_\text{m}}{\partial Y}\right|_{X,\left\{x_i\right\}}
+\end{align*}
+可得
+\begin{align*}
+      & n\left(\mathrm{d}M_\text{m}-\left.\frac{\partial M_\text{m}}{\partial X}\right|_{Y,\left\{x_i\right\}}\mathrm{d}X-\left.\frac{\partial M_\text{m}}{\partial Y}\right|_{X,\left\{x_i\right\}}\mathrm{d}Y-\sum_iM_i\mathrm{d}x_i\right) \\
+    + & \left(M_\text{m}-\sum_ix_iM_i\right)\mathrm{d}n=0
+\end{align*}
+上式第一项恰好就是$M$的全微分式，故为零。
+
+\subsection{吉布斯--杜亥姆方程}
+由偏摩尔量的加和性，联系$M$的全微分式
+\begin{align*}
+    \mathrm{d}M & =\mathrm{d}\left(\sum_in_iM_i\right)=\sum_in_i\mathrm{d}M_i+\sum_iM_i\mathrm{d}n_i                                                                                                \\
+                & =\left.\frac{\partial M}{\partial X}\right|_{Y,\left\{n_i\right\}}\mathrm{d}X+\left.\frac{\partial M}{\partial Y}\right|_{X,\left\{n_i\right\}}\mathrm{d}Y+\sum_iM_i\mathrm{d}n_i
+\end{align*}
+可得到下式
+\begin{equation}\label{eq:II.2_Gibbs_Duhem_eq}
+    \sum_in_i\mathrm{d}M_i=\left.\frac{\partial M}{\partial X}\right|_{Y,\left\{n_i\right\}}\mathrm{d}X+\left.\frac{\partial M}{\partial Y}\right|_{X,\left\{n_i\right\}}\mathrm{d}Y
+\end{equation}
+该式称吉布斯--杜亥姆方程（Gibbs--Duhem equation）。它在$X$、$Y$恒定条件下的形式是
+\begin{equation}\label{eq:II.2_Gibbs_Duhem_eq_XYConst}
+    \sum_in_i\mathrm{d}M_i=0
+\end{equation}
+
+\subsection{不同状态变量下的偏摩尔量之间的关系}
+在不同的状态变量——
+\[\left(X,Y,\left\{n_i\right\}\right)\text{和}\left(X^\prime,Y^\prime,\left\{n_i\right\}\right)\]
+下，$M\left(X,Y,\left\{n_i\right\}\right)$和$M\left(X^\prime, Y^\prime,\left\{n_i\right\}\right)$一般是不同的函数，因此相应条件下定义的偏摩尔量也是不同的函数。若记同一体系在控制条件$\left(X^\prime,Y^\prime,\left\{n_i\right\}\right)$下的同一性质为
+\[M^\prime\equiv M^\prime\left(X^\prime,Y^\prime,\left\{n_i\right\}\right)\]
+则$M_i$与$M_i^\prime$是相互联系的。由于体系的平衡状态是唯一的，使体系处于相同状态的$\left(X,Y,\left\{n_i\right\}\right)$和$\left(X^\prime,Y^\prime,\left\{n_i\right\}\right)$有一一对应关系。由$M$的全微分式，
+\[\mathrm{d}M=\left.\frac{\partial M}{\partial X}\right|_{Y,\left\{n_i\right\}}\mathrm{d}X+\left.\frac{\partial M}{\partial Y}\right|_{X,\left\{n_i\right\}}\mathrm{d}Y+\sum_i M_i\mathrm{d}n_i\]
+两边除以$\mathrm{d}n_i$，保持$X^\prime$、$Y^\prime$恒定，可得
+\[M_i^\prime=\left.\frac{\partial M}{\partial X}\right|_{Y,\left\{n_i\right\}}\left.\frac{\partial X}{\partial n_i}\right|_{X^\prime,Y^\prime,\left\{n_{j\neq i}\right\}}+\left.\frac{\partial M}{\partial Y}\right|_{X,\left\{n_i\right\}}\left.\frac{\partial Y}{\partial n_i}\right|_{X^\prime,Y^\prime,\left\{n_{j\neq i}\right\}}+M_i\]
+此即为$M_i^\prime$与$M_i$之间的一般关系式。所用到的两个偏微分——
+\[\left.\frac{\partial X}{\partial n_i}\right|_{X^\prime,Y^\prime,\left\{n_{j\neq i}\right\}},\quad\left.\frac{\partial Y}{\partial n_i}\right|_{X^\prime,Y^\prime,\left\{n_{j\neq i}\right\}}\]
+是由混合物体系的状态方程可知的。例如，我们要考虑$\left(T,p,\left\{n_i\right\}\right)$和$\left(T,V\left\{n_i\right\}\right)$下定义的偏摩尔量之间的关系，那就是
+\begin{align*}
+    \left.\frac{\partial M}{\partial n_i}\right|_{T,V,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial M}{\partial p}\right|_{T,\left\{n_i\right\}}\left.\frac{\partial p}{\partial n_i}\right|_{T,V,\left\{n_{j\neq i}\right\}}+\left.\frac{\partial M}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}} \\
+    \left.\frac{\partial M}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial M}{\partial V}\right|_{T,\left\{n_i\right\}}\left.\frac{\partial V}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}+\left.\frac{\partial M}{\partial n_i}\right|_{T,V,\left\{n_{j\neq i}\right\}}
+\end{align*}
+可见，要作两种偏摩尔性质之间的转换计算需已知混合物的状态方程，以便求得以下两个偏导数
+\[\left.\frac{\partial p}{\partial n_i}\right|_{T,V,\left\{n_{j\neq i}\right\}},\quad\left.\frac{\partial V}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\]
+这两个偏导数在\S\ref{sec:I_thermodynamic_relations}介绍过了，都属于可测量。
+
+\subsection{偏摩尔量的测定}
+实验上，我们往往只能测量一个多组份体系的摩尔量$M_\text{m}=M_\text{m}\left(X,Y,\left\{n_i\right\}\right)$随某组份$i$在恒定$X$、$Y$下的变化。以下推算，使得我们能够通过$M_\text{m}$对$x_i$的曲线得出$M_i$。
+
+在恒定$X$、$Y$下，$M=n M_\text{m}$，对其进行微分有
+\[\mathrm{d}\left(nM_\text{m}\right)=n\mathrm{d}M_\text{m}+M_\text{m}\mathrm{d}n\]
+对$n=\sum_i n_i$进行微分有
+\[\mathrm{d}n=\sum_i\mathrm{d}n_i\]
+上列两式联立起来有
+\[n\mathrm{d}M_\text{m}+M_\text{m}\sum_i \mathrm{d}n_i=\sum_i M_i\mathrm{d}n_i\]
+利用该式求关于$n_i$的偏导（即保持$\left\{n_{j\neq i}\right\}$恒定），得到
+\begin{align*}
+                    & n\left.\frac{\partial M_\text{m}}{\partial n_i}\right|_{X,Y,\left\{n_{j\neq i}\right\}}+M_\text{m}=M_i+\sum_{j\neq i}M_j\left.\frac{\partial n_j}{n_i}\right|_{n_{j\neq i}} \\
+    \Leftrightarrow & \left(1-x_i\right)\left.\frac{\partial M_\text{m}}{\partial x_i}\right|_{X,Y,\left\{n_{j\neq i}\right\}}+M_\text{m}=M_i
+\end{align*}
+
+利用这一结论，偏摩尔量$M_i$就能由摩尔量$M_\text{m}$对$x_i$的曲线数据，如图\ref{fig:meas_partial_molar_quant}所示般得出。
+
+\begin{figure}[h]
+    \centering
+    \includegraphics{../images/meas_partial_molar_quant.pdf}
+    \caption{从摩尔量曲线求偏摩尔量的“截距法”。}
+    \label{fig:meas_partial_molar_quant}
+\end{figure}
+
+《物理化学》\S 4.3中的“偏摩尔量的求法”之“3.截距法”介绍了上述方法对于双组份混合物的特例。
+\end{document}

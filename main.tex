@@ -9,6 +9,15 @@ total={137.8mm,199.2mm},
 left=19.1mm,
 top=25.4mm,
 }
+\setlength{\headheight}{14.5pt}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[LE,RO]{\rightmark}
+\fancyhead[LO,RE]{\leftmark}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[LO,RE]{更新至\today}
 
 % package for Chinese style
 %\usepackage{ctex}
@@ -95,16 +104,16 @@ sorting=none
 
 % counter controlling
 \usepackage{chngcntr}
-\counterwithin{figure}{section}
-\counterwithin{equation}{section}
-\counterwithin{section}{part}
+%\counterwithin{figure}{section}
+%\counterwithin{equation}{section}
+%\counterwithin{section}{part}
 \setcounter{tocdepth}{1}
 
 % package for subfiles
 \usepackage{subfiles}
 
 \usepackage{datetime2}
-
+    
 \title{高分子物理补充讲义}
 \author{孙尉翔\\mswxsun@scut.edu.cn}
 %=====================================================================================================================
@@ -116,12 +125,16 @@ sorting=none
 \newpage\tableofcontents
 
 \part{热力学基础}
-\chapter{热力学从理论到应用}
+\chapter{热力学从理论到应用}\label{sec:I_thermodynamic_relations}
 \subfile{I thermodynamic_relations.tex}
 
 \chapter{混合物的热力学}
 \section{混合物组成的定量描述方法}
+\subfile{II.1 composition_measures.tex}
+\section{偏摩尔量}
+\subfile{II.2 partial_molar_quantities.tex}
 \section{理想混合物}
+\subfile{II.3 ideal_mixture.tex}
 \section{真实混合物}
 \section{气液共存}
 

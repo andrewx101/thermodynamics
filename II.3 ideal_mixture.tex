@@ -1,0 +1,87 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+在第\ref{sec:I_thermodynamic_relations}章中我们已经介绍了混合物体系的基本热力学关系。我们清楚，仅仅知道各组份纯物质的热力学性质，是无法直接得到它们的混合物体系的热力学性质的。以任一热力学状态函数（广度性质）M为例，已知所有组份$i$纯物质的$M_i^*\left(T,p\right)$\footnote{上标“*”号表示纯物质。}，我们朴素地希望，混合物地同性质$M\left(T,p,\left\{n_i\right\}\right)$在任一组成$\left\{n_i\right\}$就是以下简单加和
+\[M\left(T,p,\left\{n_i\right\}\right)=\sum_i n_i M_i^*\left(T,p\right)\]
+但实际体系往往并不如此。普遍成立的加和性，只有偏摩尔量的加和性。我们于是视上述性质为一种“理想混合物”。
+
+一般的理想混合物的正式定义，会在下一小节给出。本小节对理想气态混合物进行讨论。
+
+单组份理想气体，可归结为以下3条定义：
+\begin{enumerate}
+    \item 玻义耳定律：$pV$是温度的函数；
+    \item 焦耳定律：内能$U$是温度的函数；
+    \item 阿伏伽德罗定律：同温同压下1摩尔的各种气体的体积相等。
+\end{enumerate}
+这三条不仅完成了单组份理想气体的状态方程，还规定了其完整的热力学性质。如果我们要推广到理想气体混合物，将不得不新增以下3条定义：
+\begin{enumerate}\setcounter{enumi}{3}
+    \item 道尔顿分压定律；
+    \item 混合气体的内能等于分内能之和；
+    \item 混合气体的熵等于分熵之和。
+\end{enumerate}
+
+这三条表述的细节有不同的等价版本，但总之，我们不能仅凭前三条定义和道尔顿分压定律就推广出理想气体混合物的完整热力学性质。以下将作出详细解释。
+
+道尔顿分压定律说的是：在恒定温度$T$下，若各组份纯物质气态取体积$V$时压强为$p_i$，则它们以组成$\left\{n_i\right\}$混合之后，在同温度下取体积$V$时的压强总是$p=\sum_i x_ip_i$，而不论$\left\{n_i\right\}$的具体取值情况。
+
+由道尔顿分压定律可等价地推出分体积定律，表述语言也是相似的。
+
+由条件1至4是得不出5和6的。后两条的成立需要再规定理想气体混合物在以下这个实验中的行为。考虑由只透组份$i$的半透膜分隔的封闭系统（如图所示），半透膜的位置固定且导热。膜左边是气体混合物，右边是组份$i$纯物质（也是气态）。视整个容器内的气体为体系，它与环境保持温度$T$和体积$V$恒定，但不存在物质效换。因此左右两室组份$i$的物质的量满足
+\[n_i^\text{左}+n_i^\text{右}\equiv\text{常数},\quad \mathrm{d}n_i^\text{左}=-\mathrm{d}n_i^\text{右}\]
+接下来，我们将应用热力学第二定律的最大熵表述，即平衡态下，无约束的广度性质将取使熵最大的值。由于熵是广度性质，有加和性，故体系的熵可写成左、右两室的熵之和，即
+\[S\left(U,V,\left\{n_j\right\}\right)=S^\text{左}\left(U^\text{左},V^\text{左},\left\{n_i^\text{左}\right\}\right)+S^\text{右}\left(U^\text{右},V^\text{右},\left\{n_i^\text{右}\right\}\right)\]
+平衡态下，熵最大的条件是$\mathrm{d}S=0$，再考虑到由于理想气体的内能仅与温度有关，故左、右室各自的内能都是恒定的，再加上体积和除组份$i$之外的其他组份也恒定，故有
+\[\mathrm{d}S=\frac{\partial S^\text{左}}{\partial n_i^\text{左}}\mathrm{d}n_i^\text{左}+\frac{\partial S^\text{右}}{\partial n_i^\text{右}}\mathrm{d}n_i^\text{右}=\left(\mu_i^\text{右}-\mu_i^\text{左}\right)\mathrm{d}n_i^\text{右}=0\]
+其中用到了式\eqref{eq:I.1_Maxwell_AnT}。以上得到
+\[\mu_i^\text{左}=\mu_i^\text{右}\]
+此即相平衡条件。至此我们只用到热力学的普适关系式。但是，要继续得出混合物（左室）的热力学性质，还必须具体指出，这时右室的压强会是多少。这对于真实体系而言是不定的。若要定义理想行为，就必须声称：理想气体混合物无论组成$\left\{n_i\right\}$是多少，在这种平衡态下能透过半透膜的那个组份在膜两边的分压总相等，即
+\[x_ip^\text{左}=p^\text{右}\]
+且对任一组份均成立。由这条性质可以推出上列的规定5和6，故可可作为在道尔顿分压定律基础上的新增规定，以代替规定5和6。我们改记膜右室纯物质$i$的性质为带上标“*”的符号，而膜左室的混合物性质为无上标的符号。由于膜右室是单组份理想气体，由$\mu_i^*=\mu_i^*\left(T,p\right)$及恒温过程$\mathrm{d}T=0$，
+\begin{align*}
+    \mathrm{d}\mu_i^* & =\left.\frac{\partial \mu_i^*}{\partial T}\right|_{p}\mathrm{d}T+\left.\frac{\partial\mu_i^*}{\partial p}\right|_{T} \\
+                      & =V_i^*\left(T,p\right)\mathrm{d}p                                                                                    \\
+                      & =\frac{RT}{p}\mathrm{d}p=RT\mathrm{d}\ln p
+\end{align*}
+因此由相平衡条件$\mu_i=\mu_i^*$和理想气体混合物的规定$p_i^*=x_ip$，
+\[\mathrm{d}\mu_i=\mathrm{d}\mu_i^*=RT\mathrm{d}\ln p_i^*=RT\mathrm{d}\ln\left(x_ip\right)\]
+以上对所有组份$i$均成立。可见，体系这一特定实验中的性质规定，其实是规定了理想气体混合物的偏摩尔吉布斯自由能的表达形式。反过来说，只有当一个气体混合物体系是理想的（即其化学势满足上列形式）时，我们才能定量地确定它在具体实验（特别是直接反映体系状态对组成变化依赖性的半透膜类实验）中将处于的状态。因此，可为理想气体混合物写下如下定义性的化学势表达式：恒定$T$下，对任意组成$i$，
+\begin{equation}\label{eq:II.3_def_ideal_gas_mixture_mu}
+    \mathrm{d}\mu_i^\text{ig}=RT\mathrm{d}\ln\left(x_i p\right)
+\end{equation}
+其中上标“ig”表示理想气体。
+
+这一表达式是以微分关系的形式给出的。我们之所以不直接用明显的表达式来定义模型体系，是因为热力学函数的值是不可知的，只有其变化量是可是可知的。用微分表达式来规定规律性，可供我们随时通过式\eqref{eq:I.1_integral_of_function}来进行任意状态之间的热力学函数变化量，故有最好的一般性和灵活性。所以我们要习惯用微分关系来定义模型体系的方式。例如，我们可任选某压强$p^\circ$作为参考压强，则理想气体混合物等温等组分压它们过程的化学势变化就是
+\begin{align*}
+    \mu_i^\text{ig}\left(T,p,\left\{n_i\right\}\right)-\mu_i^\text{ig}\left(T,p^\circ,\left\{n_i\right\}\right) & =\int_{p^\circ}^p\mathrm{d}\mu_i^\text{ig}\left(T,p^\prime,\left\{n_i\right\}\right) \\
+                                                                                                                & =RT\int_{p^\circ}^p\mathrm{d}\ln\left(x_ip^\prime\right)                             \\
+                                                                                                                & =RT\ln\left(\frac{x_ip}{p^\circ}\right)
+\end{align*}
+《物理化学》书上的理想气体混合物化学势的定义式只是具体选择$p^\circ=p\stst$作为惯例而已。
+
+式\eqref{eq:II.3_def_ideal_gas_mixture_mu}足以给出理想气体混合物的所有热力学性质，以下列出部分。由式\eqref{eq:I.1_Maxwell_GnT}和式\eqref{eq:I.1_Maxwell_GTp}有，
+\begin{align}
+    \left.\frac{\partial S^\text{ig}}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}} & =-\left.\frac{\partial \mu^\text{ig}_i\left(T,p,\left\{n_j\right\}\right)}{\partial T}\right|_{p,\left\{n_j\right\}}=-R\ln\left(x_ip\right)+R\ln p^\circ \\
+    \left.\frac{\partial V^\text{ig}}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial\mu^\text{ig}_i\left(T,p,\left\{n_j\right\}\right)}{\partial p}\right|_{T,\left\{n_j\right\}}=\frac{RT}{p}
+\end{align}
+恒压恒组份下，又由式\eqref{eq:I.1_heat_capacity_entropy_p}和式\eqref{eq:I.1_Maxwell_GTp}有
+\begin{align}
+    \left.\frac{\partial S^\text{ig}}{\partial T}\right|_{p,\left\{n_i\right\}} & =\frac{C_p}{T} \\
+    \left.\frac{\partial S^\text{ig}}{\partial p}\right|_{T,\left\{n_i\right\}} & =\frac{nR}{p}
+\end{align}
+故理想气体混合物的熵的完整全微分式是
+\[\mathrm{d}S^\text{ig}=\frac{C_p}{T}\mathrm{d}T+nR\mathrm{d}\ln p+\sum_i\left(-R\ln\left(x_ip\right)+R\ln p^\circ\right)\mathrm{d}n_i\]
+恒定$T$、$p$下，由偏摩尔量加和性，
+\[S^\text{ig}\left(T,p,\left\{n_i\right\}\right)=\sum_in_i\left[-R\ln\left(x_ip\right)+R\ln p^\circ\right]\]
+故同条件下的混合熵变（即把$n_1,n_2,\cdots$纯物质混合为组成是$\left\{n_i\right\}$的气体混合物的熵变）
+\begin{align*}
+    \Delta_\text{mix}S^\text{ig} & =S^\text{ig}\left(T,p,\left\{n_i\right\}\right)-S^\text{*,ig}\left(T,p\right) \\
+                                 & =-R\sum_in_i\left[\ln\left(x_ip\right)-\ln p\right]                           \\
+                                 & =-R\sum_in_i\ln x_i
+\end{align*}
+其中利用到纯物质$x_i=1$。混合吉布斯自由能也可类似地得到，即利用恒定$T$、$p$下的偏摩尔量加和性，由式\eqref{eq:II.3_def_ideal_gas_mixture_mu}
+\[
+    G^\text{ig}\left(T,p,\left\{n_i\right\}\right)=\sum_in_i\mu_i^\text{ig}\left(T,p,\left\{n_i\right\}\right)+\sum_in_iRT\ln\left(x_ip/p^\circ\right)
+\]
+故混合自由能就是
+\[\Delta_\text{mix}G^\text{ig}=RT\sum_in_i\ln x_i=-T\Delta_\text{mix}S^\text{ig}\Rightarrow\Delta_\text{mix}H^\text{ig}=0\]
+其中后面的等式和结论是与混合熵表达式比较而得。这些都是理想气体混合物的重要的热力学特征。
+\end{document}
