@@ -1,8 +1,8 @@
 \documentclass[main.tex]{subfiles}
 \begin{document}
-在第\ref{sec:I_thermodynamic_relations}章中我们已经介绍了混合物体系的基本热力学关系。我们清楚，仅仅知道各组份纯物质的热力学性质，是无法直接得到它们的混合物体系的热力学性质的。以任一热力学状态函数（广度性质）M为例，已知所有组份$i$纯物质的$M_i^*\left(T,p\right)$\footnote{上标“*”号表示纯物质。}，我们朴素地希望，混合物地同性质$M\left(T,p,\left\{n_i\right\}\right)$在任一组成$\left\{n_i\right\}$就是以下简单加和
+在第\ref{sec:I_thermodynamic_relations}章中我们已经介绍了混合物体系的基本热力学关系。我们清楚，仅仅知道各组份纯物质的热力学性质，是无法直接得到它们的混合物体系的热力学性质的。以任一热力学状态函数（广度性质）$M$为例，已知所有组份$i$纯物质的$M_i^*\left(T,p\right)$\footnote{上标“*”号表示纯物质。}，我们朴素地希望，混合物的相应性质$M\left(T,p,\left\{n_i\right\}\right)$在任一组成$\left\{n_i\right\}$下就是以下简单加和
 \[M\left(T,p,\left\{n_i\right\}\right)=\sum_i n_i M_i^*\left(T,p\right)\]
-但实际体系往往并不如此。普遍成立的加和性，只有偏摩尔量的加和性。我们于是视上述性质为一种“理想混合物”。
+但实际体系往往并不如此。普适成立的加和性只有偏摩尔量的加和性。我们于是视上述性质为一种“理想混合物”。
 
 一般的理想混合物的正式定义，会在下一小节给出。本小节对理想气态混合物进行讨论。
 
@@ -25,7 +25,7 @@
 
 由道尔顿分压定律可等价地推出分体积定律，表述语言也是相似的。
 
-由条件1至4是得不出5和6的。后两条的成立需要再规定理想气体混合物在以下这个实验中的行为。考虑由只透组份$i$的半透膜分隔的封闭系统（如图所示），半透膜的位置固定且导热。膜左边是气体混合物，右边是组份$i$纯物质（也是气态）。视整个容器内的气体为体系，它与环境保持温度$T$和体积$V$恒定，但不存在物质效换。因此左右两室组份$i$的物质的量满足
+由条件1至4是得不出5和6的。后两条的成立需要再规定理想气体混合物在以下这个实验中的行为。考虑由只透组份$i$的半透膜分隔的封闭系统（可参考《物理化学》图4.2），半透膜的位置固定且导热。膜左边是气体混合物，右边是组份$i$纯物质（也是气态）。视整个容器内的气体为体系，它与环境保持温度$T$和体积$V$恒定，但不存在物质效换。因此左右两室组份$i$的物质的量满足
 \[n_i^\text{左}+n_i^\text{右}\equiv\text{常数},\quad \mathrm{d}n_i^\text{左}=-\mathrm{d}n_i^\text{右}\]
 接下来，我们将应用热力学第二定律的最大熵表述，即平衡态下，无约束的广度性质将取使熵最大的值。由于熵是广度性质，有加和性，故体系的熵可写成左、右两室的熵之和，即
 \[S\left(U,V,\left\{n_j\right\}\right)=S^\text{左}\left(U^\text{左},V^\text{左},\left\{n_i^\text{左}\right\}\right)+S^\text{右}\left(U^\text{右},V^\text{右},\left\{n_i^\text{右}\right\}\right)\]
@@ -50,11 +50,13 @@
 其中上标“ig”表示理想气体。
 
 这一表达式是以微分关系的形式给出的。我们之所以不直接用明显的表达式来定义模型体系，是因为热力学函数的值是不可知的，只有其变化量是可是可知的。用微分表达式来规定规律性，可供我们随时通过式\eqref{eq:I.1_integral_of_function}来进行任意状态之间的热力学函数变化量，故有最好的一般性和灵活性。所以我们要习惯用微分关系来定义模型体系的方式。例如，我们可任选某压强$p^\circ$作为参考压强，则理想气体混合物等温等组分压它们过程的化学势变化就是
-\begin{align*}
-    \mu_i^\text{ig}\left(T,p,\left\{n_i\right\}\right)-\mu_i^\text{ig}\left(T,p^\circ,\left\{n_i\right\}\right) & =\int_{p^\circ}^p\mathrm{d}\mu_i^\text{ig}\left(T,p^\prime,\left\{n_i\right\}\right) \\
-                                                                                                                & =RT\int_{p^\circ}^p\mathrm{d}\ln\left(x_ip^\prime\right)                             \\
-                                                                                                                & =RT\ln\left(\frac{x_ip}{p^\circ}\right)
-\end{align*}
+\begin{equation}\label{eq:II.3_ideal_gas_mixture_mu_p0}
+    \begin{aligned}
+        \mu_i^\text{ig}\left(T,p,\left\{n_i\right\}\right)-\mu_i^\text{ig}\left(T,p^\circ,\left\{n_i\right\}\right) & =\int_{p^\circ}^p\mathrm{d}\mu_i^\text{ig}\left(T,p^\prime,\left\{n_i\right\}\right) \\
+                                                                                                                    & =RT\int_{p^\circ}^p\mathrm{d}\ln\left(x_ip^\prime\right)                             \\
+                                                                                                                    & =RT\ln\left(\frac{x_ip}{p^\circ}\right)
+    \end{aligned}
+\end{equation}
 《物理化学》书上的理想气体混合物化学势的定义式只是具体选择$p^\circ=p\stst$作为惯例而已。
 
 式\eqref{eq:II.3_def_ideal_gas_mixture_mu}足以给出理想气体混合物的所有热力学性质，以下列出部分。由式\eqref{eq:I.1_Maxwell_GnT}和式\eqref{eq:I.1_Maxwell_GTp}有，
@@ -77,11 +79,16 @@
                                  & =-R\sum_in_i\left[\ln\left(x_ip\right)-\ln p\right]                           \\
                                  & =-R\sum_in_i\ln x_i
 \end{align*}
-其中利用到纯物质$x_i=1$。混合吉布斯自由能也可类似地得到，即利用恒定$T$、$p$下的偏摩尔量加和性，由式\eqref{eq:II.3_def_ideal_gas_mixture_mu}
-\[
-    G^\text{ig}\left(T,p,\left\{n_i\right\}\right)=\sum_in_i\mu_i^\text{ig}\left(T,p,\left\{n_i\right\}\right)+\sum_in_iRT\ln\left(x_ip/p^\circ\right)
-\]
-故混合自由能就是
+其中利用到纯物质$x_i=1$。
+
+然后我们推导一下混合吉布斯自由能变。利用偏摩尔量的加和性，
+\begin{align*}
+    \Delta_\text{mix}G^\text{ig} & =G^\text{ig}\left(T,p,\left\{n_i\right\}\right)-G^\text{*,ig}\left(T,p\right)                               \\
+                                 & =\sum_in_i\left(\mu_i^\text{ig}\left(T,p,\left\{n_i\right\}\right)-\mu_i^\text{*,ig}\left(T,p\right)\right) \\
+\end{align*}
+而由式\eqref{eq:II.3_def_ideal_gas_mixture_mu}，
+\[\mu_i^\text{ig}\left(T,p,\left\{n_i\right\}\right)-\mu_i^\text{*,ig}\left(T,p\right)=RT\int_{1}^{x_i}d\ln\left(x_i^\prime p\right)=RT\ln x_i\]
+故有
 \[\Delta_\text{mix}G^\text{ig}=RT\sum_in_i\ln x_i=-T\Delta_\text{mix}S^\text{ig}\Rightarrow\Delta_\text{mix}H^\text{ig}=0\]
-其中后面的等式和结论是与混合熵表达式比较而得。这些都是理想气体混合物的重要的热力学特征。
+其中后面的等号和结论是与混合熵变的表达式比较而得。这些都是理想气体混合物的重要的热力学特征。
 \end{document}

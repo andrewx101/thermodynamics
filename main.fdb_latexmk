@@ -1,0 +1,14 @@
+# Fdb version 4
+["xdvipdfmx"] 0 "main.xdv" "main.pdf" "main" 0 -1
+  "main.xdv" 0 -1 0 "xelatex"
+  (generated)
+  "main.pdf"
+  (rewritten before read)
+["xelatex"] 0 "c:/Users/andre/OneDrive/Lectures/高分子物理/latex_notes/thermodynamics/main.tex" "main.xdv" "main" 0 -1
+  "c:/Users/andre/OneDrive/Lectures/高分子物理/latex_notes/thermodynamics/main.tex" 0 -1 0 ""
+  "main.aux" 0 -1 0 "xelatex"
+  (generated)
+  "main.aux"
+  "main.log"
+  "main.xdv"
+  (rewritten before read)

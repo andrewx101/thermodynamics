@@ -99,7 +99,7 @@ $U$、$S$、$H$、$A$、$G$等热力学函数（及其偏导数）是无法直�
 
 等熵压强系数：$\beta_S\eqdef\left.\frac{\partial p}{\partial T}\right|_{S,\left\{n_i\right\}}$
 
-等到面介绍Maxwell关系时我们将会发现，等温系列和等熵系列参数之间可通过热力学基本定律和状态方程相互关联。
+等到后面面介绍Maxwell关系时我们将会发现，等温系列和等熵系列参数之间可通过热力学基本定律和状态方程相互关联。
 
 还有一些表征体系特性的系数也是热力学函数的偏导数——
 
@@ -107,7 +107,10 @@ $U$、$S$、$H$、$A$、$G$等热力学函数（及其偏导数）是无法直�
 
 热容比：$\gamma\eqdef\frac{C_p}{C_V}$
 
-它们也是可以通过热力学定律和状态方程与上述的响应函数相关联的。
+它们也是可以通过热力学定律和状态方程与上述的响应函数相关联的。特别地，
+\begin{equation}
+    \gamma=\frac{\kappa_T}{\kappa_S}
+\end{equation}
 
 多组份体系的各组份物质的量$\left\{n_i\right\}$也是状态参数，所以状态参数之间的偏导数还应包括：
 \[\left.\frac{\partial p}{\partial n_i}\right|_{T,V,\left\{n_{j\neq i}\right\}},\quad\left.\frac{\partial V}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}},\quad\left.\frac{\partial T}{\partial n_i}\right|_{p,V,\left\{n_{j\neq i}\right\}}\]
@@ -117,9 +120,9 @@ $U$、$S$、$H$、$A$、$G$等热力学函数（及其偏导数）是无法直�
     \left.\frac{\partial T}{\partial n_i}\right|_{p,V,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial T}{\partial V}\right|_{p,\left\{n_i\right\}}\left.\frac{\partial V}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}=\frac{1}{\alpha_p V}\left.\frac{\partial V}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}
 \end{align*}
 
-类似地，$p$、$V$关于$n_i$的等温偏导数也有另一套对应的等熵的版本，不再列出了。
+类似地，$p$、$V$关于$n_i$的等温偏导数也有另一套对应的等熵的版本，不再列出了。我们把混合物体系的这些等温或等熵性质叫做$pVTn_i$响应函数。
 
-运用Tobolsky方法\cite{Tobolsky1942}，可以把任意热力学函数偏导数表示成仅由上列可测量的形式，从而打通热力学理论和实验应用的道路。这个方法需要使用Maxwell关系\footnote{参见《物理化学》\S 3.13。}。具体地，对式\eqref{eq:I.1_first_order_partial_mu}至式\eqref{eq:I.1_first_order_partial_S}中的偏导数再作不同变量的交叉二阶导数，并由于这些状态函数都假定连续可微而可交换偏导数顺序，可以得到一系列Maxwell关系式。其中将会出现很多$pVT$响应函数。由内能的交叉偏导数得到：
+运用Tobolsky方法\cite{Tobolsky1942}，可以把任意热力学函数偏导数表示成仅含上列可测量的形式，从而打通热力学理论和实验应用的道路。这个方法需要使用Maxwell关系\footnote{参见《物理化学》\S 3.13。}。具体地，对式\eqref{eq:I.1_first_order_partial_mu}至式\eqref{eq:I.1_first_order_partial_S}中的偏导数再作不同变量的交叉二阶导数，并由于这些状态函数都假定连续可微而可交换偏导数顺序，可以得到一系列Maxwell关系式。其中将会出现很多$pVTn_i$响应函数。由内能的交叉偏导数得到：
 \begin{align}
     \left.\frac{\partial^2 U}{\partial S\partial V}\right|_{\left\{n_i\right\}}             & =\left.\frac{\partial T}{\partial V}\right|_{S,\left\{n_i\right\}}=\left(\alpha_S V\right)^{-1}=-\left.\frac{\partial p}{\partial S}\right|_{V,\left\{n_i\right\}}\label{eq:I.1_Maxwell_USV} \\
     \left.\frac{\partial ^2U}{\partial n_i\partial S}\right|_{V,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial \mu_i}{\partial S}\right|_{V,\left\{n_i\right\}}=\left.\frac{\partial T}{\partial n_i}\right|_{S,V,\left\{n_{j\neq i}\right\}}\label{eq:I.1_Maxwell_UnS}               \\
@@ -144,7 +147,7 @@ $U$、$S$、$H$、$A$、$G$等热力学函数（及其偏导数）是无法直�
     \left.\frac{\partial ^2G}{\partial n_i\partial p}\right|_{T,\left\{n_{j\neq i}\right\}} & =\left.\frac{\partial \mu_i}{\partial p}\right|_{T,\left\{n_i\right\}}=\left.\frac{\partial V}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\label{eq:I.1_Maxwell_GnV}
 \end{align}
 
-最后，从上述Maxwell关系可归纳出，除了$C_p$、$C_V$、各$pVT$（等温或等熵）响应函数和（等压或等容）偏摩尔体积之外，还有两种量必须知道，才能得出混合物体系的完整热力学性质，那就是等压或等容偏摩尔熵。具体地，它们分别是含在视熵为$\left(T,V,\left\{n_i\right\}\right)$或$\left(T,p,\left\{n_i\right\}\right)$的全微分中的：
+最后，从上述Maxwell关系可归纳出，除了$C_p$、$C_V$、各$pVTn_i$（等温或等熵）响应函数，还有两种必须知道的量我们还没讨论，那就是等压或等容偏摩尔熵（式\eqref{eq:I.1_Maxwell_AnT}和\eqref{eq:I.1_Maxwell_GnT}）。具体地，它们分别是含在视熵为$\left(T,V,\left\{n_i\right\}\right)$或$\left(T,p,\left\{n_i\right\}\right)$的函数的全微分中的：
 \begin{equation}
     \begin{aligned}
         \mathrm{d}S & =\left.\frac{\partial S}{\partial T}\right|_{V,\left\{n_i\right\}}\mathrm{d}T+\left.\frac{\partial S}{\partial V}\right|_{T,\left\{n_i\right\}}\mathrm{d}V+\sum_i\left.\frac{\partial S}{\partial n_i}\right|_{T,V,\left\{n_{j\neq i}\right\}} \\
@@ -168,13 +171,13 @@ $U$、$S$、$H$、$A$、$G$等热力学函数（及其偏导数）是无法直�
     \kappa_{T,i} & \eqdef\left.\frac{\partial \kappa_T}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}} \\
     \beta_{V,i}  & \eqdef\left.\frac{\partial \beta_V}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}
 \end{align}
-的测量上。而偏摩尔$pVT$等温响应函数又可由偏摩尔体积得到。需要额外测量的就是偏摩尔热容，这可以用一系列不同组成的试样在同温同压下的热容数据得到\footnote{关于偏摩尔量，还有很多重要的热力学关系，将在后续章节专门介绍。}。故总而言之，想要完整确定体系的热力学性质，需要测定体系的热容和$pVT$响应函数；若是混合物体系，还需测定偏摩尔热容和偏摩尔体系。
+的测量上。而偏摩尔$pVT$等温响应函数又可由$pVTn_i$响应函数得到，所以真正需要额外测量的就是偏摩尔热容，这可以用一系列不同组成的试样在同温同压下的热容数据得到\footnote{关于偏摩尔量，还有很多重要的热力学关系，将在后续章节专门介绍。}。总而言之，想要完整确定体系的热力学性质，需要测定体系的热容和$pVT$响应函数；若是混合物体系，还需测定偏摩尔热容和偏摩尔体积。
 
-有了这些关系，就总是能从已知体系的状态方程出发（无论是来自实验测量或者理论模型），把式\eqref{eq:I.1_first_law_multicomp}至\eqref{eq:I.1_dG}表示成仅含可测量的形式，再由式\eqref{eq:I.1_integral_of_function}得到体系的任何平衡态热力学行为，实现“想算什么就算什么”。
+有了这些关系，就总是能从已知体系的状态方程出发（无论是来自实验测量或者理论模型），把式\eqref{eq:I.1_first_law_multicomp}至\eqref{eq:I.1_dG}表示成仅含可测量的形式，再由式\eqref{eq:I.1_integral_of_function}得到体系的任何平衡态热力学行为，实现“想算什么就算什么”的自由。
 
 例如，我们随便要求算一个古怪的偏导数：$\left.\frac{\partial H}{\partial A}\right|_{S}$。从这个偏导数形式上看，它来自由$\left(A,S\right)$所独立而完整确定的形式$H=H\left(A,S\right)$，是单组分体系。故令$X\equiv\left.\frac{\partial H}{\partial F}\right|_{S}$、$Y\equiv\left.\frac{\partial H}{\partial S}\right|_{A}$，则$H$的全微分可表示成
 \[\mathrm{d}H=X\mathrm{d}A+Y\mathrm{d}S\]
-但是$H$自己有作为特性函数的微分式\eqref{eq:I.1_dH}（单组分体系$\mathrm{d}n_i=0$），故可联系得以下式子：
+但是$H$自己有作为特性函数的微分式\eqref{eq:I.1_dH}（单组分体系$\mathrm{d}n_i=0$），故可联系而得到以下式子：
 \[X\mathrm{d}A+Y\mathrm{d}S=T\mathrm{d}S+V\mathrm{d}p\]
 然后，我们需要确定，我们的实验是在什么特性参数条件下做的。例如，我们的实验是恒温恒压下做的，那么我们就需要把上列的微分式中的$\mathrm{d}A$、$\mathrm{d}S$换成$\mathrm{d}T$和$\mathrm{d}p$。这需要恰当选用相应的式子。比如，如果我们用式\eqref{eq:I.1_dA}把$\mathrm{d}A$换掉，就会新增我们所不需要的一个$\mathrm{d}V$项。这时只需再通过状态方程按$V=V\left(T,p\right)$，可以把$\mathrm{d}V=\alpha_pV\mathrm{d}T-\kappa_TV\mathrm{d}p$再代进去，就得到只含$\mathrm{d}T$和$\mathrm{d}p$的项了。类似地$\mathrm{d}S$用式\eqref{eq:I.1_dS_T_p}代入，最终可得到：
 \[\left(-SX-pX\alpha_pV+\frac{YC_p}{T}-C_p\right)\mathrm{d}T+\left(pX\kappa_TV-Y\alpha_pV+T\alpha_pV-V\right)\mathrm{d}p=0\]
@@ -185,8 +188,8 @@ $U$、$S$、$H$、$A$、$G$等热力学函数（及其偏导数）是无法直�
 \end{align*}
 解得
 \begin{align*}
-    X & =\frac{C_p}{C_p p \kappa_T-T\alpha_p\left(S+pV\alpha_p\right)}
-    Y=T\left(1-\frac{S+p V \alpha_p}{T\alpha_p\left(S+pV\alpha_p\right)-C_pp\kappa_T}\right)
+    X & =\frac{C_p}{C_p p \kappa_T-T\alpha_p\left(S+pV\alpha_p\right)}                          \\
+    Y & =T\left(1-\frac{S+p V \alpha_p}{T\alpha_p\left(S+pV\alpha_p\right)-C_pp\kappa_T}\right)
 \end{align*}
 其中$X$是我们想要的。我们发现，这些表达式中除了含有之前说到的各种可测量响应函数之外，还含有熵值$S$。这也是不用担心的。将来在最后应用式\eqref{eq:I.1_integral_of_function}时，可转化成同状态间的熵变$\Delta S$，又可通过式\eqref{eq:I.1_dS_T_p}由积分\eqref{eq:I.1_integral_of_function}得到。此例说明，我们总是能用我们方便实验的条件（恒温恒压）测量的结果，去计算任意一个也许在特定理论分析中碰到的，又很难实验直接测量的偏导数（“恒熵下含随亥姆霍兹自由能的变化量”）。因此，热力学在实操层面上的重点在于体系的热容和状态方程的确定（多组份情况下还包括必要的偏摩尔热容和偏摩尔体积）。
 \end{document}
