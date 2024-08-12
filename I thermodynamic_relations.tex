@@ -1,5 +1,59 @@
 \documentclass[main.tex]{subfiles}
 \begin{document}
+\section{热力学的学习建议}
+仅靠在本科阶段的物理化学课堂学习是很难一次性把热力学学透彻的。
+
+首先，想要顺利地学进去，很依赖对热力学最基本的概念和思想——尤其是导出热力学第一定律之前的准备性概念——的准确把握。而准确理解这些概念和思想是需要反复地反思和质疑，最好能批判地回顾热力学的历史，以便理解今天所呈现的抽象版本它从表象到本质的变化过程。这是一个时间不短的学习过程。
+
+准确理解热力学看待问题的一般方法之后，第二个难关是物理上的体系（body）与过程（path）与数学的多元函数微积分语言的紧密结合。大部分同学在本科阶段往往只从头到尾学习了一次高等数学。对多元函数的微积分的概念的理解可能都还不准确、不熟练，面对热力学关系中大量出现的微分关系和偏导数关系来不及掌握，哪怕为“记公式”，也不知道何时使用、如何使用。
+
+第三个难关是，灵活应用热力学去处理科学研究或工业生产中的问题。
+
+我建议同学们分清这三个阶段，认识到热力学学习之路的悠远，不必急于一蹴而就。热力学是统领大半个物理学的基本理论，它值得任何一名未来的科技工作者花一生的时间去掌握，因此不必强求学习进度的快慢。以下我将分几个方面介绍一些写得好、易于自学的参考资料。
+
+一、热力学思想和概念（到热力学第二定律为止）
+
+以下章节可供读者在有限时间内，不太发散地集中学习这方面内容：
+\begin{itemize}
+    \item 王竹溪. 热力学[M]. 第二版. 高等教育出版社, 1960. 绪论、第一至三章
+    \item 韩德刚 高执棣 高盘良. 物理化学[M]. 第二版. 高等教育出版社, 2008. 第一章
+\end{itemize}
+以下资料可供本科层次读者细致地了解热力学理论的历史脉络：
+\begin{itemize}
+    \item Fowler, Michael. Physics 152: Heat and Thermodynamics[EB/OL]. [2024/8/12]. https://galileo.phys.virginia.edu/classes/152.mf1i.spring02/HeatIndex.htm.
+    \item Müller, I. A History of Thermodynamics[M]. Springer, 2007.
+\end{itemize}
+以下资料可供读者在初步完整地学习完热力学之后温故而知新：
+\begin{itemize}
+    \item 王竹溪. 热力学[M]. 第二版. 高等教育出版社, 1960. 全书
+    \item Callen, Herbert B. Thermodynamics and an introduction to thermostatistics[M]. 2nd ed. Wiley, 1985. Part I
+    \item Reichl, E L. A Modern Course in Statistical Physics[M]. 2nd ed. University of Texas Press, 1980. Ch.1$\sim$4
+\end{itemize}
+
+二、复习高等数学中函数微积分部分的内容，并用这些知识去理解物理化学或热力学课本当中出现的数学式子和推导过程。这部分资料很多，不一一罗列了。在数学过关的基础上，亲自推导物理化学或热力学课本上的全部微分和偏导数关系式，最好重复若干次。
+
+三、想要感受和学习热力学的实践应用，可以参考以“化工热力学”为标题的教材，并重点留意处理真实体系的内容。
+\begin{itemize}
+    \item Smith, J. M.; Van Ness, H. C.; Abbott, M. M. Introduction to Chemical Engineering Thermodynamics[M]. 9th ed. McGraw Hill, 2022.
+\end{itemize}
+除了一般的化工热力学教材之外，还可以从一些热力学在你关心领域的应用专著上感受，基础课本上的热力学如何推广到更加广泛的问题中去的。不同体系的差别，不在热力学基本理论的差别，而在于状态方程的差别。而状态方程要么是经验公式，要么来自微观统计理论，所以免不了要额外学习一些统计力学。但到了应用层面，我们处理的还是宏观体系，只要体系的状态方程在手了就行。以下介绍各领域热力学特色显著的书。溶液热力学：
+\begin{itemize}
+    \item Van Ness, H. C. Classical Thermodynamics of Non-Electrolyte Solutions[M]. Pergamon Press, 1964.
+    \item Van Dijk, M.; Wakker, A. Concepts of Polymer Thermodynamics[M]. ChemTec Publishing, 1997
+    \item Klenin, V. J. Thermodynamics of Systems Containing Flexible-Chain Polymers[M]. Elsevier, 1999
+    \item Flory, P. J. Principles of Polymer Chemistry[M]. Cornell University Press, 1953
+\end{itemize}
+
+最后，我列出几条一般的学习建议，能够解决学习过程中常见的困惑。
+\begin{itemize}
+    \item 区分体系与环境。在讨论过程中要注意保持讨论对象不变。在有些问题当中我们不止讨论一个体系，或者会变换所讨论的体系（比如相平衡问题）。在这种情况下就更要敏感和清醒，每句陈述是视什么为体系，视什么为环境。
+    \item 认清体系与环境之间的关系，即：有无物质交换和能量交换。
+    \item 认真理解各类“过程”（可逆、不可逆、准静态、自发……）。任何时候都能立刻回答：当前式子用到热力学第二律了没有？用到第二定律的式子，为什么写成等式？什么时候关心变化量$\Delta M$，什么时候关心微分$\mathrm{d}M$？它们之间有什么关系？
+    \item 为物理化学课本上的微分关系式推导过程补全至高等数学课所要求的仔细程度，并重视在这件事上碰到的疑问，必须努力得到解答。高等数学本身比较弱的同学，不要急着开始学习热力学，先复习和加强高等数学。我们最终要习惯不依赖文字，只通过数学式子听故事，只写数学式子讲故事。
+\end{itemize}
+这些学习建议只涉及到热力学头几章的内容。如果在学习这些基本内容的过程当中，还没达到上述建议的要求，就不要急着往后学。
+
+\section{热力学是怎么应用的}
 一般地，某体系的性质$M$若是状态函数，那它就是独立、完整地确定体系状态的一组变量$\left(X,Y,\cdots\right)$的函数$M=M\left(X,Y,\cdots\right)$。如果$\mathrm{d}M$是函数$M$的全微分，则应有
 \[\mathrm{d}M=\left.\frac{\partial M}{\partial X}\right|_{Y,\cdots}\mathrm{d}X+\left.\frac{\partial M}{\partial Y}\right|_{X,\cdots}\mathrm{d}Y+\cdots\]
 反之，如果告诉你$\mathrm{d}M$在最一般的情况下能写成上式，意思就是说$\left(X,Y,\cdots\right)$独立、完整地确定函数$M$的值，如果$M$还是状态函数且是体系的平衡态某性质，那就是说这个体系的状态独立地由$\left(X,Y,\cdots\right)$所确定，那么这个体系的其他状态函数性质也以$\left(X,Y,\cdots\right)$为自变量。独立、完整确定体系状态的变量可以不止一组。例如，说一个体系的状态可独立、完整地由温度$T$和压强$p$确定，那它也可以独立、完整地由温度$T$和体积$V$确定，因为这个体系的压强、温度和体积由状态方程所联系，所以不是三个量都互相独立，确定了两个就同时确定了第三个。例如，确定了$\left(T,p\right)$就同时确定了$V$，即$V=V\left(T,p\right)$，是体系状态方程的一种表达形式。若说$M=M\left(T,V\right)$，则理论上总能通过把$V=V\left(T,p\right)$代进去，写出$M=M\left(T,V\left(T,p\right)\right)=M\left(T,p\right)$的形式。但若说$M=M\left(T\right)$，那就叫“不完整”；若说$M=M\left(T,p,V\right)$，那就叫“不独立”。有的书用状态参数（state parameters）来称呼这样的一组变量。
