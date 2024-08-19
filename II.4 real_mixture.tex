@@ -116,13 +116,13 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 \[\ln \varphi=\sum_ix_i\ln\varphi_i\]
 
 \subsubsection{理想混合物}
-微分形式的定义是不便直接使用的。我们总要选择一个参考状态，然后应用式\eqref{eq:I.1_integral_of_function}来写下一个状态函数的显示表达式。这里我们选用同温同压下组份$i$纯物质作为参考状态来表出其在混合物中的化学势。假定组份$i$纯物质的逸度$f_i^*\left(T,p\right)$已测定，设想一个恒温恒压下，保持总摩尔数恒定，由纯物质$i$到摩尔分数为$x_i$的混合物的可逆过程\footnote{建议读者回础\S\ref{sec:II.1 composition_measures}关于这个问题的说明。}，则该过程发生前后组份$i$的化学势变化为
+微分形式的定义是不便直接使用的。我们总要选择一个参考状态，然后应用式\eqref{eq:I.1_integral_of_function}来写下一个状态函数的显示表达式。这里我们选用同温同压下组份$i$纯物质作为参考状态来表出其在混合物中的化学势。假定组份$i$纯物质的逸度$f_i^*\left(T,p\right)$已测定，设想一个恒温恒压下，保持总摩尔数恒定，由纯物质$i$到摩尔分数为$x_i$的混合物的可逆过程（请回顾\S\ref{sec:II.1 composition_measures}关于这个问题的说明），则该过程发生前后组份$i$的化学势变化为
 \begin{align*}
     \mu_i\left(T,p,\left\{n_j\right\}\right)-\mu_i^*\left(T,p\right) & =\int_1^{x_i}\mathrm{d}\mu_i\left(T,p,x_i^\prime\right)                    \\
                                                                      & =\int_1^{x_i}RT\mathrm{d}\ln f_i\left(T,p,x_i^\prime\right)                \\
                                                                      & =RT\ln\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i^*\left(T,p\right)}
 \end{align*}
-其中基于式\eqref{eq:II.4_def_fugacity}利用了式\eqref{eq:I.1_integral_of_function}。上式可直接写成
+其中基于式\eqref{eq:II.4_def_fugacity_i}利用了式\eqref{eq:I.1_integral_of_function}。上式可直接写成
 \[
     \mu_i\left(T,p,\left\{n_j\right\}\right)=\mu_i^*\left(T,p\right)+RT\ln\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i^*\left(T,p\right)}
 \]
@@ -132,7 +132,7 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 \[\mu_i\left(T,p,\left\{n_j\right\}\right)\approx\mu_i^*\left(T,p\right)+RT\ln x_i\]
 
 上式是我们定义理想混合物的起点。我们正式地把理想混合物（ideal mixture）定义为上式精确取等号的模型体系，即理想混合物的每一组份的化学势都满足：
-\begin{equation}\label{II.4_def_ideal_mixture_mu}
+\begin{equation}\label{eq:II.4_def_ideal_mixture_mu}
     \mu_i^\text{id}\left(T,p,\left\{n_j\right\}\right)=\mu_i^*\left(T,p\right)+RT\ln x_i
 \end{equation}
 其中上标“id”表示理想混合物。注意到，理想气体混合物就是理想混合物。由理想气体混合物的定义式\eqref{eq:II.3_def_ideal_gas_mixture_mu}应用式\eqref{eq:I.1_integral_of_function}作类似的定积分有
@@ -210,7 +210,7 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 其中$\varphi_i$的两个极限——$\varphi_i^*$和$\varphi_i^\infty$——可通过$\varphi_i$与$Z_i$的关系式，转变为求$Z_i$的相应极限得到。由这一转换关系，组份$i$在混合物中的化学势又可表示成
 \[\mu_i\left(T,p,\left\{n_j\right\}\right)=\mu_i^\text{id}\left(T,p,\left\{n_j\right\}\right)+RT\ln\frac{\varphi_i^*\left(T,p\right)}{\varphi_i^\infty\left(T,p,\left\{n_j\right\}\right)}\gamma_i^\text{H}\left(T,p,\left\{n_j\right\}\right)\]
 
-《物理化学》中关于非理想稀溶液活度的内容\footnote{《物理化学》\S4.11“非理想稀溶液”。}是双组份混合物的特例。对于双组份混合物，视关心的组份B为“溶质”，则另一组份A为“溶剂”，$x_\text{B}$可以连续地趋于0，此极限无非是作为“溶剂”的组份A的纯物质状态（$x_\text{A}=1$）。
+《物理化学》中关于非理想稀溶液活度的内容是双组份混合物的特例。对于双组份混合物，视关心的组份B为“溶质”，则另一组份A为“溶剂”，$x_\text{B}$可以连续地趋于0，此极限无非是作为“溶剂”的组份A的纯物质状态（$x_\text{A}=1$）。
 
 我们注意到，本讲义中理想混合物的定义不依赖拉乌尔定律。上述两种标准态的规定，虽然分别称作“拉乌尔定律标准态”和“亨利定律标准态”，但是也没有直接利用相关的定律来定义。这些做法与《物理化学》课本不同。在下一节，我们将利用本节介绍的真实混合物描述方式，来得出理想混合物中的组份$i$在$x_i=1$时满足拉乌尔定律，以及在$x_i\rightarrow 0$时满足亨利定律的结论。
 \end{document}
