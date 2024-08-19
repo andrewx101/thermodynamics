@@ -1,7 +1,216 @@
 \documentclass[main.tex]{subfiles}
 \begin{document}
+对于单相真实混合物体系，无论物态是气、液还是固态，我们都可以引入两种衍生于$pVTn_i$状态方程的量：压缩因子（compressibility factor）$Z$和逸度（fugacity）$f$来描述。
 
+\subsection{混合物的压缩因子}
+压缩因子的定义是
+\[Z\eqdef \frac{pV_\text{m}}{RT}=Z\left(X,Y,\left\{n_i\right\}\right)\]
+其中$X,Y$是$T$、$p$、$V_\text{m}$中的任意两个参量。我们常常取$\left(T,p\right)$或$\left(T,\rho\right)$，其中$\rho\equiv V^{-1}_\text{m}$。对于纯物质，写成关于$p$或$\rho$的函数时，对应不同形式的位力展开式：
+\begin{align*}
+    Z\left(T,p\right)    & =1+B_1p+B_2p^2+\cdots       \\
+    Z\left(T,\rho\right) & =1+b_1\rho+b_2\rho^2+\cdots
+\end{align*}
+这些位力展开式都保证了以下一致收敛性质
+\[\lim_{p\to 0}Z\left(T,p\right)=1,\quad\lim_{\rho\to 0}Z\left(T,\rho\right)=1\]
+即真实体系在压强极小时近似于理想气体\footnote{虽然这里讨论的真实体系未限定物态，但默认了任何体系在压强足够小时总是变成气态。}。
 
+对于混合物，$Z=Z\left(X,Y,\left\{n_i\right\}\right)$。由$Z$的定义，$nZ$才是广度性质，故相对应的偏摩尔量应从$nZ$定义：
+\[Z_i\eqdef\left.\frac{\partial\left(nZ\right)}{\partial n_i}\right|_{X,Y,\left\{n_{j\neq i}\right\}}\]
+例如，若$X=T$，$Y=p$，则$Z_i=pV_i/\left(RT\right)$。由偏摩尔量的加和性质，同温同压下
+\[nZ\left(T,p,\left\{n_i\right\}\right)=\sum_in_iZ_i\left(T,p,\left\{n_i\right\}\right),\quad \text{即}Z=\sum_ix_iZ_i\]
+混合物压缩因子也必须有以下一致收敛行为：
+\[\lim_{p\to 0}Z\left(T,p,\left\{n_i\right\}\right)=1\]
 
+虽然，原则上一个状态方程可用于描述一个体系的三种物态（例如范德华气体状态方程可描述气液转变），但由于相变潜热效应很大，因此实践上同一体系在不同物态的条件范围内将采用仅适用于该物态的状态方程。而采用压缩因子表示的状态方程，更常用于描述气态体系。可以提前说的是，逸度和逸度因子也不方便用于液态混合物，原因将在把逸度的具体知识介绍完之后明确。
 
+\subsection{逸度和逸度因子}
+\subsubsection{引入}
+我们可以令真实混合物的化学势取形如理想气体混合物的化学势的简单形式。定义组份$i$在混合物中的逸度$f_i$，以替代式\eqref{eq:II.3_def_ideal_gas_mixture_mu}中的$x_ip$，使得恒定$T$下
+\begin{align}\label{eq:II.4_def_fugacity_i}
+    \mathrm{d}\mu_i=RT\mathrm{d}\ln f_i
+\end{align}
+此处$f_i=f_i\left(T,p,\left\{n_j\right\}\right)$。对于理想气体混合物，自然有$f_i^\text{ig}\equiv x_i p$。但我们也由经验知道，真实混合物在压强极低时近似理想气体混合物，故在定义逸度时还要求以下一致收敛性质：
+\[\lim_{p\to 0}\frac{f_i\left(T,p,\left\{n_i\right\}\right)}{x_i p}=1\]
+
+定义式\eqref{eq:II.4_def_fugacity_i}在纯物质（$x_i=1$）时的形式就是（恒定$T$下）
+\begin{equation}\label{eq:II.4_def_fugacity_i*}
+    \mathrm{d}\mu_i^*=RT\mathrm{d}\ln f_i^*
+\end{equation}
+其中$f_i^*=f_i^*\left(T,p\right)$是组份$i$纯物质的逸度。
+
+我们也可以为混合物体系定义其逸度$f$，它要满足:
+\begin{equation}\label{II.4_def_fugacity_f}
+    \mathrm{d}G_\text{m}=RT\mathrm{d}\ln f
+\end{equation}
+其中$f=f\left(T,p,\left\{n_i\right\}\right)$，而且还满足以下一致收敛性质：
+\[\lim_{p\to 0}\frac{f\left(T,p,\left\{n_i\right\}\right)}{p}=1\]
+
+原则上，一个真实混合物体系，用逸度或用压缩因子描述都是等价的，所以逸度与压缩因子之间是有联系的。以下以单组份纯物质的情况为例推算这二者的关系。对于单组份纯物质$i$，定温（$\mathrm{d}T=0$）下其逸度$f_i^*$与其压缩因子$Z_i^*$和（偏）摩尔体积$V^*_i\equiv V^*_\text{m}$\footnote{纯物质的偏摩尔体积等于其摩尔体积。}之间的关系是：
+\[
+    \mathrm{d}\mu_i^*=V_i^*\mathrm{d}p=RTZ_i^*\mathrm{d}\ln p=RT\mathrm{d}\ln f_i^*
+\]
+其中用到了式\eqref{eq:I.1_Maxwell_GnV}和\eqref{eq:II.4_def_fugacity_i*}。类似地，对混合物体系，定温下我们有
+\begin{align*}
+    V_i\mathrm{d}p        & =RTZ_i\mathrm{d}\ln p=RT\mathrm{d}\ln f_i \\
+    V_\text{m}\mathrm{d}p & =RTZ\mathrm{d}\ln p=RT\mathrm{d}\ln f
+\end{align*}
+
+以下引入逸度因子。留意到，恒定$T$和组成时
+\[\mathrm{d}\ln\frac{f}{p}=\mathrm{d}\ln f-\mathrm{d}\ln p=\left(Z-1\right)\mathrm{d}\ln p\]
+则等号两边同求以下广义积分有
+\begin{align*}
+                    & \int_0^p\mathrm{d}\ln\frac{f\left(T,p^\prime,\left\{n_i\right\}\right)}{p^\prime}=\int_0^p\left[Z\left(T,p^\prime,\left\{n_i\right\}\right)-1\right]\mathrm{d}\ln p^\prime                                                     \\
+    \Leftrightarrow & \ln\frac{f\left(T,p,\left\{n_i\right\}\right)}{p}-\lim_{p^\prime\to 0}\ln\frac{f\left(T,p^\prime,\left\{n_i\right\}\right)}{p^\prime}=\int_0^p\left[Z\left(T,p^\prime,\left\{n_i\right\}\right)-1\right]\mathrm{d}\ln p^\prime \\
+    \Leftrightarrow & \ln\frac{f}{p}=\int_0^p\left(Z-1\right)\mathrm{d}\ln p^\prime
+\end{align*}
+整个推导是在恒温恒组成条件下的，在推导过程中强调了完整的状态参数。最后得到的关系，对于$Z_i^*$与$f_i^*$、$Z_i$与$f_i$都以类似形式成立。
+
+$f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的逸度因子。组份$i$在混合物中的逸度因子（fugacity factor）$\varphi_i$定义为
+\begin{equation}\label{eq:II.4_def_fugacity_factor_i}
+    \varphi_i\eqdef\frac{f_i}{x_ip}=\varphi_i\left(T,p,\left\{n_i\right\}\right)
+\end{equation}
+由$f_i$的一致收敛规定有$\lim_{p\to 0}\varphi_i=1$。纯物质$i$的逸度因子$\varphi_i^*$、混合物的（平均）逸度因子$\varphi$可类似地得到定义。上面推导的逸度与压缩因子的关系式，用逸度因子表示将更简洁：
+\begin{align*}
+    \ln\varphi     & =\int_0^p\left(Z-1\right)\mathrm{d}\ln p^\prime     \\
+    \ln\varphi_i   & =\int_0^p\left(Z_i-1\right)\mathrm{d}\ln p^\prime   \\
+    \ln\varphi^*_i & =\int_0^p\left(Z_i^*-1\right)\mathrm{d}\ln p^\prime
+\end{align*}
+
+值得注意的是，与逸度相关的偏摩尔量对应关系是
+\[\left.\frac{\partial}{\partial n_i}\left(n\ln f\right)\right|_{T,p,\left\{n_{j\neq i}\right\}}=\ln\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{x_i}\]
+证明过程如下——
+
+按照式\eqref{eq:I.1_integral_of_function}的精神，同温同组成下有
+\begin{align*}
+    G\left(T,p,\left\{n_i\right\}\right)-G\left(T,p^\prime,\left\{n_i\right\}\right) & =nG_\text{m}\left(p\right)-nG_\text{m}\left(p^\prime\right)                               \\
+                                                                                     & =n\int_{p^\prime}^p\mathrm{d}G_\text{m}\left(T,p^{\prime\prime},\left\{n_i\right\}\right) \\
+                                                                                     & =RT\left[n\ln f\left(p\right)-n\ln f\left(p^\prime\right)\right]
+\end{align*}
+等号两边同求偏摩尔量——
+\begin{align*}
+    \left.\frac{\partial}{\partial n_i}lhs\right|_{T,p,\left\{n_{j\neq i}\right\}} & =\mu_i\left(T,p,\left\{n_j\right\}\right)-\mu_i\left(T,p^\prime,\left\{n_j\right\}\right)                                                                                             \\
+                                                                                   & =\left.\frac{\partial}{\partial n_i}rhs\right|_{T,p,\left\{n_{j\neq i}\right\}}                                                                                                       \\
+                                                                                   & =RT\left.\frac{\partial}{\partial n_i}\left[n\ln f\left(T,p,\left\{n_j\right\}\right)-n\ln f\left(T,p^\prime,\left\{n_j\right\}\right)\right]\right|_{T,p,\left\{n_{j\neq i}\right\}}
+\end{align*}
+又由$f_i$的定义，
+\begin{align*}
+    \mu_i\left(T,p,\left\{n_j\right\}\right)-\mu_i\left(T,p^\prime,\left\{n_j\right\}\right) & =\int_{p^\prime}^p\mathrm{d}\mu_i\left(T,p^{\prime\prime},\left\{n_j\right\}\right)                          \\
+                                                                                             & =RT\int_{p^\prime}^p\mathrm{d}\ln f_i\left(T,p^{\prime\prime},\left\{n_j\right\}\right)                      \\
+                                                                                             & =RT\mathrm{d}\ln\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i\left(T,p^\prime,\left\{n_j\right\}\right)}
+\end{align*}
+比较两个结果可得
+\begin{align*}
+      & \left.\frac{\partial}{\partial n_i}\left[n\ln f\left(T,p,\left\{n_j\right\}\right)\right]\right|_{T,p,\left\{n_{j\neq i}\right\}}-\left.\frac{\partial}{\partial n_i}\left[n\ln f\left(T,p^\prime,\left\{n_j\right\}\right)\right]\right|_{T,p,\left\{n_{j\neq i}\right\}} \\
+    = & \ln f_i\left(T,p,\left\{n_j\right\}\right)-\ln f_i\left(T,p^\prime,\left\{n_j\right\}\right)
+\end{align*}
+两边求$p^\prime\rightarrow 0$的极限，由各逸度的一致收敛规定，可得到
+\begin{align*}
+                    & \left.\frac{\partial}{\partial n_i}\left[n\ln f\left(T,p,\left\{n_j\right\}\right)\right]\right|_{T,p,\left\{n_{j\neq i}\right\}}-\ln p^\prime=\ln f_i\left(T,p,\left\{n_j\right\}\right)-\ln\left(x_ip^\prime\right) \\
+    \Leftrightarrow & \ln f_i/x_i=\left.\frac{\partial}{\partial n_i}\left(n\ln f\right)\right|_{T,p,\left\{n_{j\neq i}\right\}}
+\end{align*}
+证毕。
+
+由偏摩尔量的加和性，定温定压下有
+\[n\ln f=\sum_i n_i\ln f_i/x_i\quad\text{或}\ln f=\sum_ix_i\ln f_i/x_i\]
+逸度因子也相应地有如下偏摩尔量对应关系
+\[\ln \varphi=\sum_ix_i\ln\varphi_i\]
+
+\subsubsection{理想混合物}
+微分形式的定义是不便直接使用的。我们总要选择一个参考状态，然后应用式\eqref{eq:I.1_integral_of_function}来写下一个状态函数的显示表达式。这里我们选用同温同压下组份$i$纯物质作为参考状态来表出其在混合物中的化学势。假定组份$i$纯物质的逸度$f_i^*\left(T,p\right)$已测定，设想一个恒温恒压下，保持总摩尔数恒定，由纯物质$i$到摩尔分数为$x_i$的混合物的可逆过程\footnote{建议读者回础\S\ref{sec:II.1 composition_measures}关于这个问题的说明。}，则该过程发生前后组份$i$的化学势变化为
+\begin{align*}
+    \mu_i\left(T,p,\left\{n_j\right\}\right)-\mu_i^*\left(T,p\right) & =\int_1^{x_i}\mathrm{d}\mu_i\left(T,p,x_i^\prime\right)                    \\
+                                                                     & =\int_1^{x_i}RT\mathrm{d}\ln f_i\left(T,p,x_i^\prime\right)                \\
+                                                                     & =RT\ln\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i^*\left(T,p\right)}
+\end{align*}
+其中基于式\eqref{eq:II.4_def_fugacity}利用了式\eqref{eq:I.1_integral_of_function}。上式可直接写成
+\[
+    \mu_i\left(T,p,\left\{n_j\right\}\right)=\mu_i^*\left(T,p\right)+RT\ln\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i^*\left(T,p\right)}
+\]
+这是选纯物质为参考态时，组份$i$在混合物中的化学势的表达式。这个式子中的各状态函数都使用相同的$T$和$p$，也就是说，这个式子是在每一组给定的$\left(T,p\right)$下成立的式子。若取$p\rightarrow 0$极限，利用逸度定义中规定的一致收敛行为，有
+\[\lim_{p\to 0}\left[\mu_i\left(T,p,\left\{n_i\right\}\right)-\mu_i^*\left(T,p\right)\right]=RT\lim_{p\to 0}\left[\ln\frac{f_i\left(p\right)}{x_ip}-\ln\frac{f_i^*\left(p\right)}{p}+\ln x_i\right]=RT\ln x_i\]
+其中为了简洁，不求极限的状态参量没有明显写出。故在$p$足够小时，真实混合物的化学势可近似为
+\[\mu_i\left(T,p,\left\{n_j\right\}\right)\approx\mu_i^*\left(T,p\right)+RT\ln x_i\]
+
+上式是我们定义理想混合物的起点。我们正式地把理想混合物（ideal mixture）定义为上式精确取等号的模型体系，即理想混合物的每一组份的化学势都满足：
+\begin{equation}\label{II.4_def_ideal_mixture_mu}
+    \mu_i^\text{id}\left(T,p,\left\{n_j\right\}\right)=\mu_i^*\left(T,p\right)+RT\ln x_i
+\end{equation}
+其中上标“id”表示理想混合物。注意到，理想气体混合物就是理想混合物。由理想气体混合物的定义式\eqref{eq:II.3_def_ideal_gas_mixture_mu}应用式\eqref{eq:I.1_integral_of_function}作类似的定积分有
+\[\mu_i^\text{ig}\left(T,p,x_i\right)-\mu_i^{*,\text{ig}}\left(T,p\right)=RT\ln x_i\]
+与式\eqref{eq:II.4_def_ideal_mixture_mu}是相同的。
+
+如果用逸度因子来表示混合物的化学势，由
+\begin{align*}
+    \mu_i\left(T,p,\left\{n_j\right\}\right) & =\mu_i^*\left(T,p\right)+RT\ln\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i^*\left(T,p\right)}                                        \\
+                                             & =\mu_i^*\left(T,p\right)+RT\ln\frac{x_ip\varphi_i\left(T,p,\left\{n_j\right\}\right)}{p\varphi_i^*\left(T,p\right)}                       \\
+                                             & =\mu_i^*\left(T,p\right)+RT\ln\frac{x_i\varphi_i\left(T,p,\left\{n_j\right\}\right)}{\varphi_i^*\left(T,p\right)}                         \\
+                                             & =\mu_i^\text{id}\left(T,p,\left\{n_j\right\}\right)+RT\ln\frac{\varphi_i\left(T,p,\left\{n_j\right\}\right)}{\varphi_i^*\left(T,p\right)}
+\end{align*}
+这就是选纯物质为参考状态时，组份$i$在真实混合物中的化学势的逸度因子表达式。
+
+\subsection{活度和活度因子}
+在逸度、逸度因子与压缩因子的关系式中涉及到的关于压强$p$的广义积分，物理上相当于从零压强极限连续等温等组成压缩到压强为$p$的过程。如果在当前温度$T$和压强$p$下，混合物体系处于液态，那么这个过程中就发生了气液转变；相比相变潜热造成的热力学性质变化，由组成变化造成的热力学性质变化将小到可以忽略，这不利于以后者为目的的研究。
+
+为了避免相变潜热主导，我们就希望所选定的参考状态与需要描述的当前状态体系保持物态相同，在这两个状态间的路径中不要发生相变。具体地，同温下，如果参考状态的压强和组成分别记作$p^\circ$和$\left\{n_i^\circ\right\}$，则相当于希望体系在$\left(T,p^\circ,\left\{n_i^\circ\right\}\right)$下与$\left(T,p,\left\{n_i\right\}\right)$下是处于相同的物态的（例如都处于液态），从而由$\left(T,p^\circ,\left\{n_i^\circ\right\}\right)$到$\left(T,p,\left\{n_i\right\}\right)$的过程没有发生相变。此时组份$i$在混合物中的化学势表达式为
+\begin{equation}\label{eq:II.4_mu_standard_state}
+    \mu_i\left(T,p,\left\{n_j\right\}\right)=\mu_i\left(T,p^\circ,\left\{n_j^\circ\right\}\right)+RT\ln\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i\left(T,p^\circ,\left\{n_j^\circ\right\}\right)}
+\end{equation}
+
+一般地，我们称如此选定的参考状态是组份$i$的混合物标准态（mixture standard state for component $i$）。理论上，我们可以为混合物的不同组份定义不同的混合物标准态，但混合物标准态的选择大致遵循如下几点考虑：
+
+\begin{itemize}
+    \item 标准态的温度与所讨论的混合物温度一致，因此标准态随所讨论的混合物的温度变化；
+    \item 为组份$i$定义的混合物标准态的组成$\left\{n_i^\circ\right\}$最好是一个固定值，即它不随问题中混合物的组成变化而变化。这个标准态组成的选择方式既可以对所有组份统一，又可以对各组份有不同的定义。一个常见的选择就是令组分$i$的混合物标准态组成为$\left\{n_j^\circ\right\}=\left\{n_i,n_{j\neq i}=0\right\}$或$x_i=1$，即组份$i$的纯物质态；
+    \item 标准态的压强，既可以定为某固定值，也可以与实际问题中的混合物压强一致，从而标准态随所讨论的压强而变化。还可以选择组份$i$的蒸气压，而随所讨论的混合物温度而变化。
+\end{itemize}
+
+在选定了组分$i$的混合物标准态的压强$p^\circ$和组成$\left\{n_i^\circ\right\}$之后，可定义组份$i$在混合物中的活度（activity）
+\[a_i\left(T,p,\left\{n_j\right\}\right)\eqdef\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i\left(T,p^\circ,\left\{n_j^\circ\right\}\right)}\]
+和活度系数（activity coefficient）
+\[\gamma_i\left(T,p,\left\{n_j\right\}\right)\eqdef\frac{a_i\left(T,p,\left\{n_j\right\}\right)}{x_i}\]
+
+以下介绍两种常用于液态混合物的混合物标准态选择惯例。
+
+\subsubsection{拉乌尔定律标准态}
+如果组份$i$纯物质在问题所关心的温度和压强范围内的物态与混合物相同，则可直接定义
+\[p^\text{R}=p,\quad x^\text{R}_i=1\]
+即选择同温同压下组份$i$的纯物质态作为组份$i$的混合物标准态。此时，定温定压下
+\begin{align*}
+    a_i^\text{R}\left(T,p,\left\{n_j\right\}\right)      & =\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i^*\left(T,p\right)}    \\
+    \gamma_i^\text{R}\left(T,p,\left\{n_j\right\}\right) & =\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{x_if_i^*\left(T,p\right)}
+\end{align*}
+式\eqref{eq:II.4_mu_standard_state}就变成
+\begin{align*}
+    \mu_i\left(T,p,\left\{n_j\right\}\right) & =\mu_i^*\left(T,p\right)+RT\ln a_i^\text{R}\left(T,p,\left\{n_j\right\}\right)                                \\
+                                             & =\mu_i^\text{id}\left(T,p,\left\{n_j\right\}\right)+RT\ln\gamma_i^\text{R}\left(T,p,\left\{n_j\right\}\right)
+\end{align*}
+
+\subsubsection{亨利定律标准态}
+如果组份$i$在混合物中的溶解度有限，无法从$x_i=1$连续地变至所关心的组成$x_i$；或者组份$i$纯物质在所关心的温压下的物态与混合物不同，我们就不方便选用拉乌尔定律标准态。此时可考虑选组份$i$无限稀（$x_i\rightarrow 0$）的极限状态为标准态，具体定
+\[p^\text{H}=p,\quad f_i^\text{H}\equiv\lim_{x_i\to 0}\frac{f_i\left(T,p,\left\{n_i\right\}\right)}{x_i}\]
+其中$f_i^\text{H}=f_i^\circ\left(T,p,\left\{n_i\right\}\right)$是亨利定律标准态逸度。则定温定压下
+\begin{align*}
+    a_i^\text{H}\left(T,p,\left\{n_j\right\}\right)      & =\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i^\circ\left(T,p,\left\{n_j\right\}\right)}    \\
+    \gamma_i^\text{H}\left(T,p,\left\{n_j\right\}\right) & =\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{x_if_i^\circ\left(T,p,\left\{n_j\right\}\right)}
+\end{align*}
+式\eqref{eq:II.4_mu_standard_state}就变成
+\begin{equation*}
+    \mu_i\left(T,p,\left\{n_j\right\}\right) =\mu_i^\text{H}\left(T,p,\left\{n_j\right\}\right)+RT\ln a_i^\text{H}\left(T,p,\left\{n_j\right\}\right)
+\end{equation*}
+其中
+\[\mu_i^\text{H}\left(T,p,\left\{n_j\right\}\right)=\lim_{x_i\to 0}\mu_i\left(T,p,\left\{n_j\right\}\right)\]
+是组份$i$在亨利定律标准态下的化学势。
+
+这两种标准态选择的活度和活度因子之间有转换关系。注意到定温定压下
+\begin{align*}
+    \gamma_i^\text{R}\left(T,p,\left\{n_j\right\}\right)              & =\frac{\varphi_i\left(T,p,\left\{n_j\right\}\right)}{\varphi_i^*\left(T,p\right)}                                                                                                                                                       \\
+    \lim_{x_i\to 0}\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{x_i} & =p\lim_{x_i\to 0}\varphi_i\left(T,p,\left\{n_j\right\}\right)\equiv p\varphi_i^\infty\left(T,p,\left\{n_j\right\}\right),\quad\gamma_i^\text{H}=\frac{\varphi_i\left(T,p,\left\{n_j\right\}\right)}{\varphi_i^\infty\left\{n_j\right\}} \\
+    \gamma_i^\text{H}                                                 & =\frac{\varphi_i^\infty\left(T,p,\left\{n_j\right\}\right)}{\varphi_i^*\left(T,p\right)}\gamma_i^\text{R}
+\end{align*}
+其中$\varphi_i$的两个极限——$\varphi_i^*$和$\varphi_i^\infty$——可通过$\varphi_i$与$Z_i$的关系式，转变为求$Z_i$的相应极限得到。由这一转换关系，组份$i$在混合物中的化学势又可表示成
+\[\mu_i\left(T,p,\left\{n_j\right\}\right)=\mu_i^\text{id}\left(T,p,\left\{n_j\right\}\right)+RT\ln\frac{\varphi_i^*\left(T,p\right)}{\varphi_i^\infty\left(T,p,\left\{n_j\right\}\right)}\gamma_i^\text{H}\left(T,p,\left\{n_j\right\}\right)\]
+
+《物理化学》中关于非理想稀溶液活度的内容\footnote{《物理化学》\S4.11“非理想稀溶液”。}是双组份混合物的特例。对于双组份混合物，视关心的组份B为“溶质”，则另一组份A为“溶剂”，$x_\text{B}$可以连续地趋于0，此极限无非是作为“溶剂”的组份A的纯物质状态（$x_\text{A}=1$）。
+
+我们注意到，本讲义中理想混合物的定义不依赖拉乌尔定律。上述两种标准态的规定，虽然分别称作“拉乌尔定律标准态”和“亨利定律标准态”，但是也没有直接利用相关的定律来定义。这些做法与《物理化学》课本不同。在下一节，我们将利用本节介绍的真实混合物描述方式，来得出理想混合物中的组份$i$在$x_i=1$时满足拉乌尔定律，以及在$x_i\rightarrow 0$时满足亨利定律的结论。
 \end{document}

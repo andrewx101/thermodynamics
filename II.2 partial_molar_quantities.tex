@@ -55,11 +55,13 @@
 《物理化学》书上的吉布斯--杜亥姆方程只是$M=G$、$X=T$、$Y=p$的特例而已。
 
 \subsection{不同状态变量下的偏摩尔量之间的关系}
-在不同的状态变量——
+对于同一体系，采用不同的两组状态变量——
 \[\left(X,Y,\left\{n_i\right\}\right)\text{和}\left(X^\prime,Y^\prime,\left\{n_i\right\}\right)\]
-下，$M\left(X,Y,\left\{n_i\right\}\right)$和$M\left(X^\prime, Y^\prime,\left\{n_i\right\}\right)$一般是不同的函数，因此相应条件下定义的偏摩尔量也是不同的函数。若记同一体系在控制条件$\left(X^\prime,Y^\prime,\left\{n_i\right\}\right)$下的同一性质为
+下，$M\left(X,Y,\left\{n_i\right\}\right)$和$M\left(X^\prime, Y^\prime,\left\{n_i\right\}\right)$一般是不同表达式的函数，因此在相应条件下定义的偏摩尔量也是不同表达式的函数。若我们小心地将同一体系在状态参数$\left(X^\prime,Y^\prime,\left\{n_i\right\}\right)$下的同一性质另记为
 \[M^\prime\equiv M^\prime\left(X^\prime,Y^\prime,\left\{n_i\right\}\right)\]
-则$M_i$与$M_i^\prime$是相互联系的。由于体系的平衡状态是唯一的，使体系处于相同状态的$\left(X,Y,\left\{n_i\right\}\right)$和$\left(X^\prime,Y^\prime,\left\{n_i\right\}\right)$有一一对应关系。由$M$的全微分式，
+则如下所示$M_i$与$M_i^\prime$是相互联系的。
+
+由于体系的平衡状态是唯一的，使体系处于相同状态的$\left(X,Y,\left\{n_i\right\}\right)$和$\left(X^\prime,Y^\prime,\left\{n_i\right\}\right)$取值之间是一一对应的。由$M$的全微分式，
 \[\mathrm{d}M=\left.\frac{\partial M}{\partial X}\right|_{Y,\left\{n_i\right\}}\mathrm{d}X+\left.\frac{\partial M}{\partial Y}\right|_{X,\left\{n_i\right\}}\mathrm{d}Y+\sum_i M_i\mathrm{d}n_i\]
 两边除以$\mathrm{d}n_i$，保持$X^\prime$、$Y^\prime$恒定，可得
 \[M_i^\prime=\left.\frac{\partial M}{\partial X}\right|_{Y,\left\{n_i\right\}}\left.\frac{\partial X}{\partial n_i}\right|_{X^\prime,Y^\prime,\left\{n_{j\neq i}\right\}}+\left.\frac{\partial M}{\partial Y}\right|_{X,\left\{n_i\right\}}\left.\frac{\partial Y}{\partial n_i}\right|_{X^\prime,Y^\prime,\left\{n_{j\neq i}\right\}}+M_i\]
@@ -72,7 +74,7 @@
 \end{align*}
 可见，要作两种偏摩尔性质之间的转换计算需已知混合物的状态方程，以便求得以下两个偏导数
 \[\left.\frac{\partial p}{\partial n_i}\right|_{T,V,\left\{n_{j\neq i}\right\}},\quad\left.\frac{\partial V}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\]
-这两个偏导数在\S\ref{sec:I_thermodynamic_relations}介绍过了，都属于可测量。
+这两个偏导数在第\ref{sec:I_thermodynamic_relations}章已经介绍过了，都属于可测量。
 
 \subsection{偏摩尔量的测定}
 实验上，我们往往只能测量一个多组份体系的摩尔量$M_\text{m}=M_\text{m}\left(X,Y,\left\{n_i\right\}\right)$随某组份$i$在恒定$X$、$Y$下的变化。以下推算，使得我们能够通过$M_\text{m}$对$x_i$的曲线得出$M_i$。
