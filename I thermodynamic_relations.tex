@@ -99,7 +99,7 @@
 \[\mathrm{d}G=\mathrm{d}U+p\mathrm{d}V+V\mathrm{d}p-T\mathrm{d}S-S\mathrm{d}T\]
 把式\eqref{eq:I.1_first_law_multicomp}代入上式就能得到式\eqref{eq:I.1_dG}。
 
-特性函数可用于确定体系在两个状态之间变化的可逆性和方向性。若体系状态由$\left(X,Y,\left\{n_i\right\}\right)$独立、完整地确定，且对照特性函数与特征变量的对应关系应选用$M=M\left(X,Y,\left\{n_i\right\}\right)$，则两个状态——$\left(X_1,Y_1,\left\{n_{i,1}\right\}\right)$到$\left(X_2,Y_2,\left\{n_{i,2}\right\}\right)$——的$M$值变化将不依赖路径（因$M$是状态函数），且总可找到一条可逆路径\footnote{前提是由$\left(X_1,Y_1,\left\{n_{i,1}\right\}\right)$可连续变化至$\left(X_2,Y_2,\left\{n_{i,2}\right\}\right)$。}，将$M$的微分式$\mathrm{d}M=X\mathrm{d}Y+Y\mathrm{d}X+\sum_i\mu_i\mathrm{d}n_i$进行如下积分，就可得到两状态间的$M$变化量$\Delta M$：
+特性函数可用于确定体系在两个状态之间变化的可逆性以及方向性\footnote{见《物理化学》\S3.11。}。若体系状态由$\left(X,Y,\left\{n_i\right\}\right)$独立、完整地确定，且对照特性函数与特征变量的对应关系应选用$M=M\left(X,Y,\left\{n_i\right\}\right)$，则两个状态——$\left(X_1,Y_1,\left\{n_{i,1}\right\}\right)$到$\left(X_2,Y_2,\left\{n_{i,2}\right\}\right)$——的$M$值变化将不依赖路径（因$M$是状态函数），且总可找到一条可逆路径\footnote{前提是由$\left(X_1,Y_1,\left\{n_{i,1}\right\}\right)$可连续变化至$\left(X_2,Y_2,\left\{n_{i,2}\right\}\right)$。}，将$M$的微分式$\mathrm{d}M=X\mathrm{d}Y+Y\mathrm{d}X+\sum_i\mu_i\mathrm{d}n_i$进行如下积分，就可得到两状态间的$M$变化量$\Delta M$：
 \begin{equation}
     \begin{aligned}\label{eq:I.1_integral_of_function}
         \Delta M & =M\left(X_2,Y_2,\left\{n_{i,2}\right\}\right)-M\left(X_1,Y_1,\left\{n_{i,1}\right\}\right)                                      \\
@@ -262,12 +262,14 @@ $U$、$S$、$H$、$A$、$G$等热力学函数（及其偏导数）是无法直�
 我们先考虑单组份体系，具体地，我们否定以下说法：对于单组份体系，仅靠$pVT$状态方程就能确定一个体系的完整热力学性质。
 
 我们仍以体系状态由参数$\left(T,p\right)$确定为例。先通过Tobolsky方法得到内能的全微分式（过程留作练习）：
-\[\mathrm{d}U=\left(C_p-\alpha_ppV\right)\mathrm{d}T+\left(\kappa_TpV-\alpha_pV\right)\mathrm{d}p\]
+\[\mathrm{d}U=\left(C_p-\alpha_ppV\right)\mathrm{d}T+\left(\kappa_TpV-\alpha_pTV\right)\mathrm{d}p\]
 我们看到，该式除了含有$pVT$响应函数外，还含有等压热容$C_p$。读者若自行尝试写出体系状态由参数$\left(T,V\right)$确定的情况，则将会发现式中除了含有$pVT$响应函数外，还含有等容势容$C_V$。
 
 能否把等压或等容热容也换成仅含$pVT$响应函数的形式呢？如果可以，那么上列第一个命题就为真了。可惜，$C_V$和$C_p$单独任一个都不能写成仅含$pVT$响应函数的表达式（利用Tobolsky方法是徒劳的）；它们单独等于啥，与$pVT$关系一样，需要借助统计力学针对体系微观特性推导而得到。比如单原子分子理想气体$C_V=3nR/2$和$C_p=5nR/2$，就是非得通过统计力学才能给出的\footnote{《物理化学》\S7.5。}。Tobolsky方法倒是能够给出以下普适关系：
 \[C_p-C_V=\alpha_p\beta_V^{-1}VT,\quad\alpha_p=\beta_V\kappa_T\]
 把理想气体状态方程代进去将得到《物理化学》式(2.23)。但是这些关系也不能使得$C_V$或$C_p$的任一个被$pVT$响应函数表出。
 
-确定混合物体系完整热力学的必要信息将在\S\ref{sec:II 混合物的热力学}详细介绍。
+所以，我们可以说，对于单组份体系，状态由$\left(T,p\right)$确定时，至少需要知道$\left\{C_p,\alpha_p,\kappa_T,V\right\}$才能确定体系的完整热力学性质。其中$V=V\left(T,p\right)$相当于要知道状态方程本身，而$\alpha_p$、$\kappa_T$则只是状态方程的偏导数。若都已经知道状态方程本身了，那么这些$pVT$偏导数也都自然已知了。所以我们可以简略地说，完整确定一个体系的热力学性质，至少需要测定该体系的状态方程和热容。
+
+对于混合物体系，首先需要注意到这些热容和响应函数的定义式是考虑了混合物的情况的；所涉及到的偏导数下标包括了“$\left\{n_i\right\}$”。也就是说，混合物的热容和$pVT$响应函数是$\left(X,Y,\left\{n_i\right\}\right)$的函数。如果说这些量必须实验测量，按这种写法是不可能完成的，因为自变量$\left\{n_i\right\}$表示的是各组份摩尔数所有可能取值，而摩尔数可取大于零的任何实数，也就是说关于自变量$\left\{n_i\right\}$的定义域是无界的，实验上不可能实现相应的条件控制。在\S\ref{sec:II.2 partial_molar_quantities}介绍的偏摩尔量的加和性，以及偏摩尔量的测量方法，就可以把现在这个问题转化成可以处理的形式。既然这些热容和响应函灵敏都是$\left(X,Y,\left\{n_i\right\}\right)$的状态函数，且注意到它们（除等容压强系数外）都是广度性质，那么它们也应有相应的偏摩尔量。在\S\ref{sec:II.2 partial_molar_quantities}我们又会了解到，偏摩尔热力学状态函数之间的关系跟本章列出的基本热力学关系形式是一样的。因此现在我们可以预先给出结论，对于混合物体系，至少需要知道各组份$i$的偏摩尔热容和偏摩尔状态方程（即各组份的偏摩尔体积关于温度、压强的函数关系）才能确定体系的完整热力学性质。
 \end{document}

@@ -1,0 +1,117 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+\subsection{气液共存}
+一个混合物封闭体系（总物质的量不变），在定温定压下处于稳定的平衡态，将会分为多少个相，是由热力学第二定律确定的，具本需要用到平衡态的稳定性的知识。这个知识在《物理化学》中是没有介绍的。读者可以参考王竹溪《热力学（第二版）》\S26和第六章。我们假定，某混合物体系在温度和压强的某范围内，凡处于平衡态时，无论总组成如何，均分为气、液两相，则两相中的各组份均应满足相平衡条件
+\[\mu_i^\text{V}=\mu_i^\text{L},\quad i=1,2,\cdots\]
+其中上标“V”和“L”分别表示气相和液相。
+
+此时我们需要把上式的化学势的具体表达式写出来，面临标准态的选择问题。留意到，标准态的选择原则中有一条“避免相变”，即体系从所选择的标准态到当前态的过程不发生相变。这在本问题当中就要求视气、液相为两个不同的状态方程所描述的体系，各状态方程均不描述该体系的气、液相变和共存行为，仅为我们分别考虑各相时使用。
+
+如果我们分别为气、液两相选择拉乌尔定律标准态，则有
+\begin{equation*}
+    \mu_i^\alpha\left(T,p,\left\{n_j^\alpha\right\}\right)=\mu_i^{*,\alpha}\left(T,p\right)+RT\ln a_i^\alpha\left(T,p,\left\{n_j^\alpha\right\}\right),\quad i=1,2,\cdots,\quad \alpha=\text{V},\text{L}
+\end{equation*}
+其中，组份$i$纯物质在不同相态下的化学势$\mu_i^{*,\alpha}$及其在不同相态混合物中的活度$a_i^\alpha$是关于$\left(T,p,\left\{n_i^\alpha\right\}\right)$的不同的函数，源自两相各自的状态方程。把这种表达式代入相平衡条件，标准态的化学势不能被消掉。这又不符合标准态选择的原则。
+
+纯物质$i$在给定温度下，处于气、液共存平衡态时的压强——即纯物质$i$的蒸气压$p_i^{*,\text{vap}}=p_i^{*,\text{vap}}\left(T\right)$时，由相平衡条件有
+\[\mu_i^{*,\text{V}}\left(T,p_i^{*,\text{vap}}\right)=\mu_i^{*,\text{L}}\left(T,p_i^{*,\text{vap}}\right)\]
+这为我们提供了一个适用于考虑混合物的气液共存问题的标准态。以这个状态为标准态，则
+\begin{equation*}
+    \mu_i^\alpha\left(T,p,\left\{n_j^\alpha\right\}\right)=\mu_i^{*,\alpha}\left(T,p_i^{*,\text{vap}}\right)+RT\ln\frac{f_i^\alpha\left(T,p,\left\{n_j^\alpha\right\}\right)}{f_i^{*,\alpha}\left(T,p_i^{*,\text{vap}}\right)},\quad i=1,2,\cdots,\quad\alpha=\text{V},\text{L}
+\end{equation*}
+代入相平衡条件后得到
+\[\frac{f_i^\text{V}\left(T,p,\left\{n_j^\text{V}\right\}\right)}{f_i^{*,\text{V}}\left(T,p_i^{*,\text{vap}}\right)}=\frac{f_i^\text{L}\left(T,p,\left\{n_j^\text{L}\right\}\right)}{f_i^{*,\text{L}}\left(T,p_i^{*,\text{vap}}\right)},\quad i=1,2,\cdots\]
+其中，$f_i^{*,\alpha}$是组份$i$纯物质在不同相态下的逸度，它们直接联系到组份$i$纯物质不同相态下的状态方程。
+
+以下我们逐步往理想体系靠拢。首先如果各相是理想混合物（但气相暂未必是理想气体混合物），则上式化为
+\[\ln x_i^\text{V}+\ln\frac{f_i^{*,\text{V}}\left(T,p\right)}{f_i^{*,\text{V}}\left(T,p_i^{*,\text{vap}}\right)}=\ln x_i^\text{L}+\ln\frac{f_i^{*,\text{L}}\left(T,p\right)}{f_i^{*,\text{L}}\left(T,p_i^{*,\text{vap}}\right)},\quad i=1,2,\cdots\]
+其中用到了理想混合物活度系数等于1的条件。气态纯物质保持使用逸度是因为气态虽是理想混合物但不是理想气体混合物，所以至少有些组分纯物质气态不遵守理想气体状态方程。由逸度与（偏）摩尔体积的关系，有
+\[\ln\frac{f_i^{*,\alpha}\left(T,p\right)}{f_i^{*,\alpha}\left(T,p_i^{*,\text{vap}}\right)}=\int_{p_i^{*,\text{vap}}}^p\frac{V_{\text{m},i}^{*,\alpha}\left(T,p^\prime\right)}{RT}\mathrm{d}p^\prime,\quad i=1,2,\cdots,\quad \alpha=\text{V},\text{L}\]
+则各相均为理想混合物情况的关系式变为
+\[\ln x_i^\text{V}+\int_{p_i^{*,\text{vap}}}^{p}\frac{V_{\text{m},i}^{*,\text{V}}\left(T,p^\prime\right)}{RT}\mathrm{d}p^\prime=\ln x_i^\text{L}+\int_{p_i^{*,\text{vap}}}^{p}\frac{V_{\text{m},i}^{*,\text{L}}\left(T,p^\prime\right)}{RT}\mathrm{d}p^\prime,\quad i=1,2,\cdots\]
+
+再往理想体系靠拢一步：若某组份$i$纯物质的气态是理想气体，即
+\[V_{\text{m},i}^{*,\text{V}}\left(T,p\right)=RT/p\]
+则对这个组份$i$就有
+\[\ln x_i^\text{V}+\ln\frac{p}{p_i^{*,\text{vap}}}=\ln x_i^\text{L}+\int_{p_i^{*,\text{vap}}}^{p}\frac{V_{\text{m},i}^{*,\text{L}}\left(T,p^\prime\right)}{RT}\mathrm{d}p^\prime \]
+若各组份$i$纯物质的气态都是理想气体（即混合物体系的气态是理想气体混合物），则上式对各组份$i=1,2,\cdots$均成立。
+
+若考虑液态的体积随压强的变化很小，则等号右边的积分也可以略掉，我们就得到
+\[x_i^\text{V}p=x_i^\text{L}p_i^{*,\text{vap}},\quad i=1,2,\cdots\]
+再加上气相是理想气体混合物，满足道尔顿分压定律，上式左边是组份$i$在气相中的分压$p^\text{V}_i=x_i^\text{V}p$，故上式又进一步写成
+\[p_i^\text{V}=x_i^\text{L}p_i^{*,\text{vap}},\quad i=1,2,\cdots\]
+这就是拉乌尔定律。
+
+可见，拉乌尔定律包括以下假定：
+\begin{itemize}
+    \item 气相是理想气体混合物；
+    \item 液相是理想混合物；
+    \item 液相不可压缩。
+\end{itemize}
+
+我们如果不为了“消掉”而给两相选择统一的标准态，保持液相是理想混合物、气相是理想气体混合物的条件，按照各相通常的参考态选择方式，组份$i$在各相的化学势可以写成
+\begin{align*}
+    \mu_i^\text{V,ig}\left(T,p,\left\{n_j^\text{V}\right\}\right) & =\mu_i^\text{V,*,ig}\left(T,p^\circ\right)+RT\ln\frac{p}{p^\circ}+RT\ln x_i^\text{V}, \\
+    \mu_i^\text{L,id}\left(T,p,\left\{n_j^\text{L}\right\}\right) & =\mu_i^\text{L,*,id}\left(T,p\right)+RT\ln x_i^\text{L},                              \\
+    i                                                             & =1,2,\cdots
+\end{align*}
+代入相平衡条件后得
+\[
+    \mu_i^\text{L,*,id}\left(T,p\right)-\mu_i^\text{V,*,ig}\left(T,p^\circ\right)+RT\ln p^\circ+RT\ln x_i^\text{L}-RT\ln\left(x_i^\text{V}p\right)=0,\quad i=1,2,\cdots
+\]
+引入组份$i$的亨利系数$k_i$，满足
+\[RT\ln k_i=\mu_i^\text{L,*,id}\left(T,p\right)-\mu_i^\text{V,*,ig}\left(T,p^\circ\right)+RT\ln p^\circ,\quad i=1,2,\cdots\]
+则有
+\[p_i^\text{V}=k_ix_i^\text{L}\]
+这就是亨利定律。与拉乌尔定律相比较可见，拉乌尔定律中的比例系数是组份$i$纯物质在温度$T$下的蒸气压$p_i^{*,\text{vap}}=p_i^{*,\text{vap}}\left(T\right)$，仅为温度的函数；而亨利定律中的比例系数$k_i=k_i\left(T,p\right)$是温度和压强的函数，且其数值依赖所选定的参考压强值$p^\circ$。这个差别是推导亨利定律没有采用推导拉乌尔定律时使用的“液相不可压缩”的等效后果。
+
+值得注意的是，混合物在各相内的各组份摩尔分数$x_i$满足$\sum_ix_i\equiv 1$的约束。由于这一约束，我们以下将推出，对于液相是理想混合物、气相是理想气体混合物的体系，如果确定了$j\neq i$的亨利系数，则剩下的这个组份$i$的气液相分配也就已被确定。由
+\[x_j^\text{V}p=k_jx_j^\text{L},\quad j\neq i\]
+和各组份的相平衡条件
+\[\mu_k^\text{L}=\mu_k^\text{V}\Leftrightarrow \mathrm{d}\mu_k^\text{L}=\mathrm{d}\mu_k^\text{V},\quad k=1,2,\cdots\]
+以及恒温恒压下的吉布斯--杜亥姆方程有（只应用于液相）
+\[
+    n_i^\text{L}\mathrm{d}\mu_i^\text{L}+\sum_{j\neq i}n_j\text{L}\mathrm{d}\mu_j^\text{L}=0\Leftrightarrow n_i^\text{L}\mathrm{d}\ln\left(x_i^\text{V}p\right)+\sum_{j\neq i}n_j^\text{L}d\ln\left(k_jx_j^\beta\right)
+\]
+而
+\begin{align*}
+    \sum_{j\neq i}n_j^\text{L}\mathrm{d}\ln\left(k_j x_j^\text{L}\right) & =\sum_{j\neq i}\frac{n_j}{x_j^\text{L}}\mathrm{d}x_j^\text{L} \\
+                                                                         & =n\sum_{j\neq i}\mathrm{d}x_j^\text{V}                        \\
+                                                                         & =-n\mathrm{d}x_i^\text{L}
+\end{align*}
+其中运用了$k_j$只依赖$T$、$p$的条件（故在恒温恒压下的微分按常数处理），以及$x_i^\text{L}=1-\sum_{j\neq i}\mathrm{d}x_j^\text{L}$。
+因此液相的吉布斯--杜亥姆方程就变成以下微分方程：
+\[\frac{\mathrm{d}x_i^\text{L}}{x_i^\text{L}}=\mathrm{d}\ln\left(x_i^\text{V}p\right)\]
+利用$x_i^\text{L}=1$时$x_i^\text{V}=1$的条件解上列方程得
+\[x_i^\text{L}p\left(x_i^\text{V}= 1\right)=p x_i^\text{L}\Leftrightarrow x_i^\text{L}p_i^{*,\text{vap}}=p^\text{V}_i\]
+即组份$i$满足拉乌尔定律。与之前得到的所有组份满足拉乌尔定律相比较，这里的结论是仅一个组份满足拉乌尔定律，其余组份满足亨利定律，这是不需要依靠“液相不可压缩”条件，仅基于液相是理想混合物、气相是理想气体混合物就能得到的结论。如果把组份$j\neq i$称作“溶质”，则组份$i$就是溶剂，于是也就得到通常《物理化学》教科书中，所谓“理想溶液”\footnote{“溶液”一词专用于讨论混合物时区分溶质和溶剂的情况。除此之外，若不再加其他说明，那么“理想溶液”就应就等价于“理想混合物”。但既然对“理想溶液”的溶质溶剂遵守这两个定律的陈述，那似乎又认为“理想溶液”在气液共存时气态总是理想气体混合物，而不仅只是处于气态的理想混合物。这是普通的《物理化学》课本不够严谨的地方。}的溶剂满足拉乌尔定律（而无需要求其液相不可压缩）、溶质满足亨利定律的结论。
+
+\subsection{“非挥发溶质”问题}
+\subsubsection{问题的提出}
+有一类问题是液态混合物与其某一组份纯物质的另一相态之间在定温下的相平衡问题。这类问题的相平衡条件是
+\[\mu_i^\text{L}\left(T,p,\left\{n_k^\text{L}\right\}\right)=\mu_i^{\alpha,*}\left(T,p\right),\quad n_{j\neq i}^\alpha=0,\quad \alpha=\text{V},\text{L或S}\]
+
+如果$\alpha$相是气相（$\alpha=\text{V}$），视组份$j\neq i$为“溶质”，就可以称其为“非挥发”的溶质。只有“溶剂”组份$i$有气液共存的行为。
+
+如果$\alpha$相是固相（$\alpha=\text{S}$），则类似组份$i$在一个溶液中“析出”其晶体（或称“重结晶”）。
+
+如果$\alpha$相是液相（$\alpha=\text{L}$），则类似该液体混合物发生了“分层”，且有一相几乎没有其他组份$j\neq i$的奇怪情况。
+
+尽管第三种情况很少见，但无论$\alpha$相是什么物态，以下讨论的热力学结论是普适的。但是这些推导需要具备热力学平衡态的稳定性的知识，这个知识在本科的《物理化学》课是没有学过的。这里作最简要介绍。
+
+\subsubsection{平衡态的稳定性简介}
+我们知道，由热力学第二定律，以温度、压强和组成$\left(T,p,\left\{n_i\right\}\right)$作为状态参数的体系，任何可能发生的变动都使其特性函数——吉布斯自由能——的变化小于零。那么，假定体系被实验控制在$\left(T^\circ,p^\circ,\left\{n_i^\circ\right\}\right)$下，考虑体系由此状态出发至任一微小变化后的状态$\left(T^circ+\Delta T,p^\circ+\Delta p,\left\{n_i^\circ+\Delta n_i\right\}\right)$造成的吉布斯自由能变$\Delta^\circ G$，必须总小于零——否则体系在不加控制的情况下就会自发离开当前状态点$\left(T^\circ,p^\circ,\left\{n_i^\circ\right\}\right)$往某一个吉布斯自由能值更小方向变化。实验上，我们碰到的问题常常并不是把所有状态参量都控制住的。若在某实验中，我们只控制体系的部分状态量恒定，任由体系自发变化剩余的状态量，所最终达到的平衡态一定满足：在此状态点邻近状态上的吉布斯自由能都比该状态点处的值大，也就是说体系所达到这个状态点是一定范围内吉布斯自由能作为特性函数的极小点。如果对于该体系，在此实验下吉布斯自由能在其可变状态参数的整个取值范围内只有一个极小值，那这个极小值对应的状态点就是该体系在此实验条件下的稳定平衡态。如果同样条件下，函数有多个极小值，则值最小的那个极小值所对应的状态点就是该体系在此实验条件下的稳定平衡态，而其他极小值对应的状态点就是该体系在此实验条件下的亚稳定平衡态（亚稳态）。
+
+在数学中，极小值的条件既要求一阶导数为0，还要求二阶导数大于零。应用这个条件，可以具体推出，以温度、压强和组成$\left(T,p,\left\{n_i\right\}\right)$作为状态参数的体系的平衡态稳定充要条件如下：体系在$\left(T,p,\left\{n_i\right\}\right)$状态是热力学平衡态，即满足热平衡、力学平衡和相平衡条件\footnote{可由$\mathrm{d}G=0$得出。}，且\footnote{由$\mathrm{d}^2G>0$得出。}：
+\[C_V>0,\quad \kappa_T>0,\quad \frac{\partial \mu_i}{\partial n_i}>0,\quad i=1,2,\cdots\]
+以上不等式，不等号左边的函数值或导数值是在$\left(T,p,\left\{n_i\right\}\right)$处的值。
+
+\subsubsection{液体混合物的溶解度、沸点、凝固点和蒸气压的变化规律}
+
+\subsection{半透膜问题}
+
+
+
+
+
+\end{document}

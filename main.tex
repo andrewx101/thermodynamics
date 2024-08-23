@@ -72,9 +72,7 @@ top=25.4mm,
 \hypersetup{colorlinks=true}
 
 % packages for footnotes
-\renewcommand{\thefootnote}{\fnsymbol{footnote}}
-\usepackage{perpage}
-\MakePerPage{footnote} 
+\usepackage[perpage,symbol*]{footmisc}
 
 % packages for bibliography
 \usepackage[
@@ -107,7 +105,7 @@ sorting=none
 %\counterwithin{figure}{section}
 %\counterwithin{equation}{section}
 %\counterwithin{section}{part}
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{2}
 
 % package for subfiles
 \usepackage{subfiles}
@@ -133,14 +131,16 @@ sorting=none
 \subfile{II.1 composition_measures.tex}
 \section{偏摩尔量}\label{sec:II.2 partial_molar_quantities}
 \subfile{II.2 partial_molar_quantities.tex}
-\section{理想气体混合物}
+\section{理想气体混合物}\label{sec:II.3 ideal_mixture.tex}
 \subfile{II.3 ideal_mixture.tex}
-\section{真实混合物}
+\section{真实混合物}\label{sec:II.4 real_mixture}
 \subfile{II.4 real_mixture.tex}
-\section{气液共存}
-
+\section{混合物热力学的典型问题}\label{sec:II.5 typical_problems}
+\subfile{II.5 typical_problems.tex}
 
 \part{高分子热力学}
+\chapter{高分子溶液热力学}
+
 \part{高分子平衡态统计力学}
 \chapter{链统计}
 \part{高分子动力学和流变学}

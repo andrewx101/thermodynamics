@@ -16,5 +16,71 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Grolier2015}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=dee509697ee94df690c2b018adc1dcc8}{%
+           family={Grolier},
+           familyi={G\bibinitperiod},
+           given={Jean-Pierre\bibnamedelima E.},
+           giveni={J\bibinithyphendelim P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=dee509697ee94df690c2b018adc1dcc8}{%
+           family={Grolier},
+           familyi={G\bibinitperiod},
+           given={Jean-Pierre\bibnamedelima E.},
+           giveni={J\bibinithyphendelim P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{dee509697ee94df690c2b018adc1dcc8}
+      \strng{fullhash}{dee509697ee94df690c2b018adc1dcc8}
+      \strng{fullhashraw}{dee509697ee94df690c2b018adc1dcc8}
+      \strng{bibnamehash}{dee509697ee94df690c2b018adc1dcc8}
+      \strng{authorbibnamehash}{dee509697ee94df690c2b018adc1dcc8}
+      \strng{authornamehash}{dee509697ee94df690c2b018adc1dcc8}
+      \strng{authorfullhash}{dee509697ee94df690c2b018adc1dcc8}
+      \strng{authorfullhashraw}{dee509697ee94df690c2b018adc1dcc8}
+      \strng{nameabibnamehash}{dee509697ee94df690c2b018adc1dcc8}
+      \strng{nameanamehash}{dee509697ee94df690c2b018adc1dcc8}
+      \strng{nameafullhash}{dee509697ee94df690c2b018adc1dcc8}
+      \strng{nameafullhashraw}{dee509697ee94df690c2b018adc1dcc8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Since the early ages any progress in thermodynamics, in fact its birth itself, results from the observation of phenomena combining heat and mechanical effects. This is also true in chemical thermodynamics. In addition, in particular in solution thermodynamics, chemical effects must be taken into account. From this point of view, solution thermodynamics is a science of observation developed from judicially conceived experimental measurements that characterize and quantify the contributions of the chemical species involved. Using the formal rather simple scheme of basic relations built from equally simple thermodynamic principles, the thermodynamic behavior resulting from the chemical interactions of an investigated chemical system can be related to the chemical potentials of the system’s components. Experimental thermodynamics is a science by itself. In this context, calorimetric techniques play a major role in providing essential data used to build theoretical models capable of being used further in chemical engineering applications. Heats of mixing, heats of interaction, and heats of dilution constitute the primary data to be measured. After a short review of the thermodynamic formalism and basic relations, the state of the art in solution calorimetry to determine the above heats is described. For an in-depth study of molecular interactions, the pressure as well as the temperature dependence of these thermodynamic properties must be documented. The thermophysical properties that are the second derivatives of the Gibbs energy with respect to temperature and pressure are of paramount importance since they can be related directly to the molecular level, opening windows to molecular thermodynamics. Scanning transitiometry, which can provide experimentally all the thermophysical properties, is described in detail. I give from my personal march in the field a view of the most recent developments in experimental techniques including their extensions to operate over extended temperature and pressure ranges. Selected striking results in pure liquids and mixtures, and in polymer systems, serve to illustrate the role of well-designed experimental techniques in providing exclusive data of the best quality. The aim was indeed to stress also the pivotal role and impetus of Robert H. Wood in modern chemical thermodynamics.}
+      \field{issn}{1572-8927}
+      \field{journaltitle}{Journal of Solution Chemistry}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{5}
+      \field{title}{From Solutions to Polymers: A High Temperature-High Pressure Journey in Experimental Thermodynamics}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{44}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{pages}{1090\bibrangedash 1120}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.1007/s10953-015-0302-8
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10953-015-0302-8
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10953-015-0302-8
+      \endverb
+      \keyw{Grolier2015}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
