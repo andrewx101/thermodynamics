@@ -78,22 +78,22 @@
 
 式\eqref{eq:II.3_def_ideal_gas_mixture_mu}足以给出理想气体混合物的完整热力学性质，以下列出部分。由式\eqref{eq:I.1_Maxwell_GnT}和式\eqref{eq:I.1_Maxwell_GTp}有，
 \begin{align}
-    S^\text{ig}_i & =-\left.\frac{\partial \mu^\text{ig}_i\left(T,p,\left\{n_j\right\}\right)}{\partial T}\right|_{p,\left\{n_j\right\}}=S_0-R\left[\ln x_i+\ln \left(p/p^\circ\right)\right] \\
+    S^\text{ig}_i & =-\left.\frac{\partial \mu^\text{ig}_i\left(T,p,\left\{n_j\right\}\right)}{\partial T}\right|_{p,\left\{n_j\right\}}=S_i^{\circ,\text{ig}}-R\left[\ln x_i+\ln \left(p/p^\circ\right)\right] \\
     V^\text{ig}_i & =\left.\frac{\partial\mu^\text{ig}_i\left(T,p,\left\{n_j\right\}\right)}{\partial p}\right|_{T,\left\{n_j\right\}}=\frac{RT}{p}
 \end{align}
-其中$S_0\equiv-\left(\partial\mu_i^\text{ig}\left(T,p^\circ,\left\{n_j\right\}\right)/\partial T\right)_{\left\{n_i\right\}}$。恒压恒组成下，又由式\eqref{eq:I.1_heat_capacity_entropy_p}和式\eqref{eq:I.1_Maxwell_GTp}有
+其中$S_i^{\circ,\text{ig}}\equiv-\left(\partial\mu_i^\text{ig}\left(T,p^\circ,\left\{n_j\right\}\right)/\partial T\right)_{\left\{n_i\right\}}$。恒压恒组成下，又由式\eqref{eq:I.1_heat_capacity_entropy_p}和式\eqref{eq:I.1_Maxwell_GTp}有
 \begin{align}
     \left.\frac{\partial S^\text{ig}}{\partial T}\right|_{p,\left\{n_i\right\}} & =\frac{C_p}{T} \\
     \left.\frac{\partial S^\text{ig}}{\partial p}\right|_{T,\left\{n_i\right\}} & =-\frac{nR}{p}
 \end{align}
 故理想气体混合物的熵的完整全微分式是
-\[\mathrm{d}S^\text{ig}=\frac{C_p}{T}\mathrm{d}T-\frac{nR}{p}\mathrm{d}p+\sum_i\left[S_0-R\ln x_i-R\ln\left(p/p^\circ\right)\right]\mathrm{d}n_i\]
+\[\mathrm{d}S^\text{ig}=\frac{C_p}{T}\mathrm{d}T-\frac{nR}{p}\mathrm{d}p+\sum_i\left[S_i^{\circ,\text{ig}}-R\ln x_i-R\ln\left(p/p^\circ\right)\right]\mathrm{d}n_i\]
 恒定$T$、$p$下，由偏摩尔量加和性，
-\[S^\text{ig}\left(T,p,\left\{n_i\right\}\right)=\sum_in_i\left[S_0-R\ln x_i-R\ln\left(p/ p^\circ\right)\right]\]
+\[S^\text{ig}\left(T,p,\left\{n_i\right\}\right)=\sum_in_i\left[S_i^{\circ,\text{ig}}-R\ln x_i-R\ln\left(p/ p^\circ\right)\right]\]
 故同条件下的混合熵变（即把$n_1,n_2,\cdots$纯物质混合为组成是$\left\{n_i\right\}$的气体混合物的熵变）
 \begin{align*}
-    \Delta_\text{mix}S^\text{ig} & =S^\text{ig}\left(T,p,\left\{n_i\right\}\right)-\sum_i n_i S^\text{*,ig}\left(T,p\right)                            \\
-                                 & =\sum_in_i\left[S_0-R\ln x_i-R\ln\left(p/p^\circ\right)\right]-\sum_in_i\left[S_0-R\ln\left(p/p^\circ\right)\right] \\
+    \Delta_\text{mix}S^\text{ig} & =S^\text{ig}\left(T,p,\left\{n_i\right\}\right)-\sum_i n_i S^\text{*,ig}\left(T,p\right)                                                                \\
+                                 & =\sum_in_i\left[S_i^{\circ,\text{ig}}-R\ln x_i-R\ln\left(p/p^\circ\right)\right]-\sum_in_i\left[S_i^{\circ,\text{ig}}-R\ln\left(p/p^\circ\right)\right] \\
                                  & =-R\sum_in_i\ln x_i
 \end{align*}
 其中利用到纯物质$S_i^{*,\text{ig}}=S_i^\text{ig}\left(T,p,x_i=1\right)$。

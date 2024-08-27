@@ -3,13 +3,13 @@
 设一混合物体系的某广度性质$M$是状态函数，不妨记作$M=M\left(X,Y,\left\{n_i\right\}\right)$,其中$X$、$Y$表示除组成$\left\{n_i\right\}$外，独立、完整确定体系状态的其他强度性质。组份$i$在体系中的偏摩尔性质（partial molar property）定义为\footnote{大部分资料中的偏摩尔量定义规定为$X=T$、$Y=p$的情况，但这并不是必要的。我们将看到，推广为一般情况并不增加难度，且所有偏摩尔量的规律仍成立。本节的推导过程是跟《物理化学》\S4.3很像的。}
 \[M_i\eqdef\left.\frac{\partial M}{\partial n_i}\right|_{X,Y,\left\{n_{j\neq i}\right\}}\]
 
-\begin{longtable}{clc}
-    \caption{各种摩尔量和偏摩尔量的符号和定义}                                                                                                                                           \\
+\begin{longtable}{p{0.25\textwidth}p{0.3\textwidth}p{0.3\textwidth}}
+    \caption{各种摩尔量和偏摩尔量的符号和定义}\label{tab:molar_partial_molar_notaion}                                                                                                    \\
     \hline
-    $M\left(X,Y,\left\{n_i\right\}\right)$                         & 混合物的某广度性质（状态函数）  &                                                                                  \\
+    $M\left(X,Y,\left\{n_i\right\}\right)$                         & 混合物的某广度性质        &                                                                                  \\
     $M_\text{m}\left(X,Y,\left\{n_i\right\}\right)$                & 混合物的摩尔性质         & $M_\text{m}\eqdef M/n$                                                           \\
     $M_i\left(X,Y,\left\{n_j\right\}\right)$                       & 组份$i$在混合物中的偏摩尔性质 & $M_i\eqdef\left(\partial M/\partial n_i\right)_{X,Y,\left\{n_{j\neq i}\right\}}$ \\
-    $M_{\text{m},i}^*\left(X,Y\right)\equiv M_i^*\left(X,Y\right)$ & 组份$i$纯物质的（偏）摩尔性质 & 从纯物质广度性质$M\left(X,Y,n_i\right)$按上列定义算                                            \\
+    $M_{\text{m},i}^*\left(X,Y\right)\equiv M_i^*\left(X,Y\right)$ & 组份$i$纯物质的（偏）摩尔性质 & $M_i^*\left(X,Y,n_i\right)$，按上列定义计算。                                             \\
     \hline
 \end{longtable}
 
@@ -21,7 +21,7 @@
 \[\mathrm{d}V=V\alpha_p\mathrm{d}T-V\kappa_T\mathrm{d}p+\sum_in_iV_i\]
 代入式\eqref{eq:I.1_first_law_multicomp}得
 \[\mathrm{d}U=\left(C_p-pV\alpha_p\right)\mathrm{d}T+\left(pV\kappa_T-TV\alpha_p\right)\mathrm{d}p+\sum_i\left(\mu_i+TS_i-pV_i\right)\mathrm{d}n_i\]
-比较可得：
+与$U\left(T,p,\left\{n_i\right\}\right)$的全微分比较可得：
 \begin{equation}\label{eq:II.2_partial_molar_thermodynamic_functions_relation}
     \mu_i=U_i+pV_i-TS_i
 \end{equation}
@@ -40,13 +40,13 @@
 \begin{equation}\label{eq:II.2_additivity_partial_molar_quantity_2}
     M_\text{m}=\sum_ix_iM_i
 \end{equation}
-这件事称为偏摩尔量的加和性。由此可知，偏摩尔量（包括化学势）都是强度性质。
+这件事称为偏摩尔量的加和性。由此可知，摩尔量和偏摩尔量（包括化学势）都是强度性质。
 
-值得注意的是，摩尔量也满足第\ref{sec:I_thermodynamic_relations}章推导的那些关于$U$、$S$、$H$、$A$和$G$之间的各种热力学关系式——\eqref{eq:I.1_first_law_multicomp}至\eqref{eq:I.1_dG}、式\eqref{eq:I.1_first_order_partial_T}至\eqref{eq:I.1_heat_capacity_entropy_V}，以及表\ref{tab:Maxwell_relations}，式\eqref{eq:I.1_dS_T_V}和\eqref{eq:I.1_dS_T_p}——只需把这些关系式中的广度性质全部换成摩尔量即可。以下以吉布斯自由能为例证明式\eqref{eq:I.1_dG}的对摩尔吉布斯自由能的适用性。从以下微分出发，并作相应的偏导数，不难得到
+值得注意的是，摩尔量也满足第\ref{sec:I_thermodynamic_relations}章推导的那些关于$U$、$S$、$H$、$A$和$G$之间的各种热力学关系式——\eqref{eq:I.1_first_law_multicomp}至\eqref{eq:I.1_dG}、式\eqref{eq:I.1_first_order_partial_T}至\eqref{eq:I.1_heat_capacity_entropy_V}，以及表\ref{tab:Maxwell_relations}，式\eqref{eq:I.1_dS_T_V}和\eqref{eq:I.1_dS_T_p}——只需把这些关系式中的广度性质全部换成摩尔量即可。以下以吉布斯自由能为例证明式\eqref{eq:I.1_dG}对摩尔吉布斯自由能的适用性。从以下微分出发，并作相应的偏导数，不难得到
 \begin{align*}
     \mathrm{d}G_\text{m} & =\mathrm{d}\left(G/n\right)=\left.\frac{\partial\left(G/n\right)}{\partial T}\right|_{p,\left\{n_i\right\}}\mathrm{d}T+\left.\frac{\partial\left(G/n\right)}{\partial p}\right|_{T,\left\{n_i\right\}}\mathrm{d}p+\sum_i\left.\frac{\partial\left(G/n\right)}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}}\mathrm{d}n_i \\
-                         & =-S_\text{m}\mathrm{d}T+V_\text{m}\mathrm{d}p+\sum_i\left(\mu_i-G_\text{m}\right)\mathrm{d}x_i
-                         & =-S_text{m}\mathrm{d}T+V_\text{m}\mathrm{d}p+\sum_i\mu_i\mathrm{d}x_i
+                         & =-S_\text{m}\mathrm{d}T+V_\text{m}\mathrm{d}p+\sum_i\left(\mu_i-G_\text{m}\right)\mathrm{d}x_i                                                                                                                                                                                                                                   \\
+                         & =-S_\text{m}\mathrm{d}T+V_\text{m}\mathrm{d}p+\sum_i\mu_i\mathrm{d}x_i
 \end{align*}
 其中用到条件$\sum_i\mathrm{d}x_i\equiv 0$。
 
@@ -69,12 +69,6 @@
     + & \left(M_\text{m}-\sum_ix_iM_i\right)\mathrm{d}n=0
 \end{align*}
 上式第一项恰好就是$M$的全微分式，故为零。剩下的含$\mathrm{d}n$的一项也只能为零，得到式\eqref{eq:II.2_additivity_partial_molar_quantity_2}。
-
-需要说明的是，按照等压热膨胀系数和等温压缩系数在第\ref{sec:I_thermodynamic_relations}章的定义方式，它们的偏摩尔量并非直接按照上述的定义得到。具体地，组份$i$在混合物体系中的偏摩尔等压热膨胀系数定义为
-\[\alpha_{p,i}\eqdef V^{-1}\left.\frac{\partial V_i}{\partial T}\right|_{p,\left\{n_j\right\}}\]
-偏摩尔等温压缩系数定义为
-\[\kappa_{T,i}\eqdef -V^{-1}\left.\frac{\partial V_i}{\partial p}\right|_{T,\left\{n_j\right\}}\]
-这样定义的偏摩尔响应函数，才与第\S\ref{sec:I_thermodynamic_relations}定义的相应响应函数遵循偏摩尔量的加和性。
 
 \subsection{吉布斯--杜亥姆方程}
 由偏摩尔量的加和性，联系$M$的全微分式
@@ -136,7 +130,7 @@
 
 利用这一结论，偏摩尔量$M_i$就能由摩尔量$M_\text{m}$对$x_i$的曲线数据，如图\ref{fig:meas_partial_molar_quant}所示般得出。
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics{../images/meas_partial_molar_quant.pdf}
     \caption{从摩尔量曲线求偏摩尔量的“截距法”。}
