@@ -123,32 +123,58 @@
 
 因此由式\eqref{eq:II.5_phase_eq_non_volatile}出发的以下分析，将使我们获得上述这些性质的变化规律。由式\eqref{eq:II.5_phase_eq_non_volatile}，在当前状态点附近的微变化将满足
 \begin{align*}
-                    & \mathrm{d}\mu_i^\text{L}\left(T,p,\left\{n_i^\text{L}\right\}\right)=\mathrm{d}\mu_i^{\alpha,*}\left(T,p\right)                                                                                                                                                       \\
-    \Leftrightarrow & -S_i^\text{L}\mathrm{d}T+V_i^\text{L}\mathrm{d}p+\sum_j\left.\frac{\partial \mu_i^\text{L}}{\partial n_j^\text{L}}\right|_{T,p,\left\{n_{k\neq j}\right\}}\mathrm{d}n_j^\text{L}=-S_i^{\alpha,*}\mathrm{d}T+V_i^{\alpha,*}\mathrm{d}p,\quad\alpha=\text{V},\text{L或S}
+                    & \mathrm{d}\mu_i^\text{L}\left(T,p,\left\{n_i^\text{L}\right\}\right)=\mathrm{d}\mu_i^{\alpha,*}\left(T,p\right)                                                                                                                                                                             \\
+    \Leftrightarrow & -S_i^\text{L}\mathrm{d}T+V_i^\text{L}\mathrm{d}p+\sum_j\left.\frac{\partial \mu_i^\text{L}}{\partial n_j^\text{L}}\right|_{T,p,\left\{n_{k\neq j}\right\}}\mathrm{d}n_j^\text{L}=-S_{\text{m},i}^{\alpha,*}\mathrm{d}T+V_{\text{m},i}^{\alpha,*}\mathrm{d}p,\quad\alpha=\text{V},\text{L或S}
 \end{align*}
 由于液相只有组份$i$的摩尔数发生变化（与气相交流），而其他组份$j\neq i$都不变化，因此上式变为
 \begin{align*}
-                    & -S_i^\text{L}\mathrm{d}T+V_i^\text{L}\mathrm{d}p+\left.\frac{\partial\mu_i^\text{L}}{\partial n_i^\text{L}}\right|_{T,p}\mathrm{d}n_i^\text{L}=-S_i^{\alpha,*}\mathrm{d}T+V_i^{\alpha,*}\mathrm{d}p                                                                                                                                                               \\
-    \Leftrightarrow & -\left(S_i^\text{L}-S_i^{\alpha,*}\right)\mathrm{d}T+\left(V_i^\text{L}-V_i^{\alpha,*}\right)\mathrm{d}p+\left.\frac{\partial \mu_i^\text{L}}{\partial n_i^\text{L}}\right|_{T,p}\mathrm{d}n_i^\text{L}=0                                                                                                                                                         \\
-    \Leftrightarrow & \mathrm{d}n_i^\text{L}=-\frac{V_i^\text{L}-V_i^{\alpha,*}}{\left(\partial\mu_i^\text{L}/\partial n_i^\text{L}\right)_{T,p}}\mathrm{d}p+\frac{S_i^\text{L}-S_i^{\alpha,*}}{\left(\partial\mu_i^\text{L}/\partial n_i^\text{L}\right)_{T,p}} \mathrm{d}T                                                                                                            \\
-    \Leftrightarrow & \left.\frac{\partial n_i^\text{L}}{\partial p}\right|_{T}=-\frac{V_i^\text{L}-V_i^{\alpha,*}}{\left(\partial\mu_i^\text{L}/\partial n_i^\text{L}\right)_{T,p}},\quad\left.\frac{\partial n_i^\text{L}}{\partial T}\right|_{p}=\frac{S_i^\text{L}-S_i^{\alpha,*}}{\left(\partial\mu_i^\text{L}/\partial n_i^\text{L}\right)_{T,p}},\quad\alpha=\text{V},\text{L或S}
+                    & -S_i^\text{L}\mathrm{d}T+V_i^\text{L}\mathrm{d}p+\left.\frac{\partial\mu_i^\text{L}}{\partial n_i^\text{L}}\right|_{T,p}\mathrm{d}n_i^\text{L}=-S_{\text{m},i}^{\alpha,*}\mathrm{d}T+V_{\text{m},i}^{\alpha,*}\mathrm{d}p                                                                                                                                                               \\
+    \Leftrightarrow & -\left(S_i^\text{L}-S_{\text{m},i}^{\alpha,*}\right)\mathrm{d}T+\left(V_i^\text{L}-V_{\text{m},i}^{\alpha,*}\right)\mathrm{d}p+\left.\frac{\partial \mu_i^\text{L}}{\partial n_i^\text{L}}\right|_{T,p}\mathrm{d}n_i^\text{L}=0                                                                                                                                                         \\
+    \Leftrightarrow & \mathrm{d}n_i^\text{L}=-\frac{V_i^\text{L}-V_{\text{m},i}^{\alpha,*}}{\left(\partial\mu_i^\text{L}/\partial n_i^\text{L}\right)_{T,p}}\mathrm{d}p+\frac{S_i^\text{L}-S_{\text{m},i}^{\alpha,*}}{\left(\partial\mu_i^\text{L}/\partial n_i^\text{L}\right)_{T,p}} \mathrm{d}T                                                                                                            \\
+    \Leftrightarrow & \left.\frac{\partial n_i^\text{L}}{\partial p}\right|_{T}=-\frac{V_i^\text{L}-V_{\text{m},i}^{\alpha,*}}{\left(\partial\mu_i^\text{L}/\partial n_i^\text{L}\right)_{T,p}},\quad\left.\frac{\partial n_i^\text{L}}{\partial T}\right|_{p}=\frac{S_i^\text{L}-S_{\text{m},i}^{\alpha,*}}{\left(\partial\mu_i^\text{L}/\partial n_i^\text{L}\right)_{T,p}},\quad\alpha=\text{V},\text{L或S}
 \end{align*}
 
 在式\eqref{eq:II.5_phase_eq_non_volatile}成立的条件下，由偏摩尔热力学函数之间的关系，又有
-\[H_i^\text{L}-TS_i^\text{L}=H_i^{\alpha,*}-TS_i^{\alpha,*}\Leftrightarrow H_i^\text{L}-H_i^{\alpha,*}=T\left(S_i^\text{L}-S_i^{\alpha,*}\right)\]
+\[H_i^\text{L}-TS_i^\text{L}=H_{\text{m},i}^{\alpha,*}-TS_{\text{m},i}^{\alpha,*}\Leftrightarrow H_i^\text{L}-H_{\text{m},i}^{\alpha,*}=T\left(S_i^\text{L}-S_{\text{m},i}^{\alpha,*}\right)\]
 故上面得到的两个偏导数又可表示为：
-\[\left.\frac{\partial n_i^\text{L}}{\partial p}\right|_{T}=\frac{V_i^{\alpha,*}-V_i^\text{L}}{\left(\partial \mu_i^\text{L}/\partial n_i^\text{L}\right)_{T,p}},\quad\left.\frac{\partial n_i^\text{L}}{\partial T}\right|_{p}=-\frac{\lambda_i}{T}\frac{1}{\left(\partial\mu_i^\text{L}/\partial n_i^\text{L}\right)_{T,p}}\]
-其中$\lambda_i\equiv H_i^{\alpha,*}-H_i^\text{L}$。另外，由《物理化学》附录\SI.3的式(7)可得到
-\[\left.\frac{\partial p}{\partial T}\right|_{n_i^\text{L}}=\frac{\lambda_i}{T\left(V_i^{\alpha,*}-V_i^\text{L}\right)}\]
+\[\left.\frac{\partial n_i^\text{L}}{\partial p}\right|_{T}=\frac{V_{\text{m},i}^{\alpha,*}-V_i^\text{L}}{\left(\partial \mu_i^\text{L}/\partial n_i^\text{L}\right)_{T,p}},\quad\left.\frac{\partial n_i^\text{L}}{\partial T}\right|_{p}=-\frac{\lambda_i}{T}\frac{1}{\left(\partial\mu_i^\text{L}/\partial n_i^\text{L}\right)_{T,p}}\]
+其中$\lambda_i\equiv H_{\text{m},i}^{\alpha,*}-H_i^\text{L}$。另外，由《物理化学》附录\S I.3的式(7)可得到
+\[\left.\frac{\partial p}{\partial T}\right|_{n_i^\text{L}}=\frac{\lambda_i}{T\left(V_{\text{m},i}^{\alpha,*}-V_i^\text{L}\right)}\]
 注意上列式子均只在使式\eqref{eq:II.5_phase_eq_non_volatile}成立的条件下成立。
 
-由平衡态的稳定性判据，这些偏导数表达式中的$\partial\mu_i^\text{L}/\partial n_i^\text{L}>0$。因此它们的符号由$\lambda_i$或$V_i^{\alpha,*}=V_i^\text{L}$的符号决定。
+由平衡态的稳定性判据，这些偏导数表达式中的$\partial\mu_i^\text{L}/\partial n_i^\text{L}>0$。因此它们的符号由$\lambda_i$或$V_i^{\alpha,*}-V_i^\text{L}$的符号决定。
 
 $\lambda_i$是每摩尔组份$i$从纯物质$\alpha$状态变为置身于同温同压下相应组成$\left\{n_j\right\}$的液相状态的焓变。它与两状态中组份$i$分子处于的分子间作用力强弱差异有关。分子间力增大，这个过程的焓变为负。换个角度也可以说$\lambda_i>0$表示溶解时放热，反之亦然。
 
-$V_i^{\alpha,*}-V_i^\text{L}$是组份$i$纯物质在$\alpha$相的（偏）摩尔体积与其处于同温同压下其在组成为$\left\{n_j^\text{L}\right\}$的液相混合物时的偏摩尔体积之差。一般来说，气、液、固态物质，摩尔体积依次大幅减小，这个差异比同相态不同组成间的差异大。
+$V_{\text{m},i}^{\alpha,*}-V_i^\text{L}$是组份$i$纯物质在$\alpha$相的（偏）摩尔体积与其处于同温同压下其在组成为$\left\{n_j^\text{L}\right\}$的液相混合物时的偏摩尔体积之差。一般来说，气、液、固态物质，摩尔体积依次大幅减小，这个差异比同相态不同组成间的差异大。
 
-现在考虑偏微分$\left(\partial n_i^\text{L}/\partial T\right)_{p}$。如果$\alpha$相是气态，那么一般从气态到液态分子间力增大，所以$\lambda_i>0$，此时温度升高，组份$i$在液相的溶解度降低。若$\alpha$是固相，由于一般从固态到液态分子间力减小，所以$\lambda_i<0$，此时温度升高时组份$i$在液相的溶解度增加。若$\alpha$是液相，$\lambda_i$没有通常的情况可以讨论。再考虑该偏微分的倒数$\left(\partial T/\partial n_i^\text{L}\right)_p$，当$\alpha$相是气相时，沸点随组份$i$在液相浓度减小而增加。若视组份$i$为“溶剂”，则可说溶质浓度增加将使溶液的沸点增加。若$\alpha$是固相，组份$i$的凝固点随其在液相中浓度的减小而降低。若视组份$i$为“溶剂”，则溶质浓度增加将使溶剂凝固点降低。以上这些性质均在《物理化学》\S4.8以“溶剂服从拉乌尔定律、溶质服从亨利定律”的情况推导过了。
+现在考虑偏微分$\left(\partial n_i^\text{L}/\partial T\right)_{p}$。如果$\alpha$相是气态，那么一般从气态到液态分子间力增大，所以$\lambda_i>0$，此时温度升高，组份$i$在液相的溶解度降低。若$\alpha$是固相，由于一般从固态到液态分子间力减小，所以$\lambda_i<0$，此时温度升高时组份$i$在液相的溶解度增加。若$\alpha$是液相，$\lambda_i$没有通常的情况可以讨论。再考虑该偏微分的倒数$\left(\partial T/\partial n_i^\text{L}\right)_p$，当$\alpha$相是气相时，沸点随组份$i$在液相浓度减小而增加。若视组份$i$为“溶剂”，则可说溶质浓度增加将使溶液的沸点增加。若$\alpha$是固相，组份$i$的凝固点随其在液相中浓度的减小而降低。若视组份$i$为“溶剂”，则溶质浓度增加将使溶剂凝固点降低。以上这些性质均在《物理化学》\S4.8以“溶剂服从拉乌尔定律、溶质服从亨利定律”的情况推导过了。以下我们从一般混合物出发，在“稀溶液极限”得出相应的表达式。
+
+之前得到的一个偏导数$\left(\partial T/\partial n_i^\text{L}\right)_{p}$的倒数，可解读成等温条件下混合物的L-$\alpha$共存温度$T=T_\text{c}$随组成$n_i^\text{L}$的变化率
+\begin{equation}\label{eq:II.5_phase_coexist_temperature_partial_derivative}
+    \left.\frac{\partial T_\text{c}}{\partial n_i^\text{L}}\right|_{p}=-\left.\frac{\partial \mu_i^\text{L}}{\partial n_i^\text{L}}\right|_{T_\text{c},p}\frac{T_\text{c}}{\lambda_i}
+\end{equation}
+视混合物的L-$\alpha$共存温度是组份$i$在混合物中的摩尔分数$x_i^\text{L}$的函数，$T_\text{c}=T_\text{c}\left(x_i^\text{L}\right)$，则它在$x_i^\text{L}$附近的展开式为
+\[T_\text{c}\left(x_i^\text{L}\right)=T_{i,\text{c}}^*+\left.\frac{\partial T_\text{c}}{\partial x_i^\text{L}}\right|_{p,x_i^\text{L}=1}\left(x_i^\text{L}-1\right)+o\left[\left(x_i^\text{L}-1\right)^2\right]\]
+其中$T_{i,\text{c}}^*\equiv T_\text{c}\left(1\right)$是纯份$i$液态纯物质在同压强$p$下的L-$\alpha$共存温度温度，而
+\[\frac{\partial T_\text{c}}{\partial x_i^\text{L}}=\frac{\partial T_\text{c}}{\partial n_i^\text{L}}\frac{\partial n_i^\text{L}}{\partial x_i^\text{L}}\]
+可见，利用式\eqref{eq:II.5_phase_coexist_temperature_partial_derivative}，可以表出在$x_i^\text{L}$很接近1时的L-$\alpha$共存温度表达式。这里还需要推导的是导数$\partial n_i^\text{L}/\partial x_i^\text{L}$。由于L相混合物除组份$i$之外的剩余组份的摩尔数$n^\text{L}-n_i^\text{L}$保持恒定，令$C\equiv n^\text{L}-n_i^\text{L}$，则$n_i^\text{L}$与$x_i^\text{L}$的关系可表示为
+\[n_i^\text{L}=\frac{Cx_i^\text{L}}{1-x_i^\text{L}}\]
+进而
+\[\frac{\partial n_i^\text{L}}{\partial x_i^\text{L}}=\frac{C}{\left(1-x_i^\text{L}\right)^2}=\frac{n^\text{L}}{1-x_i^\text{L}}\]
+进而
+\[\frac{\partial T_\text{c}}{\partial x_i^\text{L}}=-\frac{T_\text{c}}{\lambda_i}\frac{\partial\mu_i^\text{L}}{\partial n_i^\text{L}}\frac{n^\text{L}}{1-x_i^\text{L}}\]
+把式\eqref{eq:II.4_Raoult_standard_state_activity}在$T=T_\text{c}$时的形式代入上式，得到
+\[\left.\frac{\partial T_\text{c}}{\partial x_i^\text{L}}\right|_{p,x_i^\text{L}=1}=-\frac{R\left(T_{i,\text{c}}^*\right)^2}{\Delta_\text{c}H_{\text{m},i}^*}\]
+其中用到了$x_i^\text{L}=1$时$\partial \gamma_i^\text{L}/\partial n_i^\text{L}=0$，并且记
+\[\Delta_\text{c}H_{\text{m},i}^*\equiv\lambda_i\left(x_i^\text{L}=1\right)=H_{\text{m},i}^{\alpha,*}-H_{\text{m},i}^{\text{L},*}\]
+为组份$i$纯物质的L-$\alpha$相变焓。代入$T_\text{c}\left(x_i^\text{L}\right)$的展开式可得，液体理想混合物在$x_i^\text{L}$很接近1时
+\[\Delta T_\text{c}\approx\frac{R\left(T_{i,\text{c}}^*\right)^2}{\Delta_\text{c}H_{\text{m},i}^*}\left(1-x_i^\text{L}\right)\]
+若视组份$i$为溶剂，省去上标L，得到
+\[\Delta T_\text{c}\approx \frac{R\left(T_{i,\text{c}}^*\right)^2}{\Delta_\text{c}H_{\text{m},i}^*}x_\text{B}\]
+其中$x_\text{B}\equiv 1-\sum_j x_{j\neq i}$是溶质的摩尔分数。
+
+若$\alpha$相是气相，则纯溶剂的摩尔蒸发焓$\Delta_\text{vap}H_{\text{m},i}^*=\Delta_\text{c}H_{\text{m},i}^*$，$\Delta T_\text{b}=\Delta T_\text{c}$，上式就是“沸点升高”的公式（《物理化学》式(4.67)）；若$\alpha$相是固相，则组份$i$纯物质的摩尔熔化焓$\Delta_\text{fus}H_{\text{m},i}^*=-\Delta_\text{c}H_{\text{m},i}^*$，$\Delta T_\text{f}=-\Delta T_\text{c}$，上式就是“凝固点降低”的公式（《物理化学》式(4.64)）。
 
 现在考虑偏微分$\left(\partial n_i^\text{L}/\partial p\right)_T$。无论$\alpha$相是什么相态，我们可以统一地说，加压将使组份$i$往两相中偏摩尔体积更小的相跑。再考虑该偏微分的倒数$\left(\partial p/\partial n_i^\text{L}\right)_T$，与它比较相关的实际情况是$\alpha$为气相的情况。则在温度不变时，当液相中组份$i$减小，饱和蒸气压降低。这时视组分$i$为“溶剂”，则可说溶质浓度增加将使溶液的饱和蒸气压降低。
 
@@ -166,30 +192,17 @@ $V_i^{\alpha,*}-V_i^\text{L}$是组份$i$纯物质在$\alpha$相的（偏）摩�
     \frac{\partial\Pi}{\partial n_i^\text{L}}=\frac{\partial p^\text{L}}{\partial n_i^\text{L}}=-\frac{1}{V_i^\text{L}}\frac{\partial\mu_i^\text{L}}{\partial n_i^\text{L}}
 \end{equation}
 
-恒温、恒外压$p$下，渗透压可表示组份$i$在混合物相中的摩尔分数$x_i^\text{L}$的函数，其在$x_i^\text{L}=1$附近的展开式是
+以下推导混合物在极稀条件下的范托夫定律。恒温、恒外压$p$下，渗透压可表示组份$i$在混合物相中的摩尔分数$x_i^\text{L}$的函数，其在$x_i^\text{L}=1$附近的展开式是
 \[\Pi\left(x_i^\text{L}\right)=\Pi\left(1\right)+\left.\frac{\partial\Pi}{\partial x_i^\text{L}}\right|_{x_i^\text{L}=1}\left(x_i^\text{L}-1\right)+o\left[\left(x_i^\text{L}-1\right)^2\right]\]
 其中$\Pi\left(1\right)=0$，而
 \[\frac{\partial \Pi}{\partial x_i^\text{L}}=\frac{\partial\Pi}{\partial n_i^\text{L}}\frac{\partial n_i^\text{L}}{\partial x_i^\text{L}}\]
-可见，利用式\eqref{eq:II.5_osmotic_pressure_partial_derivative}，可以表出在$x_i^\text{L}$很接近1时的渗透压表达式。这里还需要推导的是偏导数$\partial n_i^\text{L}/\partial x_i^\text{L}$。由于混合物除组份$i$之外的剩余组份的摩尔数$n^\text{L}-n_i^\text{L}$保持恒定，令$C\equiv n^\text{L}-n_i^\text{L}$，则$n_i^\text{L}$与$x_i^\text{L}$的关系可表示为
-\[n_i^\text{L}=\frac{Cx_i^\text{L}}{1-x_i^\text{L}}\]
-进而
-\[\frac{\partial n_i^\text{L}}{\partial x_i^\text{L}}=\frac{C}{\left(1-x_i^\text{L}\right)^2}=\frac{n^\text{L}}{1-x_i^\text{L}}\]
-进而
-\[\frac{\partial \Pi}{\partial x_i^\text{L}}=-\frac{1}{V_i^\text{L}}\frac{\partial\mu_i^\text{L}}{\partial n_i^\text{L}}\frac{n^\text{L}}{1-x_i^\text{L}}\]
-
-如果L相是理想混合物，可把式\eqref{eq:II.4_def_ideal_mixture_mu}代入上式，得到
-\[\frac{\partial \Pi^\text{id}}{\partial x_i^\text{L}}=-\frac{RT}{V_i^\text{L,*}x_i^\text{L}}\]
-其中用到了理想混合物性质$V_i^\text{L,id}=V_i^\text{L,*}$。再代入$\Pi\left(x_i^\text{L}\right)$的展开式可得，液态理想混合物在$x_i^\text{L}$很接近1时
-\[\Pi^\text{id}\approx\frac{RT}{V_i^\text{L,*}}\left(1-x_i^\text{L}\right)\]
+可见，利用式\eqref{eq:II.5_osmotic_pressure_partial_derivative}，可以表出在$x_i^\text{L}$很接近1时的渗透压表达式。这里所需要的偏导数$\partial n_i^\text{L}/\partial x_i^\text{L}$之前已经推导过了。我们直接可以得到
+\[\left.\frac{\partial \Pi}{\partial x_i^\text{L}}\right|_{x_i^\text{L}=1}=-\frac{RT}{V_i^\text{L,*}}\]
+再代入$\Pi\left(x_i^\text{L}\right)$的展开式可得，液态理想混合物在$x_i^\text{L}$很接近1时
+\[\Pi\approx\frac{RT}{V_i^\text{L,*}}\left(1-x_i^\text{L}\right)\]
 若视组份$i$为溶剂，且在$x_i^\text{L}\rightarrow 1$时
 \[V_i^\text{L,*}=V^\text{L}/n_i^\text{L}\approx V^\text{L}/n^\text{L}\]
 省去上标L，有
-\[\Pi^\text{id}\approx RTn_\text{B}\]
-其中$n_\text{B}\equiv\sum_{j\neq i}n_j$是溶质的物质的量。该式就是《物理化学》\S4.9式(4.73)的范托夫定律（van 't Hoff law）。我们留意到，就算对于理想混合物，范托夫定律也仅是稀溶液极限下的近似行为。若不在稀的极限，展开式的二次方项不可忽略，上式因含有第二位力系数而依赖体系的化学属性，不再是“依数性”。在《物理化学》中的\S4.9“理想稀溶液的依数性”之下介绍的式(4.76)、(4.77)超出了该节的主题。
-
-
-
-
-
-
+\[\Pi V\approx RTn_\text{B}\]
+其中$n_\text{B}\equiv\sum_{j\neq i}n_j$是溶质的物质的量。该式就是《物理化学》\S4.9式(4.73)的范托夫定律（van 't Hoff law）。我们留意到，范托夫定律仅是稀溶液极限下的近似行为。若不在稀的极限，展开式的二次方项不可忽略，上式因含有第二位力系数而依赖体系的化学属性，不再是“依数性”。在《物理化学》中的\S4.9“理想稀溶液的依数性”之下介绍的式(4.76)、(4.77)超出了该节的主题。
 \end{document}
