@@ -16,5 +16,81 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Mollerup2009}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b0b73ddd156d922b0929ea550e6f9fa1}{%
+           family={Mollerup},
+           familyi={M\bibinitperiod},
+           given={Jørgen\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=f5a8dc0c184f9500690fd6b64fd26c83}{%
+           family={Breil},
+           familyi={B\bibinitperiod},
+           given={Martin\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=b0b73ddd156d922b0929ea550e6f9fa1}{%
+           family={Mollerup},
+           familyi={M\bibinitperiod},
+           given={Jørgen\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=f5a8dc0c184f9500690fd6b64fd26c83}{%
+           family={Breil},
+           familyi={B\bibinitperiod},
+           given={Martin\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{33e487aa4e7c74e30c7403b9f299869f}
+      \strng{fullhash}{be6826dc4d51d14035bf3bd1cc5ed643}
+      \strng{fullhashraw}{be6826dc4d51d14035bf3bd1cc5ed643}
+      \strng{bibnamehash}{be6826dc4d51d14035bf3bd1cc5ed643}
+      \strng{authorbibnamehash}{be6826dc4d51d14035bf3bd1cc5ed643}
+      \strng{authornamehash}{33e487aa4e7c74e30c7403b9f299869f}
+      \strng{authorfullhash}{be6826dc4d51d14035bf3bd1cc5ed643}
+      \strng{authorfullhashraw}{be6826dc4d51d14035bf3bd1cc5ed643}
+      \strng{nameabibnamehash}{be6826dc4d51d14035bf3bd1cc5ed643}
+      \strng{nameanamehash}{33e487aa4e7c74e30c7403b9f299869f}
+      \strng{nameafullhash}{be6826dc4d51d14035bf3bd1cc5ed643}
+      \strng{nameafullhashraw}{be6826dc4d51d14035bf3bd1cc5ed643}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The osmotic second virial coefficient is a key parameter in light scattering, protein crystallisation, self-interaction chromatography, and osmometry. The interpretation of the osmotic second virial coefficient depends on the solution theory. On the macroscopic level an expansion of the osmotic pressure is employed. A common statistical interpretation of the osmotic second virial coefficient of the expansion employs the McMillan–Mayer framework and the potential of mean force to characterise the solute–solute interaction. Supplementary to the statistical interpretation, it may be advantageous to develop the McMillan–Mayer framework in a classical thermodynamic context for which we develop the relationship between the state function of the McMillan–Mayer framework and the Helmholtz state function. A Taylor expansion method can be applied to the osmotic pressure of a solution which is dilute with respect to at least one solute component. This offers the possibility for an interpretation and correlation of the osmotic second virial coefficient utilising a McMillan–Mayer state function derived from a Helmholtz state function.}
+      \field{issn}{0378-3812}
+      \field{journaltitle}{Fluid Phase Equilibria}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{On the thermodynamics of the McMillan–Mayer state function}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{276}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{18\bibrangedash 23}
+      \range{pages}{6}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.fluid.2008.10.004
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0378381208003476
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0378381208003476
+      \endverb
+      \keyw{McMillan–Mayer,Osmotic pressure,Osmotic second virial coefficient,Helmholtz state function,Potential of mean force}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

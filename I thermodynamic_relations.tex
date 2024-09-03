@@ -156,49 +156,28 @@
 \subsection{响应函数}
 $U$、$S$、$H$、$A$、$G$等热力学函数（及其偏导数）是无法直接测量的。我们能直接测量的是体系的状态方程出现的那些状态变量。此外我们还能通过量热实验测量体系的热容。因此，我们需要把热力学函数的微分式中的那些偏导数努力地表示成仅含这些可测量的表达形式，才有望得到实用化。以下介绍的是，物质的量恒定（封闭系统），只做体积功的单组份均相体系的可测量量的定义。它们又称为响应函数（response functions）。
 
-两种可逆过程热容，定容热容
-\[C_V\eqdef\mathrm{d} Q_\text{可逆等容变温}/\mathrm{d}T\]
-和定压热容
-\[C_p\eqdef\mathrm{d} Q_\text{可逆等压变温}/\mathrm{d}T\]
-它们常被重新定义为
-\[C_V\eqdef\left.\frac{\partial U}{\partial T}\right|_{V,\left\{n_i\right\}},\quad C_p\eqdef\left.\frac{\partial H}{\partial T}\right|_{p,\left\{n_i\right\}}\]
-但更有用的是由可逆过程熵变的热温商式得到的以下表达式
-\begin{align}
-    C_p & =T\left.\frac{\partial S}{\partial T}\right|_{p,\left\{n_i\right\}}\label{eq:I.1_heat_capacity_entropy_p} \\
-    C_V & =T\left.\frac{\partial S}{\partial T}\right|_{V,\left\{n_i\right\}}\label{eq:I.1_heat_capacity_entropy_V}
-\end{align}
-这两种热容也被称作体系的热响应函数（thermal response functions）。
+\begin{longtable}{m{0.25\textwidth}m{0.5\textwidth}}
+    \caption{各种响应函数的定义及普适关系}                                                                                                                                                                                                                                                                                                  \\
+    \hline
+    \multicolumn{2}{l}{{热响应函数：}}                                                                                                                                                                                                                                                                                              \\[-4ex]
+    定容热容\footnote{定义式中的$Q_\text{rev}$是可逆等容变温过程。} & \begin{align}\label{eq:I.1_heat_capacity_entropy_V}C_V\eqdef\frac{\dbar Q_\text{rev}}{\mathrm{d}T}=\left.\frac{\partial U}{\partial T}\right|_{T,\left\{n_i\right\}}=T\left.\frac{\partial S}{\partial T}\right|_{V,\left\{n_i\right\}}\end{align} \\[-4ex]
+    定压热容\footnote{定义式中的$Q_\text{rev}$是可逆等压变温过程。} & \begin{align}\label{eq:I.1_heat_capacity_entropy_p}C_p\eqdef\frac{\dbar Q_\text{rev}}{\mathrm{d}T}=\left.\frac{\partial H}{\partial T}\right|_{p,\left\{n_i\right\}}=T\left.\frac{\partial S}{\partial T}\right|_{p,\left\{n_i\right\}}\end{align} \\[-4ex]
+    热容比                                          & \begin{align}\gamma\eqdef C_p/C_V\end{align}                                                                                                                                                                                                                               \\
+    \multicolumn{2}{l}{{$pVTn_i$响应函数:}}                                                                                                                                                                                                                                                                                       \\[-4ex]
+    等压膨胀系数                                       & \begin{align}\alpha_p\eqdef V^{-1}\left.\frac{\partial V}{\partial T}\right|_{p,\left\{n_i\right\}}\end{align}                                                                                                                                                             \\[-4ex]
+    等温压缩系数                                       & \begin{align}\kappa_T\eqdef-V^{-1}\left.\frac{\partial V}{\partial p}\right|_{T,\left\{n_i\right\}}\end{align}                                                                                                                                                             \\[-4ex]
+    等容压强系数                                       & \begin{align}\beta_V\eqdef\left.\frac{\partial p}{\partial T}\right|_{V,\left\{n_i\right\}}\end{align}                                                                                                                                                                     \\
+    \multicolumn{2}{l}{{等熵响应函数：}}                                                                                                                                                                                                                                                                                             \\[-4ex]
+    等熵热膨胀系数                                      & \begin{align}\alpha_S\eqdef V^{-1}\left.\frac{\partial V}{\partial T}\right|_{S,\left\{n_i\right\}}\end{align}                                                                                                                                                             \\[-4ex]
+    等熵压缩系数                                       & \begin{align}\kappa_S\eqdef -V^{-1}\left.\frac{\partial V}{\partial p}\right|_{S,\left\{n_i\right\}}\end{align}                                                                                                                                                            \\[-4ex]
+    等熵压强系数                                       & \begin{align}\beta_S\eqdef\left.\frac{\partial p}{\partial T}\right|_{S,\left\{n_i\right\}}\end{align}                                                                                                                                                                     \\
+    \multicolumn{2}{l}{{普适关系式：}}                                                                                                                                                                                                                                                                                              \\
+                                                 & \begin{align}\alpha_p=\beta_V\kappa_T\end{align}                                                                                                                                                                                                                           \\ [-10ex]
+                                                 & \begin{align}\gamma=\kappa_T/\kappa_S\end{align}                                                                                                                                                                                                                           \\[-10ex]
+                                                 & \begin{align}C_p-C_V=TV\alpha_p^2/\kappa_T\end{align}                                                                                                                                                                                                                      \\ [-4ex]
 
-体系的状态参数之间的偏导数，称之为$pVTn_i$响应函数。它们之所以能有相互的偏导数是因为它们数学上由体系的状态方程所联系。当组份不变时，有以下响应函数。
-
-等压热膨胀系数：$\alpha_p\eqdef V^{-1}\left.\frac{\partial V}{\partial T}\right|_{p,\left\{n_i\right\}}$
-
-等温压缩系数：$\kappa_T\eqdef-V^{-1}\left.\frac{\partial V}{\partial p}\right|_{T,\left\{n_i\right\}}$
-
-等容压强系数：$\beta_V\eqdef\left.\frac{\partial p}{\partial T}\right|_{V,\left\{n_i\right\}}$
-
-由于组份不变时，$p$、$V$、$T$之间是相关联的，这三个响应函数之间也是相关联的：$\alpha_p=\beta_V\kappa_T$\footnote{见《物理化学》附录I.3式(2)。}。
-
-上列$pVTn_i$响应函数是适用于等温实验的。还有另一系列等熵（isentropic）实验的响应函数\footnote{等熵过程就是可逆绝热过程。在多数实验中，我们一般是控制一定的温度。如果体系在定温下等到平衡态再记录测量数据，得到的就是等温响应函数；而如果是在条件突然变化的瞬间测得数据，则由于热来不及传导而近似绝热条件的响应，这样的实验结果常近似作为等熵参数来报道。这是等熵参数的实际意义。}如下。
-
-等熵热膨胀系数：$\alpha_S\eqdef V^{-1}\left.\frac{\partial V}{\partial T}\right|_{S,\left\{n_i\right\}}$
-
-等熵压缩系数：$\kappa_S\eqdef -V^{-1}\left.\frac{\partial V}{\partial p}\right|_{S,\left\{n_i\right\}}$
-
-等熵压强系数：$\beta_S\eqdef\left.\frac{\partial p}{\partial T}\right|_{S,\left\{n_i\right\}}$
-
-后面将会知道，等温系列和等熵系列参数之间可通过热力学基本定律和状态方程相互关联。
-
-还有一些表征体系特性的系数也是热力学函数的偏导数——
-
-焦汤系数：$\mu_\text{JT}\eqdef\left.\frac{\partial T}{\partial p}\right|_{H,\left\{n_i\right\}}$
-
-热容比：$\gamma\eqdef\frac{C_p}{C_V}$
-
-它们也是可以通过热力学定律和状态方程与上述的响应函数相关联的。特别地，
-\begin{equation*}
-    \gamma=\frac{\kappa_T}{\kappa_S}
-\end{equation*}
+    \hline
+\end{longtable}
 
 多组份体系的各组份物质的量$\left\{n_i\right\}$也是状态参数，所以状态参数之间的偏导数还应包括：
 \[\left.\frac{\partial p}{\partial n_i}\right|_{T,V,\left\{n_{j\neq i}\right\}},\quad\left.\frac{\partial V}{\partial n_i}\right|_{T,p,\left\{n_{j\neq i}\right\}},\quad\left.\frac{\partial T}{\partial n_i}\right|_{p,V,\left\{n_{j\neq i}\right\}}\]
@@ -245,7 +224,7 @@ $U$、$S$、$H$、$A$、$G$等热力学函数（及其偏导数）是无法直�
 \begin{equation}
     \begin{aligned}
         \mathrm{d}S & =\left.\frac{\partial S}{\partial T}\right|_{V,\left\{n_i\right\}}\mathrm{d}T+\left.\frac{\partial S}{\partial V}\right|_{T,\left\{n_i\right\}}\mathrm{d}V+\sum_i\left.\frac{\partial S}{\partial n_i}\right|_{T,V,\left\{n_{j\neq i}\right\}}\mathrm{d}n_i \\
-                    & =\frac{C_V}{T}\mathrm{d}T+\beta_V^{-1}\mathrm{d}V+\sum_i\left.\frac{\partial S}{\partial n_i}\right|_{T,V,\left\{n_{j\neq i}\right\}}\mathrm{d}n_i \label{eq:I.1_dS_T_V}
+                    & =\frac{C_V}{T}\mathrm{d}T+\beta_V\mathrm{d}V+\sum_i\left.\frac{\partial S}{\partial n_i}\right|_{T,V,\left\{n_{j\neq i}\right\}}\mathrm{d}n_i \label{eq:I.1_dS_T_V}
     \end{aligned}
 \end{equation}
 \begin{equation}

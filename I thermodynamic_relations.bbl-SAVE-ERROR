@@ -1,0 +1,90 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Tobolsky1942}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=18494e7675927efcb2d30dd67e9920fa}{%
+           family={Tobolsky},
+           familyi={T\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=18494e7675927efcb2d30dd67e9920fa}{%
+           family={Tobolsky},
+           familyi={T\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{fullhash}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{fullhashraw}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{bibnamehash}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{authorbibnamehash}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{authornamehash}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{authorfullhash}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{authorfullhashraw}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{nameabibnamehash}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{nameanamehash}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{nameafullhash}{18494e7675927efcb2d30dd67e9920fa}
+      \strng{nameafullhashraw}{18494e7675927efcb2d30dd67e9920fa}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{An elementary systematic method for obtaining the relations between thermodynamic coefficients is presented. This method is applicable for any desired set of independent variables, and is also easily adapted to obtain the derivatives of any functions of the thermodynamic variables.}}
+      \field{issn}{0021-9606}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{{A Systematic Method of Obtaining the Relations Between Thermodynamic Derivatives}}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{10}
+      \field{year}{1942}
+      \field{dateera}{ce}
+      \field{pages}{644\bibrangedash 645}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1063/1.1723632
+      \endverb
+      \verb{eprint}
+      \verb https://pubs.aip.org/aip/jcp/article-pdf/10/10/644/18792815/644\_1\_online.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1063/1.1723632
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.1723632
+      \endverb
+      \keyw{Tobolsky1942}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

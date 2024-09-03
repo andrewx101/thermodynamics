@@ -155,7 +155,7 @@ $V_{\text{m},i}^{\alpha,*}-V_i^\text{L}$是组份$i$纯物质在$\alpha$相的�
     \left.\frac{\partial T_\text{c}}{\partial n_i^\text{L}}\right|_{p}=-\left.\frac{\partial \mu_i^\text{L}}{\partial n_i^\text{L}}\right|_{T_\text{c},p}\frac{T_\text{c}}{\lambda_i}
 \end{equation}
 视混合物的L-$\alpha$共存温度是组份$i$在混合物中的摩尔分数$x_i^\text{L}$的函数，$T_\text{c}=T_\text{c}\left(x_i^\text{L}\right)$，则它在$x_i^\text{L}$附近的展开式为
-\[T_\text{c}\left(x_i^\text{L}\right)=T_{i,\text{c}}^*+\left.\frac{\partial T_\text{c}}{\partial x_i^\text{L}}\right|_{p,x_i^\text{L}=1}\left(x_i^\text{L}-1\right)+o\left[\left(x_i^\text{L}-1\right)^2\right]\]
+\[T_\text{c}\left(x_i^\text{L}\right)=T_{i,\text{c}}^*+\left.\frac{\partial T_\text{c}}{\partial x_i^\text{L}}\right|_{p,x_i^\text{L}=1}\left(x_i^\text{L}-1\right)+o\left(x_i^\text{L}-1\right)\]
 其中$T_{i,\text{c}}^*\equiv T_\text{c}\left(1\right)$是纯份$i$液态纯物质在同压强$p$下的L-$\alpha$共存温度温度，而
 \[\frac{\partial T_\text{c}}{\partial x_i^\text{L}}=\frac{\partial T_\text{c}}{\partial n_i^\text{L}}\frac{\partial n_i^\text{L}}{\partial x_i^\text{L}}\]
 可见，利用式\eqref{eq:II.5_phase_coexist_temperature_partial_derivative}，可以表出在$x_i^\text{L}$很接近1时的L-$\alpha$共存温度表达式。这里还需要推导的是导数$\partial n_i^\text{L}/\partial x_i^\text{L}$。由于L相混合物除组份$i$之外的剩余组份的摩尔数$n^\text{L}-n_i^\text{L}$保持恒定，令$C\equiv n^\text{L}-n_i^\text{L}$，则$n_i^\text{L}$与$x_i^\text{L}$的关系可表示为
@@ -184,7 +184,9 @@ $V_{\text{m},i}^{\alpha,*}-V_i^\text{L}$是组份$i$纯物质在$\alpha$相的�
 半透膜问题中，也分两相，其中一相是液态混合物，另一相是同温下某组份$i$的纯物质，但压强与液态混合物相不同（如图\ref{fig:sol_thermodyn_typical_problems}(c)所示）。这要依靠半透膜来实现。它是隔开两相的一个界面，但位置和形状是固定的。在大部分问题中，半透膜通常是导热的，允许两边的分体系之间达到热平衡。但由于它是刚的，因此能承担它两侧存在的压差。半透膜最重要的特点是，它两侧的压强之间并非独立，而是通过组分的部分透过性而相互关联的。所以可以说这种壁还允许部分物质交换。我们将推导发现，半透膜左右两相的压差——即渗透压——与可透过组份摩尔数在两相的分配有关。
 
 具体地，设半透膜左侧是液态混合物相，压强为$p^\text{L}$；右侧为组份$i$组物质相，压强为$p$，物态不重要，故记为$\alpha$相。我们不妨假定半透膜右侧与环境外压$p$达到力学平衡，即$\alpha$相的压强$p$保持恒定。化学平衡条件
-\[\mu_i^\text{L}\left(T,p^\text{L},\left\{n_j^\text{L}\right\}\right)=\mu_i^{\alpha,*}\left(T,p\right)\]
+\begin{equation}\label{eq:II.5_osmotic_equilibrium}
+    \mu_i^\text{L}\left(T,p^\text{L},\left\{n_j^\text{L}\right\}\right)=\mu_i^{\alpha,*}\left(T,p\right)
+\end{equation}
 两边全微分（$\mathrm{d}n_{j\neq i}^\text{L}=0,\mathrm{d}T=0,\mathrm{d}p=0$）得到
 \[V_i^\text{L}\mathrm{d}p^\text{L}+\frac{\partial \mu_i^\text{L}}{\partial n_i^\text{L}}\mathrm{d}n_i^\text{L}=0\]
 而由平衡态稳定性条件，$\partial\mu_i^\text{L}/\partial n_i^\text{L}>0$，故上式表明，当可透过组份$i$减小时，液体混合物相的压强增加。若视组份$i$为溶剂，并记$\Pi\eqdef p^\text{L}-p$为液体混合物的渗透压，则可以说，当溶质浓度增加时，溶液的渗透压相应增加，增加率是溶剂在溶液中的偏摩尔体积$V_i^\text{L}$。注意以上等式是在定温定压下两相体系达到稳定平衡态时成立。我们可以写下定温定压下液体混合物的渗透压随可透过组份在混合物中的浓度的变化率，即偏导数
@@ -193,7 +195,7 @@ $V_{\text{m},i}^{\alpha,*}-V_i^\text{L}$是组份$i$纯物质在$\alpha$相的�
 \end{equation}
 
 以下推导混合物在极稀条件下的范托夫定律。恒温、恒外压$p$下，渗透压可表示组份$i$在混合物相中的摩尔分数$x_i^\text{L}$的函数，其在$x_i^\text{L}=1$附近的展开式是
-\[\Pi\left(x_i^\text{L}\right)=\Pi\left(1\right)+\left.\frac{\partial\Pi}{\partial x_i^\text{L}}\right|_{x_i^\text{L}=1}\left(x_i^\text{L}-1\right)+o\left[\left(x_i^\text{L}-1\right)^2\right]\]
+\[\Pi\left(x_i^\text{L}\right)=\Pi\left(1\right)+\left.\frac{\partial\Pi}{\partial x_i^\text{L}}\right|_{x_i^\text{L}=1}\left(x_i^\text{L}-1\right)+o\left(x_i^\text{L}-1\right)\]
 其中$\Pi\left(1\right)=0$，而
 \[\frac{\partial \Pi}{\partial x_i^\text{L}}=\frac{\partial\Pi}{\partial n_i^\text{L}}\frac{\partial n_i^\text{L}}{\partial x_i^\text{L}}\]
 可见，利用式\eqref{eq:II.5_osmotic_pressure_partial_derivative}，可以表出在$x_i^\text{L}$很接近1时的渗透压表达式。这里所需要的偏导数$\partial n_i^\text{L}/\partial x_i^\text{L}$之前已经推导过了。我们直接可以得到
@@ -203,6 +205,24 @@ $V_{\text{m},i}^{\alpha,*}-V_i^\text{L}$是组份$i$纯物质在$\alpha$相的�
 若视组份$i$为溶剂，且在$x_i^\text{L}\rightarrow 1$时
 \[V_i^\text{L,*}=V^\text{L}/n_i^\text{L}\approx V^\text{L}/n^\text{L}\]
 省去上标L，有
-\[\Pi V\approx RTn_\text{B}\]
-其中$n_\text{B}\equiv\sum_{j\neq i}n_j$是溶质的物质的量。该式就是《物理化学》\S4.9式(4.73)的范托夫定律（van 't Hoff law）。我们留意到，范托夫定律仅是稀溶液极限下的近似行为。若不在稀的极限，展开式的二次方项不可忽略，上式因含有第二位力系数而依赖体系的化学属性，不再是“依数性”。在《物理化学》中的\S4.9“理想稀溶液的依数性”之下介绍的式(4.76)、(4.77)超出了该节的主题。
+\begin{equation}\label{eq:II.5_osmotic_pressure_ideal_dilute_sol}\Pi \approx \frac{RTn_\text{B}}{V}=RTc_\text{B}\end{equation}
+其中$n_\text{B}\equiv\sum_{j\neq i}n_j$是溶质的物质的量。该式就是《物理化学》\S4.9式(4.73)的范托夫定律（van \char"0027 t Hoff law）。
+
+对于非理想溶液的一般情况，仅有式\eqref{eq:II.5_osmotic_pressure_partial_derivative}是不方便得出渗透压的一般表达式的。把式\eqref{eq:II.4_Raoult_standard_state_activity_factor}代入\eqref{eq:II.5_osmotic_equilibrium}，可以得出
+\begin{equation}\label{eq:II.5_osmotic_equilibrium_activity_factor}
+    \int_{p^\text{L}}^p V_{\text{m},i}^*\left(T,p^\prime\right)\mathrm{d}p^\prime=RT\ln x_i^\text{L}+\ln \gamma_i^\text{L}\left(T,p^\text{L},\left\{n_i^\text{L}\right\}\right)
+\end{equation}
+尽管该式在理想稀溶液近似条件下也能得到式\eqref{eq:II.5_osmotic_pressure_ideal_dilute_sol}，但是对于一般混合物，上式并不显现渗透压。以下是由上式取理想稀溶液近似得到式\eqref{eq:II.5_osmotic_pressure_ideal_dilute_sol}的过程。首先需假定组份$i$纯物质的摩尔体积随压强变化不大，故
+\[\int_{p^\text{L}}^pV_{\text{m},i}^*\left(T,p^\prime\right)\mathrm{d}p^\prime\approx-\Pi V_{\text{m},i}^*\]
+再利用$\ln\left(1/x_i^\text{L}\right)=1-x+o\left(x-1\right)$，就可以得到式\eqref{eq:II.5_osmotic_pressure_ideal_dilute_sol}。
+
+在半透膜问题中人们习惯把溶质视为“气体分子”，而把渗透压视为“气体压强”，讨论渗透压关于溶质浓度的函数形式
+\[\Pi=\frac{RT}{V}\left(c_\text{B}+B_2c_\text{B}^2+\cdots\right)\]
+并把这个式子也叫做“位力展开”。渗透压的位力展开的二次项系数，也被称为溶质B在溶剂$A$中的第二位力系数。这是与纯物质的$pVT$状态方程的第二位力系数不同的概念。纯物质$pVT$状态方程的第二位力系数来自纯物质处于相应物态时分子间的二体相互作用势。而溶质在溶液中的第二位力系数则反映溶质分子之间的二体相互作用势与溶质-溶剂二体相互作用势的差别。它的具体表达式将在后面的章节介绍。此处值得提示的是，如果想用热力学关系式来表达出第二位力系数，则本讲义采用的基于逸度、标准态、活度等概念的描述框架（称Lewis--Randall框架）是不方便或不直接的。采用McMillan--Mayer框架，则可以比较直接地表示出第二位力系数\cite{Mollerup2009}。这里就不作详细介绍了。
+
+
+
+
+
+
 \end{document}
