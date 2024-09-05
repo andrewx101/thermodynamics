@@ -1,9 +1,16 @@
 \documentclass[main.tex]{subfiles}
 \begin{document}
 \subsection{系综与公设}
-我们知道，一个由大量原子组成的系统，其宏观的平衡态只由少数几个状态变量所确定。只要系统处于某平衡态，则它的各状态函数性质的值就是确定的。例如，一个单组份体系的熵$S=S\left(U,V,n\right)$，由体系的内能$U$、体积$V$和摩尔数$n$所确定。然而，组成这个体系的$N=nN_\text{A}$个原子，每一时刻$t$的位置$\mathbf{r}_i\left(t\right)$和动量$\mathbf{p}_i\left(t\right)$都不同。体系的瞬时状态由一组$\left(\mathbf{r}_1,\cdots,\mathbf{r}_N,\mathbf{p}_1,\cdots,\mathbf{p}_N\right)$的取值所确定。在体积为$V$、内能为$U$的限定下，这个系统仍然可以取很多组不同值的原子位置和动量。宏观上，我们认为体系已经处于$\left(U,V,n\right)$取某定值的平衡态，各宏观热力学性质已经恒定，不再随时间变化；但微观上，体系的原子位置和动量，一直在运动变化，只是它们的取值总满足$\left(U,V,n\right)$为一定值这一约束。
+% 在量子力学基础里，必须明确的几条：1）给定处于某能级$E_j$的一个系统、它的简并度$\Omega\left(E\right)$由粒子数$N$和势阱体积$V$确定。2）
 
-我们称体系由一组宏观状态变量$\left(X,Y,\cdots\right)$所确定的热力学平衡态称作体系的一个宏观状态，这组状态变量称为宏观约束。体系由一组$\left(\mathbf{r}^N,\mathbf{p}^N\right)$的取值所确定的状态称为体系的一个微观状态。其中记号$\mathbf{r}^N$是指$\mathbf{r}_1,\cdots,\mathbf{r}_N$，$\mathbf{p}^N$也类似。在每一微观态下，也能计算体系的各个性质。例如，某孤立体系在平衡态下总能量不变。而对每一微观状态$\left(\mathbf{r}^N,\mathbf{p}^N\right)$，也能计算体系的总能量，它是这$N$个粒子的总动能和总势能之和，利用各粒子的位置和动量就能算出来。我们把体系宏观平衡态性质记为$M=M\left(X,Y,\cdots\right)$，而由微观状态计算的相同性质计为$\tilde{M}=\tilde{M}\left(\mathbf{r}^N,\mathbf{p}^N\right)$。性质$\tilde{M}$顶上的“\char`~”表示这是微观状态的函数，以区别于同一物理量的宏观状态性质$M$。
+
+在量子力学基础里，我们已经清楚，给定一个处于某能级$E$的系统，它的简并度$\Omega\left(E\right)$由该系统的粒子数$N$和势阱限制区域体积$V$所确定。一个只做体积功的简单孤立体系，其热力学能$U$就是其总能量$E$。确定这个体系的平衡态的状态变量是$\left(N,V,E\right)$。此时，系统可以且只可以取由$\left(N,V,E\right)$所确定的$\Omega\left(E\right)$个简并量子态；系统无论采取这$\Omega\left(E\right)$个简并量子态的哪一个，都满足相同的$\left(N,V,E\right)$约束值。
+
+在经典力学基础里我们已经清楚，如果我们考虑的是由$N$个质点所组成的经典力系，限制在一个体积为$V$的区域内，那么它的动力学状态可由各粒子的位置和动量
+\[\left(\mathbf{r}_1,\cdots,\mathbf{r}_N,\mathbf{p}_1,\cdots,\mathbf{p}_N\right)\equiv\left(\mathbf{r}^N,\mathbf{p}^N\right)\]
+的一组取值所确定。在限制总能量为$E$下，这个系统仍然可以取很多组不同值的$\left(\mathbf{r}^N,\mathbf{p}^N\right)$。
+
+一般地，我们称体系由一组宏观状态变量$\left(X,Y,\cdots\right)$所确定的热力学平衡态称作体系的一个宏观状态，这组状态变量称为宏观约束。在一定的宏观约束下，体系可以取大量的微观状态（无论是量子态还是经典动力学状态），且由一个微观状态，也能计算出相同的宏观性质。我们系统的某性质$M$在确定状态参数$\left(X,Y,\cdots\right)$平衡态下恒定的宏观观测结果记为$M\left(X,Y,\cdots\right)$，而把从微观状态计算得到的性质记为$\tilde{M}$。性质$\tilde{M}$顶上的“\char`~”表示这是微观状态的函数，以区别于同一物理量的宏观状态性质$M$。
 
 体系可以取的所有微观状态组成一个概率论意义上的样本空间。例如非相对论经典力学中$N$个粒子的位置$\mathbf{r}_i\in\mathbb{R}^3$和动量$\mathbf{p}_i\in\mathbb{R}^3$可在整个$\mathbb{R}^{6N}$空间取值。但是在一定的宏观约束下，体系取不同微观状态的概率是不同的。例如，在恒定粒子数$N$、体积$V$和总能量$U$的宏观约束下，任一粒子位置处在这个体积区域之外的概率就无限小。如果我们给一个在某宏观约束$\left(X,Y,\cdots\right)$下处于平衡态的体系不断拍摄快照，快照中能分辨该体系的瞬时微观状态。则这些微观状态均满足$\tilde{X}=X,\tilde{Y}=Y,\cdots$。随着拍照次数$\mathcal{N}$的增加，体系在这个宏观约束下能取的微观状态都出现过了，而且出现次数的直方图将趋于一个稳定的分布。这是概率论当中“随机试验”的思想。现在我们进一步假想，每次拍照不仅把这个系统当时处于的微观状态记录了下来，还对处于这个宏观约束的系统作了一分“活的复制”。我们讨论的快照次数$\mathcal{N}$很大，于是对系统的复制数也就很大。所谓“活的复制”，就是复制下来的每个假想系统都能够在相同的宏观约束下自行运动发展而不必保持其在被拍摄快照时的那个微观状态。如果我们要求，这一套复制的数量$\mathcal{N}$非常大，以保证平衡态下任一时刻只要我们把它们拿出来统计一番，其微观状态分布直方图都已经达到了那一个稳定的曲线（在概率论意义上我们其实要求$\mathcal{N}\rightarrow\infty$）；而且这些复制的系统完全相同且处于相同的宏观约束之外，但它们各自的运动变化是相互独立的，那么就把这样一个对实际系统的大量复制的集合称为系综（ensemble）。系综当然是一个假想的概念。它的出发点是无穷次随机试样反映统计规律的概率论思想，但又有超出了这个想法的内容（这些系统复制是“活的”）。
 
@@ -17,9 +24,12 @@
 
 我们实际上不可能真给一个系统拍无穷多个快照然后统计出这个系统在某宏观约束下的微观状态概率分布函数。统计力学理论在给出系综平均公设之后，必须还要先验地告诉我们，这个概率分布是怎样的。
 
-现在我们考虑宏观约束为$\left(N,V,U\right)$的情况。热力学中，一个体系的平衡态由$\left(N,V,U\right)$确定的，应属于一个体积为$V$的单组份孤立系统（且没有外场的作用）。我们把$\left(N,V,U\right)$约束下的系综称作微正则系综（microcanonical ensemble）。
+现在我们考虑宏观约束为$\left(N,V,E\right)$的情况。热力学中，一个体系的平衡态由$\left(N,V,E\right)$确定的，应属于一个体积为$V$的单组份孤立系统（且没有外场的作用）。我们把$\left(N,V,E\right)$约束下的系综称作微正则系综（microcanonical ensemble）。
 
-平衡态统计力学的第二个公设是孤立系统的等先验概率原则（principle of equial apriori probabilities）。量子力学告诉我们，一个体系在宏观约束$\left(N,V,U\right)$下，其能量简并度$\Omega\left(U\right)$是确定的。此时等先验概率原则要求，实际体系处于这$\Omega\left(U\right)$个微观状态中的任一个的概率相等。
+平衡态统计力学的第二个公设是孤立系统的等先验概率原则（principle of equial apriori probabilities）。量子力学告诉我们，一个体系在宏观约束$\left(N,V,E\right)$下，其能量简并度$\Omega\left(E\right)$是确定的。此时等先验概率原则要求，实际体系处于这$\Omega\left(E\right)$个微观状态中的任一个的概率相等。具体地，假定能量$E$的简并态标记为$\left\{1,2,\cdots,j,\cdots\right\}$，则微正则系综的微观状态概率质量函数就是
+\[P_j=\frac{1}{\Omega\left(E\right)},\quad j=1,2,\cdots\]
+其归一化条件是
+\[\sum_{j=1}^{\Omega\left(E\right)}P_j\equiv 1\]
 
 \subsection{正则系综}
 \subsubsection{正则系综概率分布的形式推导}
@@ -33,7 +43,7 @@
 
 首先，这个大系统的总粒子数应该是$\mathcal{N}N$、总体积应是$\mathcal{N}V$。由于每个子系统的粒子数$\left(N,V\right)$是确定的，因此每个子系统可取的能级（量子本征值）以及每个能级的简并度也是确定的（见量子力学基础）。我们把每个子系统可取的能量值列为$E_1,E_2,\cdots,E_j,\cdots$。这里的各个能量值不是一个能级列表；如果某能级有简并度，我们就把这一能级按其简并数列成$j$不同的多个取值相同的$E_j$。也就是说$j$遍历的是，每个小系统可取的所有微观状态；当我们说一个小系统取能量$E_j$时，不仅说出了它所取能量的大小是$E_j$的值，还说出它取了这个能级下的哪个简并态。
 
-然后我们再考虑，这个大系统在当初与大热源环境处于热平衡时，体系取了某总能量$\mathcal{E}$。现在它被孤立出来了，总能量$\mathcal{E}$保持不变。也就是说它是一个宏观约束为$\left(\mathcal{N}N,\mathcal{N}V,\mathcal{U}\right)$的系统。但是它的各个小系统之间可以发生热交换，所以这些小系统，谁取什么能级，可以变来变去，只要满足它们加起来的总能量恒定为$\mathcal{E}$。我们可以先作一个类别区分。记有$n_j$个小系统取能量值$E_i$。那么不管$n_j$怎么取值，以下总成立
+然后我们再考虑，这个大系统在当初与大热源环境处于热平衡时，体系取了某总能量$\mathcal{E}$。现在它被孤立出来了，总能量$\mathcal{E}$保持不变。也就是说它是一个宏观约束为$\left(\mathcal{N}N,\mathcal{N}V,\mathcal{E}\right)$的系统。但是它的各个小系统之间可以发生热交换，所以这些小系统，谁取什么能级，可以变来变去，只要满足它们加起来的总能量恒定为$\mathcal{E}$。我们可以先作一个类别区分。记有$n_j$个小系统取能量值$E_i$。那么不管$n_j$怎么取值，以下总成立
 \begin{equation}\label{eq:V.2_canonical_ensemble_constraints}
     \sum_jn_j=\mathcal{N},\quad\sum_jn_jE_j=\mathcal{E}
 \end{equation}
@@ -49,34 +59,99 @@
 
 经过这四步考虑，我们完成了正则系综概率分布的形式推导。我们需要具体地把这个表达式计算为更有用的形式。这是需要取$\mathcal{N}\rightarrow\infty$极限才能做到的。附录xxx（待补充）将会证明，当$\mathcal{N}\rightarrow\infty$时，一个满足多项分布$W\left(\mathbf{n}\right)$的随机变量$\mathbf{n}$的均值$\overline{\mathbf{n}}$将趋于那个使分布概率密度最大的那个值$\mathbf{n}^*$，且分布的宽度收敛。所以$\mathcal{N}$越大，拿$\mathbf{n}^*$代替$\overline{\mathbf{n}}$的误差就越小。虽然在$\mathcal{N}\rightarrow\infty$的同时$\mathbf{n}^*\rightarrow\infty$（意思是均值向量$\mathbf{n}^*$的各分量$n_j^*$都发散），但我们关心的比例$n_j^*/\mathcal{N}$保持有限的定值。因此，在$\mathcal{N}\rightarrow\infty$，正则系综概率质量函数
 \[P_j=\frac{\overline{n_j}}{\mathcal{N}}=\frac{n_j^*}{\mathcal{N}}\]
+由于$\sum_j\overline{n_j}=\mathcal{N}$故$P_j$满足归一化条件——正如其所应当。
 
 我们再复述一次$n_j^*$是什么。$n_j^*$是使大系统满足约束\eqref{eq:V.2_canonical_ensemble_constraints}的某$\mathbf{n}$中，使$W\left(\mathbf{n}\right)$最大的一个（记为$\mathbf{n}^*$）的第$j$个分量。我们可以用拉格朗日乘子法去解，在满足约束\eqref{eq:V.2_canonical_ensemble_constraints}下使函数$W\left(\mathbf{n}\right)$最大的这一最值问题（见附录XXX待补充）。结果得到，$\mathbf{n}^*$的每个分量都取：
 \[n_j^*=\mathcal{N}e^{-\alpha}e^{-\beta E_j},\quad j=1,2,\cdots\]
 时满足这一要求。其中$\alpha$、$\beta$是拉格朗日乘子。利用$\sum_jn_j^*=\mathcal{N}$可以把$\alpha$消掉，从而，正则系综的概率质量函数的形式变为
-\[P_j=\frac{e^{-\beta E_j\left(N,V\right)}}{\sum_ie^{-\beta E_i\left(N,V\right)}},\quad j=1,2,\cdots\]
-式中我们明显地提醒，系统可取的能量状态数是依赖$\left(N,V\right)$约束而确定的。
+\begin{equation}\label{eq:V.2_canonical_ensemble_probability_mass}
+    P_j\left(N,V,T\right)=\frac{e^{-\beta\left(T\right) E_j\left(N,V\right)}}{\sum_ie^{-\beta\left(T\right) E_i\left(N,V\right)}},\quad j=1,2,\cdots
+\end{equation}
+式中我们明显地提醒，系统可取的能量状态数是依赖$\left(N,V\right)$约束而确定的。整个问题还有一个控制量，那就是大系统在孤立出来之前的恒定温度$T$。在这个问题中如果改变系统的温度，将会改变这个大系统的总能量$\mathcal{E}$，故会影响满足相应约束的$\left\{\mathbf{n}\right\}$。连同小体系的能级$\left\{E_j\right\}$对$\left(N,V\right)$的依赖，最终$P_j$应该依赖$\left(N,V,T\right)$，由上式，对$T$的依赖就应来自$\beta$，故$\beta=\beta\left(T\right)$。这也已在式中体现。
 
-\subsubsection{从热力学关系确定$beta$}
-照理，$\alpha$和$\beta$的值需要代回到原函数中，在令原函数取最值时解出来。但是在我们现在的问题中，$W\left(\mathbf{n}\right)$的值是不可知的。要继续讨论，就需要用到统计力学的第一条公设了。注意到，在没有各种外场作用时，一个系统的总能量就是它的热力学能（即内能）。这就能够联系函数$W\left(\mathbf{n}\right)$与体系的热力学状态函数。$\alpha$和$\beta$就能表示成与热力学函数有关的形式。
+式\eqref{eq:V.2_canonical_ensemble_probability_mass}中的分母记为$Q=Q\left(N,V,T\right)$，称为正则系综配分函数（partition function），正式地
+\[Q\left(N,V,T\right)=\sum_ie^{-\beta E_i}\]
+以后我们将会看到，其他不同类型的系综的配分函数$Q\left(X,Y,\cdots\right)$都是相应宏观约束$\left(X,Y,\cdots\right)$下，系统微观状态的概率密度函数的归一化因子。
 
-具体地，我们现在直接就能得到，无外场作用下一个分子数为$N$、体积为$V$、温度为$T$的单组分简单封闭系统的内能$U=E=\left\langle\tilde{E}\right\rangle$，且
-\[\left\langle\tilde{E}\right\rangle=\frac{\sum_jP_jE_j}{\sum_jP_j}=\frac{\sum_jE_je^{-\beta E_j}}{\sum_je^{-\beta E_j}}\]
+\subsubsection{$\beta$是什么？}
+照理，$\alpha$和$\beta$的值需要代回到原函数中，在令原函数取最值时解出来。但是在我们现在的问题中，$W\left(\mathbf{n}\right)$的值是不可知的。要继续讨论，就需要用到统计力学的第一条公设了。注意到，在没有各种外场作用时，一个系统的总能量就是它的热力学能（即内能）。这就能够联系函数$W\left(\mathbf{n}\right)$与体系的热力学状态函数。我们将看到，通过联系微观状态统计结果与宏观热力学函数，可进一步明确$\beta$的热力学角色。
 
-我们看到$\left\langle\tilde{E}\right\rangle$是$\left(N,V,\left\{P_j\right\}\right)$的函数，它的全微分可以写成
-\begin{align*}
-    \mathrm{d}\left\langle\tilde{E}\right\rangle & =\sum_jE_j\mathrm{d}P_j+\sum_jP_j\mathrm{d}E_j                                                                                 \\
-                                                 & =-\beta^{-1}\sum_j\left(\ln P_j+\ln Q\right)\mathrm{d}P_j+\sum_jP_j\left.\frac{\partial E_j}{\partial V}\right|_{N}\mathrm{d}V
-\end{align*}
-其中我们记$Q\equiv\sum_je^{-\beta E_j}$，$Q$不依赖$P_j$。利用$P_j$的归一化性质，
-\[\sum_jP_j=1,\quad\sum_j\mathrm{d}P_j=0\]
-含$Q$的项就没了。而我们看到
+具体地，我们现在直接就能得到，无外场作用下一个分子数为$N$、体积为$V$、温度为$T$的单组分简单封闭系统的内能
+\[U=E=\left\langle\tilde{E}\right\rangle=\frac{\sum_jP_jE_j}{\sum_jP_j}=\frac{\sum_jE_je^{-\beta E_j}}{\sum_je^{-\beta E_j}}\]
+
+其次，我们看到
 \[-p_j=\left.\frac{\partial E_j}{\partial V}\right|_{N}\]
-是一个压强（参照\eqref{eq:I.1_first_order_partial_p}），$-p_j\mathrm{d}V$是当系统的能量为$E_j$时，使系统的体积变化$\mathrm{d}V$所做的功。它是系统微状态的性质，故有
-\[\sum_jP_j\left.\frac{\partial E_j}{\partial V}\right|_{N}\mathrm{d}V=-\left\langle\tilde{p}\right\rangle\mathrm{d}V\]
-因此全微分式给出
-\[-\beta^{-1}\mathrm{d}\left(\sum_jP_j\ln P_j\right)=\mathrm{d}\left\langle\tilde{E}\right\rangle+\left\langle\tilde{p}\right\rangle\mathrm{d}V\]
+是一个压强（参照\eqref{eq:I.1_first_order_partial_p}）它的意义是，系统取第$j$个微观状态时，体积变化体积变化$\mathrm{d}V$所做的功。$p_j$是系统的微观状态性质，故有
+\[\sum_jP_j\left.\frac{\partial E_j}{\partial V}\right|_{N}=-\left\langle\tilde{p}\right\rangle\]
 
-由第一公设，$\left\langle\tilde{E}\right\rangle$就是体系的内能$U$，$\left\langle\tilde{p}\right\rangle$就是体系的压强$p$。而由热力学第一定律\eqref{eq:I.1_first_law_multicomp}（单组份封闭体系）我们得到
-\[-\beta^{-1}\mathrm{d}\left(\sum_jP_j\ln P_j\right)\]
-就是$T\mathrm{d}S$。
+现在我们就$U=U\left(T,V\right)$进行全微分（封闭体系$N$恒定），并利用Tobolsky方法，可以得到：
+\[\left.\frac{\partial U}{\partial V}\right|_{T}=T\beta_V-p\]
+而刚刚由微观状态的正则系综平均得到的$\left\langle\tilde{E}\right\rangle$和$\left\langle\tilde{p}\right\rangle$也可以作相应的导数，与上式对应。记得$E_j=E_j\left(T,V\right)$和$\beta=\beta\left(T\right)$，我们先分别得到
+\begin{align*}
+    \left.\frac{\partial\left\langle\tilde{E}\right\rangle}{\partial V}\right|_{N,T} & =-\left\langle\tilde{p}\right\rangle+\beta\left\langle\tilde{E}\tilde{p}\right\rangle-\beta\left\langle\tilde{E}\right\rangle\left\langle\tilde{p}\right\rangle   \\
+    \left.\frac{\partial\left\langle\tilde{p}\right\rangle}{\partial T}\right|_{N,V} & =\frac{\mathrm{d}\beta}{\mathrm{d}T}\left(\left\langle\tilde{E}\right\rangle\left\langle\tilde{p}\right\rangle-\left\langle\tilde{E}\tilde{p}\right\rangle\right)
+\end{align*}
+比较两式得
+\[\left.\frac{\partial\left\langle\tilde{E}\right\rangle}{\partial V}\right|_{N,T}=-\left\langle\tilde{p}\right\rangle-\beta\left(\frac{\mathrm{d}\beta}{\mathrm{d}T}\right)^{-1}\left.\frac{\partial\left\langle\tilde{p}\right\rangle}{\partial T}\right|_{N,V}\]
+再与$\left(\partial U/\partial V\right)|_{T}$表达式比较可得
+\[\frac{\mathrm{d}\beta}{\mathrm{d}T}=-\frac{\beta}{T}\Leftrightarrow\beta=\frac{1}{kT}\]
+其中$k$是不依赖温度、体积、分子数的常数。
+
+以下我们将利用“熵是广度性质”这一来自热力学的信息进一步发现$k$是一个普适常数。我们考虑两个系统A、B处于同一温度$T$，记它们的熵分别为$S_\text{A}$和$S_\text{B}$，分子数分别为$N_\text{A}$、$N_\text{B}$，体积分别为$V_\text{A}$、$V_\text{B}$。在这里，我们要区分系统$A$和系统$B$的分子种类，它们是不同的分子。这使得系统A与系统B之间是可区分的。
+
+我们像之前推算正则系综那样，把一个系统A和一个系统B视为一对称作系统AB，它们之间可做热交换，但没有物质交换和体积变化。把$\mathcal{N}$对温度已经处于系统AB拼接成一个大系统，每个小系统AB体积一定，各小系统AB之间只有能量交换而没有物质交换。让这样的一个大系统与一个温度为$T$的更大的热源接触达到热平衡之后，再孤立出来，成为一个大的孤立系统。此时，系统A和系统B的各的可取微观状态数都是确定的，以能量列表分别记为$\left\{E_j^\text{A}\right\}$、$\left\{E_j^\text{B}\right\}$。记取微观状态$E_j^\text{A}$系统A数量是$n_j^\text{A}$，则一套分类法可用向量$\mathbf{n}_\text{A}$表示。系统B的也类似。那么，给定某种分类$\left(\mathbf{n}_\text{A},\mathbf{n}_\text{B}\right)$下的放法数$W\left(\mathbf{n}_\text{A},\mathbf{n}_\text{B}\right)$，就等于
+\[W\left(\mathbf{n}_\text{A},\mathbf{n}_\text{B}\right)=\frac{\mathcal{N}!}{\prod_j\left(n_j^\text{A}!\right)}\frac{\mathcal{N}!}{\prod_j\left(n_j^\text{B}!\right)}\]
+按照约束
+\[\sum_jn_j^\text{A}=\sum_jn_j^\text{B}=\mathcal{N},\quad\sum_j\left(n_j^\text{A}E_j^\text{A}+n_j^\text{B}E_j^\text{B}\right)=\mathcal{E}\]
+使用拉格朗日乘子法求使$W\left(\mathbf{n}_\text{A},\mathbf{n}_\text{B}\right)$最大的$\left(\mathbf{n}_\text{A}^*,\mathbf{n}_\text{B}^*\right)$，将带有三个待定乘子：$\alpha_\text{A}$、$\alpha_\text{B}$和$\beta$，其中$\alpha_\text{A}$和$\alpha_\text{B}$来自两个数量的约束，$\beta$来自能量的约束。后面的步骤与前面推导正则系统类似，因此可以得到，小系统AB取微观状态$\left(E_i^\text{A},E_j^\text{B}\right)$的概率质量函数$P_{ij}$为
+\[P_{ij}=P_i^\text{A}P_j^\text{B}=\frac{e^{-\beta E_i^\text{A}}e^{-\beta E_j^\text{B}}}{Q_\text{A}Q_\text{B}}\]
+其中$P_i^\text{A}$、$P_j^\text{B}$分别是系统A取微观状态$E_i^\text{A}$而不论与它结伴的系统B的微观状态的概率质量函数，以及系统B取微观状态$E_j^\text{B}$而不论与它结伴的系统A的微观状态的概率质最函数。$Q_\text{A}=\sum_i e^{-\beta E_i^\text{A}}$，$Q_\text{B}=\sum_j e^{-\beta E_j^\text{B}}$。这是两个可分辨系统A和B在仅有热交换时的正则系综概率分布。由于以上讨论的系统A和B是一般意义的，因此我们讨论的结果说明，某系统A与另一个系统B达到热平衡时，它们共享一个$\beta$。而系统$A$可以再和$B^\prime$、$B^{\prime\prime}$……达到热平衡，都共享一个$\beta$值。换句话说，任意两个系统之间达到给定$T$下的热平衡时，都将有相同的$\beta$值，而前面又已明确了$\beta=1/\left(kT\right)$，故$k$是一个普适常数。我们可以通过任何方便的模型来得到$k$的具体值。例如，理想气体的统计力学模型推出$pV=NkT$，而理想气体状态方程是$pV=nRT$，其中$R$是气体常数，其发现和值的确定远早于$k$。比较二式可得$k=nR/N=R/N_\text{A}$，其中$n$是摩尔数、$N_\text{A}$是阿伏加德罗常数。
+
+这个常数$k$是玻尔兹曼在思考熵与概率的关系时\cite{Sharp2015}就已明确的，但是在当时这个常数总是以用气体常数表出的形式出现的。普朗克在推算黑体辐射的能谱形式（并引发了二十世纪早期的物理学危机）时\cite{Planck1901}，才采用了明显出现的$k$，并称之为玻尔兹曼常数，同一论文中还连带提出了的普朗克常数$h$。现在我们正式将这个常数记为$k_\text{B}$。
+
+\subsubsection{热力学对应关系}
+尽管式\eqref{eq:V.2_canonical_ensemble_probability_mass}的概率质量函数表达式是正则系综的基本结论，但是体系的宏观热力学状态函数都是相应微观状态函数的系综平均，所以都不再具体依赖各个$E_j$，而可以只用正则系综配分函数$Q\left(N,V,T\right)$来表达。首先看到：
+\[\left.\frac{\partial\ln Q}{\partial T}\right|_{N,V}=-\frac{\left\langle\tilde{E}\right\rangle}{k_\text{B}T^2}\]
+故有
+\[U=\left\langle\tilde{E}\right\rangle=k_\text{B}T^2\left.\frac{\partial\ln Q}{\partial T}\right|_{N,V}\]
+类似地不难得出
+\[p=k_\text{B}T\left.\frac{\partial\ln Q}{\partial V}\right|_{N,T}\]
+
+现在我们找出熵的对应关系。记函数$f=\ln Q=f\left(\beta,\left\{E_j\right\}\right)$，对其作全微分得
+\[\mathrm{d}f=\left.\frac{\partial f}{\partial\beta}\right|_{\left\{E_j\right\}}\mathrm{d}\beta+\sum_k\left.\frac{\partial f}{\partial E_k}\right|_{\beta,\left\{E_{i\neq k}\right\}}\mathrm{d}E_k\]
+我们可以计算出其中
+\begin{align*}
+    \left.\frac{\partial f}{\partial\beta}\right|_{\left\{E_j\right\}}              & =-\left\langle\tilde{E}\right\rangle \\
+    \left.\frac{\partial f}{\partial E_k}\right|_{\beta,\left\{E_{i\neq k}\right\}} & =-\beta P_k
+\end{align*}
+因此
+\begin{align*}
+                    & \mathrm{d}f=-\left\langle\tilde{E}\right\rangle\mathrm{d}\beta-\beta\sum_jP_j\mathrm{d}E_j                                                             \\
+    \Leftrightarrow & \mathrm{d}\left(f+\beta\left\langle\tilde{E}\right\rangle\right)=\beta\left(\mathrm{d}\left\langle\tilde{E}\right\rangle-\sum_jP_j\mathrm{d}E_j\right)
+\end{align*}
+写成上列的形式后，我们假想一个适应上式的过程。我们还是考虑之前的那个由$\mathcal{N}$个小系统拼接成大系统的模型。我们改变每个小系统的体积$\mathrm{d}V$（做功），这将使得每个小系统的各个微观状态能量产生相应的变化，但却不改变总能量为$\mathcal{E}$的约束。我们再将大系统放回到一个大热源环境中，然后使这个大热源从原来的温度$T$变化到$T+\mathrm{d}T$，然后再把它孤立出来，实现温度的微变化。
+
+如果有$n_j$个系统处于能量$E_j$，那么$n_j\mathrm{d}E_j$就是使这些系统的能量从$E_j$变为$E_j+\mathrm{d}E_j$所做的功（之所以说这个能量变化是做功实现的，是因为我们是通过改变体积$\mathrm{d}V$实现的）。但到底处于能量$E_j$的系统数$n_j$平均是多少，必须征询概率质量函数$P_j=\overline{n_j}/\mathcal{N}=n_j^*/\mathcal{N}$。因此，我们可以说通过体积变化$\mathrm{d}V$系统所做的总的功$\sum_jn_j\mathrm{d}E_j=\sum_jP_j\mathrm{d}E_j$，这是上式等号右边的第二项。由热力学第一定律，总能量变化$\mathrm{d}\left\langle\tilde{E}\right\rangle$除去所做的功之外，就是上述过程的可逆热$\dbar Q_\text{rev}$。所以上式实际上暗示
+\[\mathrm{d}\left(f+\beta\left\langle\tilde{E}\right\rangle\right)=\beta\dbar Q_\text{rev}\]
+因此，按式\eqref{eq:I.1_integral_of_function}的精神和$\beta=1/\left(k_\text{B}T\right)$可得
+\[S=\frac{\left\langle\tilde{E}\right\rangle}{T}+k_\text{B}\ln Q+C\]
+其中$C$与$T$、$\left\{E_j\right\}$都无关的积分常数。考虑到$E_j=E_j\left(N,V\right)$，我们也可以说$C$是与$\left(N,V,T\right)$无关的积分常数。当温度$T$趋于零时（记得热力学公式中的温度$T$是绝对温标），熵趋于这个积分常数$C$，因此这个积分常数$C$的物理意义是体系在绝对零度的熵，它是依赖所讨论的体系的类型的，对于同一体系而言它是不依赖热力学变化过程的常数。本讲义采用$C=0$，这是经典（非量子力学）情况的近似。无论$C$取值如何，在热力学中我们只讨论熵在两个状态间的变化量，因此这个常数总是消掉的。总之
+\[S=\frac{\left\langle\tilde{E}\right\rangle}{T}+k_\text{B}\ln Q\]
+
+内能$U$、熵$S$和状态方程$p$的热力学对应关系都明确了之后，我们还差一个热容就能确定体系的完整热力学性质。由式\eqref{eq:I.1_heat_capacity_entropy_V}，
+\[C_V=\left.\frac{\partial U}{\partial T}\right|_{V}=\left.\frac{\partial\left\langle\tilde{E}\right\rangle}{\partial T}\right|_{N,V}=\frac{\left\langle\tilde{E}^2\right\rangle-\left\langle\tilde{E}\right\rangle^2}{k_\text{B}T^2}\]
+
+其中$\left\langle\tilde{E}^2\right\rangle-\left\langle\tilde{E}\right\rangle^2$是能量的涨落的方差，表征能量涨幅度的大小。我们以理想气体的内能和等容热容为例，可以估算能量相对涨落幅度的数量级。理想气体内能$U\sim O\left(Nk_\text{B}T\right)$，热容$C_V\sim O\left(Nk_\text{B}\right)$，故相对涨落幅度（标准差比均值）$\left(k_\text{B}T^2C_V\right)^{1/2}/U\sim O\left(N^{-1/2}\right)$。因此，典型宏观系统的能量涨落幅度非常小。如果能量涨落满足某概率密度函数，则无论它是什么类型的分布，它的分布宽度都会非常窄，以至于，用使概率分布最大的那个能量值$E^*$来代替平均能量$\left\langle\tilde{E}\right\rangle$的误差极小。
+
+原$\mathcal{N}$个小系统拼接起来的大系统，可把取相同能量值的那些合并起来。具体地，我们重新把$E_1$、$E_2$、……改记为两两不等的能量值，$\Omega\left(E_j\right)$为能量值$E_j$的简并度，则正则系综配分函数可改写成
+\[Q\left(N,V,T\right)=\sum_{j}\Omega\left(N,V,E_j\right)e^{E_j/\left(k_\text{B}T\right)}\]
+其中$\left\{E_j\right\}$是哪些，以及$\Omega\left(E_j\right)$各是多少，是由宏观约束$\left(N,V,T\right)$确定的。前面提到过，由于典型宏观体系的能量涨落概率分布极窄，因此$\left\{E_j\right\}$中的这些$E_j$虽然严格来说是不同的能量本征值，但是概率分布极窄，其中最概然的能量$E^*\approx \left\langle\tilde{E}\right\rangle$的贡献几乎占了全部的贡献，同时因此，上式在宏观极限条件下可直接写成。
+\[Q\left(N,V,T\right)=\Omega\left(N,V,\left\langle\tilde{E}\right\rangle\right)e^{-\left\langle\tilde{E}\right\rangle/\left(k_\text{B}T\right)}\]
+此时，
+\[A=\left\langle\tilde{E}\right\rangle-k_\text{B}T\ln\Omega\left(N,V,\left\langle\tilde{E}\right\rangle\right)\]
+由$S=-\left(\partial A/\partial T\right)_{V}$得
+\[S=k_\text{B}\ln\Omega\left(N,V,\left\langle\tilde{E}\right\rangle\right)\]
+我们将会看到，在$\left(N,p,T\right)$（等温等压系综）、$\left(\mu,T,V\right)$（巨正则系综）为宏观约束时，只要$N$很大，熵在宏观极限都取上式。而在微正则系综（孤立体系）的条件下，熵精确地就是
+\[S\left(N,V,E\right)=k_\text{B}\ln\Omega\left(N,V,E\right)\]
+而无需取宏观极限。因此，对于$N$并不大的小体系，不得滥用“$S=k_\text{B}\ln\Omega$”。
 \end{document}

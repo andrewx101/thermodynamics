@@ -195,6 +195,139 @@
       \endverb
       \keyw{McMillan–Mayer,Osmotic pressure,Osmotic second virial coefficient,Helmholtz state function,Potential of mean force}
     \endentry
+    \entry{Sharp2015}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=5aede30c8e1c0517663ccaa8d94ebf26}{%
+           family={Sharp},
+           familyi={S\bibinitperiod},
+           given={Kim},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c3cb28675408f92ff2bfd971ded391c3}{%
+           family={Matschinsky},
+           familyi={M\bibinitperiod},
+           given={Franz},
+           giveni={F\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=5aede30c8e1c0517663ccaa8d94ebf26}{%
+           family={Sharp},
+           familyi={S\bibinitperiod},
+           given={Kim},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c3cb28675408f92ff2bfd971ded391c3}{%
+           family={Matschinsky},
+           familyi={M\bibinitperiod},
+           given={Franz},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{d358cf90e93255bbd26c7c5e7aac4b81}
+      \strng{fullhash}{f40b96862893859f2ce489580d14e23a}
+      \strng{fullhashraw}{f40b96862893859f2ce489580d14e23a}
+      \strng{bibnamehash}{f40b96862893859f2ce489580d14e23a}
+      \strng{authorbibnamehash}{f40b96862893859f2ce489580d14e23a}
+      \strng{authornamehash}{d358cf90e93255bbd26c7c5e7aac4b81}
+      \strng{authorfullhash}{f40b96862893859f2ce489580d14e23a}
+      \strng{authorfullhashraw}{f40b96862893859f2ce489580d14e23a}
+      \strng{nameabibnamehash}{f40b96862893859f2ce489580d14e23a}
+      \strng{nameanamehash}{d358cf90e93255bbd26c7c5e7aac4b81}
+      \strng{nameafullhash}{f40b96862893859f2ce489580d14e23a}
+      \strng{nameafullhashraw}{f40b96862893859f2ce489580d14e23a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Translation of the seminal 1877 paper by Ludwig Boltzmann which for the first time established the probabilistic basis of entropy. Includes a scientific commentary.}
+      \field{issn}{1099-4300}
+      \field{journaltitle}{Entropy}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{4}
+      \field{title}{Translation of Ludwig Boltzmann’s Paper “On the Relationship between the Second Fundamental Theorem of the Mechanical Theory of Heat and Probability Calculations Regarding the Conditions for Thermal Equilibrium” Sitzungberichte der Kaiserlichen Akademie der Wissenschaften. Mathematisch-Naturwissen Classe. Abt. II, LXXVI 1877, pp 373-435 (Wien. Ber. 1877, 76:373-435). Reprinted in Wiss. Abhandlungen, Vol. II, reprint 42, p. 164-223, Barth, Leipzig, 1909}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{17}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{pages}{1971\bibrangedash 2009}
+      \range{pages}{39}
+      \verb{doi}
+      \verb 10.3390/e17041971
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1099-4300/17/4/1971
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1099-4300/17/4/1971
+      \endverb
+      \keyw{Sharp2015}
+    \endentry
+    \entry{Planck1901}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=b70f9b82b1387fb65567789c543a0c4c}{%
+           family={Planck},
+           familyi={P\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=b70f9b82b1387fb65567789c543a0c4c}{%
+           family={Planck},
+           familyi={P\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{fullhash}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{fullhashraw}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{bibnamehash}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{authorbibnamehash}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{authornamehash}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{authorfullhash}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{authorfullhashraw}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{nameabibnamehash}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{nameanamehash}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{nameafullhash}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{nameafullhashraw}{b70f9b82b1387fb65567789c543a0c4c}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annalen der Physik}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{3}
+      \field{title}{Ueber das Gesetz der Energieverteilung im Normalspectrum}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{309}
+      \field{year}{1901}
+      \field{dateera}{ce}
+      \field{pages}{553\bibrangedash 563}
+      \range{pages}{11}
+      \verb{doi}
+      \verb https://doi.org/10.1002/andp.19013090310
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/andp.19013090310
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19013090310
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19013090310
+      \endverb
+      \keyw{Planck1901}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
