@@ -82,12 +82,6 @@
       \verb{doi}
       \verb https://doi.org/10.1016/j.fluid.2008.10.004
       \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0378381208003476
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0378381208003476
-      \endverb
       \keyw{McMillan–Mayer,Osmotic pressure,Osmotic second virial coefficient,Helmholtz state function,Potential of mean force}
     \endentry
   \enddatalist

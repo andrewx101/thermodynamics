@@ -137,12 +137,6 @@
       \verb{doi}
       \verb 10.1007/s10953-015-0302-8
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/s10953-015-0302-8
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/s10953-015-0302-8
-      \endverb
       \keyw{Grolier2015}
     \endentry
     \entry{Mollerup2009}{article}{}{}
@@ -208,13 +202,404 @@
       \verb{doi}
       \verb https://doi.org/10.1016/j.fluid.2008.10.004
       \endverb
+      \keyw{McMillan–Mayer,Osmotic pressure,Osmotic second virial coefficient,Helmholtz state function,Potential of mean force}
+    \endentry
+    \entry{Bragg1934}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=fbe5fdedb0690d04c64476129af964cb}{%
+           family={Bragg},
+           familyi={B\bibinitperiod},
+           given={William\bibnamedelima Lawrence},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=26176e0bc0cec3b65bbf6e6d156a849d}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Evan\bibnamedelima James},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=fbe5fdedb0690d04c64476129af964cb}{%
+           family={Bragg},
+           familyi={B\bibinitperiod},
+           given={William\bibnamedelima Lawrence},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=26176e0bc0cec3b65bbf6e6d156a849d}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Evan\bibnamedelima James},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{353edf8799bbbf67e7cd871d19a08c85}
+      \strng{fullhash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{fullhashraw}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{bibnamehash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{authorbibnamehash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{authornamehash}{353edf8799bbbf67e7cd871d19a08c85}
+      \strng{authorfullhash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{authorfullhashraw}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{nameabibnamehash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{nameanamehash}{353edf8799bbbf67e7cd871d19a08c85}
+      \strng{nameafullhash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{nameafullhashraw}{aa20e16e438d50f6031dd7eb62b054fe}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society of London. Series A, Containing Papers of a Mathematical and Physical Character}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{note}{doi: 10.1098/rspa.1934.0132}
+      \field{number}{855}
+      \field{title}{The effect of thermal agitation on atomic arrangement in alloys}
+      \field{type}{Journal Article}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{145}
+      \field{year}{1934}
+      \field{dateera}{ce}
+      \field{pages}{699\bibrangedash 730}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1098/rspa.1934.0132
+      \endverb
       \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0378381208003476
+      \verb https://doi.org/10.1098/rspa.1934.0132
       \endverb
       \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0378381208003476
+      \verb https://doi.org/10.1098/rspa.1934.0132
       \endverb
-      \keyw{McMillan–Mayer,Osmotic pressure,Osmotic second virial coefficient,Helmholtz state function,Potential of mean force}
+      \keyw{Bragg1934}
+    \endentry
+    \entry{Bragg1935}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=fbe5fdedb0690d04c64476129af964cb}{%
+           family={Bragg},
+           familyi={B\bibinitperiod},
+           given={William\bibnamedelima Lawrence},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=26176e0bc0cec3b65bbf6e6d156a849d}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Evan\bibnamedelima James},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=fbe5fdedb0690d04c64476129af964cb}{%
+           family={Bragg},
+           familyi={B\bibinitperiod},
+           given={William\bibnamedelima Lawrence},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=26176e0bc0cec3b65bbf6e6d156a849d}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Evan\bibnamedelima James},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{353edf8799bbbf67e7cd871d19a08c85}
+      \strng{fullhash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{fullhashraw}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{bibnamehash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{authorbibnamehash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{authornamehash}{353edf8799bbbf67e7cd871d19a08c85}
+      \strng{authorfullhash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{authorfullhashraw}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{nameabibnamehash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{nameanamehash}{353edf8799bbbf67e7cd871d19a08c85}
+      \strng{nameafullhash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{nameafullhashraw}{aa20e16e438d50f6031dd7eb62b054fe}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society of London. Series A - Mathematical and Physical Sciences}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{note}{doi: 10.1098/rspa.1935.0165}
+      \field{number}{874}
+      \field{title}{The effect of thermal agitaion on atomic arrangement in alloys—II}
+      \field{type}{Journal Article}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{151}
+      \field{year}{1935}
+      \field{dateera}{ce}
+      \field{pages}{540\bibrangedash 566}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1098/rspa.1935.0165
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1098/rspa.1935.0165
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1098/rspa.1935.0165
+      \endverb
+      \keyw{Bragg1935}
+    \endentry
+    \entry{Borelius1934}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=bf216b4f7e35d30cec30d218f7a51651}{%
+           family={Borelius},
+           familyi={B\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=bf216b4f7e35d30cec30d218f7a51651}{%
+           family={Borelius},
+           familyi={B\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{bf216b4f7e35d30cec30d218f7a51651}
+      \strng{fullhash}{bf216b4f7e35d30cec30d218f7a51651}
+      \strng{fullhashraw}{bf216b4f7e35d30cec30d218f7a51651}
+      \strng{bibnamehash}{bf216b4f7e35d30cec30d218f7a51651}
+      \strng{authorbibnamehash}{bf216b4f7e35d30cec30d218f7a51651}
+      \strng{authornamehash}{bf216b4f7e35d30cec30d218f7a51651}
+      \strng{authorfullhash}{bf216b4f7e35d30cec30d218f7a51651}
+      \strng{authorfullhashraw}{bf216b4f7e35d30cec30d218f7a51651}
+      \strng{nameabibnamehash}{bf216b4f7e35d30cec30d218f7a51651}
+      \strng{nameanamehash}{bf216b4f7e35d30cec30d218f7a51651}
+      \strng{nameafullhash}{bf216b4f7e35d30cec30d218f7a51651}
+      \strng{nameafullhashraw}{bf216b4f7e35d30cec30d218f7a51651}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0003-3804}
+      \field{journaltitle}{Annalen der Physik}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{Zur Theorie der Umwandlungen von metallischen Mischphasen}
+      \field{type}{Journal Article}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{412}
+      \field{year}{1934}
+      \field{dateera}{ce}
+      \field{pages}{57\bibrangedash 74}
+      \range{pages}{18}
+      \verb{doi}
+      \verb https://doi.org/10.1002/andp.19344120105
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1002/andp.19344120105
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1002/andp.19344120105
+      \endverb
+      \keyw{Borelius1934}
+    \endentry
+    \entry{Dehlinger1934}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=bb1fbc9a4438b7e77b6d28be38c746e9}{%
+           family={Dehlinger},
+           familyi={D\bibinitperiod},
+           given={U.},
+           giveni={U\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=bb1fbc9a4438b7e77b6d28be38c746e9}{%
+           family={Dehlinger},
+           familyi={D\bibinitperiod},
+           given={U.},
+           giveni={U\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{bb1fbc9a4438b7e77b6d28be38c746e9}
+      \strng{fullhash}{bb1fbc9a4438b7e77b6d28be38c746e9}
+      \strng{fullhashraw}{bb1fbc9a4438b7e77b6d28be38c746e9}
+      \strng{bibnamehash}{bb1fbc9a4438b7e77b6d28be38c746e9}
+      \strng{authorbibnamehash}{bb1fbc9a4438b7e77b6d28be38c746e9}
+      \strng{authornamehash}{bb1fbc9a4438b7e77b6d28be38c746e9}
+      \strng{authorfullhash}{bb1fbc9a4438b7e77b6d28be38c746e9}
+      \strng{authorfullhashraw}{bb1fbc9a4438b7e77b6d28be38c746e9}
+      \strng{nameabibnamehash}{bb1fbc9a4438b7e77b6d28be38c746e9}
+      \strng{nameanamehash}{bb1fbc9a4438b7e77b6d28be38c746e9}
+      \strng{nameafullhash}{bb1fbc9a4438b7e77b6d28be38c746e9}
+      \strng{nameafullhashraw}{bb1fbc9a4438b7e77b6d28be38c746e9}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{Stetiger Übergang und kritischer Punkt zwischen zwei festen Phasen}
+      \field{type}{Journal Article}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{26B}
+      \field{year}{1934}
+      \field{dateera}{ce}
+      \field{pages}{343\bibrangedash 352}
+      \range{pages}{10}
+      \verb{doi}
+      \verb doi:10.1515/zpch-1934-2631
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1515/zpch-1934-2631
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1515/zpch-1934-2631
+      \endverb
+      \keyw{Dehlinger1934}
+    \endentry
+    \entry{Sharp2015}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=5aede30c8e1c0517663ccaa8d94ebf26}{%
+           family={Sharp},
+           familyi={S\bibinitperiod},
+           given={Kim},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c3cb28675408f92ff2bfd971ded391c3}{%
+           family={Matschinsky},
+           familyi={M\bibinitperiod},
+           given={Franz},
+           giveni={F\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=5aede30c8e1c0517663ccaa8d94ebf26}{%
+           family={Sharp},
+           familyi={S\bibinitperiod},
+           given={Kim},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c3cb28675408f92ff2bfd971ded391c3}{%
+           family={Matschinsky},
+           familyi={M\bibinitperiod},
+           given={Franz},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{d358cf90e93255bbd26c7c5e7aac4b81}
+      \strng{fullhash}{f40b96862893859f2ce489580d14e23a}
+      \strng{fullhashraw}{f40b96862893859f2ce489580d14e23a}
+      \strng{bibnamehash}{f40b96862893859f2ce489580d14e23a}
+      \strng{authorbibnamehash}{f40b96862893859f2ce489580d14e23a}
+      \strng{authornamehash}{d358cf90e93255bbd26c7c5e7aac4b81}
+      \strng{authorfullhash}{f40b96862893859f2ce489580d14e23a}
+      \strng{authorfullhashraw}{f40b96862893859f2ce489580d14e23a}
+      \strng{nameabibnamehash}{f40b96862893859f2ce489580d14e23a}
+      \strng{nameanamehash}{d358cf90e93255bbd26c7c5e7aac4b81}
+      \strng{nameafullhash}{f40b96862893859f2ce489580d14e23a}
+      \strng{nameafullhashraw}{f40b96862893859f2ce489580d14e23a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Translation of the seminal 1877 paper by Ludwig Boltzmann which for the first time established the probabilistic basis of entropy. Includes a scientific commentary.}
+      \field{issn}{1099-4300}
+      \field{journaltitle}{Entropy}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{4}
+      \field{title}{Translation of Ludwig Boltzmann’s Paper “On the Relationship between the Second Fundamental Theorem of the Mechanical Theory of Heat and Probability Calculations Regarding the Conditions for Thermal Equilibrium” Sitzungberichte der Kaiserlichen Akademie der Wissenschaften. Mathematisch-Naturwissen Classe. Abt. II, LXXVI 1877, pp 373-435 (Wien. Ber. 1877, 76:373-435). Reprinted in Wiss. Abhandlungen, Vol. II, reprint 42, p. 164-223, Barth, Leipzig, 1909}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{17}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{pages}{1971\bibrangedash 2009}
+      \range{pages}{39}
+      \verb{doi}
+      \verb 10.3390/e17041971
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1099-4300/17/4/1971
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1099-4300/17/4/1971
+      \endverb
+      \keyw{Sharp2015}
+    \endentry
+    \entry{Planck1901}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=b70f9b82b1387fb65567789c543a0c4c}{%
+           family={Planck},
+           familyi={P\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=b70f9b82b1387fb65567789c543a0c4c}{%
+           family={Planck},
+           familyi={P\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{fullhash}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{fullhashraw}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{bibnamehash}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{authorbibnamehash}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{authornamehash}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{authorfullhash}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{authorfullhashraw}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{nameabibnamehash}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{nameanamehash}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{nameafullhash}{b70f9b82b1387fb65567789c543a0c4c}
+      \strng{nameafullhashraw}{b70f9b82b1387fb65567789c543a0c4c}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annalen der Physik}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{3}
+      \field{title}{Ueber das Gesetz der Energieverteilung im Normalspectrum}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{309}
+      \field{year}{1901}
+      \field{dateera}{ce}
+      \field{pages}{553\bibrangedash 563}
+      \range{pages}{11}
+      \verb{doi}
+      \verb https://doi.org/10.1002/andp.19013090310
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/andp.19013090310
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19013090310
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19013090310
+      \endverb
+      \keyw{Planck1901}
     \endentry
   \enddatalist
 \endrefsection

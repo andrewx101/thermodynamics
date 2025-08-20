@@ -1,14 +1,14 @@
 \documentclass[main.tex]{subfiles}
 \begin{document}
-在第\ref{sec:I_thermodynamic_relations}章最后已经明确，完整确定一个混合物体系的热力学性质，需要其各组份的偏摩尔热容以及偏摩尔状态方程。后者来自体系的$pVTn_i$状态方程对$n_i$的偏导数。对于等温过程，混合物的$pVTn_i$状态方程是混合物体系的核心性质。对于均相真实混合物体系，无论物态是气、液还是固态，我们都可以引入两种衍生于$pVTn_i$状态方程的量：压缩因子（compressibility factor）$Z$和逸度（fugacity）$f$来描述。它们都是体系的强度性质。
+在第\ref{sec:I_thermodynamic_relations}章最后已经明确，完整确定一个混合物体系的热力学性质，需要其各组份的偏摩尔热容以及偏摩尔状态方程。后者来自体系的$pVTn_i$状态方程对$n_i$的偏导数。对于等温过程，混合物的$pVTn_i$状态方程是混合物体系的核心性质。对于均相真实混合物体系，无论物态是气、液还是固态，我们都可以引入两种衍生于$pVTn_i$状态方程的量：\emph{压缩因子（compressibility factor）}$Z$和\emph{逸度（fugacity）}$f$来描述。它们都是体系的强度性质。
 
 \subsection{混合物的压缩因子}
 压缩因子的定义是
 \[Z\eqdef \frac{pV_\text{m}}{RT}=Z\left(X,Y,\left\{n_i\right\}\right)\]
 其中$X,Y$是$T$、$p$、$V_\text{m}$中的任意两个参量。我们常常取$\left(T,p\right)$或$\left(T,\rho\right)$，其中$\rho\equiv V^{-1}_\text{m}$。对于纯物质，写成关于$p$或$\rho$的函数时，对应不同形式的位力展开式：
 \begin{align*}
-    Z\left(T,p,\left\{n_i\right\}\right)    & =1+B_1p+B_2p^2+\cdots       \\
-    Z\left(T,\rho,\left\{n_i\right\}\right) & =1+b_1\rho+b_2\rho^2+\cdots
+  Z\left(T,p,\left\{n_i\right\}\right)    & =1+B_1p+B_2p^2+\cdots       \\
+  Z\left(T,\rho,\left\{n_i\right\}\right) & =1+b_1\rho+b_2\rho^2+\cdots
 \end{align*}
 这些位力展开式都保证了以下一致收敛性质
 \[\lim_{p\to 0}Z\left(T,p,\left\{n_i\right\}\right)=1,\quad\lim_{\rho\to 0}Z\left(T,\rho,\left\{n_i\right\}\right)=1\]
@@ -28,21 +28,21 @@
 \subsubsection{引入}
 我们可以令真实混合物的化学势取形如理想气体混合物的化学势的简单形式。定义组份$i$在混合物中的逸度$f_i$，以替代式\eqref{eq:II.3_def_ideal_gas_mixture_mu}中的$x_ip$，使得恒定$T$（$\mathrm{d}T=0$）下
 \begin{align}\label{eq:II.4_def_fugacity_i}
-    \mathrm{d}\mu_i=RT\mathrm{d}\ln f_i
+  \mathrm{d}\mu_i=RT\mathrm{d}\ln f_i
 \end{align}
 此处$f_i=f_i\left(T,p,\left\{n_j\right\}\right)$。对于理想气体混合物，自然有$f_i^\text{ig}\equiv x_i p$。但我们也由经验知道，真实混合物在压强极低时近似理想气体混合物，故在定义逸度时还要求以下一致收敛性质：
 \[\lim_{p\to 0}\frac{f_i\left(T,p,\left\{n_i\right\}\right)}{x_i p}=1\]
 
 定义式\eqref{eq:II.4_def_fugacity_i}在纯物质（$x_i=1$）时的形式就是（恒定$T$下）
 \begin{equation}\label{eq:II.4_def_fugacity_i*}
-    \mathrm{d}\mu_i^*=RT\mathrm{d}\ln f_i^*
+  \mathrm{d}\mu_i^*=RT\mathrm{d}\ln f_i^*
 \end{equation}
 其中$f_i^*=f_i^*\left(T,p\right)$是组份$i$纯物质的逸度，相应地它也满足在$p\rightarrow 0$时的一致收敛性质
 \[\lim_{p\to 0}\frac{f_i^*\left(T,p\right)}{p}=1\]
 
 我们还可以为混合物体系定义其逸度$f$，它要满足:
 \begin{equation}\label{II.4_def_fugacity_f}
-    \mathrm{d}G_\text{m}=RT\mathrm{d}\ln f
+  \mathrm{d}G_\text{m}=RT\mathrm{d}\ln f
 \end{equation}
 其中$f=f\left(T,p,\left\{n_i\right\}\right)$，而且还满足以下一致收敛性质：
 \[\lim_{p\to 0}\frac{f\left(T,p,\left\{n_i\right\}\right)}{p}=1\]
@@ -51,8 +51,8 @@
 
 以上用来定义各逸度的微分式都是在$\mathrm{d}T=0$下的形式，不是的完整全微分式。以组份$i$在混合物中的化学势为例，它作为状态函数应该完整、独立地由$\left(T,p,\left\{n_i\right\}\right)$确定，故其完整的全微分式应该是
 \begin{align*}
-    \mathrm{d}\mu_i\left(T,p,\left\{n_i\right\}\right) & =-S_i\mathrm{d}T+RT\mathrm{d}\ln f_i                                                                                   \\
-                                                       & =-S_i\mathrm{d}T+V_i\mathrm{d}p+\sum_j\left.\frac{\partial\mu_i}{\partial n_j}\right|_{T,p,\left\{n_{k\neq j}\right\}}
+  \mathrm{d}\mu_i\left(T,p,\left\{n_i\right\}\right) & =-S_i\mathrm{d}T+RT\mathrm{d}\ln f_i                                                                                   \\
+                                                     & =-S_i\mathrm{d}T+V_i\mathrm{d}p+\sum_j\left.\frac{\partial\mu_i}{\partial n_j}\right|_{T,p,\left\{n_{k\neq j}\right\}}
 \end{align*}
 于是我们得到了组份$i$在混合物中的逸度与其在混合物中的偏摩尔体积之间的关系：
 \[V_i=\left.\frac{\partial\ln f_i}{\partial p}\right|_{T,\left\{n_j\right\}}\]
@@ -62,30 +62,30 @@
 \[V_\text{m,i}^*=\left.\frac{\partial\ln f_i^*}{\partial p}\right|_T,\quad V=\left.\frac{\partial\ln f}{\partial p}\right|_{T,\left\{n_i\right\}}\]
 讨论恒温恒组成过程时（$\mathrm{d}T=\mathrm{d}n_i=0$）可直接写成
 \begin{align*}
-    \mathrm{d}\mu_i^*     & =V_i^*\mathrm{d}p=RTZ_i^*\mathrm{d}\ln p=RT\mathrm{d}\ln f_i^* \\
-    V_i\mathrm{d}p        & =RTZ_i\mathrm{d}\ln p=RT\mathrm{d}\ln f_i                      \\
-    V_\text{m}\mathrm{d}p & =RTZ\mathrm{d}\ln p=RT\mathrm{d}\ln f
+  \mathrm{d}\mu_i^*     & =V_i^*\mathrm{d}p=RTZ_i^*\mathrm{d}\ln p=RT\mathrm{d}\ln f_i^* \\
+  V_i\mathrm{d}p        & =RTZ_i\mathrm{d}\ln p=RT\mathrm{d}\ln f_i                      \\
+  V_\text{m}\mathrm{d}p & =RTZ\mathrm{d}\ln p=RT\mathrm{d}\ln f
 \end{align*}
 
 留意到，恒定$T$和组成时
 \[\mathrm{d}\ln\frac{f}{p}=\mathrm{d}\ln f-\mathrm{d}\ln p=\left(Z-1\right)\mathrm{d}\ln p\]
 则等号两边同求以下广义积分有
 \begin{align*}
-                    & \int_0^p\mathrm{d}\ln\frac{f\left(T,p^\prime,\left\{n_i\right\}\right)}{p^\prime}=\int_0^p\left[Z\left(T,p^\prime,\left\{n_i\right\}\right)-1\right]\mathrm{d}\ln p^\prime                                                     \\
-    \Leftrightarrow & \ln\frac{f\left(T,p,\left\{n_i\right\}\right)}{p}-\lim_{p^\prime\to 0}\ln\frac{f\left(T,p^\prime,\left\{n_i\right\}\right)}{p^\prime}=\int_0^p\left[Z\left(T,p^\prime,\left\{n_i\right\}\right)-1\right]\mathrm{d}\ln p^\prime \\
-    \Leftrightarrow & \ln\frac{f}{p}=\int_0^p\left(Z-1\right)\mathrm{d}\ln p^\prime
+                  & \int_0^p\mathrm{d}\ln\frac{f\left(T,p^\prime,\left\{n_i\right\}\right)}{p^\prime}=\int_0^p\left[Z\left(T,p^\prime,\left\{n_i\right\}\right)-1\right]\mathrm{d}\ln p^\prime                                                     \\
+  \Leftrightarrow & \ln\frac{f\left(T,p,\left\{n_i\right\}\right)}{p}-\lim_{p^\prime\to 0}\ln\frac{f\left(T,p^\prime,\left\{n_i\right\}\right)}{p^\prime}=\int_0^p\left[Z\left(T,p^\prime,\left\{n_i\right\}\right)-1\right]\mathrm{d}\ln p^\prime \\
+  \Leftrightarrow & \ln\frac{f}{p}=\int_0^p\left(Z-1\right)\mathrm{d}\ln p^\prime
 \end{align*}
 整个推导是在恒温恒组成条件下的，在推导过程中强调了完整的状态参数。最后得到的关系，对于$Z_i^*$与$f_i^*$、$Z_i$与$f_i$都以类似形式成立。
 
-$f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的逸度因子。组份$i$在混合物中的逸度因子（fugacity factor）$\varphi_i$定义为
+$f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的逸度因子。组份$i$在混合物中的\emph{逸度因子（fugacity factor）}$\varphi_i$定义为
 \begin{equation}\label{eq:II.4_def_fugacity_factor_i}
-    \varphi_i\eqdef\frac{f_i}{x_ip}=\varphi_i\left(T,p,\left\{n_i\right\}\right)
+  \varphi_i\eqdef\frac{f_i}{x_ip}=\varphi_i\left(T,p,\left\{n_i\right\}\right)
 \end{equation}
 由$f_i$的一致收敛规定有$\lim_{p\to 0}\varphi_i=1$。纯物质$i$的逸度因子$\varphi_i^*$、混合物的（平均）逸度因子$\varphi$可类似地得到定义。上面推导的逸度与压缩因子的关系式，用逸度因子表示将更简洁：恒温恒组成时（$\mathrm{d}T=\mathrm{d}n_i=0$），
 \begin{align*}
-    \ln\varphi     & =\int_0^p\left(Z-1\right)\mathrm{d}\ln p^\prime     \\
-    \ln\varphi_i   & =\int_0^p\left(Z_i-1\right)\mathrm{d}\ln p^\prime   \\
-    \ln\varphi^*_i & =\int_0^p\left(Z_i^*-1\right)\mathrm{d}\ln p^\prime
+  \ln\varphi     & =\int_0^p\left(Z-1\right)\mathrm{d}\ln p^\prime     \\
+  \ln\varphi_i   & =\int_0^p\left(Z_i-1\right)\mathrm{d}\ln p^\prime   \\
+  \ln\varphi^*_i & =\int_0^p\left(Z_i^*-1\right)\mathrm{d}\ln p^\prime
 \end{align*}
 
 由混合物的逸度、逸度因子、压缩因子和偏摩尔体积之间的关系式可以看到，这些全是混合物体系的$pVTn_i$状态方程的等效表达形式。逸度或逸度因子可通过某体系的$p-V-T-n_i$数据表计算得到，也可通过某给定的$pVTn_i$状态方程的解析式得到。
@@ -97,31 +97,31 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 
 按照式\eqref{eq:I.1_integral_of_function}的精神，同温同组成下有
 \begin{align*}
-    G\left(T,p,\left\{n_i\right\}\right)-G\left(T,p^\prime,\left\{n_i\right\}\right) & =nG_\text{m}\left(p\right)-nG_\text{m}\left(p^\prime\right)                               \\
-                                                                                     & =n\int_{p^\prime}^p\mathrm{d}G_\text{m}\left(T,p^{\prime\prime},\left\{n_i\right\}\right) \\
-                                                                                     & =RT\left[n\ln f\left(p\right)-n\ln f\left(p^\prime\right)\right]
+  G\left(T,p,\left\{n_i\right\}\right)-G\left(T,p^\prime,\left\{n_i\right\}\right) & =nG_\text{m}\left(p\right)-nG_\text{m}\left(p^\prime\right)                               \\
+                                                                                   & =n\int_{p^\prime}^p\mathrm{d}G_\text{m}\left(T,p^{\prime\prime},\left\{n_i\right\}\right) \\
+                                                                                   & =RT\left[n\ln f\left(p\right)-n\ln f\left(p^\prime\right)\right]
 \end{align*}
 等号两边同求偏摩尔量——
 \begin{align*}
-    \left.\frac{\partial}{\partial n_i}lhs\right|_{T,p,\left\{n_{j\neq i}\right\}} & =\mu_i\left(T,p,\left\{n_j\right\}\right)-\mu_i\left(T,p^\prime,\left\{n_j\right\}\right)                                                                                             \\
-                                                                                   & =\left.\frac{\partial}{\partial n_i}rhs\right|_{T,p,\left\{n_{j\neq i}\right\}}                                                                                                       \\
-                                                                                   & =RT\left.\frac{\partial}{\partial n_i}\left[n\ln f\left(T,p,\left\{n_j\right\}\right)-n\ln f\left(T,p^\prime,\left\{n_j\right\}\right)\right]\right|_{T,p,\left\{n_{j\neq i}\right\}}
+  \left.\frac{\partial}{\partial n_i}lhs\right|_{T,p,\left\{n_{j\neq i}\right\}} & =\mu_i\left(T,p,\left\{n_j\right\}\right)-\mu_i\left(T,p^\prime,\left\{n_j\right\}\right)                                                                                             \\
+                                                                                 & =\left.\frac{\partial}{\partial n_i}rhs\right|_{T,p,\left\{n_{j\neq i}\right\}}                                                                                                       \\
+                                                                                 & =RT\left.\frac{\partial}{\partial n_i}\left[n\ln f\left(T,p,\left\{n_j\right\}\right)-n\ln f\left(T,p^\prime,\left\{n_j\right\}\right)\right]\right|_{T,p,\left\{n_{j\neq i}\right\}}
 \end{align*}
 又由$f_i$的定义，
 \begin{align*}
-    \mu_i\left(T,p,\left\{n_j\right\}\right)-\mu_i\left(T,p^\prime,\left\{n_j\right\}\right) & =\int_{p^\prime}^p\mathrm{d}\mu_i\left(T,p^{\prime\prime},\left\{n_j\right\}\right)                          \\
-                                                                                             & =RT\int_{p^\prime}^p\mathrm{d}\ln f_i\left(T,p^{\prime\prime},\left\{n_j\right\}\right)                      \\
-                                                                                             & =RT\mathrm{d}\ln\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i\left(T,p^\prime,\left\{n_j\right\}\right)}
+  \mu_i\left(T,p,\left\{n_j\right\}\right)-\mu_i\left(T,p^\prime,\left\{n_j\right\}\right) & =\int_{p^\prime}^p\mathrm{d}\mu_i\left(T,p^{\prime\prime},\left\{n_j\right\}\right)                          \\
+                                                                                           & =RT\int_{p^\prime}^p\mathrm{d}\ln f_i\left(T,p^{\prime\prime},\left\{n_j\right\}\right)                      \\
+                                                                                           & =RT\mathrm{d}\ln\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i\left(T,p^\prime,\left\{n_j\right\}\right)}
 \end{align*}
 比较两个结果可得
 \begin{align*}
-      & \left.\frac{\partial}{\partial n_i}\left[n\ln f\left(T,p,\left\{n_j\right\}\right)\right]\right|_{T,p,\left\{n_{j\neq i}\right\}}-\left.\frac{\partial}{\partial n_i}\left[n\ln f\left(T,p^\prime,\left\{n_j\right\}\right)\right]\right|_{T,p,\left\{n_{j\neq i}\right\}} \\
-    = & \ln f_i\left(T,p,\left\{n_j\right\}\right)-\ln f_i\left(T,p^\prime,\left\{n_j\right\}\right)
+    & \left.\frac{\partial}{\partial n_i}\left[n\ln f\left(T,p,\left\{n_j\right\}\right)\right]\right|_{T,p,\left\{n_{j\neq i}\right\}}-\left.\frac{\partial}{\partial n_i}\left[n\ln f\left(T,p^\prime,\left\{n_j\right\}\right)\right]\right|_{T,p,\left\{n_{j\neq i}\right\}} \\
+  = & \ln f_i\left(T,p,\left\{n_j\right\}\right)-\ln f_i\left(T,p^\prime,\left\{n_j\right\}\right)
 \end{align*}
 两边求$p^\prime\rightarrow 0$的极限，由各逸度的一致收敛规定，可得到
 \begin{align*}
-                    & \left.\frac{\partial}{\partial n_i}\left[n\ln f\left(T,p,\left\{n_j\right\}\right)\right]\right|_{T,p,\left\{n_{j\neq i}\right\}}-\ln p^\prime=\ln f_i\left(T,p,\left\{n_j\right\}\right)-\ln\left(x_ip^\prime\right) \\
-    \Leftrightarrow & \ln f_i/x_i=\left.\frac{\partial}{\partial n_i}\left(n\ln f\right)\right|_{T,p,\left\{n_{j\neq i}\right\}}
+                  & \left.\frac{\partial}{\partial n_i}\left[n\ln f\left(T,p,\left\{n_j\right\}\right)\right]\right|_{T,p,\left\{n_{j\neq i}\right\}}-\ln p^\prime=\ln f_i\left(T,p,\left\{n_j\right\}\right)-\ln\left(x_ip^\prime\right) \\
+  \Leftrightarrow & \ln f_i/x_i=\left.\frac{\partial}{\partial n_i}\left(n\ln f\right)\right|_{T,p,\left\{n_{j\neq i}\right\}}
 \end{align*}
 证毕。
 
@@ -139,7 +139,7 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 
 现在我们的目标是，利用式\eqref{eq:I.1_integral_of_function}的精神，通过选定某状态$\left(T^\circ,p^\circ,\left\{n_i^\circ\right\}\right)$为参考态，写出任一状态$\left(T,p,\left\{n_i\right\}\right)$下，组份$i$在混合物中的化学式$\mu_i\left(T,p,\left\{n_j\right\}\right)$的表达式。它将形如：
 \begin{equation*}
-    \mu_i\left(T,p,\left\{n_j\right\}\right)=\mu_i\left(T^\circ,p^\circ,\left\{n_j^\circ\right\}\right)+RT\ln\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i\left(T^\circ,p^\circ,\left\{n_i^\circ\right\}\right)}
+  \mu_i\left(T,p,\left\{n_j\right\}\right)=\mu_i\left(T^\circ,p^\circ,\left\{n_j^\circ\right\}\right)+RT\ln\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i\left(T^\circ,p^\circ,\left\{n_i^\circ\right\}\right)}
 \end{equation*}
 
 第一条惯例是，在同一问题的讨论下，应固定参考态的选择。无论要表出哪一相、哪一组份，在什么状态下的化学势，都采用同一参考态的化学势表达式。这样在各类问题的计算中，表达式所含的参考态化学势将消掉或约掉。诚然，客观规律不会依赖参考态的主观选择。为了实现“消掉或约掉”的目的，不同具体问题可能需要灵活选择不同的状态作为参考态。
@@ -150,10 +150,10 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 
 总结这三条惯例，选择某参考态后，组份$i$在混合物中的化学势表达式总有如下形式
 \begin{equation}\label{eq:II.4_mu_standard_state}
-    \mu_i\left(T,p,\left\{n_j\right\}\right)=\mu_i\left(T,p^\circ,\left\{n_j^\circ\right\}\right)+RT\ln\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i\left(T,p^\circ,\left\{n_j^\circ\right\}\right)}
+  \mu_i\left(T,p,\left\{n_j\right\}\right)=\mu_i\left(T,p^\circ,\left\{n_j^\circ\right\}\right)+RT\ln\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i\left(T,p^\circ,\left\{n_j^\circ\right\}\right)}
 \end{equation}
 
-在混合物热力学中，为上述目的、按上述惯例规定的参考状态，称为组份$i$的混合物标准态（mixture standard state for component $i$）。原则上，为每一组分$i$，可选择不同的状态作为其混合物标准态。但实际上我们常常为所有组分$i$统一某种选择方式。
+在混合物热力学中，为上述目的、按上述惯例规定的参考状态，称为\emph{组份$i$的混合物标准态（mixture standard state for component $i$）}。原则上，为每一组分$i$，可选择不同的状态作为其混合物标准态。但实际上我们常常为所有组分$i$统一某种选择方式。
 
 第一条惯例和第三条惯例经常是很难兼顾的。我们经常坚持第一条惯例，然后考虑到参考态的化学势一项反正会“消掉或约掉”的，那么它哪怕是假的也没关系，所以在第三条惯例中我们假想一个不发生相变的假想状态。例如明明在同温同组成下压强为$p^\circ$时混合物为气态，但我们却硬说选择一个假想的、在同温同组成下压强为$p^\circ$的液态混合物状态为参考态。同样的情况也见于选择同温同压下某组份纯物质为参考态的情况。实际上在同温同压下该组份纯物质与混合物物态已不同，我们就说选择的是一个同温同压下该纯物质与混合物物态相同的假想态。
 
@@ -162,13 +162,13 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 总之，采用微分式来表达热力学关系和定义模型体系，就是为了最大的一般性和灵活性。在实际问题当中，我们总是利用式\eqref{eq:I.1_integral_of_function}的精神，巧妙选择参考态来求算各种问题。
 
 \subsubsection{活度与活度因子}
-我们可进一步把式\eqref{eq:II.4_mu_standard_state}中的逸度比定义为一个新的量。正式地，选定了某种混合物标准态后，组份$i$在混合物中的活度（activity）是
+我们可进一步把式\eqref{eq:II.4_mu_standard_state}中的逸度比定义为一个新的量。正式地，选定了某种混合物标准态后，组份$i$在混合物中的\emph{活度（activity）}是
 \begin{equation}
-    a_i\left(T,p,\left\{n_j\right\}\right)\eqdef\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i\left(T,p^\circ,\left\{n_j^\circ\right\}\right)}
+  a_i\left(T,p,\left\{n_j\right\}\right)\eqdef\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i\left(T,p^\circ,\left\{n_j^\circ\right\}\right)}
 \end{equation}
-活度因子（activity factor）是
+\emph{活度因子（activity factor）}是
 \begin{equation}
-    \gamma_i\left(T,p,\left\{n_j\right\}\right)\eqdef\frac{a_i\left(T,p,\left\{n_j\right\}\right)}{x_i}
+  \gamma_i\left(T,p,\left\{n_j\right\}\right)\eqdef\frac{a_i\left(T,p,\left\{n_j\right\}\right)}{x_i}
 \end{equation}
 
 逸度和逸度因子则是由化学势的微分式\eqref{eq:II.4_def_fugacity_i}和\eqref{eq:II.4_def_fugacity_factor_i}定义的概念。而活度和活度因子是规定了混合物标准态，把化学势写成式\eqref{eq:II.4_mu_standard_state}形式之后才衍生出来的概念。对于同一混合物体系，采用不同的混合物标准态选择方式，就有不同的活度和活度因子。
@@ -180,13 +180,13 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 \[p^\text{R}=p,\quad x^\text{R}_i=1\]
 即选择同温同压下组份$i$的纯物质态作为组份$i$的混合物标准态。此时，定温定压下
 \begin{align*}
-    a_i^\text{R}\left(T,p,\left\{n_j\right\}\right)      & =\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i^*\left(T,p\right)}    \\
-    \gamma_i^\text{R}\left(T,p,\left\{n_j\right\}\right) & =\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{x_if_i^*\left(T,p\right)}
+  a_i^\text{R}\left(T,p,\left\{n_j\right\}\right)      & =\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i^*\left(T,p\right)}    \\
+  \gamma_i^\text{R}\left(T,p,\left\{n_j\right\}\right) & =\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{x_if_i^*\left(T,p\right)}
 \end{align*}
 式\eqref{eq:II.4_mu_standard_state}就变成
 \begin{align}
-    \mu_i\left(T,p,\left\{n_j\right\}\right) & =\mu_i^*\left(T,p\right)+RT\ln a_i^\text{R}\left(T,p,\left\{n_j\right\}\right)\label{eq:II.4_Raoult_standard_state_activity}                                       \\
-                                             & =\mu_i^\text{id}\left(T,p,\left\{n_j\right\}\right)+RT\ln\gamma_i^\text{R}\left(T,p,\left\{n_j\right\}\right)\label{eq:II.4_Raoult_standard_state_activity_factor}
+  \mu_i\left(T,p,\left\{n_j\right\}\right) & =\mu_i^*\left(T,p\right)+RT\ln a_i^\text{R}\left(T,p,\left\{n_j\right\}\right)\label{eq:II.4_Raoult_standard_state_activity}                                       \\
+                                           & =\mu_i^\text{id}\left(T,p,\left\{n_j\right\}\right)+RT\ln\gamma_i^\text{R}\left(T,p,\left\{n_j\right\}\right)\label{eq:II.4_Raoult_standard_state_activity_factor}
 \end{align}
 
 \subsubsection{亨利定律标准态}
@@ -194,12 +194,12 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 \[p^\text{H}=p,\quad f_i^\text{H}\equiv\lim_{x_i\to 0}\frac{f_i\left(T,p,\left\{n_i\right\}\right)}{x_i}\]
 其中$f_i^\text{H}=f_i^\circ\left(T,p,\left\{n_i\right\}\right)$是亨利定律标准态逸度。则定温定压下
 \begin{align*}
-    a_i^\text{H}\left(T,p,\left\{n_j\right\}\right)      & =\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i^\circ\left(T,p,\left\{n_j\right\}\right)}    \\
-    \gamma_i^\text{H}\left(T,p,\left\{n_j\right\}\right) & =\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{x_if_i^\circ\left(T,p,\left\{n_j\right\}\right)}
+  a_i^\text{H}\left(T,p,\left\{n_j\right\}\right)      & =\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i^\circ\left(T,p,\left\{n_j\right\}\right)}    \\
+  \gamma_i^\text{H}\left(T,p,\left\{n_j\right\}\right) & =\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{x_if_i^\circ\left(T,p,\left\{n_j\right\}\right)}
 \end{align*}
 式\eqref{eq:II.4_mu_standard_state}就变成
 \begin{equation}\label{eq:II.4_Henry_standard_state_activity}
-    \mu_i\left(T,p,\left\{n_j\right\}\right) =\mu_i^\text{H}\left(T,p,\left\{n_j\right\}\right)+RT\ln a_i^\text{H}\left(T,p,\left\{n_j\right\}\right)
+  \mu_i\left(T,p,\left\{n_j\right\}\right) =\mu_i^\text{H}\left(T,p,\left\{n_j\right\}\right)+RT\ln a_i^\text{H}\left(T,p,\left\{n_j\right\}\right)
 \end{equation}
 其中
 \[\mu_i^\text{H}\left(T,p,\left\{n_j\right\}\right)=\lim_{x_i\to 0}\mu_i\left(T,p,\left\{n_j\right\}\right)\]
@@ -207,13 +207,13 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 
 这两种标准态选择的活度和活度因子之间有转换关系。注意到定温定压下
 \begin{align*}
-    \gamma_i^\text{R}\left(T,p,\left\{n_j\right\}\right)              & =\frac{\varphi_i\left(T,p,\left\{n_j\right\}\right)}{\varphi_i^*\left(T,p\right)}                                                                                                                                                       \\
-    \lim_{x_i\to 0}\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{x_i} & =p\lim_{x_i\to 0}\varphi_i\left(T,p,\left\{n_j\right\}\right)\equiv p\varphi_i^\infty\left(T,p,\left\{n_j\right\}\right),\quad\gamma_i^\text{H}=\frac{\varphi_i\left(T,p,\left\{n_j\right\}\right)}{\varphi_i^\infty\left\{n_j\right\}} \\
-    \gamma_i^\text{H}                                                 & =\frac{\varphi_i^\infty\left(T,p,\left\{n_j\right\}\right)}{\varphi_i^*\left(T,p\right)}\gamma_i^\text{R}
+  \gamma_i^\text{R}\left(T,p,\left\{n_j\right\}\right)              & =\frac{\varphi_i\left(T,p,\left\{n_j\right\}\right)}{\varphi_i^*\left(T,p\right)}                                                                                                                                                       \\
+  \lim_{x_i\to 0}\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{x_i} & =p\lim_{x_i\to 0}\varphi_i\left(T,p,\left\{n_j\right\}\right)\equiv p\varphi_i^\infty\left(T,p,\left\{n_j\right\}\right),\quad\gamma_i^\text{H}=\frac{\varphi_i\left(T,p,\left\{n_j\right\}\right)}{\varphi_i^\infty\left\{n_j\right\}} \\
+  \gamma_i^\text{H}                                                 & =\frac{\varphi_i^\infty\left(T,p,\left\{n_j\right\}\right)}{\varphi_i^*\left(T,p\right)}\gamma_i^\text{R}
 \end{align*}
 其中$\varphi_i$的两个极限——$\varphi_i^*$和$\varphi_i^\infty$——可通过$\varphi_i$与$Z_i$的关系式，转变为求$Z_i$的相应极限得到。由这一转换关系，组份$i$在混合物中的化学势又可表示成
 \begin{equation}\label{eq:II.4_Henry_standardstate_activity_factor}
-    \mu_i\left(T,p,\left\{n_j\right\}\right)=\mu_i^\text{id}\left(T,p,\left\{n_j\right\}\right)+RT\ln\frac{\varphi_i^*\left(T,p\right)}{\varphi_i^\infty\left(T,p,\left\{n_j\right\}\right)}\gamma_i^\text{H}\left(T,p,\left\{n_j\right\}\right)
+  \mu_i\left(T,p,\left\{n_j\right\}\right)=\mu_i^\text{id}\left(T,p,\left\{n_j\right\}\right)+RT\ln\frac{\varphi_i^*\left(T,p\right)}{\varphi_i^\infty\left(T,p,\left\{n_j\right\}\right)}\gamma_i^\text{H}\left(T,p,\left\{n_j\right\}\right)
 \end{equation}
 
 《物理化学》中关于非理想稀溶液活度的内容是双组份混合物的特例。对于双组份混合物，视关心的组份B为“溶质”，则另一组份A为“溶剂”，$x_\text{B}$可以连续地趋于0，此极限无非是作为“溶剂”的组份A的纯物质状态（$x_\text{A}=1$）。
@@ -230,7 +230,7 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 
 上式是我们定义理想混合物的起点。我们正式地把理想混合物（ideal mixture）定义为上式精确取等号的模型体系，即理想混合物的每一组份的化学势都满足：
 \begin{equation}\label{eq:II.4_def_ideal_mixture_mu}
-    \mu_i^\text{id}\left(T,p,\left\{n_j\right\}\right)=\mu_i^*\left(T,p\right)+RT\ln x_i
+  \mu_i^\text{id}\left(T,p,\left\{n_j\right\}\right)=\mu_i^*\left(T,p\right)+RT\ln x_i
 \end{equation}
 其中上标“id”表示理想混合物。
 
@@ -244,12 +244,12 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 
 \subsection{剩余函数与超额函数}
 \subsubsection{偏离函数的引入}
-在混合物热力学中常采用偏离函数（deviation function）来描述真实混合物。偏离函数是指一类按照如下精神定义的函数。设$M$是混合物体系的某广度性质，$M=M\left(X,Y,\left\{n_i\right\}\right)$，$X$、$Y$是除组成外的其余状态参数，则我们把实际体系性质$M$与某模型在同状态下的性质$M^\text{mod}$之差定义为该体系的偏离函数，表征体系性质偏离相应模型预测的程度。
+在混合物热力学中常采用\emph{偏离函数（deviation function）}来描述真实混合物。偏离函数是指一类按照如下精神定义的函数。设$M$是混合物体系的某广度性质，$M=M\left(X,Y,\left\{n_i\right\}\right)$，$X$、$Y$是除组成外的其余状态参数，则我们把实际体系性质$M$与某模型在同状态下的性质$M^\text{mod}$之差定义为该体系的偏离函数，表征体系性质偏离相应模型预测的程度。
 
 具体地，我们介绍两种状态参数的偏离函数：
 \begin{align}
-    M^\text{D} & \eqdef M-M^\text{mod}\left(T,p,\left\{n_i\right\}\right)\label{eq:II.4_def_deviation_function_D} \\
-    M^\text{d} & \eqdef M-M^\text{mod}\left(T,V,\left\{n_i\right\}\right)\label{eq:II.4_def_deviation_function_d}
+  M^\text{D} & \eqdef M-M^\text{mod}\left(T,p,\left\{n_i\right\}\right)\label{eq:II.4_def_deviation_function_D} \\
+  M^\text{d} & \eqdef M-M^\text{mod}\left(T,V,\left\{n_i\right\}\right)\label{eq:II.4_def_deviation_function_d}
 \end{align}
 
 \subsubsection{两组状态参数的偏离函数之间的换算关系}
@@ -259,36 +259,36 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 \[\int_{p^\prime}^p\left.\frac{\partial M^\text{mod}\left(T,p^{\prime\prime},\left\{n_i\right\}\right)}{\partial p^{\prime\prime}}\right|_{T,\left\{n_i\right\}}\mathrm{d}p^{\prime\prime}\]
 其中$p^\prime$是使模型体系在$T,\left\{n_i\right\}$下体积为$V$的压强值。正式结论就是
 \begin{equation}\label{eq:II.4_deviation_function_relation}
-    M^\text{d}=M^\text{D}+\int_{p^\prime}^p\left.\frac{M^\text{mod}\left(T,p^{\prime\prime},\left\{n_i\right\}\right)}{\partial p^{\prime\prime}}\right|_{T,\left\{n_i\right\}}\mathrm{d}p^{\prime\prime}
+  M^\text{d}=M^\text{D}+\int_{p^\prime}^p\left.\frac{M^\text{mod}\left(T,p^{\prime\prime},\left\{n_i\right\}\right)}{\partial p^{\prime\prime}}\right|_{T,\left\{n_i\right\}}\mathrm{d}p^{\prime\prime}
 \end{equation}
 
 易知，热力学状态函数的偏离函数之间仍保持相同的关系。第\ref{sec:I_thermodynamic_relations}章中的那些热力学关系中的状态函数全改成某种偏离函数，关系式仍成立。
 
 \subsubsection{剩余函数和超额函数}
-理想气体混合物和理想混合物就是使用偏离函数来描述真实混合物的性质时常常选用的两个模型。我们具体又称选用理想气体混合物为模型时的偏离函数为剩余函数（residual function），称选用理想混合物为模型时的偏离函数为超额函数（excess function）。由偏离函数的一般定义式\eqref{eq:II.4_def_deviation_function_D}和\eqref{eq:II.4_def_deviation_function_d}自然有
+理想气体混合物和理想混合物就是使用偏离函数来描述真实混合物的性质时常常选用的两个模型。我们具体又称选用理想气体混合物为模型时的偏离函数为\emph{剩余函数（residual function）}，称选用理想混合物为模型时的偏离函数为\emph{超额函数（excess function）}。由偏离函数的一般定义式\eqref{eq:II.4_def_deviation_function_D}和\eqref{eq:II.4_def_deviation_function_d}自然有
 \begin{align}
-    M^\text{R} & \eqdef M-M^\text{ig}\left(T,p,\left\{n_i\right\}\right) \\
-    M^\text{r} & \eqdef M-M^\text{ig}\left(T,V,\left\{n_i\right\}\right) \\
-    M^\text{E} & \eqdef M-M^\text{id}\left(T,p,\left\{n_i\right\}\right) \\
-    M^\text{e} & \eqdef M-M^\text{id}\left(T,V,\left\{n_i\right\}\right)
+  M^\text{R} & \eqdef M-M^\text{ig}\left(T,p,\left\{n_i\right\}\right) \\
+  M^\text{r} & \eqdef M-M^\text{ig}\left(T,V,\left\{n_i\right\}\right) \\
+  M^\text{E} & \eqdef M-M^\text{id}\left(T,p,\left\{n_i\right\}\right) \\
+  M^\text{e} & \eqdef M-M^\text{id}\left(T,V,\left\{n_i\right\}\right)
 \end{align}
 
 由于理想气体的状态方程是明确的，故两种剩余函数之间的转换关系可以写得更明确些。由式\eqref{eq:II.4_deviation_function_relation}及其中$p^\prime$的意义，有
 \begin{equation}\label{eq:II.4_residual_function_relation}
-    M^\text{r}=M^\text{R}+\int_{RT/V}^p\left.\frac{\partial M^\text{ig}\left(T,p^{\prime\prime},\left\{n_i\right\}\right)}{\partial p^{\prime\prime}}\right|_{T,\left\{n_i\right\}}\mathrm{d}p^{\prime\prime}
+  M^\text{r}=M^\text{R}+\int_{RT/V}^p\left.\frac{\partial M^\text{ig}\left(T,p^{\prime\prime},\left\{n_i\right\}\right)}{\partial p^{\prime\prime}}\right|_{T,\left\{n_i\right\}}\mathrm{d}p^{\prime\prime}
 \end{equation}
 
 具体地，理想气体的内能、焓、等容和等压热容均不依赖压强，故对这些状态函数而言，
 \[M^\text{r}=M^\text{R},\quad M=U,H,C_V,C_p\]
 而理想气体的熵、亥姆霍兹自由能和吉而斯自由能依赖压强，具体地
 \begin{align*}
-    \left.\frac{\partial S^\text{ig}}{\partial p}\right|_{T,\left\{n_i\right\}} & =-nR/p                                                                             \\
-    \left.\frac{\partial A^\text{ig}}{\partial p}\right|_{T,\left\{n_i\right\}} & =\left.\frac{\partial G^\text{ig}}{\partial p}\right|_{T,\left\{n_i\right\}}=nRT/p
+  \left.\frac{\partial S^\text{ig}}{\partial p}\right|_{T,\left\{n_i\right\}} & =-nR/p                                                                             \\
+  \left.\frac{\partial A^\text{ig}}{\partial p}\right|_{T,\left\{n_i\right\}} & =\left.\frac{\partial G^\text{ig}}{\partial p}\right|_{T,\left\{n_i\right\}}=nRT/p
 \end{align*}
 代入式\eqref{eq:II.4_residual_function_relation}得
 \begin{align*}
-    S^\text{r}            & =S^\text{R}-nR\ln Z             \\
-    A^\text{r}-A^\text{R} & =G^\text{r}-G^\text{R}=nRT\ln Z
+  S^\text{r}            & =S^\text{R}-nR\ln Z             \\
+  A^\text{r}-A^\text{R} & =G^\text{r}-G^\text{R}=nRT\ln Z
 \end{align*}
 其中$Z$是混合物体系的压缩因子。
 
@@ -304,72 +304,74 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 
 气态体系的状态方程常以压缩因子的形式给出。各热力学函数的剩余函数，都能用偏摩尔压缩因子方程得到，具体结果列于表\ref{tab:residule_functions_compressibility_factor}。这些公式等号左边都是混合物体系的（平均）摩尔量。它们都是通过相应的偏摩尔量由加和性公式间接得到的，此时等号右边的压缩因子$Z$就要换成偏摩尔压缩因子$Z_i$。以$\left(T,p,\left\{n_i\right\}\right)$作为状态参数的情况为例，偏摩尔压缩因子$Z_i=Z_i\left(T,p,\left\{n_i\right\}\right)$这个函数在实际上是通过各组份在混合物中的偏摩尔体积$V_i$对温、压的依赖关系$V_i\left(T,p\right)$的测量得到的，而根据偏摩尔量的测量方法，测定某组份$i$的偏摩尔体积需要测定平均摩尔体积$V_\text{m}$随该组份在混合物中的摩尔分数$x_i$的的变化曲线，且由$\rho\equiv V^{-1}_\text{m}$，实验上往往是通过密度测定来完成的。
 \begin{longtable}{m{0.9\textwidth}}
-    \caption{剩余函数的压缩因子表达式}                                   \label{tab:residule_functions_compressibility_factor}                                                                                                                                                  \\
-    \hline
-    以$\left(T,p,\left\{n_i\right\}\right)$为状态参数时，                                                                                                                                                                                                                   \\[-4ex]
-    \begin{align}
-        V_\text{m}^\text{R}=\frac{RT\left(Z-1\right)}{p}
-    \end{align}                                                                                                                                                                                                                 \\[-8ex]
-    \begin{align}
-        U_\text{m}^\text{R}=-RT^2\int_0^p\left.\frac{\partial Z}{\partial T}\right|_{p,\left\{n_i\right\}}\mathrm{d}\ln p-RT\left(Z-1\right)
-    \end{align}                                                                                                                             \\[-8ex]
-    \begin{align}H_\text{m}^\text{R}=-RT^2\int_0^p\left.\frac{\partial Z}{\partial T}\right|_{p,\left\{n_i\right\}}\mathrm{d}\ln p\end{align}                                                                                                                       \\[-8ex]
-    \begin{align}S_\text{m}^\text{R}=-R\int_0^p\left(T\left.\frac{\partial Z}{\partial T}\right|_{p,\left\{n_i\right\}}+Z-1\right)\mathrm{d}\ln p\end{align}                                                                                                        \\[-8ex]
-    \begin{align}A_\text{m}^\text{R}=RT\int_0^p\left(Z-1\right)\mathrm{d}\ln p-RT\left(Z-1\right)\end{align}                                                                                                                                                        \\ [-8ex]
-    \begin{align}G_\text{m}^\text{R}=RT\int_0^p\left(Z-1\right)\mathrm{d}\ln p\end{align}                                                                                                                                                                           \\[-8ex]
-    \begin{align}C_{p,\text{m}}^\text{R}  =-RT\int_0^p\left(T\left.\frac{\partial^2 Z}{\partial T^2}\right|_{p,\left\{n_i\right\}}+2\left.\frac{\partial Z}{\partial T}\right|_{p,\left\{n_i\right\}}\right)\mathrm{d}\ln p \end{align}                             \\ [-8ex]
-    \begin{align}C_{V,\text{m}}^\text{R}  =C_{p,\text{m}}^\text{R}+R-R\left(Z+T\left.\frac{\partial Z}{\partial T}\right|_{p,\left\{n_i\right\}}\right)^2\left(Z-p\left.\frac{\partial Z}{\partial p}\right|_{T,\left\{n_i\right\}}\right)^{-1}\end{align}          \\
-    以$\left(T,\rho,\left\{n_i\right\}\right)$为状态参数时，                                                                                                                                                                                                                \\ [-4ex]
-    \begin{align}
-        p^\text{r}               =\rho RT\left(Z-1\right)\end{align}                                                                                                                                                                                                    \\ [-8ex]
-    \begin{align}U_\text{m}^\text{r}      =-RT^2\int_0^\rho\left.\frac{\partial Z}{\partial T}\right|_{\rho,\left\{n_i\right\}}\mathrm{d}\ln \rho\end{align}                                                                                                        \\[-8ex]
-    \begin{align}H_\text{m}^\text{r}      =-RT^2\int_0^\rho\left.\frac{\partial Z}{\partial T}\right|_{\rho,\left\{n_i\right\}}\mathrm{d}\ln\rho+RT\left(Z-1\right)\end{align}                                                                                      \\[-8ex]
-    \begin{align}S_\text{m}^\text{r}      =-R\int_0^\rho\left(T\left.\frac{\partial Z}{\partial T}\right|_{\rho,\left\{n_i\right\}}+Z-1\right)\mathrm{d}\ln\rho\end{align}                                                                                          \\[-8ex]
-    \begin{align}A_\text{m}^\text{r}      =RT\int_0^\rho\left(Z-1\right)\mathrm{d}\ln\rho\end{align}                                                                                                                                                                \\[-8ex]
-    \begin{align}G_\text{m}^\text{r}      =RT\int_0^\rho\left(Z-1\right)+RT\left(Z-1\right)\end{align}                                                                                                                                                              \\[-8ex]
-    \begin{align}C_{V,\text{m}}^\text{r}  =-RT\int_0^\rho\left(T\left.\frac{\partial^2 Z}{\partial T^2}\right|_{\rho,\left\{n_i\right\}}+2\left.\frac{\partial Z}{\partial T}\right|_{\rho,\left\{n_i\right\}}\right)\mathrm{d}\ln\rho\end{align}                   \\[-8ex]
-    \begin{align}C_{p,\text{m}}^\text{r}  =C_{V,\text{m}}^\text{r}-R+R\left(Z+T\left.\frac{\partial Z}{\partial T}\right|_{\rho,\left\{n_i\right\}}\right)^2\left(Z+\rho\left.\frac{\partial Z}{\partial \rho}\right|_{T,\left\{n_i\right\}}\right)^{-1}\end{align} \\
-    \hline
+  \caption{剩余函数的压缩因子表达式}                                   \label{tab:residule_functions_compressibility_factor}                                                                                                                                                  \\
+  \hline
+  以$\left(T,p,\left\{n_i\right\}\right)$为状态参数时，                                                                                                                                                                                                                   \\[-4ex]
+  \begin{align}
+    V_\text{m}^\text{R}=\frac{RT\left(Z-1\right)}{p}
+  \end{align}                                                                                                                                                                                                                 \\[-8ex]
+  \begin{align}
+    U_\text{m}^\text{R}=-RT^2\int_0^p\left.\frac{\partial Z}{\partial T}\right|_{p,\left\{n_i\right\}}\mathrm{d}\ln p-RT\left(Z-1\right)
+  \end{align}                                                                                                                             \\[-8ex]
+  \begin{align}H_\text{m}^\text{R}=-RT^2\int_0^p\left.\frac{\partial Z}{\partial T}\right|_{p,\left\{n_i\right\}}\mathrm{d}\ln p\end{align}                                                                                                                       \\[-8ex]
+  \begin{align}S_\text{m}^\text{R}=-R\int_0^p\left(T\left.\frac{\partial Z}{\partial T}\right|_{p,\left\{n_i\right\}}+Z-1\right)\mathrm{d}\ln p\end{align}                                                                                                        \\[-8ex]
+  \begin{align}A_\text{m}^\text{R}=RT\int_0^p\left(Z-1\right)\mathrm{d}\ln p-RT\left(Z-1\right)\end{align}                                                                                                                                                        \\ [-8ex]
+  \begin{align}G_\text{m}^\text{R}=RT\int_0^p\left(Z-1\right)\mathrm{d}\ln p\end{align}                                                                                                                                                                           \\[-8ex]
+  \begin{align}C_{p,\text{m}}^\text{R}  =-RT\int_0^p\left(T\left.\frac{\partial^2 Z}{\partial T^2}\right|_{p,\left\{n_i\right\}}+2\left.\frac{\partial Z}{\partial T}\right|_{p,\left\{n_i\right\}}\right)\mathrm{d}\ln p \end{align}                             \\ [-8ex]
+  \begin{align}C_{V,\text{m}}^\text{R}  =C_{p,\text{m}}^\text{R}+R-R\left(Z+T\left.\frac{\partial Z}{\partial T}\right|_{p,\left\{n_i\right\}}\right)^2\left(Z-p\left.\frac{\partial Z}{\partial p}\right|_{T,\left\{n_i\right\}}\right)^{-1}\end{align}          \\
+  以$\left(T,\rho,\left\{n_i\right\}\right)$为状态参数时，                                                                                                                                                                                                                \\ [-4ex]
+  \begin{align}
+    p^\text{r}               =\rho RT\left(Z-1\right)\end{align}                                                                                                                                                                                                    \\ [-8ex]
+  \begin{align}U_\text{m}^\text{r}      =-RT^2\int_0^\rho\left.\frac{\partial Z}{\partial T}\right|_{\rho,\left\{n_i\right\}}\mathrm{d}\ln \rho\end{align}                                                                                                        \\[-8ex]
+  \begin{align}H_\text{m}^\text{r}      =-RT^2\int_0^\rho\left.\frac{\partial Z}{\partial T}\right|_{\rho,\left\{n_i\right\}}\mathrm{d}\ln\rho+RT\left(Z-1\right)\end{align}                                                                                      \\[-8ex]
+  \begin{align}S_\text{m}^\text{r}      =-R\int_0^\rho\left(T\left.\frac{\partial Z}{\partial T}\right|_{\rho,\left\{n_i\right\}}+Z-1\right)\mathrm{d}\ln\rho\end{align}                                                                                          \\[-8ex]
+  \begin{align}A_\text{m}^\text{r}      =RT\int_0^\rho\left(Z-1\right)\mathrm{d}\ln\rho\end{align}                                                                                                                                                                \\[-8ex]
+  \begin{align}G_\text{m}^\text{r}      =RT\int_0^\rho\left(Z-1\right)+RT\left(Z-1\right)\end{align}                                                                                                                                                              \\[-8ex]
+  \begin{align}C_{V,\text{m}}^\text{r}  =-RT\int_0^\rho\left(T\left.\frac{\partial^2 Z}{\partial T^2}\right|_{\rho,\left\{n_i\right\}}+2\left.\frac{\partial Z}{\partial T}\right|_{\rho,\left\{n_i\right\}}\right)\mathrm{d}\ln\rho\end{align}                   \\[-8ex]
+  \begin{align}C_{p,\text{m}}^\text{r}  =C_{V,\text{m}}^\text{r}-R+R\left(Z+T\left.\frac{\partial Z}{\partial T}\right|_{\rho,\left\{n_i\right\}}\right)^2\left(Z+\rho\left.\frac{\partial Z}{\partial \rho}\right|_{T,\left\{n_i\right\}}\right)^{-1}\end{align} \\
+  \hline
 \end{longtable}
 
 \subsubsection{超额函数的活度因子表达式}
 超额函数以理想混合物为参考模型，恰好十分便于结合拉乌尔定律标准态的活度因子表达式\eqref{eq:II.4_Raoult_standard_state_activity_factor}。留意到化学势就是偏摩尔吉布斯自由能，而偏摩尔热力学函数遵循第\ref{sec:I_thermodynamic_relations}章的热力学关系式，因此很容易得到各超额热力学函数的活度因子表达式（见表\ref{tab:excess_functions_activity_factor}）。
 \begin{longtable}{m{0.75\textwidth}}
-    \caption{超额热力学函数的活度因子表达式}\label{tab:excess_functions_activity_factor}                                                                                                                                      \\
-    \hline
-    以$\left(T,p,\left\{n_i\right\}\right)$为状态参数时，                                                                                                                                                              \\ [-4ex]
+  \caption{超额热力学函数的活度因子表达式}\label{tab:excess_functions_activity_factor}                                                                                                                                      \\
+  \hline
+  以$\left(T,p,\left\{n_i\right\}\right)$为状态参数时，                                                                                                                                                              \\ [-4ex]
 
 
-    \begin{align}    \mu_i^\text{E}  =RT\ln\gamma_i    \end{align}                                                                                                                                             \\ [-8ex]
-    \begin{align}S_i^\text{E}    =-R\left(\gamma_i+T\left.\frac{\partial\gamma_i}{\partial T}\right|_{p,\left\{n_j\right\}}\right)\end{align}                                                                  \\[-8ex]
-    \begin{align}V_i^\text{E}    =RT\left.\frac{\partial\gamma_i}{\partial p}\right|_{T,\left\{n_j\right\}}\end{align}                                                                                         \\[-8ex]
-    \begin{align}H_i^\text{E}    =-RT^2\left.\frac{\partial\gamma_i}{\partial T}\right|_{p,\left\{n_j\right\}}\end{align}                                                                                      \\[-8ex]
-    \begin{align}U_i^\text{E}    =-RT\left(T\left.\frac{\partial\gamma_i}{\partial T}\right|_{p,\left\{n_j\right\}}+p\left.\frac{\partial\gamma_i}{\partial p}\right|_{T,\left\{n_j\right\}}\right)\end{align} \\[-8ex]
-    \begin{align}A_i^\text{E}    =RT\left(\gamma_i-p\left.\frac{\partial\gamma_i}{\partial p}\right|_{T,\left\{n_i\right\}}\right)\end{align}                                                                  \\
-    \hline
+  \begin{align}    \mu_i^\text{E}  =RT\ln\gamma_i    \end{align}                                                                                                                                             \\ [-8ex]
+  \begin{align}S_i^\text{E}    =-R\left(\gamma_i+T\left.\frac{\partial\gamma_i}{\partial T}\right|_{p,\left\{n_j\right\}}\right)\end{align}                                                                  \\[-8ex]
+  \begin{align}V_i^\text{E}    =RT\left.\frac{\partial\gamma_i}{\partial p}\right|_{T,\left\{n_j\right\}}\end{align}                                                                                         \\[-8ex]
+  \begin{align}H_i^\text{E}    =-RT^2\left.\frac{\partial\gamma_i}{\partial T}\right|_{p,\left\{n_j\right\}}\end{align}                                                                                      \\[-8ex]
+  \begin{align}U_i^\text{E}    =-RT\left(T\left.\frac{\partial\gamma_i}{\partial T}\right|_{p,\left\{n_j\right\}}+p\left.\frac{\partial\gamma_i}{\partial p}\right|_{T,\left\{n_j\right\}}\right)\end{align} \\[-8ex]
+  \begin{align}A_i^\text{E}    =RT\left(\gamma_i-p\left.\frac{\partial\gamma_i}{\partial p}\right|_{T,\left\{n_i\right\}}\right)\end{align}                                                                  \\
+  \hline
 \end{longtable}
 
-混合物的超额函数可由上述偏摩尔超额函数通过加和性质得到（即《物理化学》\S4.12“超额函数”下的式(4.107)、(4.109)、(4.110)和(4.111))。
+混合物的超额函数可由上述偏摩尔超额函数通过加和性质得到（即《物理化学》\S4.12“超额函数”下的式(4.107)、(4.109)、(4.110)和(4.111)）。
 
-\subsection{混合函数}
+\subsection{混合函数}\label{sec:II.4.6 mixing_function}
 除了依靠与模型体系比较（偏离函数）以突出混合物的非理想性之外，我们还会拿混合物的性质与纯物质相应性质的加和相比较，来描述混合造成的额外效应。具体地，混合物体系某广度性质$M$的混合函数定义为：
-\[\Delta_\text{mix}M\left(X,Y,\left\{n_i\right\}\right)\eqdef M\left(X,Y,\left\{n_i\right\}\right)-\sum_in_iM_i^*\left(X,Y\right)\]
+\begin{equation}\label{eq:II.4_def_mixing_function}
+  \Delta_\text{mix}M\left(X,Y,\left\{n_i\right\}\right)\eqdef M\left(X,Y,\left\{n_i\right\}\right)-\sum_in_iM_i^*\left(X,Y\right)
+\end{equation}
 而由偏摩尔量加和性，又直接有
 \[\Delta_\text{mix}M=\sum_in_i\left(M_i-M_i^*\right)\]
 结合式\eqref{eq:II.4_Raoult_standard_state_activity}，混合函数适合采用拉乌尔标准态的表达式的活度来表达。以$\left(T,p,\left\{n_i\right\}\right)$为状态参数时，
 \begin{align}
-    \mu_i-\mu_i^* & =RT\ln a_i                                                                                                                                                       \\
-    V_i-V_i^*     & =RT\left.\frac{\partial\ln a_i}{\partial p}\right|_{T,\left\{n_j\right\}}                                                                                        \\
-    S_i-S_i^*     & =-R\ln a_i-RT\left.\frac{\partial\ln a_i}{\partial T}\right|_{p,\left\{n_j\right\}}                                                                              \\
-    H_i-H_i^*     & =-RT^2\left.\frac{\partial\ln a_i}{\partial T}\right|_{p,\left\{n_j\right\}}                                                                                     \\
-    U_i-U_i^*     & =-RT\left(T\left.\frac{\partial\ln a_i}{\partial T}\right|_{p,\left\{n_j\right\}}+p\left.\frac{\partial\ln a_i}{\partial p}\right|_{T,\left\{n_j\right\}}\right) \\
-    A_i-A_i^*     & =RT\left(\ln a_i-p\left.\frac{\partial\ln a_i}{\partial p}\right|_{T,\left\{n_j\right\}}\right)
+  \mu_i-\mu_i^* & =RT\ln a_i                                                                                                                                                       \\
+  V_i-V_i^*     & =RT\left.\frac{\partial\ln a_i}{\partial p}\right|_{T,\left\{n_j\right\}}                                                                                        \\
+  S_i-S_i^*     & =-R\ln a_i-RT\left.\frac{\partial\ln a_i}{\partial T}\right|_{p,\left\{n_j\right\}}                                                                              \\
+  H_i-H_i^*     & =-RT^2\left.\frac{\partial\ln a_i}{\partial T}\right|_{p,\left\{n_j\right\}}                                                                                     \\
+  U_i-U_i^*     & =-RT\left(T\left.\frac{\partial\ln a_i}{\partial T}\right|_{p,\left\{n_j\right\}}+p\left.\frac{\partial\ln a_i}{\partial p}\right|_{T,\left\{n_j\right\}}\right) \\
+  A_i-A_i^*     & =RT\left(\ln a_i-p\left.\frac{\partial\ln a_i}{\partial p}\right|_{T,\left\{n_j\right\}}\right)
 \end{align}
 
 特别地，对于理想混合物，代入$a_i^\text{id}=x_i$，可以得到
 \begin{align}
-    \Delta_\text{mix}V^\text{id} & =\Delta_\text{mix}H^\text{id}=\Delta_\text{mix}U^\text{id}=0                    \\
-    \Delta_\text{mix}G^\text{id} & =\Delta_\text{mix}A^\text{id}=-T\Delta_\text{mix}S^\text{id}=RT\sum_in_i\ln x_i
+  \Delta_\text{mix}V^\text{id} & =\Delta_\text{mix}H^\text{id}=\Delta_\text{mix}U^\text{id}=0\label{eq:II.4_ideal_mixture_mixing_function_zero}                       \\
+  \Delta_\text{mix}G^\text{id} & =\Delta_\text{mix}A^\text{id}=-T\Delta_\text{mix}S^\text{id}=RT\sum_in_i\ln x_i\label{eq:II.4_ideal_mixture_mixing_function_nonzero}
 \end{align}
 
 在实验上，活度和活度因子不能直接测量。其中一种常见的方法是用量热法测偏摩尔焓$H_i$\cite{Grolier2015}，用密度法测量偏摩尔体积$V_i$，从而完成活度对温、压的偏导数的测定。注意到，$H_i^*$与纯物质的标准生成焓直接相关，$V_i^*$与纯物质的密度直接相关，都可以查手册解决。

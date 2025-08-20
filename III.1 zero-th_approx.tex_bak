@@ -1,0 +1,216 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+\section{小分子溶液的格子模型}\label{sec:III.1_regular_solution_lattice_model}
+在混合物热力学的章节中，我们定义了理想混合物，并指出其各混合函数的特点（\eqref{eq:II.4_ideal_mixture_mixing_function_zero}和\eqref{eq:II.4_ideal_mixture_mixing_function_nonzero}）。在这里定义一种简单的非理想溶液。对于液态混合物（溶液），如果其混合熵变与理想混合物相同，即
+\[\Delta_\text{mix}S=\Delta_\text{mix}S^\text{id}=-R\sum_in_i\ln x_i\]
+但是混合焓变与理想混合不不同，即$\Delta_\text{mix}H\neq 0$，那么我们就称这种溶液是正规溶液（regular solution）。
+
+无论是理想溶液、正规溶液还是真实的溶液，到目前我们只有关于它们的一般热力学关系。比如，凡是正规溶液$\Delta_\text{mix}H\neq 0$，这是事物的共性表述。具体$\Delta_\text{mix}H$的表达式是什么，是体系特性的体现，随具体试样不同而不同。这种表现体系特性的规律是需要从微观模型出发，通过统计力学给出的。本节介绍一种简单的微观模型，叫做格子模型（lattice model）。在格子模型中我们能复现理想或正规溶液混合熵变表达式，而且能给出正规溶液非零混合焓变的一种表达式。通过这个过程我们也能了解，溶液体系的熵、焓的微观来源是什么。
+
+\subsection{小分子溶液的内能的微观根源}\label{sec:III.1.1_internal_energy_micro_origin}
+热力学系统的内能（或称热力学能）是除开其作为一个整体质心运动的动能，以及其处于外场下的势能之外，体系内部的总能量。若体系由$N$个经典微观粒子组成，那么在没有外场时，这种热力学体系的内能是其内部的动能和势能之和。在任一瞬间这$N$个粒子的总能量$E_N$可写成：
+\[E_N=K_N+V_N\]
+其中$K_N$和$V_N$分别是这$N$个粒子的瞬时总动能和总势能。若这$N$个粒子的瞬时位置是$\mathbf{r}_1,\mathbf{r}_2,\cdots,\mathbf{r}_N$，动量是$\mathbf{p}_1,\mathbf{p}_2,\cdots,\mathbf{p}_N$，则$K_N$和$V_N$分别只与动量和位置有关\footnote{前提是一个没有外场作用的保守体系，但理解这些术语需要经典力学知识。}。瞬时总动能$K_N$可直接写出来
+\[K_N=\frac{1}{2}\sum_{i=1}^N\frac{\left\|\mathbf{p}_i\right\|^2}{2 m}\]
+其中$m$是粒子的质量。在没有外场时，瞬时总势能就是粒子间相互作用势的总和。一般地，我们只能写成
+\[V_N=V_N\left(\mathbf{r}_1,\mathbf{r}_2,\cdots,\mathbf{r}_N\right)\]
+
+在恒温恒容的热力学平衡态下，宏观体系的内能是体系内部总能量的系综平均：
+\[U=\left\langle E_N\right\rangle=\left\langle K_N\right\rangle+\left\langle V_N\right\rangle\]
+其中系统的平均总动能正比于温度$\left\langle K_N\right\rangle\propto T$，因此恒温过程的内能变化$\Delta U$仅依赖体系的平均势能$\left\langle V_N\right\rangle$的变化。为此我们需要更加具体地考虑$V_N\left(\mathbf{r}_1,\mathbf{r}_2,\cdots,\mathbf{r}_N\right)$
+
+一般地，粒子间的相互作用是“多体”的。比方说，如果体系只有两个粒子1和2，我们知道它们的相互作用势能随距离的函数$u\left(r_{12}\right)$，那么当体系有三个粒子1、2和3时，它们的总相互作用势能未必直接等于加和$u\left(r_{12}\right)+u\left(r_{13}\right)+u\left(r_{23}\right)$，而必须另外考虑一种三体相互作用势。长期的理论和实验对照表明，大部分情况下只考虑二体相互作用的加和就足够符合实际了。此时瞬时总势能可以写成
+\[V_N=\frac{1}{2}\sum_{i=1}^N\sum_{j=1}^N u\left(r_{ij}\right)\]
+其中$r_{ij}$是第$i$个粒子与第$j$个粒子之间的距离，即$r_{ij}=\left\|\mathbf{r}_i-\mathbf{r}_j\right\|$，$u\left(r\right)$是两粒子相互作用势能随距离的函数。图\ref{fig:interaction_potential_energy}展示了$u\left(r\right)$的一种典型曲线形状。
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics{../images/interaction_potential_energy.pdf}
+  \caption{用于说明粒子相互作用势的示意图。任意两个粒子$i$和$j$的相互作用势依赖它们的距离$r_{ij}$，可由热能函数$u\left(r\right)$来描述。对于硬球粒子，$r$的取值范围是$\left[2a,\infty\right)$，$a$是粒子的半径。无论$u\left(r\right)$的具体形式，在$r\rightarrow \infty$时$u$总是趋于零。因此为了简化可设置某截断值，不考虑距离大于这个值的粒子间作用势（见正文介绍）。}
+  \label{fig:interaction_potential_energy}
+\end{figure}
+
+由于相互作用势$u\left(r\right)$总是规定在$r\rightarrow\infty$处为零。我们可以认为距离大于某个值的两个粒子的势能贡献小到可以忽略。从而少算很多对粒子。以下举两例典型的相互作用势进行考察。
+
+两个相同半径$a$的球形粒子间的范德华作用势是
+\[u_\text{vdW}\left(r\right)=-\frac{A_\text{H}a}{6r}\]
+其中$A_\text{H}$是Hamaker常数，它与粒子作为一个实际物质被诱导出偶极矩的难易程度有关，负号使作用势取负值，这是因为惯例上以负值的作用势表示吸引作用势。$A_\text{H}$的值一般在\qty{-e19}{\joule}到\qty{-e20}{\joule}。我们可以用热运动单位能量$k_\text{B}T$作为一个判据，如果吸引势能的大小小于$k_\text{B}T$，它将无法束缚粒子的热运动。由$\left|u_\text{vdW}\left(r\right)\right|<k_\text{B}T$得$r>A_\text{H}a/\left(6k_\text{B}T\right)\equiv r_\text{cut}$，$r_\text{cut}$是我们按这个标准定义的截断距离。在\qty{30}{\degreeCelsius}时，水分子（$A_\text{H}=\qty{3.7e-20}{\joule}$）之间的作用势截断距离$r_\text{cut}\approx 1.5a$。可见，范德华势对总势能的贡献，一般只需考虑相邻两粒子间的加和即可。
+
+在水中，同种电荷的单价电解质之间的静电势
+\[u_\text{el}\left(r\right)=\frac{1}{k_\text{B}T}\lambda_\text{B}\left(\frac{e^{\kappa a}}{1+\kappa a}\right)^2\frac{e^{-\kappa r}}{r}\]
+其中$\lambda_\text{B}$是Bjerrum长度，$\kappa^{-1}$是Debye--Hückel屏蔽长度。在室温下，\qty{1}{\milli\mole\per\liter}的\ce{NaCl}水溶液，$\lambda_\text{B}\approx\qty{0.71}{\nano\meter},\kappa^{-1}\approx\qty{0.074}{\nano\meter}$。令$\left|u_\text{el}\left(r\right)\right|<k_\text{B}T$得$r_\text{cut}\approx \num{7.1}a$。可见，静电相互作用在两、三个分子的距离范围内都是十分重要的势能贡献。所以我们常说，范德华作用是短程作用，静电作用是长程作用。
+
+尽管采用了截断距离的近似能让我们少算好多对粒子的势能，但这只对计算机模拟时减少计算量有利。在一定温度下，宏观上处于平衡态的体系，微观下粒子一直在运动。宏观性质的系统平均是按各微观状态出现概率求得的数学期望。如果只有草稿纸和铅笔，沿着上述思路是很难继续下去的。下面引入格子模型和平均场假定来计算内能。
+
+\subsection{格子模型}
+我们假想溶液体系所占体积被划分成网格，格子的大小都相同。无论是溶剂还是溶质分子，每个分子只能放在一格，这相当于认为溶质和溶剂分子的大小相同，且混合前后体积不变，即$\Delta_\text{mix}V=0$。
+
+\begin{wrapfigure}{r}{0.333\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{../images/lattice_binary_mixture.pdf}
+  \caption{二元液体混合物中溶质分子在正规溶液格子模型中的分布示意图}
+  \label{fig:lattice_binary_mixture}
+\end{wrapfigure}
+
+在3维空间中，我们可以设定这套网格的配位数$z$，即每个格子周围相邻的格子个数。在三维空间中，尺寸相同的球的堆积密度与堆积的方式有关，造成不同的配位数。显然，需要$z\geq 2$才有可能构成可在三维空间中延展的网格结构。最紧密的堆砌方法是面心立方（face-centered cubic，FCC）或六方密排（hexagonal close-packed，HCP），它们的配位数都是\num{12}。因此$z$的理论上的取值范围须是\num{2}到\num{12}，实际体系$z$一般大于\num{6}。此外，液体中的分子不是静止不动的。所以在任一瞬间，各分子都并不精确地落在一套周期性的晶格内。因此，格子模型的配位数仅反映液态体系中平均而言每个分子邻近的分子数，故$z$可取6至12间的任意一个有理数。
+
+% \begin{figure}[ht]
+%     \centering
+%     \includegraphics{../images/average_coordination_number.pdf}
+%     \caption{由于分子运动，每个分子周围有几个分子，只能讨论平均数。}
+%     \label{fig:average_coordination_number}
+% \end{figure}
+
+我们马上会看到，格子模型和平均场思想简化了我们考虑体系的总势能的难度。现在，我们只考虑处于相邻格子的两个分子间的势能对总势能的贡献，这相当于取$r_\text{cut}=2a$。这对于仅有范德华作用势的体系是比较合理的近似。既然任意两个相邻分子的间距都是$2a$，那么势能只需考虑三个定值：
+\[\varepsilon_{11}=u_{11}\left(2a\right),\quad\varepsilon_{22}=u_{12}\left(2a\right),\quad\varepsilon_{12}=u_{12}\left(2a\right)\]
+其中$u_{11}\left(r\right)$、$u_{22}\left(r\right)$和$u_{12}\left(r\right)$分别是两溶剂分子间、两溶质分子间以及一溶剂分子与一溶质分子间的相互作用势能函数。由于分子种类不同，它们应是不同的势能函数。
+
+我们要认识到，宏观视为静止的体系，在微观下其分子一直在运动。每一时刻，每个分子邻近的分子是溶质还是溶剂分子，也时时、处处不同。由于这种变化十分快，所以宏观上的效应，就好像每个分子邻近的分子种类跟溶液中该种分子的浓度相同。这是一种平均场（mean-field）思想，即采用宏观平均参数，来作为微观局域环境对单个分子的影响的一种估计。具体地，每个格子中的分子是溶质（2号）的平均比例，按照平均场方法，就直接等于溶液在溶液中的宏观平均浓度。这样的话，由$N_1$个溶剂和$N_2$个溶质分子混合的溶液体系，任一格子周围的$z$个格子中，将有$x_1z$个格子放了溶剂，其中$x_1\equiv N_1/\left(N_1+N_2\right)$是溶剂的摩尔分数。总共有$N_1$个溶剂分子，就有$N_1x_1z$个1-1相邻的分子对和$n_2x_2z$个1-2相邻的分子对\footnote{我们忽略了恰好处于溶液边界上、因此配位数少于$z$的情况，因此一个宏观尺度规模的体系，处于边界上的分子跟全体分子相比，比例小到可以忽略，可近似认为所有分子都是“在内部的”。}。同理又知总共有$N_2$个溶质分子，则又算得共有$N_2x_2z$个2-2分子对和$N_2x_1z$个2-1分子对。两种计算是重复的，因此溶液的平均总势能是上列计数所对应的总势能的二分之一：
+\[U_\text{溶液}=\frac{1}{2}N_1\left(zx_1\varepsilon_{11}+zx_2\varepsilon_{12}\right)+\frac{1}{2}N_2\left(zx_2\varepsilon_{22}+zx_1\varepsilon_{12}\right)\]
+在混合前，溶质和溶剂各自以纯物质的状态存在。例如，纯溶质体系只有$N_2$个分子2，每个分子2之间全是分子2（$x_1=0$、$x_2=1$）。纯溶剂体系情况类似。因此，纯溶质与纯溶质的总势能是
+\[U_\text{纯组份}=\frac{1}{2}N_1z\varepsilon_{11}+\frac{1}{2}N_2z\varepsilon_{22}\]
+由此可直接写下混合内能变化：
+\begin{align}
+  \Delta_\text{mix}U & =U_\text{溶液}-U_\text{纯组份}\nonumber                                                                               \\
+                     & =\frac{N_1N_2z}{N}\left(\varepsilon_{12}-\frac{1}{2}\varepsilon_{11}-\frac{1}{2}\varepsilon_{22}\right)\nonumber \\
+                     & =N_1x_2z\Delta\varepsilon\label{eq:III.1_mixing_internal_energy_regular_solution}
+\end{align}
+其中我们定义了交换能
+\[\Delta\varepsilon\equiv\varepsilon_{12}-\frac{1}{2}\varepsilon_{11}-\frac{1}{2}\varepsilon_{22}\]
+
+我们可以从交换能$\Delta\varepsilon$的表达式理解其物理意义。由$2\Delta\varepsilon=2\varepsilon_{12}-\varepsilon_{11}-\varepsilon_{22}$，我们知道$\Delta\varepsilon$是溶质与溶剂分子间相互作用势能的差值。如果$\Delta\varepsilon>0$，溶质分子与溶剂分子相邻的状态比它们各自相邻的状态势能更高，是溶解的不利因素；反之，如果$\Delta\varepsilon<0$，则溶质分子与溶剂分子相邻的状态比它们各自相邻的状态势能更低，是溶解的有利因素。由于热力学势函数常用$k_\text{B}T$作为单位，我们又定义相互作用参数
+\begin{equation}\label{eq:III.1_interaction_parameter_definition}\chi_{12}\equiv\frac{\Delta_\text{mix}U}{k_\text{B}TN_1\varphi_2}\end{equation}
+其中$\varphi_2$是溶质的体积分数。这个定义式是普遍适用的。在后面的章节里我们会进一步讨论。现在，在格子模型下小分子溶质和溶剂占用体积是相同的（都是一个格子）所以这里$\varphi_2=x_2$。结合式\eqref{eq:III.1_mixing_internal_energy_regular_solution}和\eqref{eq:III.1_interaction_parameter_definition}，我们可以得到，格子模型所预测的小分子溶液相互作用参数是
+\[\chi_{12}=\frac{z\Delta\varepsilon}{k_\text{B}T}\]
+
+由于我们假定了$\Delta_\text{mix}V=0$，因此将有$\Delta_\text{mix}H=\Delta_\text{mix}U+p\Delta_\text{mix}V=\Delta_\text{mix}U$，因此格子模型预测的混合焓变就等一混合内能变：
+\[\Delta_\text{mix}H=\Delta_\text{mix}U=k_\text{B}T\chi_{12}N_1x_2\]
+
+\subsection{溶液的熵的微观根源}
+当分子数$N$非常大时，热力学系统在定温定压下或定温定容下某宏观状态的熵都近似于内能相同的孤立系统表达式，即
+\[S\approx k_\text{B}\ln\Omega\]
+其中$\Omega$是具有与实际关注的系统相同的分子数、相同的体积以及相同的内能的孤立系统的可取微观状态数。对于一个由$N$个微观粒子组成的经典力学系统，一组位置$\left(\mathbf{r}_1,\cdots,\mathbf{r}_N\right)$和动量$\left(\mathbf{p}_1,\cdots,\mathbf{p}_N\right)$的取值就唯一确定系统的一个微观状态。所以$\Omega$就是表示这个孤立系统在定温定容定内能下可以取多少种不同值的一组$\left(\mathbf{r}_1,\cdots,\mathbf{r}_N,\mathbf{p}_1,\cdots,\mathbf{p}_N\right)$。这将是一个天文数字，但我们坚持继续讨论下去。
+
+注意到，经典力系的动量与位置取值相互独立，意思是说，体系可以取的动量值个数不依赖体系已取的位置值，反之亦然。那么，若体系可取$\Omega_\text{m}$种动量值和$\Omega_c$种位置值\footnote{m代表动量（momentum）；c代表位形（configuration）。}，则总共可取的微观状数将直接是它们的乘积$\Omega=\Omega_\text{m}\Omega_\text{c}$。再考虑到，溶质与溶剂混合前、后温度是相同的，由温度“平均动能”的物理意义，我们不难接受这一说法：混合前、后$\Omega_\text{m}$相同的说法\footnote{严格的统计力学理由待补充。}。此时混合前后体系的熵变化
+\[\begin{aligned}\Delta_\text{mix}S & =S_\text{溶液}-S_\text{纯组份}                                                                                  \\
+                                  & =k_\text{B}\left(\ln\Omega_\text{m}+\ln\Omega_\text{c,溶液}-\ln\Omega_\text{m}-\ln\Omega_\text{c,纯组份}\right) \\
+                                  & =k_\text{B}\left(\ln\Omega_\text{c,溶液}-\ln\Omega_\text{c,纯组份}\right)                                       \\
+                                  & =\Delta_\text{mix}S_\text{c}\end{aligned}\]
+其中$S_\text{c}=k_\text{B}\ln\Omega_\text{c}$叫位形熵（configurational entropy）。上式表明，对于等温混合过程，只需统计混合前后位形数$\Omega_\text{c}$——即分子空间排布的方法数——的变化，就能得到体系的混合熵变了。
+
+在格子模型中，分子空间排布的方法数可抽象成一个组合数问题。若考虑把$N_1$个溶剂分子和$N_2$个溶质分子依次放入$N=N_1+N_2$个格子中，总共有$N!$种放法。但由于同组分的分子是不可区分的，因此还要除以$N_1!N_2!$。于是溶液分子的位形数是
+\begin{equation}
+  \Omega_\text{c,溶液}=\frac{N!}{N_1!N_2!}
+  \label{eq:III.1_omega_c_solution}
+\end{equation}
+在混合前，组份1和2处于纯物质状态，相当于把$N_1$个溶剂分子放入一个盒子中，以及把$N_2$个溶剂分子放入第二个盒子中的方法——只有一种。因此$\Omega_\text{c,纯组份}=1$，$S_\text{c,纯组份}=0$。混合熵变就是
+\[\begin{aligned}
+    \Delta_\text{mix}S & =k_\text{B}\ln\Omega_\text{c,溶液}                                                     \\
+                       & =k_\text{B}\left[\ln\left(N!\right)-\ln\left(N_1!\right)-\ln\left(N_2!\right)\right]
+  \end{aligned}\]
+当$N$很大时，可以用Stirling近似（Stirling's approximation）：
+\[\ln\left(N!\right)\approx N\ln N-N\]
+代入上式，得
+\begin{equation}\label{eq:III.1_mixing_entropy_regular_solution}
+  \Delta_\text{mix}S=-k_\text{B}\left(N_1\ln x_1+N_2\ln x_2\right)
+\end{equation}
+我们发现，这个混合熵变表达式恰好是理想溶液的混合熵变表达式（式\eqref{eq:II.4_ideal_mixture_mixing_function_nonzero}的双组份情况）。我们知道，理想混合物的混合熵变是由理想溶液的热力学定义和基本热力学关系所规定的。这里我们通过格子模型的微观模型的推导复现出了理想溶液的混合熵变表达式。我们因此可以认为，尽管格子模型作了各种简化假定，但它基本抓住了溶液的微观机理。
+
+最后，结合我们对混合焓变和混合熵变的推导结果式\eqref{eq:III.1_mixing_internal_energy_regular_solution}和\eqref{eq:III.1_mixing_entropy_regular_solution}，我们可以写下由格子模型所预测的正规溶液的混合吉布斯自由能变表达式：
+\begin{align}
+  \Delta_\text{mix}G & =\Delta_\text{mix}H-T\Delta_\text{mix}S\nonumber                                                                         \\
+                     & =k_\text{B}T\left(N_1\ln x_1+N_2\ln x_2+\chi_{12}N_1x_2\right)\label{eq:III.1_mixing_Gibbs_free_energy_regular_solution}
+\end{align}
+且当$\chi_{12}=0$时，上式自然回到理想溶液的情况（式\eqref{eq:II.4_ideal_mixture_mixing_function_nonzero}）。得到了混合自由能变的表达式，我们就可以供我们对溶液体系的很多具体性质的进行预测。这将在后面的章节集中讨论。下一节我们先进一步讨论用格子模型处理高分子溶液的理论。
+
+\section{高分子溶液的格子模型}
+\begin{wrapfigure}{r}{0.333\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{../images/lattice_flory_huggins.pdf}
+  \caption{一条高分子链的链段在格子中的一种放置方式。}
+  \label{fig:lattice_flory_huggins}
+\end{wrapfigure}
+我们把格子模型应用于线型高分子溶液，将作如下基本考虑：
+\begin{enumerate}
+  \item 每个高分子链占$x$个格子，故$x$正比于高分子的聚合度。高分子每一格子的部分暂称“链段”，但这只是临时称呼，它不同于链统计理论中的库恩链段；
+  \item 高分子链的不同构象势能都相同，因此它取任一构象的概率相等。这相当于忽略了内旋转势能的影响，类似自由联结链的假设；
+  \item 平均场假定，即微观局部的分子环境等于宏观整体的均值。
+\end{enumerate}
+
+假定有$N_1$个溶剂分子和$N_2$个高分子链，且每个高分子链占$x$个格子，则总的格子数为$N_1+N_2x$。我们可以把一个高分子画成由$x$个球相连接的整体。原则上，格子模型可以考虑线形、支化、嵌段共聚物等不同链拓扑结构的情况\cite{Wolf2011}。本课只考虑线形高分子溶液，如图\ref{fig:lattice_flory_huggins}所示。
+
+\subsection{高分子溶液的混合熵}
+在上一讲中，我们已经知道，格子模型讨论下的等温混合过程的混合熵变等于位形熵的变化：
+\[\Delta_\text{mix}S=k_\text{B}\left(\ln\Omega_\text{c,溶液}-\ln\Omega_\text{c,纯组份}\right)\]
+其中$\Omega_\text{c,溶液}$是把混合物各组份的分子放入网格的方法数。在本问题中，混合物中有$N_1$个溶剂分子和$N_2$个高分子链，每个高分子链占$x$个格子。总的格子数为$N_1+N_2x$。
+
+因此我们所面临的组合数问题是：把$N_1$个溶剂分子（每个占1格）和$N_2$条长链分子（每条占连续想邻的$x$格）放入$N_1+N_2x$个格子中，有多少种不同的放置方法。我们可以按某种方便的先后步骤去假想这个过程，只要后一步的方法不依赖前面步骤的结果，那么整件事的方法数就等于各步骤方法数之积。我们注意到，不管我们怎么放轩这$N_2$条长链份子，剩下的$N_1$个溶剂分子放入$N_1$个格子中的方法都是1种，因此球$\Omega_\text{c,溶液}$就只需计算把$N_2$条长链放入$N$个格子的方法数。
+
+这$N_2$条链的放置方法数需要考虑链段间的连接性的限制，因此并非典型的组合数题目。我们采用类似“数学归纳法”的步骤，若能先写下：已放入$j$条链后，第$j+1$条链的放置数——$W_{j+1}$，则这$N_2$条依次放入网格的方法数就是
+\[
+  \prod_{j=0}^{N_2-1} W_{j+1}
+\]
+在这个总数中，我们把这$N_2$条链的不同放置次序的不同也当作不同的放法了。实际上我们认为没次序的放法是等价的，所以上面的式子还要除以$N_2!$，即
+\begin{equation}\label{eq:III.1_omega_c_flory_huggins}
+  \Omega_\text{c,溶液}=\frac{1}{N_2!}\prod_{j=0}^{N_2-1} W_{j+1}
+\end{equation}
+才对。这里的$\Omega_\text{c,溶液}$就是书上式（3-12）中的$\Omega$。
+
+现在我们考虑这个$W_{j+1}$等于什么。假设已有$j$条链，占了$x\times j$个格子，剩下$N-x\times j$个空格子。我们考虑放置第$j+1$条链的情况。这条链的第1个链段可在这$N-x\times j$个空格子中任意一个放置。但第2个链段——以及之后的链段——就只能在上一个已放置链段周围的$z-1$个格子中选空的格子来放置。这$z-1$个格子不一定都是空的，而可能会因为之前已经放置的$j$条链的摆放方式而被部分占据。所以这$z-1$个相邻格子到底空了几个可以给我们放现在的链段是首先需要估计的。这个被占据格子的比例依赖以下因素：
+\begin{itemize}
+  \item 之前已经放了几条链（即$j$的值），以及它们的放置方式；
+  \item 现在要放的是当前链的第几个链段（即之前已经放了多少个链段），以及它们的放置方式。
+\end{itemize}
+
+这时，我们采用平均场假定来确定这个比例。具体地，我们认为，无论之前链段的放置方式如何，任一格子补占的概率都等于当前的链段浓度。至于放置方式方法的不同就不管了。这是十分符合实际的。因为在溶液中，溶质链段和溶剂分子都在高速而杂乱无章地运动，而不是按某一特定的放置方法固定在相应的格子里的。我们讨论放置方式纯粹只为计算一个总数。我们可以想象，每多放一个链段，它就立刻加入到这场杂乱无章的运动当中，迅速遍历所有可能的格子。因此，新增一个链接的效果仅体现在总链段浓度的增加。任一放置步骤后，网格中的任一位置被链段占据的概率都等于当下的链段浓度。
+
+已放置$j$条链，以及第$j+1$条链的$k$个链段时，当前链段总浓度就是网格的链段数与总网格数之比
+\[\frac{x\times j+k}{N}\]
+此时，任一格子未被占据的概率就是1减上面那个式子，即
+\[\frac{N-x\times j-k}{N}\]
+第$k+1$个链段只能放在第$k$个链段周围的$z-1$个格子中。它们每一个是空格的概率都是上式，因此第$k+1$个链段的放法数是
+\[\left(z-1\right)\left(\frac{N-x\times j-k}{N}\right)\]
+整条第$j+1$链的放法就是
+\[W_{j+1}=\left(N-xj\right)z\frac{N-xj-1}{N}\prod_{k=2}^{x-2}\left[\left(z-1\right)\frac{N-xj-k}{N}\right]\]
+书上说“$z$与$z-1$差别不大”，因此可以近似地把$z$当作$z-1$。我们暂时接受这种说法，则上式就变成书上的式（3-11），即
+\[W_{j+1}\approx\left(\frac{z-1}{N}\right)^{x-1}\frac{\left(N-xj\right)!}{\left(N-xj-x\right)!}\]
+代入式\eqref{eq:III.1_omega_c_flory_huggins}，
+\begin{align*}
+  \Omega_\text{c,溶液} & =\frac{1}{N_2!}\prod_{j=0}^{N_2-1}W_{j+1}                                                                                                                                     \\
+                     & \approx\frac{1}{N_2!}\prod_{j=0}^{N_2-1}\left(\frac{z-1}{N}\right)^{x-1}\frac{\left(N-xj\right)!}{\left(N-xj-x\right)!}                                                       \\
+                     & =\frac{1}{N_2!}\left(\frac{z-1}{N}\right)^{(x-1)N_2}\frac{N!\left(N-x\right)!\cdots\left(N-N_2x+x\right)!}{\left(N-x\right)!\cdots\left(N-N_2x+x\right)!\left(N-N_2x\right)!} \\
+                     & =\frac{N!}{N_1!N_2!}\left(\frac{z-1}{N}\right)^{N_2\left(x-1\right)}
+\end{align*}
+此即书上的式（3-13），其中用到了$N_1=N-xN_2$。拿上式与正规溶液的格子模型相比（式\eqref{eq:III.1_omega_c_solution}），溶质变成长链分子后，就使位形熵多出了一项含有聚合度$x$的贡献项。
+
+现在我们可以使用斯特林近似进一步简化上式：
+\begin{align*}
+  \ln\Omega_\text{c,溶液} & \approx N_2\left(x-1\right)\ln\frac{z-1}{N}+\ln\frac{N!}{N_1!N_2!}   \\
+                        & = N_2\left(x-1\right)\ln\left(z-1\right)-N_2\left(x-1\right)\ln N    \\
+                        & \quad +N\ln N-N-N_1\ln N_1+N_1-N_2\ln N_2+N_2                        \\
+                        & =\left[N-N_2\left(x-1\right)\right]\ln N-N_1\ln N_1-N_2\ln N_2       \\
+                        & \quad +\left(N_1+N_2-N\right)+N_2\left(x-1\right)\ln\left(z-1\right) \\
+                        & =\left(N_1+N_2\right)\ln\left(N_1+xN_2\right)-N_1\ln N_1-N_2\ln N_2  \\
+                        & \quad -N_2\left(x-1\right)\left[1-\ln\left(z-1\right)\right]
+\end{align*}
+先保留此形式不动，我们再考虑在混合前，溶剂和聚合物纯组份的熵。这可以分别令上式的$N_1=0$和$N_2=0$得到：
+\begin{align*}
+  \ln\Omega_1 & =0,                                                                                       \\
+  \ln\Omega_2 & =N_2\ln\left(xN_2\right)-N_2\ln N_2-N_2\left(x-1\right)\left[1-\ln\left(z-1\right)\right]
+\end{align*}
+因此混合熵变就是
+\begin{align}
+  \Delta_\text{mix}S & =k_\text{B}\left[\ln\Omega_\text{c,溶液}-\ln\Omega_\text{c,纯组份}\right]\nonumber                                     \\
+                     & =k_\text{B}\left(\ln\Omega_\text{c,溶液}-\ln\Omega_1-\ln\Omega_2\right)\nonumber                                    \\
+                     & =k_\text{B}\left[\left(N_1+N_2\right)\ln\left(N_1+xN_2\right)-N_1\ln N_1-N_2\ln\left(x N_2\right)\right]\nonumber \\
+                     & =k_\text{B}\left[N_1\ln\frac{N_1+N_2x}{N_1}+N_2\ln\frac{N_1+N_2x}{N_2x}\right]\nonumber                           \\
+                     & =-k_\text{B}\left[N_1\ln\phi_1+N_2\ln\phi_2\right]\label{eq:III.1_mix_entropy_flory_huggins}
+\end{align}
+其中，$\phi_1=\left.N_1\middle/\left(N_1+N_2x\right)\right.$是溶剂的体积分数，$\phi_2=\left.N_2 x\middle/\left(N_1+N_2x\right)\right.$是高分子链的体积分数（前提是格子体积都相等，所以约掉了格子体积）。
+
+\subsection{高分子溶液的混合焓}
+类似在推导正规溶液混合熵时的近似方法（回顾\ref{sec:III.1_regular_solution}节），在$\Delta_\text{mix}V=0$的假定下，格子模型下的高分子溶液的混合焓变是混合内能变：$\Delta_\text{mix}H=\Delta_\text{mix}U$。而$\Delta_\text{mix}U$是通过计算混合前、后体系有多少个1--1/2--2相邻分子对变成了1--2/1--2相邻分子对来得到的。在聚合物溶液问题中，这里的2是指一个链段，而不是一整条链。
+
+每条链周围，一共有$2\left(z-1\right)+\left(x-2\right)\left(z-2\right)$个相邻的格子。按照平均场假定，这些格子中的分子是溶剂的概率等于整个溶液的溶剂浓度。即$\phi_1\equiv \left. N_1\middle/ N\right.$。因此，平均每条链形成的(1--2)相邻分子对的个数是$\left[\left(z-2\right)x+2\right]\phi-1$。当$x$很大时，我们作近似$\left(z-2\right)x+2\approx\left(z-2\right)x$。总共有$N_2$条链，因此总的(1--2)相邻分子对的个数是
+\[P_{12}=\
+\end{document}

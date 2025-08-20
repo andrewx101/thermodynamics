@@ -1,0 +1,484 @@
+% Encoding: UTF-8
+
+@book{jammer1999concepts,
+  title     = {Concepts of Force: A Study in the Foundations of Dynamics},
+  author    = {Jammer, M.},
+  isbn      = {9780486406893},
+  lccn      = {99012475},
+  series    = {Dover books on physics},
+  year      = {1999},
+  publisher = {Dover Publications}
+}
+
+@book{lautrup2011physics,
+  title     = {Physics of Continuous Matter: Exotic and Everyday Phenomena in the Macroscopic World},
+  author    = {Lautrup, B.},
+  isbn      = {9781439894200},
+  year      = {2011},
+  publisher = {CRC Press}
+}
+
+@misc{papachristou2012foundations,
+  author        = {C. J. Papachristou},
+  title         = {Foundations of Newtonian Dynamics: An Axiomatic Approach for the Thinking Student},
+  year          = {2012},
+  archiveprefix = {arXiv},
+  primaryclass  = {physics.class-ph}
+}
+
+@article{Diu_1990,
+  author    = {B Diu and C Guthmann and D Lederer and B Roulet},
+  journal   = {European Journal of Physics},
+  title     = {About the fundamental postulate of statistical mechanics},
+  year      = {1990},
+  month     = {may},
+  number    = {3},
+  pages     = {160--162},
+  volume    = {11},
+  abstract  = {The 'generalised' version (based on Jaynes's principle) of the fundamental postulate of statistical mechanics is confronted with the usual (microcanonical) formulation. It is argued that the 'generalised' postulate should be taken with some caution, at least at the pedagogical level.},
+  publisher = {{IOP} Publishing}
+}
+
+@book{chalmers2013thing,
+  title     = {What Is This Thing Called Science?},
+  author    = {Chalmers, A.},
+  isbn      = {9780702250873},
+  year      = {2013},
+  publisher = {University of Queensland Press}
+}
+
+@book{周胜林2012线性代数,
+  title     = {线性代数与解析几何},
+  author    = {周胜林 and 刘西民},
+  isbn      = {9787040340150},
+  year      = {2012},
+  publisher = {高等教育出版社}
+}
+
+@article{RN6185,
+  author  = {Doraiswamy, Deepak},
+  title   = {The Origins of Rheology: A Short Historical Excursion},
+  journal = {Rheology Bulletin},
+  volume  = {71},
+  number  = {1},
+  pages   = {7--17},
+  year    = {2002},
+  type    = {Journal Article}
+}
+
+@article{RN6186,
+  author  = {Reiner, M.},
+  journal = {Physics Today},
+  title   = {The Deborah Number},
+  year    = {1964},
+  number  = {1},
+  pages   = {62--62},
+  volume  = {17},
+  type    = {Journal Article}
+}
+
+@book{邓文基2009大物上,
+  author    = {邓文基},
+  title     = {大学物理（上册）},
+  isbn      = {9787562327622},
+  year      = {2009},
+  publisher = {华南理工大学出版社}
+}
+
+@book{华工高数2009上,
+  author    = {王全迪 and 郭艾 and 杨立洪},
+  title     = {高等数学（上册）},
+  isbn      = {9787040264876},
+  year      = {2009},
+  publisher = {高等教育出版社}
+}
+
+@book{华工高数2009下,
+  author    = {王全迪 and 郭艾 and 杨立洪},
+  title     = {高等数学（下册）},
+  isbn      = {9787040266436},
+  year      = {2009},
+  publisher = {高等教育出版社}
+}
+
+@inbook{RN6187,
+  author    = {Truesdell, C. and Toupin, R.},
+  editor    = {Flügge, S.},
+  pages     = {226--858},
+  publisher = {Springer Berlin Heidelberg},
+  title     = {The Classical Field Theories},
+  year      = {1960},
+  address   = {Berlin, Heidelberg},
+  isbn      = {978-3-642-45943-6},
+  type      = {Book Section},
+  booktitle = {Principles of Classical Mechanics and Field Theory / Prinzipien der Klassischen Mechanik und Feldtheorie}
+}
+
+@inbook{RN6188,
+  author    = {Truesdell, C. and Noll, W.},
+  editor    = {Truesdell, Clifford and Noll, Walter and Antman, Stuart S.},
+  pages     = {1--579},
+  publisher = {Springer Berlin Heidelberg},
+  title     = {The Non-Linear Field Theories of Mechanics},
+  year      = {2004},
+  address   = {Berlin, Heidelberg},
+  isbn      = {978-3-662-10388-3},
+  type      = {Book Section},
+  booktitle = {The Non-Linear Field Theories of Mechanics}
+}
+
+@book{mcquarrie2000statistical,
+  title     = {Statistical Mechanics},
+  author    = {McQuarrie, D.A.},
+  isbn      = {060443669},
+  year      = {1976},
+  publisher = {Happer \& Row}
+}
+
+@misc{0804.0399,
+  author = {Roman Frigg},
+  title  = {A Field Guide to Recent Work on the Foundations of Statistical Mechanics},
+  year   = {2008}
+}
+
+@book{jaynes1989t,
+  title     = {E.T. Jaynes: Papers on Probability, Statistics, and Statistical Physics},
+  author    = {Jaynes, E.T. and Rosenkrantz, R.D.},
+  isbn      = {9780792302131},
+  lccn      = {82021623},
+  series    = {Pallas paperbacks},
+  year      = {1989},
+  publisher = {Springer Netherlands}
+}
+
+@book{DeGroot1984,
+  title     = {Non-equilibrium Thermodynamics},
+  publisher = {Dover Publications},
+  year      = {1984},
+  author    = {De Groot, Sybren Ruurds. and Mazur, Peter.},
+  address   = {New York},
+  database  = {/z-wcorg/},
+  issn      = {0486647412 9780486647418},
+  language  = {English},
+  refid     = {610670701}
+}
+
+@book{Murdoch2012,
+  title     = {Physical foundations of continuum mechanics},
+  publisher = {Cambridge University Press},
+  year      = {2012},
+  author    = {Murdoch, A. Ian and Press., Cambridge University},
+  address   = {Cambridge},
+  database  = {/z-wcorg/},
+  issn      = {9780521765589 0521765587},
+  language  = {English},
+  refid     = {869908537}
+}
+
+@book{Oettinger2005,
+  author    = {Öttinger, Hans Christian},
+  publisher = {Wiley-Interscience},
+  title     = {Beyond equilibrium thermodynamics},
+  year      = {2005},
+  address   = {Hoboken, N.J.; [Great Britain]},
+  database  = {/z-wcorg/},
+  groups    = {[andrewx100:]},
+  issn      = {0471666580 9780471666585},
+  language  = {English},
+  refid     = {984448728}
+}
+
+@book{何曼君2007,
+  title     = {高分子物理（第三版）},
+  publisher = {复旦大学出版社},
+  year      = {2007},
+  author    = {何曼君 and 张红东 and 陈维孝 and 董西侠},
+  isbn      = {9787309054156}
+}
+
+@book{Feynman1994,
+  author    = {Feynman, Richard P. (1918-1988)},
+  publisher = {MIT},
+  title     = {The character of physical law.},
+  year      = {1994},
+  address   = {Cambridge, Mass},
+  database  = {/z-wcorg/},
+  groups    = {andrewx100:6},
+  issn      = {0262560038 9780262560030},
+  language  = {English},
+  refid     = {815611196}
+}
+
+@book{邓文基2009大物下,
+  author    = {邓文基},
+  publisher = {华南理工大学出版社},
+  title     = {大学物理（下册）},
+  year      = {2009},
+  isbn      = {9787562327639}
+}
+
+@book{钟理化工原理上册2008,
+  author    = {钟理 and 伍钦 and 马四朋},
+  publisher = {化学工业出版社},
+  title     = {化工原理（上册）},
+  year      = {2008},
+  isbn      = {9787122025517}
+}
+
+@article{Zheng1991,
+  author   = {Zheng, R. and Phan-Thien, N. and Tanner, R. I.},
+  journal  = {Rheologica Acta},
+  title    = {The flow past a sphere in a cylindrical tube: effects of intertia, shear-thinning and elasticity},
+  year     = {1991},
+  issn     = {1435-1528},
+  number   = {6},
+  pages    = {499--510},
+  volume   = {30},
+  abstract = {Numerical solutions are presented for the flow past a sphere placed at the centreline of a cylindrical tube for Reynolds numbers ranging from 0 to 150, using a boundary element method. Fluids are modelled by a variety of constitutive equations including the Newtonian, the Carreau and the Phan-Thien-Tanner models. The influence of inertia, shear-thinning and fluid elasticity on the flow field, drag and the pressure drop force-drag ratio is examined. Some results are compared with available experimental data.},
+  refid    = {Zheng1991}
+}
+
+@book{Berger1987,
+  author    = {Berger, Marcel},
+  publisher = {Springer-Verlag},
+  title     = {Geometry I},
+  year      = {1987},
+  isbn      = {9783540116585}
+}
+
+@book{Coleman1966,
+  author    = {Coleman, Bernard D. and Markovitz, Hershel and Noll, W.},
+  publisher = {Springer-Verlag Berlin Heidelberg},
+  title     = {Viscometric Flows of Non-Newtonian Fluids},
+  year      = {1966},
+  isbn      = {978-3-642-88657-7},
+  series    = {Springer Tracts in Natural Philosophy},
+  volume    = {5}
+}
+
+@incollection{Noll1974,
+  author    = {Noll, Walter},
+  booktitle = {The Foundations of Mechanics and Thermodynamics: Selected Papers},
+  publisher = {Springer Berlin Heidelberg},
+  title     = {Lectures on the Foundations of Continuum Mechanics and Thermodynamics},
+  year      = {1974},
+  address   = {Berlin, Heidelberg},
+  pages     = {293--324},
+  abstract  = {This is an outline of a series of lectures I delivered at the Technion in Haifa, Israel, in the summer of 1972. This outline gives my view of what the basic concepts of modern continuum mechanics and thermodynamics are and how they should be presented to graduate students of mathematics and theoretical mechanics. This view evolved gradually over the past eight years. A first version was given in a series of lectures I delivered at the Summer Session in Bressanone, Italy, in 1965 (reference [1]). The material was reworked several times for an introductory graduate course repeatedly given at Carnegie-Mellon University and for lecture series given at the University of Karlsruhe, Germany, in 1968 and in Jablonna, Poland, in 1970. This paper is the latest version, and it renders reference [1] obsolete.},
+  issn      = {978-3-642-65817-4},
+  refid     = {Noll1974}
+}
+
+@incollection{Noll2011,
+  author    = {Noll, Walter},
+  booktitle = {Non-linear Continuum Theories},
+  publisher = {Springer Berlin Heidelberg},
+  title     = {The Foundations of Mechanics},
+  year      = {2011},
+  address   = {Berlin, Heidelberg},
+  editor    = {Grioli, G. and Truesdell, C.},
+  pages     = {159--200},
+  abstract  = {“Classical mechanics” is based upon the concepts of absolute space and absolute time. Even the natural philosophers of of the Renaissance realized, however, that space has physical relevance only with respect to a frame of reference. Only relative, not absolute, velocities can be physically detected. Absolute accelerations cannot be detected by purely kinematrical means, but they have a dynamical effect, namely inertia. It is to account for inertia that Newtonian and Eulerian mechanics employ absolute space. It was clearly recognized only recently that this is the only role that absolute space may play, and that the effect of the dependence of space on the frame of reference in all considerations unrelated to inertia must be taken into account by means of principles of frame-indifference.},
+  issn      = {978-3-642-11033-7},
+  refid     = {Noll2011}
+}
+
+@incollection{Reiss2020,
+  author    = {Reiss, Julian and Sprenger, Jan},
+  booktitle = {The {Stanford} Encyclopedia of Philosophy},
+  publisher = {Metaphysics Research Lab, Stanford University},
+  title     = {{Scientific Objectivity}},
+  year      = {2020},
+  edition   = {Winter 2020},
+  editor    = {Edward N. Zalta}
+}
+
+@book{Hoffman1971,
+  author    = {Hoffman, Kenneth and Kunze, Ray},
+  publisher = {Prentice-Hall, Inc.},
+  title     = {{L}inear {A}lgebra},
+  year      = {1971},
+  edition   = {2},
+  isbn      = {978-0135367971}
+}
+
+@book{Hassani1999,
+  author    = {Hassani, Sadri},
+  publisher = {Springer},
+  title     = {Mathematical physics : a modern introduction to its foundations},
+  year      = {1999},
+  address   = {New York},
+  isbn      = {0387985794}
+}
+
+@book{Williamson1972,
+  author    = {Williamson, Richard E. and Crowell, Richard H. and Trotter, Hale F.},
+  publisher = {Prentice Hall, Inc.},
+  title     = {Calculus of Vector Functions},
+  year      = {1972},
+  isbn      = {013112367X},
+  edition   = {3}
+}
+
+@article{Muller1959,
+  author     = {Muller, Mervin E.},
+  journal    = {Commun. ACM},
+  title      = {A note on a method for generating points uniformly on n-dimensional spheres},
+  year       = {1959},
+  issn       = {0001-0782},
+  month      = {apr},
+  number     = {4},
+  pages      = {19–20},
+  volume     = {2},
+  address    = {New York, NY, USA},
+  doi        = {10.1145/377939.377946},
+  issue_date = {April 1959},
+  numpages   = {2},
+  publisher  = {Association for Computing Machinery}
+}
+
+@book{Callen1985,
+  author    = {Callen, Herbert B.},
+  publisher = {Wiley},
+  title     = {Thermodynamics and an introduction to thermostatistics},
+  year      = {1985},
+  address   = {New York},
+  edition   = {2nd},
+  isbn      = {9780471862567},
+  note      = {Hier auch später erschienene, unveränderte Nachdrucke},
+  database  = {WorldCat},
+  pagetotal = {493},
+  ppn_gvk   = {025296582},
+  section   = {xvi, 493 pages : illustrations ; 24 cm}
+}
+
+@book{王竹溪1960,
+  author    = {王竹溪},
+  publisher = {高等教育出版社},
+  title     = {热力学（第二版）},
+  year      = {1960}
+}
+
+@book{傅献彩2022I,
+  author    = {傅献彩;侯文华},
+  publisher = {高等教育出版社},
+  title     = {物理化学（第六版）上册},
+  year      = {2022},
+  isbn      = {9787040586046}
+}
+
+@book{傅献彩2022II,
+  author    = {傅献彩;侯文华},
+  publisher = {高等教育出版社},
+  title     = {物理化学（第六版）下册},
+  year      = {2022},
+  isbn      = {9787040586046}
+}
+
+@article{Tobolsky1942,
+  author   = {Tobolsky, Arthur},
+  journal  = {The Journal of Chemical Physics},
+  title    = {{A Systematic Method of Obtaining the Relations Between Thermodynamic Derivatives}},
+  year     = {1942},
+  issn     = {0021-9606},
+  month    = {10},
+  number   = {10},
+  pages    = {644-645},
+  volume   = {10},
+  abstract = {{An elementary systematic method for obtaining the relations between thermodynamic coefficients is presented. This method is applicable for any desired set of independent variables, and is also easily adapted to obtain the derivatives of any functions of the thermodynamic variables.}},
+  doi      = {10.1063/1.1723632}
+}
+
+@article{Grolier2015,
+  author   = {Grolier, Jean-Pierre E.},
+  journal  = {Journal of Solution Chemistry},
+  title    = {From Solutions to Polymers: A High Temperature-High Pressure Journey in Experimental Thermodynamics},
+  year     = {2015},
+  issn     = {1572-8927},
+  number   = {5},
+  pages    = {1090--1120},
+  volume   = {44},
+  abstract = {Since the early ages any progress in thermodynamics, in fact its birth itself, results from the observation of phenomena combining heat and mechanical effects. This is also true in chemical thermodynamics. In addition, in particular in solution thermodynamics, chemical effects must be taken into account. From this point of view, solution thermodynamics is a science of observation developed from judicially conceived experimental measurements that characterize and quantify the contributions of the chemical species involved. Using the formal rather simple scheme of basic relations built from equally simple thermodynamic principles, the thermodynamic behavior resulting from the chemical interactions of an investigated chemical system can be related to the chemical potentials of the system’s components. Experimental thermodynamics is a science by itself. In this context, calorimetric techniques play a major role in providing essential data used to build theoretical models capable of being used further in chemical engineering applications. Heats of mixing, heats of interaction, and heats of dilution constitute the primary data to be measured. After a short review of the thermodynamic formalism and basic relations, the state of the art in solution calorimetry to determine the above heats is described. For an in-depth study of molecular interactions, the pressure as well as the temperature dependence of these thermodynamic properties must be documented. The thermophysical properties that are the second derivatives of the Gibbs energy with respect to temperature and pressure are of paramount importance since they can be related directly to the molecular level, opening windows to molecular thermodynamics. Scanning transitiometry, which can provide experimentally all the thermophysical properties, is described in detail. I give from my personal march in the field a view of the most recent developments in experimental techniques including their extensions to operate over extended temperature and pressure ranges. Selected striking results in pure liquids and mixtures, and in polymer systems, serve to illustrate the role of well-designed experimental techniques in providing exclusive data of the best quality. The aim was indeed to stress also the pivotal role and impetus of Robert H. Wood in modern chemical thermodynamics.},
+  doi      = {10.1007/s10953-015-0302-8},
+  refid    = {Grolier2015}
+}
+
+@article{Mollerup2009,
+  author   = {Jørgen M. Mollerup and Martin P. Breil},
+  journal  = {Fluid Phase Equilibria},
+  title    = {On the thermodynamics of the McMillan–Mayer state function},
+  year     = {2009},
+  issn     = {0378-3812},
+  number   = {1},
+  pages    = {18-23},
+  volume   = {276},
+  abstract = {The osmotic second virial coefficient is a key parameter in light scattering, protein crystallisation, self-interaction chromatography, and osmometry. The interpretation of the osmotic second virial coefficient depends on the solution theory. On the macroscopic level an expansion of the osmotic pressure is employed. A common statistical interpretation of the osmotic second virial coefficient of the expansion employs the McMillan–Mayer framework and the potential of mean force to characterise the solute–solute interaction. Supplementary to the statistical interpretation, it may be advantageous to develop the McMillan–Mayer framework in a classical thermodynamic context for which we develop the relationship between the state function of the McMillan–Mayer framework and the Helmholtz state function. A Taylor expansion method can be applied to the osmotic pressure of a solution which is dilute with respect to at least one solute component. This offers the possibility for an interpretation and correlation of the osmotic second virial coefficient utilising a McMillan–Mayer state function derived from a Helmholtz state function.},
+  doi      = {https://doi.org/10.1016/j.fluid.2008.10.004},
+  keywords = {McMillan–Mayer, Osmotic pressure, Osmotic second virial coefficient, Helmholtz state function, Potential of mean force}
+}
+
+@article{Sharp2015,
+  author   = {Sharp, Kim and Matschinsky, Franz},
+  journal  = {Entropy},
+  title    = {Translation of Ludwig Boltzmann’s Paper “On the Relationship between the Second Fundamental Theorem of the Mechanical Theory of Heat and Probability Calculations Regarding the Conditions for Thermal Equilibrium” Sitzungberichte der Kaiserlichen Akademie der Wissenschaften. Mathematisch-Naturwissen Classe. Abt. II, LXXVI 1877, pp 373-435 (Wien. Ber. 1877, 76:373-435). Reprinted in Wiss. Abhandlungen, Vol. II, reprint 42, p. 164-223, Barth, Leipzig, 1909},
+  year     = {2015},
+  issn     = {1099-4300},
+  number   = {4},
+  pages    = {1971--2009},
+  volume   = {17},
+  abstract = {Translation of the seminal 1877 paper by Ludwig Boltzmann which for the first time established the probabilistic basis of entropy. Includes a scientific commentary.},
+  doi      = {10.3390/e17041971},
+  url      = {https://www.mdpi.com/1099-4300/17/4/1971}
+}
+
+@article{Planck1901,
+  author  = {Planck, Max},
+  journal = {Annalen der Physik},
+  title   = {Ueber das Gesetz der Energieverteilung im Normalspectrum},
+  year    = {1901},
+  number  = {3},
+  pages   = {553-563},
+  volume  = {309},
+  doi     = {https://doi.org/10.1002/andp.19013090310},
+  eprint  = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/andp.19013090310},
+  url     = {https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19013090310}
+}
+
+@Article{Pomeau1975,
+  author   = {Pomeau, Y. and Résibois, P.},
+  journal  = {Physics Reports},
+  title    = {Time dependent correlation functions and mode-mode coupling theories},
+  year     = {1975},
+  issn     = {0370-1573},
+  number   = {2},
+  pages    = {63-139},
+  volume   = {19},
+  abstract = {We critically discuss the various tools and methods which are used to describe the role of long wave length hydrodynamical processes in the analysis of time-dependent correlation functions. We also review the various physical problems (long time behavior of Green-Kubo integrands, 2 dimensional hydrodynamics, transport properties of the Van der Waals fluid, critical phenomena …) where these methods have received fruitful applications.},
+  doi      = {https://doi.org/10.1016/0370-1573(75)90019-8},
+  type     = {Journal Article},
+  url      = {https://www.sciencedirect.com/science/article/pii/0370157375900198},
+}
+
+@Article{Kheifets2014,
+  author   = {Kheifets, Simon and Simha, Akarsh and Melin, Kevin and Li, Tongcang and Raizen, Mark G.},
+  journal  = {Science},
+  title    = {Observation of Brownian Motion in Liquids at Short Times: Instantaneous Velocity and Memory Loss},
+  year     = {2014},
+  note     = {doi: 10.1126/science.1248091},
+  number   = {6178},
+  pages    = {1493-1496},
+  volume   = {343},
+  abstract = {On long time scales, the random Brownian motion of particles diffusing in a liquid is well described by theories developed by Einstein and others, but the instantaneous or short time scale behavior has been much harder to observe or analyze. Kheifets et al. (p. 1493) combined ultrasensitive position detection with sufficient data collection to probe the Brownian motion of microbeads in fluids on time scales that are shorter than the characteristic bead-fluid interaction time. The motions of Brownian particles are tracked and evaluated on short time scales where solvent effects play a role. Measurement of the instantaneous velocity of Brownian motion of suspended particles in liquid probes the microscopic foundations of statistical mechanics in soft condensed matter. However, instantaneous velocity has eluded experimental observation for more than a century since Einstein?s prediction of the small length and time scales involved. We report shot-noise?limited, high-bandwidth measurements of Brownian motion of micrometer-sized beads suspended in water and acetone by an optical tweezer. We observe the hydrodynamic instantaneous velocity of Brownian motion in a liquid, which follows a modified energy equipartition theorem that accounts for the kinetic energy of the fluid displaced by the moving bead. We also observe an anticorrelated thermal force, which is conventionally assumed to be uncorrelated.},
+  doi      = {10.1126/science.1248091},
+  type     = {Journal Article},
+  url      = {https://doi.org/10.1126/science.1248091},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 StaticGroup:Markings\;2\;1\;\;\;\;;
+2 StaticGroup:[andrewx100:]\;2\;1\;\;\;\;;
+2 StaticGroup:andrewx100:6\;2\;1\;\;\;\;;
+}

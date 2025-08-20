@@ -9,34 +9,36 @@
 
 一个混合物封闭体系（总物质的量不变），在定温定压下处于稳定的平衡态时，将会分为多少个相，也是由热力学第二定律确定的，理论上可通过平衡态稳定性进行分析。
 
-\subsection{气液共存}
+\subsection{气液共存}\label{sec:II.5.2 vapor-liquid_equilibrium}
 我们假定，某混合物体系在温度和压强的某范围内，凡处于平衡态时，无论总组成如何，均分为气、液两相，则两相中的各组份均应满足相平衡条件
 \[\mu_i^\text{V}=\mu_i^\text{L},\quad i=1,2,\cdots\]
 其中上标“V”和“L”分别表示气相和液相（如图\ref{fig:sol_thermodyn_typical_problems}(a)所示）。
 
 \begin{figure}[ht]
-    \centering
-    \includegraphics{../images/sol_thermodyn_typical_problems.pdf}
-    \caption{恒定温度下，液体混合物的三种典型相平衡问题。(a) 气液共存，两相压强相同，且物质自由交换；(b) “非挥发溶质”相平衡问题，两相压强相同，只有组份$i$（溶剂）在两相间自由交换；(c) 半透膜问题，两相压强不同，只有组份$i$在两相间自由交换。}
-    \label{fig:sol_thermodyn_typical_problems}
+  \centering
+  \includegraphics{../images/sol_thermodyn_typical_problems.pdf}
+  \caption{恒定温度下，液体混合物的三种典型相平衡问题。(a) 气液共存，两相压强相同，且物质自由交换；(b) “非挥发溶质”相平衡问题，两相压强相同，只有组份$i$（溶剂）在两相间自由交换；(c) 半透膜问题，两相压强不同，只有组份$i$在两相间自由交换。}
+  \label{fig:sol_thermodyn_typical_problems}
 \end{figure}
 
 此时我们需要把上式的化学势的具体表达式写出来，面临标准态的选择问题。留意到，标准态的选择原则中有一条“避免相变”，即体系从所选择的标准态到当前态的过程不发生相变。这在本问题当中就要求视气、液相为两个不同的状态方程所描述的体系，各状态方程均不描述该体系的气、液相变和共存行为，仅为我们分别考虑各相时使用。
 
 如果我们分别为气、液两相选择拉乌尔定律标准态，则有
 \begin{equation*}
-    \mu_i^\alpha\left(T,p,\left\{n_j^\alpha\right\}\right)=\mu_i^{*,\alpha}\left(T,p\right)+RT\ln a_i^\alpha\left(T,p,\left\{n_j^\alpha\right\}\right),\quad i=1,2,\cdots,\quad \alpha=\text{V},\text{L}
+  \mu_i^\alpha\left(T,p,\left\{n_j^\alpha\right\}\right)=\mu_i^{*,\alpha}\left(T,p\right)+RT\ln a_i^\alpha\left(T,p,\left\{n_j^\alpha\right\}\right),\quad i=1,2,\cdots,\quad \alpha=\text{V},\text{L}
 \end{equation*}
 其中，组份$i$纯物质在不同相态下的化学势$\mu_i^{*,\alpha}$及其在不同相态混合物中的活度$a_i^\alpha$是关于$\left(T,p,\left\{n_i^\alpha\right\}\right)$的不同的函数，源自两相各自的状态方程。把这种表达式代入相平衡条件，标准态的化学势不能被消掉。这又不符合标准态选择的原则。
 
 纯物质$i$在给定温度下，处于气、液共存平衡态时的压强——即纯物质$i$的蒸气压$p_i^{*,\text{vap}}=p_i^{*,\text{vap}}\left(T\right)$时，由相平衡条件有
 \[\mu_i^{*,\text{V}}\left(T,p_i^{*,\text{vap}}\right)=\mu_i^{*,\text{L}}\left(T,p_i^{*,\text{vap}}\right)\]
 这为我们提供了一个适用于考虑混合物的气液共存问题的标准态。以这个状态为标准态，则
-\begin{equation*}
-    \mu_i^\alpha\left(T,p,\left\{n_j^\alpha\right\}\right)=\mu_i^{*,\alpha}\left(T,p_i^{*,\text{vap}}\right)+RT\ln\frac{f_i^\alpha\left(T,p,\left\{n_j^\alpha\right\}\right)}{f_i^{*,\alpha}\left(T,p_i^{*,\text{vap}}\right)},\quad i=1,2,\cdots,\quad\alpha=\text{V},\text{L}
-\end{equation*}
+\begin{equation}\label{eq:II.5_chemical_potential_vapor_liquid_equilibrium}
+  \mu_i^\alpha\left(T,p,\left\{n_j^\alpha\right\}\right)=\mu_i^{*,\alpha}\left(T,p_i^{*,\text{vap}}\right)+RT\ln\frac{f_i^\alpha\left(T,p,\left\{n_j^\alpha\right\}\right)}{f_i^{*,\alpha}\left(T,p_i^{*,\text{vap}}\right)},\quad i=1,2,\cdots,\quad\alpha=\text{V},\text{L}
+\end{equation}
 代入相平衡条件后得到
-\[\frac{f_i^\text{V}\left(T,p,\left\{n_j^\text{V}\right\}\right)}{f_i^{*,\text{V}}\left(T,p_i^{*,\text{vap}}\right)}=\frac{f_i^\text{L}\left(T,p,\left\{n_j^\text{L}\right\}\right)}{f_i^{*,\text{L}}\left(T,p_i^{*,\text{vap}}\right)},\quad i=1,2,\cdots\]
+\begin{equation}\label{eq:II.5_vapor-liquid_equilibrium_fugacity}
+  \frac{f_i^\text{V}\left(T,p,\left\{n_j^\text{V}\right\}\right)}{f_i^{*,\text{V}}\left(T,p_i^{*,\text{vap}}\right)}=\frac{f_i^\text{L}\left(T,p,\left\{n_j^\text{L}\right\}\right)}{f_i^{*,\text{L}}\left(T,p_i^{*,\text{vap}}\right)},\quad i=1,2,\cdots
+\end{equation}
 其中，$f_i^{*,\alpha}$是组份$i$纯物质在不同相态下的逸度，它们直接联系到组份$i$纯物质不同相态下的状态方程。
 
 以下我们逐步往理想体系靠拢。首先如果各相是理想混合物（但气相暂未必是理想气体混合物），则上式化为
@@ -60,20 +62,20 @@
 
 可见，拉乌尔定律包括以下假定：
 \begin{itemize}
-    \item 气相是理想气体混合物；
-    \item 液相是理想混合物；
-    \item 液相不可压缩。
+  \item 气相是理想气体混合物；
+  \item 液相是理想混合物；
+  \item 液相不可压缩。
 \end{itemize}
 
 我们如果不为了“消掉”而给两相选择统一的标准态，保持液相是理想混合物、气相是理想气体混合物的条件，按照各相通常的参考态选择方式，组份$i$在各相的化学势可以写成
 \begin{align*}
-    \mu_i^\text{V,ig}\left(T,p,\left\{n_j^\text{V}\right\}\right) & =\mu_i^\text{V,*,ig}\left(T,p^\circ\right)+RT\ln\frac{p}{p^\circ}+RT\ln x_i^\text{V}, \\
-    \mu_i^\text{L,id}\left(T,p,\left\{n_j^\text{L}\right\}\right) & =\mu_i^\text{L,*,id}\left(T,p\right)+RT\ln x_i^\text{L},                              \\
-    i                                                             & =1,2,\cdots
+  \mu_i^\text{V,ig}\left(T,p,\left\{n_j^\text{V}\right\}\right) & =\mu_i^\text{V,*,ig}\left(T,p^\circ\right)+RT\ln\frac{p}{p^\circ}+RT\ln x_i^\text{V}, \\
+  \mu_i^\text{L,id}\left(T,p,\left\{n_j^\text{L}\right\}\right) & =\mu_i^\text{L,*,id}\left(T,p\right)+RT\ln x_i^\text{L},                              \\
+  i                                                             & =1,2,\cdots
 \end{align*}
 代入相平衡条件后得
 \[
-    \mu_i^\text{L,*,id}\left(T,p\right)-\mu_i^\text{V,*,ig}\left(T,p^\circ\right)+RT\ln p^\circ+RT\ln x_i^\text{L}-RT\ln\left(x_i^\text{V}p\right)=0,\quad i=1,2,\cdots
+  \mu_i^\text{L,*,id}\left(T,p\right)-\mu_i^\text{V,*,ig}\left(T,p^\circ\right)+RT\ln p^\circ+RT\ln x_i^\text{L}-RT\ln\left(x_i^\text{V}p\right)=0,\quad i=1,2,\cdots
 \]
 引入组份$i$的亨利系数$k_i$，满足
 \[RT\ln k_i=\mu_i^\text{L,*,id}\left(T,p\right)-\mu_i^\text{V,*,ig}\left(T,p^\circ\right)+RT\ln p^\circ,\quad i=1,2,\cdots\]
@@ -85,53 +87,67 @@
 \[x_j^\text{V}p=k_jx_j^\text{L},\quad j\neq i\]
 和各组份的相平衡条件
 \[\mu_k^\text{L}=\mu_k^\text{V}\Leftrightarrow \mathrm{d}\mu_k^\text{L}=\mathrm{d}\mu_k^\text{V},\quad k=1,2,\cdots\]
-以及恒温恒压下的吉布斯--杜亥姆方程有（只应用于液相）
+以及恒温恒压下的吉布斯--杜安方程有（只应用于液相）
 \[
-    n_i^\text{L}\mathrm{d}\mu_i^\text{L}+\sum_{j\neq i}n_j\text{L}\mathrm{d}\mu_j^\text{L}=0\Leftrightarrow n_i^\text{L}\mathrm{d}\ln\left(x_i^\text{V}p\right)+\sum_{j\neq i}n_j^\text{L}d\ln\left(k_jx_j^\beta\right)
+  n_i^\text{L}\mathrm{d}\mu_i^\text{L}+\sum_{j\neq i}n_j\text{L}\mathrm{d}\mu_j^\text{L}=0\Leftrightarrow n_i^\text{L}\mathrm{d}\ln\left(x_i^\text{V}p\right)+\sum_{j\neq i}n_j^\text{L}d\ln\left(k_jx_j^\beta\right)
 \]
 而
 \begin{align*}
-    \sum_{j\neq i}n_j^\text{L}\mathrm{d}\ln\left(k_j x_j^\text{L}\right) & =\sum_{j\neq i}\frac{n_j}{x_j^\text{L}}\mathrm{d}x_j^\text{L} \\
-                                                                         & =n\sum_{j\neq i}\mathrm{d}x_j^\text{V}                        \\
-                                                                         & =-n\mathrm{d}x_i^\text{L}
+  \sum_{j\neq i}n_j^\text{L}\mathrm{d}\ln\left(k_j x_j^\text{L}\right) & =\sum_{j\neq i}\frac{n_j}{x_j^\text{L}}\mathrm{d}x_j^\text{L} \\
+                                                                       & =n\sum_{j\neq i}\mathrm{d}x_j^\text{V}                        \\
+                                                                       & =-n\mathrm{d}x_i^\text{L}
 \end{align*}
 其中运用了$k_j$只依赖$T$、$p$的条件（故在恒温恒压下的微分按常数处理），以及$x_i^\text{L}=1-\sum_{j\neq i}\mathrm{d}x_j^\text{L}$。
-因此液相的吉布斯--杜亥姆方程就变成以下微分方程：
+因此液相的吉布斯--杜安方程就变成以下微分方程：
 \[\frac{\mathrm{d}x_i^\text{L}}{x_i^\text{L}}=\mathrm{d}\ln\left(x_i^\text{V}p\right)\]
 利用$x_i^\text{L}=1$时$x_i^\text{V}=1$的条件解上列方程得
 \[x_i^\text{L}p\left(x_i^\text{V}= 1\right)=p x_i^\text{L}\Leftrightarrow x_i^\text{L}p_i^{*,\text{vap}}=p^\text{V}_i\]
 即组份$i$满足拉乌尔定律。与之前得到的所有组份满足拉乌尔定律相比较，这里的结论是仅一个组份满足拉乌尔定律，其余组份满足亨利定律，这是不需要依靠“液相不可压缩”条件，仅基于液相是理想混合物、气相是理想气体混合物就能得到的结论。如果把组份$j\neq i$称作“溶质”，则组份$i$就是溶剂，于是也就得到通常《物理化学》教科书中，所谓“理想溶液”\footnote{“溶液”一词专用于讨论混合物时区分溶质和溶剂的情况。除此之外，若不再加其他说明，那么“理想溶液”就应就等价于“理想混合物”。但既然对“理想溶液”的溶质溶剂遵守这两个定律的陈述，那似乎又认为“理想溶液”在气液共存时气态总是理想气体混合物，而不仅只是处于气态的理想混合物。这是普通的《物理化学》课本不够严谨的地方。}的溶剂满足拉乌尔定律（而无需要求其液相不可压缩）、溶质满足亨利定律的结论。
 
-\subsection{“非挥发溶质”问题}
+常见热力学教科书还常介绍\emph{杜安--马居尔方程（Duhem-Margules equation）}。对于双组份混合物在定温定压下的气液平衡，由吉布斯--杜安方程有（只应用于液相）：
+\[x_1^\text{L}\mathrm{d}\mu_1^\text{L}+x_2^\text{L}\mathrm{d}\mu_2^\text{L}=0\]
+在定温定压下$\mu_i^\text{L}=\mu_i^\text{L}\left(T,p,x_i^\text{L}\right)$的全微分给出
+\[\mathrm{d}\mu_i^\text{L}=\left.\frac{\partial\mu_i^\text{L}}{\partial x_i^\text{L}}\right|_{T,p}\mathrm{d}x_i^\text{L},\quad i=1,2\]
+利用$\mathrm{d}x_1^\text{L}+\mathrm{d}x_2^\text{L}=0$，以上两式联立可得
+\[x_1\left.\frac{\partial\mu_1^\text{L}}{\partial x_1^\text{L}}\right|_{T,p}=x_2\left.\frac{\partial\mu_2^\text{L}}{\partial x_2^\text{L}}\right|_{T,p}\]
+把式\eqref{eq:II.5_chemical_potential_vapor_liquid_equilibrium}代入上式，就可以得到推广的杜安--马居尔方程：
+\[x_1^\text{L}\left.\frac{\partial\ln f_1^\text{V}}{\partial x_1^\text{L}}\right|_{T,p}=x_2^\text{L}\left.\frac{\partial\ln f_2^\text{V}}{\partial x_2^\text{L}}\right|_{T,p}\]
+结合气液平衡条件，又可表示成
+\[\left.\frac{\partial\ln\gamma_1^\text{L}}{\partial\ln x_1^\text{L}}\right|_{T,p}=\left.\frac{\partial\ln\gamma_2^\text{L}}{\partial\ln x_2^\text{L}}\right|_{T,p}\]
+推导过程留作练习。当气相是理想气体混合物时，以上方程可以化为
+\[x_1^\text{L}\left.\frac{\partial \ln p_1}{\partial x_1^\text{L}}\right|_{T,p}=x_2^\text{L}\left.\frac{\partial\ln p_2}{\partial x_2^\text{L}}\right|_{T,p}\]
+其中$p_i$是组份$i$在气相中的分压。这是常见于教科书中的杜安--马居尔方程形式。
+
+\subsection{“非挥发溶质”问题}\label{sec:II.5.3 non_volatile_solute}
 有一类问题是液态混合物与其某一组份纯物质的另一相态之间在定温下的相平衡问题（如图\ref{fig:sol_thermodyn_typical_problems}(b)所示）。这类问题的相平衡条件是
 \begin{equation}\label{eq:II.5_phase_eq_non_volatile}
-    \mu_i^\text{L}\left(T,p,\left\{n_k^\text{L}\right\}\right)=\mu_i^{\alpha,*}\left(T,p\right),\quad n_{j\neq i}^\alpha=0,\quad \alpha=\text{V},\text{L或S}
+  \mu_i^\text{L}\left(T,p,\left\{n_k^\text{L}\right\}\right)=\mu_i^{\alpha,*}\left(T,p\right),\quad n_{j\neq i}^\alpha=0,\quad \alpha=\text{V},\text{L或S}
 \end{equation}
 
-如果$\alpha$相是气相（$\alpha=\text{V}$），视组份$j\neq i$为“溶质”，就可以称其为“非挥发”的溶质。只有“溶剂”组份$i$有气液共存的行为。
+如果$\alpha$相是气相（$\alpha=\text{V}$），视组份$j\neq i$为“溶质”，就可以称其为“非挥发”的溶质。只有“溶剂”组份$i$有气液共存的行为。最典型的情况就是这个溶质是高分子。
 
 如果$\alpha$相是固相（$\alpha=\text{S}$），则类似组份$i$在一个溶液中“析出”其晶体（或称“重结晶”）。
 
 如果$\alpha$相是液相（$\alpha=\text{L}$），则类似该液体混合物发生了“分层”，且有一相几乎没有其他组份$j\neq i$的奇怪情况。
 
-尽管第三种情况很少见，但无论$\alpha$相是什么物态，以下讨论的热力学结论是普适的。应用时只需按以下几种情况作相应的解度就可以了。假定体系在当前$\left(T,p,\left\{n_j\right\}\right)$取值下处于如式\eqref{eq:II.5_phase_eq_non_volatile}所表达的稳定的平衡态，那么：
+尽管第三种情况很少见，但无论$\alpha$相是什么物态，以下讨论的热力学结论是普适的。应用时只需按以下几种情况作相应的解读就可以了。假定体系在当前$\left(T,p,\left\{n_j\right\}\right)$取值下处于如式\eqref{eq:II.5_phase_eq_non_volatile}所表达的稳定的平衡态，那么：
 \begin{itemize}
-    \item $n_i$是组份$i$在$T$、$p$下，其余组成为$\left\{n_{j\neq i}\right\}$时的溶解度；
-    \item $T$是液相混合物在该$p$下，组成为$\left\{n_j\right\}$时的的相变点。例如当$\alpha=\text{V}$时是液相混合物在该条件下的沸点；当$\alpha=\text{S}$时是组份$i$从该条件下的液相混合物析出的凝固点；
-    \item $p$是组份$i$在$T$下，与组成为$\left\{n_j\right\}$的液相混合物共存时的饱和蒸气压。
+  \item $n_i$是组份$i$在$T$、$p$下，其余组成为$\left\{n_{j\neq i}\right\}$时的溶解度；
+  \item $T$是液相混合物在该$p$下，组成为$\left\{n_j\right\}$时的的相变点。例如当$\alpha=\text{V}$时是液相混合物在该条件下的沸点；当$\alpha=\text{S}$时是组份$i$从该条件下的液相混合物析出的凝固点；
+  \item $p$是组份$i$在$T$下，与组成为$\left\{n_j\right\}$的液相混合物共存时的饱和蒸气压。
 \end{itemize}
 
 因此由式\eqref{eq:II.5_phase_eq_non_volatile}出发的以下分析，将使我们获得上述这些性质的变化规律。由式\eqref{eq:II.5_phase_eq_non_volatile}，在当前状态点附近的微变化将满足
 \begin{align*}
-                    & \mathrm{d}\mu_i^\text{L}\left(T,p,\left\{n_i^\text{L}\right\}\right)=\mathrm{d}\mu_i^{\alpha,*}\left(T,p\right)                                                                                                                                                                             \\
-    \Leftrightarrow & -S_i^\text{L}\mathrm{d}T+V_i^\text{L}\mathrm{d}p+\sum_j\left.\frac{\partial \mu_i^\text{L}}{\partial n_j^\text{L}}\right|_{T,p,\left\{n_{k\neq j}\right\}}\mathrm{d}n_j^\text{L}=-S_{\text{m},i}^{\alpha,*}\mathrm{d}T+V_{\text{m},i}^{\alpha,*}\mathrm{d}p,\quad\alpha=\text{V},\text{L或S}
+                  & \mathrm{d}\mu_i^\text{L}\left(T,p,\left\{n_i^\text{L}\right\}\right)=\mathrm{d}\mu_i^{\alpha,*}\left(T,p\right)                                                                                                                                                                             \\
+  \Leftrightarrow & -S_i^\text{L}\mathrm{d}T+V_i^\text{L}\mathrm{d}p+\sum_j\left.\frac{\partial \mu_i^\text{L}}{\partial n_j^\text{L}}\right|_{T,p,\left\{n_{k\neq j}\right\}}\mathrm{d}n_j^\text{L}=-S_{\text{m},i}^{\alpha,*}\mathrm{d}T+V_{\text{m},i}^{\alpha,*}\mathrm{d}p,\quad\alpha=\text{V},\text{L或S}
 \end{align*}
-由于液相只有组份$i$的摩尔数发生变化（与气相交流），而其他组份$j\neq i$都不变化，因此上式变为
+由于液相只有组份$i$的摩尔数发生变化（与$\alpha$相交流），而其他组份$j\neq i$都不变化，因此上式变为
 \begin{align*}
-                    & -S_i^\text{L}\mathrm{d}T+V_i^\text{L}\mathrm{d}p+\left.\frac{\partial\mu_i^\text{L}}{\partial n_i^\text{L}}\right|_{T,p}\mathrm{d}n_i^\text{L}=-S_{\text{m},i}^{\alpha,*}\mathrm{d}T+V_{\text{m},i}^{\alpha,*}\mathrm{d}p                                                                                                                                                               \\
-    \Leftrightarrow & -\left(S_i^\text{L}-S_{\text{m},i}^{\alpha,*}\right)\mathrm{d}T+\left(V_i^\text{L}-V_{\text{m},i}^{\alpha,*}\right)\mathrm{d}p+\left.\frac{\partial \mu_i^\text{L}}{\partial n_i^\text{L}}\right|_{T,p}\mathrm{d}n_i^\text{L}=0                                                                                                                                                         \\
-    \Leftrightarrow & \mathrm{d}n_i^\text{L}=-\frac{V_i^\text{L}-V_{\text{m},i}^{\alpha,*}}{\left(\partial\mu_i^\text{L}/\partial n_i^\text{L}\right)_{T,p}}\mathrm{d}p+\frac{S_i^\text{L}-S_{\text{m},i}^{\alpha,*}}{\left(\partial\mu_i^\text{L}/\partial n_i^\text{L}\right)_{T,p}} \mathrm{d}T                                                                                                            \\
-    \Leftrightarrow & \left.\frac{\partial n_i^\text{L}}{\partial p}\right|_{T}=-\frac{V_i^\text{L}-V_{\text{m},i}^{\alpha,*}}{\left(\partial\mu_i^\text{L}/\partial n_i^\text{L}\right)_{T,p}},\quad\left.\frac{\partial n_i^\text{L}}{\partial T}\right|_{p}=\frac{S_i^\text{L}-S_{\text{m},i}^{\alpha,*}}{\left(\partial\mu_i^\text{L}/\partial n_i^\text{L}\right)_{T,p}},\quad\alpha=\text{V},\text{L或S}
+                  & -S_i^\text{L}\mathrm{d}T+V_i^\text{L}\mathrm{d}p+\left.\frac{\partial\mu_i^\text{L}}{\partial n_i^\text{L}}\right|_{T,p}\mathrm{d}n_i^\text{L}=-S_{\text{m},i}^{\alpha,*}\mathrm{d}T+V_{\text{m},i}^{\alpha,*}\mathrm{d}p                                                                                                                                                               \\
+  \Leftrightarrow & -\left(S_i^\text{L}-S_{\text{m},i}^{\alpha,*}\right)\mathrm{d}T+\left(V_i^\text{L}-V_{\text{m},i}^{\alpha,*}\right)\mathrm{d}p+\left.\frac{\partial \mu_i^\text{L}}{\partial n_i^\text{L}}\right|_{T,p}\mathrm{d}n_i^\text{L}=0                                                                                                                                                         \\
+  \Leftrightarrow & \mathrm{d}n_i^\text{L}=-\frac{V_i^\text{L}-V_{\text{m},i}^{\alpha,*}}{\left(\partial\mu_i^\text{L}/\partial n_i^\text{L}\right)_{T,p}}\mathrm{d}p+\frac{S_i^\text{L}-S_{\text{m},i}^{\alpha,*}}{\left(\partial\mu_i^\text{L}/\partial n_i^\text{L}\right)_{T,p}} \mathrm{d}T                                                                                                            \\
+  \Leftrightarrow & \left.\frac{\partial n_i^\text{L}}{\partial p}\right|_{T}=-\frac{V_i^\text{L}-V_{\text{m},i}^{\alpha,*}}{\left(\partial\mu_i^\text{L}/\partial n_i^\text{L}\right)_{T,p}},\quad\left.\frac{\partial n_i^\text{L}}{\partial T}\right|_{p}=\frac{S_i^\text{L}-S_{\text{m},i}^{\alpha,*}}{\left(\partial\mu_i^\text{L}/\partial n_i^\text{L}\right)_{T,p}},\quad\alpha=\text{V},\text{L或S}
 \end{align*}
 
 在式\eqref{eq:II.5_phase_eq_non_volatile}成立的条件下，由偏摩尔热力学函数之间的关系，又有
@@ -152,7 +168,7 @@ $V_{\text{m},i}^{\alpha,*}-V_i^\text{L}$是组份$i$纯物质在$\alpha$相的�
 
 之前得到的一个偏导数$\left(\partial T/\partial n_i^\text{L}\right)_{p}$的倒数，可解读成等温条件下混合物的L-$\alpha$共存温度$T=T_\text{c}$随组成$n_i^\text{L}$的变化率
 \begin{equation}\label{eq:II.5_phase_coexist_temperature_partial_derivative}
-    \left.\frac{\partial T_\text{c}}{\partial n_i^\text{L}}\right|_{p}=-\left.\frac{\partial \mu_i^\text{L}}{\partial n_i^\text{L}}\right|_{T_\text{c},p}\frac{T_\text{c}}{\lambda_i}
+  \left.\frac{\partial T_\text{c}}{\partial n_i^\text{L}}\right|_{p}=-\left.\frac{\partial \mu_i^\text{L}}{\partial n_i^\text{L}}\right|_{T_\text{c},p}\frac{T_\text{c}}{\lambda_i}
 \end{equation}
 视混合物的L-$\alpha$共存温度是组份$i$在混合物中的摩尔分数$x_i^\text{L}$的函数，$T_\text{c}=T_\text{c}\left(x_i^\text{L}\right)$，则它在$x_i^\text{L}$附近的展开式为
 \[T_\text{c}\left(x_i^\text{L}\right)=T_{i,\text{c}}^*+\left.\frac{\partial T_\text{c}}{\partial x_i^\text{L}}\right|_{p,x_i^\text{L}=1}\left(x_i^\text{L}-1\right)+o\left(x_i^\text{L}-1\right)\]
@@ -180,18 +196,18 @@ $V_{\text{m},i}^{\alpha,*}-V_i^\text{L}$是组份$i$纯物质在$\alpha$相的�
 
 最后一个偏微分$\left(\partial p/\partial T\right)_{n_i^\text{L}}$是液相混合物体系的克拉佩龙--克劳修斯方程。《物理化学》\S6.4的式(6.12)是这个方程的纯物质版。
 
-\subsection{半透膜问题}
+\subsection{半透膜问题}\label{sec:II.5.4_semipermeable_membrane}
 半透膜问题中，也分两相，其中一相是液态混合物，另一相是同温下某组份$i$的纯物质，但压强与液态混合物相不同（如图\ref{fig:sol_thermodyn_typical_problems}(c)所示）。这要依靠半透膜来实现。它是隔开两相的一个界面，但位置和形状是固定的。在大部分问题中，半透膜通常是导热的，允许两边的分体系之间达到热平衡。但由于它是刚的，因此能承担它两侧存在的压差。半透膜最重要的特点是，它两侧的压强之间并非独立，而是通过组分的部分透过性而相互关联的。所以可以说这种壁还允许部分物质交换。我们将推导发现，半透膜左右两相的压差——即渗透压——与可透过组份摩尔数在两相的分配有关。
 
 具体地，设半透膜左侧是液态混合物相，压强为$p^\text{L}$；右侧为组份$i$组物质相，压强为$p$，物态不重要，故记为$\alpha$相。我们不妨假定半透膜右侧与环境外压$p$达到力学平衡，即$\alpha$相的压强$p$保持恒定。化学平衡条件
 \begin{equation}\label{eq:II.5_osmotic_equilibrium}
-    \mu_i^\text{L}\left(T,p^\text{L},\left\{n_j^\text{L}\right\}\right)=\mu_i^{\alpha,*}\left(T,p\right)
+  \mu_i^\text{L}\left(T,p^\text{L},\left\{n_j^\text{L}\right\}\right)=\mu_i^{\alpha,*}\left(T,p\right)
 \end{equation}
 两边全微分（$\mathrm{d}n_{j\neq i}^\text{L}=0,\mathrm{d}T=0,\mathrm{d}p=0$）得到
 \[V_i^\text{L}\mathrm{d}p^\text{L}+\frac{\partial \mu_i^\text{L}}{\partial n_i^\text{L}}\mathrm{d}n_i^\text{L}=0\]
 而由平衡态稳定性条件，$\partial\mu_i^\text{L}/\partial n_i^\text{L}>0$，故上式表明，当可透过组份$i$减小时，液体混合物相的压强增加。若视组份$i$为溶剂，并记$\Pi\eqdef p^\text{L}-p$为液体混合物的渗透压，则可以说，当溶质浓度增加时，溶液的渗透压相应增加，增加率是溶剂在溶液中的偏摩尔体积$V_i^\text{L}$。注意以上等式是在定温定压下两相体系达到稳定平衡态时成立。我们可以写下定温定压下液体混合物的渗透压随可透过组份在混合物中的浓度的变化率，即偏导数
 \begin{equation}\label{eq:II.5_osmotic_pressure_partial_derivative}
-    \frac{\partial\Pi}{\partial n_i^\text{L}}=\frac{\partial p^\text{L}}{\partial n_i^\text{L}}=-\frac{1}{V_i^\text{L}}\frac{\partial\mu_i^\text{L}}{\partial n_i^\text{L}}
+  \frac{\partial\Pi}{\partial n_i^\text{L}}=\frac{\partial p^\text{L}}{\partial n_i^\text{L}}=-\frac{1}{V_i^\text{L}}\frac{\partial\mu_i^\text{L}}{\partial n_i^\text{L}}
 \end{equation}
 
 以下推导混合物在极稀条件下的范托夫定律。恒温、恒外压$p$下，渗透压可表示组份$i$在混合物相中的摩尔分数$x_i^\text{L}$的函数，其在$x_i^\text{L}=1$附近的展开式是
@@ -206,11 +222,11 @@ $V_{\text{m},i}^{\alpha,*}-V_i^\text{L}$是组份$i$纯物质在$\alpha$相的�
 \[V_i^\text{L,*}=V^\text{L}/n_i^\text{L}\approx V^\text{L}/n^\text{L}\]
 省去上标L，有
 \begin{equation}\label{eq:II.5_osmotic_pressure_ideal_dilute_sol}\Pi \approx \frac{RTn_\text{B}}{V}=RTc_\text{B}\end{equation}
-其中$n_\text{B}\equiv\sum_{j\neq i}n_j$是溶质的物质的量。该式就是《物理化学》\S4.9式(4.73)的范托夫定律（van \char"0027 t Hoff law）。
+其中$n_\text{B}\equiv\sum_{j\neq i}n_j$是溶质的物质的量。该式就是《物理化学》\S4.9式(4.73)的\emph{范托夫定律（van \char"0027 t Hoff law）}。
 
 对于非理想溶液的一般情况，仅有式\eqref{eq:II.5_osmotic_pressure_partial_derivative}是不方便得出渗透压的一般表达式的。把式\eqref{eq:II.4_Raoult_standard_state_activity_factor}代入\eqref{eq:II.5_osmotic_equilibrium}，可以得出
 \begin{equation}\label{eq:II.5_osmotic_equilibrium_activity_factor}
-    \int_{p^\text{L}}^p V_{\text{m},i}^*\left(T,p^\prime\right)\mathrm{d}p^\prime=RT\ln x_i^\text{L}+\ln \gamma_i^\text{L}\left(T,p^\text{L},\left\{n_i^\text{L}\right\}\right)
+  \int_{p^\text{L}}^p V_{\text{m},i}^*\left(T,p^\prime\right)\mathrm{d}p^\prime=RT\ln x_i^\text{L}+\ln \gamma_i^\text{L}\left(T,p^\text{L},\left\{n_i^\text{L}\right\}\right)
 \end{equation}
 尽管该式在理想稀溶液近似条件下也能得到式\eqref{eq:II.5_osmotic_pressure_ideal_dilute_sol}，但是对于一般混合物，上式并不显现渗透压。以下是由上式取理想稀溶液近似得到式\eqref{eq:II.5_osmotic_pressure_ideal_dilute_sol}的过程。首先需假定组份$i$纯物质的摩尔体积随压强变化不大，故
 \[\int_{p^\text{L}}^pV_{\text{m},i}^*\left(T,p^\prime\right)\mathrm{d}p^\prime\approx-\Pi V_{\text{m},i}^*\]

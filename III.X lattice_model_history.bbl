@@ -19,552 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
-    \entry{Tobolsky1942}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=18494e7675927efcb2d30dd67e9920fa}{%
-           family={Tobolsky},
-           familyi={T\bibinitperiod},
-           given={Arthur},
-           giveni={A\bibinitperiod}}}%
-      }
-      \name{namea}{1}{}{%
-        {{hash=18494e7675927efcb2d30dd67e9920fa}{%
-           family={Tobolsky},
-           familyi={T\bibinitperiod},
-           given={Arthur},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{18494e7675927efcb2d30dd67e9920fa}
-      \strng{fullhash}{18494e7675927efcb2d30dd67e9920fa}
-      \strng{fullhashraw}{18494e7675927efcb2d30dd67e9920fa}
-      \strng{bibnamehash}{18494e7675927efcb2d30dd67e9920fa}
-      \strng{authorbibnamehash}{18494e7675927efcb2d30dd67e9920fa}
-      \strng{authornamehash}{18494e7675927efcb2d30dd67e9920fa}
-      \strng{authorfullhash}{18494e7675927efcb2d30dd67e9920fa}
-      \strng{authorfullhashraw}{18494e7675927efcb2d30dd67e9920fa}
-      \strng{nameabibnamehash}{18494e7675927efcb2d30dd67e9920fa}
-      \strng{nameanamehash}{18494e7675927efcb2d30dd67e9920fa}
-      \strng{nameafullhash}{18494e7675927efcb2d30dd67e9920fa}
-      \strng{nameafullhashraw}{18494e7675927efcb2d30dd67e9920fa}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{{An elementary systematic method for obtaining the relations between thermodynamic coefficients is presented. This method is applicable for any desired set of independent variables, and is also easily adapted to obtain the derivatives of any functions of the thermodynamic variables.}}
-      \field{issn}{0021-9606}
-      \field{journaltitle}{The Journal of Chemical Physics}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{month}{10}
-      \field{number}{10}
-      \field{title}{{A Systematic Method of Obtaining the Relations Between Thermodynamic Derivatives}}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{10}
-      \field{year}{1942}
-      \field{dateera}{ce}
-      \field{pages}{644\bibrangedash 645}
-      \range{pages}{2}
-      \verb{doi}
-      \verb 10.1063/1.1723632
-      \endverb
-      \verb{eprint}
-      \verb https://pubs.aip.org/aip/jcp/article-pdf/10/10/644/18792815/644\_1\_online.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1063/1.1723632
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1063/1.1723632
-      \endverb
-      \keyw{Tobolsky1942}
-    \endentry
-    \entry{Grolier2015}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=dee509697ee94df690c2b018adc1dcc8}{%
-           family={Grolier},
-           familyi={G\bibinitperiod},
-           given={Jean-Pierre\bibnamedelima E.},
-           giveni={J\bibinithyphendelim P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-      }
-      \name{namea}{1}{}{%
-        {{hash=dee509697ee94df690c2b018adc1dcc8}{%
-           family={Grolier},
-           familyi={G\bibinitperiod},
-           given={Jean-Pierre\bibnamedelima E.},
-           giveni={J\bibinithyphendelim P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{dee509697ee94df690c2b018adc1dcc8}
-      \strng{fullhash}{dee509697ee94df690c2b018adc1dcc8}
-      \strng{fullhashraw}{dee509697ee94df690c2b018adc1dcc8}
-      \strng{bibnamehash}{dee509697ee94df690c2b018adc1dcc8}
-      \strng{authorbibnamehash}{dee509697ee94df690c2b018adc1dcc8}
-      \strng{authornamehash}{dee509697ee94df690c2b018adc1dcc8}
-      \strng{authorfullhash}{dee509697ee94df690c2b018adc1dcc8}
-      \strng{authorfullhashraw}{dee509697ee94df690c2b018adc1dcc8}
-      \strng{nameabibnamehash}{dee509697ee94df690c2b018adc1dcc8}
-      \strng{nameanamehash}{dee509697ee94df690c2b018adc1dcc8}
-      \strng{nameafullhash}{dee509697ee94df690c2b018adc1dcc8}
-      \strng{nameafullhashraw}{dee509697ee94df690c2b018adc1dcc8}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Since the early ages any progress in thermodynamics, in fact its birth itself, results from the observation of phenomena combining heat and mechanical effects. This is also true in chemical thermodynamics. In addition, in particular in solution thermodynamics, chemical effects must be taken into account. From this point of view, solution thermodynamics is a science of observation developed from judicially conceived experimental measurements that characterize and quantify the contributions of the chemical species involved. Using the formal rather simple scheme of basic relations built from equally simple thermodynamic principles, the thermodynamic behavior resulting from the chemical interactions of an investigated chemical system can be related to the chemical potentials of the system’s components. Experimental thermodynamics is a science by itself. In this context, calorimetric techniques play a major role in providing essential data used to build theoretical models capable of being used further in chemical engineering applications. Heats of mixing, heats of interaction, and heats of dilution constitute the primary data to be measured. After a short review of the thermodynamic formalism and basic relations, the state of the art in solution calorimetry to determine the above heats is described. For an in-depth study of molecular interactions, the pressure as well as the temperature dependence of these thermodynamic properties must be documented. The thermophysical properties that are the second derivatives of the Gibbs energy with respect to temperature and pressure are of paramount importance since they can be related directly to the molecular level, opening windows to molecular thermodynamics. Scanning transitiometry, which can provide experimentally all the thermophysical properties, is described in detail. I give from my personal march in the field a view of the most recent developments in experimental techniques including their extensions to operate over extended temperature and pressure ranges. Selected striking results in pure liquids and mixtures, and in polymer systems, serve to illustrate the role of well-designed experimental techniques in providing exclusive data of the best quality. The aim was indeed to stress also the pivotal role and impetus of Robert H. Wood in modern chemical thermodynamics.}
-      \field{issn}{1572-8927}
-      \field{journaltitle}{Journal of Solution Chemistry}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{number}{5}
-      \field{title}{From Solutions to Polymers: A High Temperature-High Pressure Journey in Experimental Thermodynamics}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{44}
-      \field{year}{2015}
-      \field{dateera}{ce}
-      \field{pages}{1090\bibrangedash 1120}
-      \range{pages}{31}
-      \verb{doi}
-      \verb 10.1007/s10953-015-0302-8
-      \endverb
-      \keyw{Grolier2015}
-    \endentry
-    \entry{Mollerup2009}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=b0b73ddd156d922b0929ea550e6f9fa1}{%
-           family={Mollerup},
-           familyi={M\bibinitperiod},
-           given={Jørgen\bibnamedelima M.},
-           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=f5a8dc0c184f9500690fd6b64fd26c83}{%
-           family={Breil},
-           familyi={B\bibinitperiod},
-           given={Martin\bibnamedelima P.},
-           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-      }
-      \name{namea}{2}{}{%
-        {{hash=b0b73ddd156d922b0929ea550e6f9fa1}{%
-           family={Mollerup},
-           familyi={M\bibinitperiod},
-           given={Jørgen\bibnamedelima M.},
-           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=f5a8dc0c184f9500690fd6b64fd26c83}{%
-           family={Breil},
-           familyi={B\bibinitperiod},
-           given={Martin\bibnamedelima P.},
-           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{33e487aa4e7c74e30c7403b9f299869f}
-      \strng{fullhash}{be6826dc4d51d14035bf3bd1cc5ed643}
-      \strng{fullhashraw}{be6826dc4d51d14035bf3bd1cc5ed643}
-      \strng{bibnamehash}{be6826dc4d51d14035bf3bd1cc5ed643}
-      \strng{authorbibnamehash}{be6826dc4d51d14035bf3bd1cc5ed643}
-      \strng{authornamehash}{33e487aa4e7c74e30c7403b9f299869f}
-      \strng{authorfullhash}{be6826dc4d51d14035bf3bd1cc5ed643}
-      \strng{authorfullhashraw}{be6826dc4d51d14035bf3bd1cc5ed643}
-      \strng{nameabibnamehash}{be6826dc4d51d14035bf3bd1cc5ed643}
-      \strng{nameanamehash}{33e487aa4e7c74e30c7403b9f299869f}
-      \strng{nameafullhash}{be6826dc4d51d14035bf3bd1cc5ed643}
-      \strng{nameafullhashraw}{be6826dc4d51d14035bf3bd1cc5ed643}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The osmotic second virial coefficient is a key parameter in light scattering, protein crystallisation, self-interaction chromatography, and osmometry. The interpretation of the osmotic second virial coefficient depends on the solution theory. On the macroscopic level an expansion of the osmotic pressure is employed. A common statistical interpretation of the osmotic second virial coefficient of the expansion employs the McMillan–Mayer framework and the potential of mean force to characterise the solute–solute interaction. Supplementary to the statistical interpretation, it may be advantageous to develop the McMillan–Mayer framework in a classical thermodynamic context for which we develop the relationship between the state function of the McMillan–Mayer framework and the Helmholtz state function. A Taylor expansion method can be applied to the osmotic pressure of a solution which is dilute with respect to at least one solute component. This offers the possibility for an interpretation and correlation of the osmotic second virial coefficient utilising a McMillan–Mayer state function derived from a Helmholtz state function.}
-      \field{issn}{0378-3812}
-      \field{journaltitle}{Fluid Phase Equilibria}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{number}{1}
-      \field{title}{On the thermodynamics of the McMillan–Mayer state function}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{276}
-      \field{year}{2009}
-      \field{dateera}{ce}
-      \field{pages}{18\bibrangedash 23}
-      \range{pages}{6}
-      \verb{doi}
-      \verb https://doi.org/10.1016/j.fluid.2008.10.004
-      \endverb
-      \keyw{McMillan–Mayer,Osmotic pressure,Osmotic second virial coefficient,Helmholtz state function,Potential of mean force}
-    \endentry
-    \entry{Bragg1934}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=fbe5fdedb0690d04c64476129af964cb}{%
-           family={Bragg},
-           familyi={B\bibinitperiod},
-           given={William\bibnamedelima Lawrence},
-           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=26176e0bc0cec3b65bbf6e6d156a849d}{%
-           family={Williams},
-           familyi={W\bibinitperiod},
-           given={Evan\bibnamedelima James},
-           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \name{namea}{2}{}{%
-        {{hash=fbe5fdedb0690d04c64476129af964cb}{%
-           family={Bragg},
-           familyi={B\bibinitperiod},
-           given={William\bibnamedelima Lawrence},
-           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=26176e0bc0cec3b65bbf6e6d156a849d}{%
-           family={Williams},
-           familyi={W\bibinitperiod},
-           given={Evan\bibnamedelima James},
-           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{353edf8799bbbf67e7cd871d19a08c85}
-      \strng{fullhash}{aa20e16e438d50f6031dd7eb62b054fe}
-      \strng{fullhashraw}{aa20e16e438d50f6031dd7eb62b054fe}
-      \strng{bibnamehash}{aa20e16e438d50f6031dd7eb62b054fe}
-      \strng{authorbibnamehash}{aa20e16e438d50f6031dd7eb62b054fe}
-      \strng{authornamehash}{353edf8799bbbf67e7cd871d19a08c85}
-      \strng{authorfullhash}{aa20e16e438d50f6031dd7eb62b054fe}
-      \strng{authorfullhashraw}{aa20e16e438d50f6031dd7eb62b054fe}
-      \strng{nameabibnamehash}{aa20e16e438d50f6031dd7eb62b054fe}
-      \strng{nameanamehash}{353edf8799bbbf67e7cd871d19a08c85}
-      \strng{nameafullhash}{aa20e16e438d50f6031dd7eb62b054fe}
-      \strng{nameafullhashraw}{aa20e16e438d50f6031dd7eb62b054fe}
-      \field{extraname}{1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Proceedings of the Royal Society of London. Series A, Containing Papers of a Mathematical and Physical Character}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{note}{doi: 10.1098/rspa.1934.0132}
-      \field{number}{855}
-      \field{title}{The effect of thermal agitation on atomic arrangement in alloys}
-      \field{type}{Journal Article}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{145}
-      \field{year}{1934}
-      \field{dateera}{ce}
-      \field{pages}{699\bibrangedash 730}
-      \range{pages}{32}
-      \verb{doi}
-      \verb 10.1098/rspa.1934.0132
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1098/rspa.1934.0132
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1098/rspa.1934.0132
-      \endverb
-      \keyw{Bragg1934}
-    \endentry
-    \entry{Bragg1935}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=fbe5fdedb0690d04c64476129af964cb}{%
-           family={Bragg},
-           familyi={B\bibinitperiod},
-           given={William\bibnamedelima Lawrence},
-           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=26176e0bc0cec3b65bbf6e6d156a849d}{%
-           family={Williams},
-           familyi={W\bibinitperiod},
-           given={Evan\bibnamedelima James},
-           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \name{namea}{2}{}{%
-        {{hash=fbe5fdedb0690d04c64476129af964cb}{%
-           family={Bragg},
-           familyi={B\bibinitperiod},
-           given={William\bibnamedelima Lawrence},
-           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=26176e0bc0cec3b65bbf6e6d156a849d}{%
-           family={Williams},
-           familyi={W\bibinitperiod},
-           given={Evan\bibnamedelima James},
-           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{353edf8799bbbf67e7cd871d19a08c85}
-      \strng{fullhash}{aa20e16e438d50f6031dd7eb62b054fe}
-      \strng{fullhashraw}{aa20e16e438d50f6031dd7eb62b054fe}
-      \strng{bibnamehash}{aa20e16e438d50f6031dd7eb62b054fe}
-      \strng{authorbibnamehash}{aa20e16e438d50f6031dd7eb62b054fe}
-      \strng{authornamehash}{353edf8799bbbf67e7cd871d19a08c85}
-      \strng{authorfullhash}{aa20e16e438d50f6031dd7eb62b054fe}
-      \strng{authorfullhashraw}{aa20e16e438d50f6031dd7eb62b054fe}
-      \strng{nameabibnamehash}{aa20e16e438d50f6031dd7eb62b054fe}
-      \strng{nameanamehash}{353edf8799bbbf67e7cd871d19a08c85}
-      \strng{nameafullhash}{aa20e16e438d50f6031dd7eb62b054fe}
-      \strng{nameafullhashraw}{aa20e16e438d50f6031dd7eb62b054fe}
-      \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Proceedings of the Royal Society of London. Series A - Mathematical and Physical Sciences}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{note}{doi: 10.1098/rspa.1935.0165}
-      \field{number}{874}
-      \field{title}{The effect of thermal agitaion on atomic arrangement in alloys—II}
-      \field{type}{Journal Article}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{151}
-      \field{year}{1935}
-      \field{dateera}{ce}
-      \field{pages}{540\bibrangedash 566}
-      \range{pages}{27}
-      \verb{doi}
-      \verb 10.1098/rspa.1935.0165
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1098/rspa.1935.0165
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1098/rspa.1935.0165
-      \endverb
-      \keyw{Bragg1935}
-    \endentry
-    \entry{Borelius1934}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=bf216b4f7e35d30cec30d218f7a51651}{%
-           family={Borelius},
-           familyi={B\bibinitperiod},
-           given={G.},
-           giveni={G\bibinitperiod}}}%
-      }
-      \name{namea}{1}{}{%
-        {{hash=bf216b4f7e35d30cec30d218f7a51651}{%
-           family={Borelius},
-           familyi={B\bibinitperiod},
-           given={G.},
-           giveni={G\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{bf216b4f7e35d30cec30d218f7a51651}
-      \strng{fullhash}{bf216b4f7e35d30cec30d218f7a51651}
-      \strng{fullhashraw}{bf216b4f7e35d30cec30d218f7a51651}
-      \strng{bibnamehash}{bf216b4f7e35d30cec30d218f7a51651}
-      \strng{authorbibnamehash}{bf216b4f7e35d30cec30d218f7a51651}
-      \strng{authornamehash}{bf216b4f7e35d30cec30d218f7a51651}
-      \strng{authorfullhash}{bf216b4f7e35d30cec30d218f7a51651}
-      \strng{authorfullhashraw}{bf216b4f7e35d30cec30d218f7a51651}
-      \strng{nameabibnamehash}{bf216b4f7e35d30cec30d218f7a51651}
-      \strng{nameanamehash}{bf216b4f7e35d30cec30d218f7a51651}
-      \strng{nameafullhash}{bf216b4f7e35d30cec30d218f7a51651}
-      \strng{nameafullhashraw}{bf216b4f7e35d30cec30d218f7a51651}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0003-3804}
-      \field{journaltitle}{Annalen der Physik}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{number}{1}
-      \field{title}{Zur Theorie der Umwandlungen von metallischen Mischphasen}
-      \field{type}{Journal Article}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{412}
-      \field{year}{1934}
-      \field{dateera}{ce}
-      \field{pages}{57\bibrangedash 74}
-      \range{pages}{18}
-      \verb{doi}
-      \verb https://doi.org/10.1002/andp.19344120105
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1002/andp.19344120105
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1002/andp.19344120105
-      \endverb
-      \keyw{Borelius1934}
-    \endentry
-    \entry{Dehlinger1934}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=bb1fbc9a4438b7e77b6d28be38c746e9}{%
-           family={Dehlinger},
-           familyi={D\bibinitperiod},
-           given={U.},
-           giveni={U\bibinitperiod}}}%
-      }
-      \name{namea}{1}{}{%
-        {{hash=bb1fbc9a4438b7e77b6d28be38c746e9}{%
-           family={Dehlinger},
-           familyi={D\bibinitperiod},
-           given={U.},
-           giveni={U\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{bb1fbc9a4438b7e77b6d28be38c746e9}
-      \strng{fullhash}{bb1fbc9a4438b7e77b6d28be38c746e9}
-      \strng{fullhashraw}{bb1fbc9a4438b7e77b6d28be38c746e9}
-      \strng{bibnamehash}{bb1fbc9a4438b7e77b6d28be38c746e9}
-      \strng{authorbibnamehash}{bb1fbc9a4438b7e77b6d28be38c746e9}
-      \strng{authornamehash}{bb1fbc9a4438b7e77b6d28be38c746e9}
-      \strng{authorfullhash}{bb1fbc9a4438b7e77b6d28be38c746e9}
-      \strng{authorfullhashraw}{bb1fbc9a4438b7e77b6d28be38c746e9}
-      \strng{nameabibnamehash}{bb1fbc9a4438b7e77b6d28be38c746e9}
-      \strng{nameanamehash}{bb1fbc9a4438b7e77b6d28be38c746e9}
-      \strng{nameafullhash}{bb1fbc9a4438b7e77b6d28be38c746e9}
-      \strng{nameafullhashraw}{bb1fbc9a4438b7e77b6d28be38c746e9}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{number}{1}
-      \field{title}{Stetiger Übergang und kritischer Punkt zwischen zwei festen Phasen}
-      \field{type}{Journal Article}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{26B}
-      \field{year}{1934}
-      \field{dateera}{ce}
-      \field{pages}{343\bibrangedash 352}
-      \range{pages}{10}
-      \verb{doi}
-      \verb doi:10.1515/zpch-1934-2631
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1515/zpch-1934-2631
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1515/zpch-1934-2631
-      \endverb
-      \keyw{Dehlinger1934}
-    \endentry
-    \entry{Guggenheim1952}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=40688350d14f9ebdd684fbed521a7399}{%
-           family={Guggenheim},
-           familyi={G\bibinitperiod},
-           given={E.\bibnamedelimi A.},
-           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \name{namea}{1}{}{%
-        {{hash=40688350d14f9ebdd684fbed521a7399}{%
-           family={Guggenheim},
-           familyi={G\bibinitperiod},
-           given={E.\bibnamedelimi A.},
-           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{publisher}{1}{%
-        {Clarendon Press}%
-      }
-      \strng{namehash}{40688350d14f9ebdd684fbed521a7399}
-      \strng{fullhash}{40688350d14f9ebdd684fbed521a7399}
-      \strng{fullhashraw}{40688350d14f9ebdd684fbed521a7399}
-      \strng{bibnamehash}{40688350d14f9ebdd684fbed521a7399}
-      \strng{authorbibnamehash}{40688350d14f9ebdd684fbed521a7399}
-      \strng{authornamehash}{40688350d14f9ebdd684fbed521a7399}
-      \strng{authorfullhash}{40688350d14f9ebdd684fbed521a7399}
-      \strng{authorfullhashraw}{40688350d14f9ebdd684fbed521a7399}
-      \strng{nameabibnamehash}{40688350d14f9ebdd684fbed521a7399}
-      \strng{nameanamehash}{40688350d14f9ebdd684fbed521a7399}
-      \strng{nameafullhash}{40688350d14f9ebdd684fbed521a7399}
-      \strng{nameafullhashraw}{40688350d14f9ebdd684fbed521a7399}
-      \field{extraname}{1}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{title}{Mixtures}
-      \field{usera}{M}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{year}{1952}
-      \field{dateera}{ce}
-      \keyw{Guggenheim1952}
-    \endentry
-    \entry{Tompa1956}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=c43d9019d77fb90097ba8a3fe90af706}{%
-           family={Tompa},
-           familyi={T\bibinitperiod},
-           given={H.},
-           giveni={H\bibinitperiod}}}%
-      }
-      \name{namea}{1}{}{%
-        {{hash=c43d9019d77fb90097ba8a3fe90af706}{%
-           family={Tompa},
-           familyi={T\bibinitperiod},
-           given={H.},
-           giveni={H\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{publisher}{1}{%
-        {Butterworths Scientific Publications}%
-      }
-      \strng{namehash}{c43d9019d77fb90097ba8a3fe90af706}
-      \strng{fullhash}{c43d9019d77fb90097ba8a3fe90af706}
-      \strng{fullhashraw}{c43d9019d77fb90097ba8a3fe90af706}
-      \strng{bibnamehash}{c43d9019d77fb90097ba8a3fe90af706}
-      \strng{authorbibnamehash}{c43d9019d77fb90097ba8a3fe90af706}
-      \strng{authornamehash}{c43d9019d77fb90097ba8a3fe90af706}
-      \strng{authorfullhash}{c43d9019d77fb90097ba8a3fe90af706}
-      \strng{authorfullhashraw}{c43d9019d77fb90097ba8a3fe90af706}
-      \strng{nameabibnamehash}{c43d9019d77fb90097ba8a3fe90af706}
-      \strng{nameanamehash}{c43d9019d77fb90097ba8a3fe90af706}
-      \strng{nameafullhash}{c43d9019d77fb90097ba8a3fe90af706}
-      \strng{nameafullhashraw}{c43d9019d77fb90097ba8a3fe90af706}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{title}{Polymer Solutions}
-      \field{usera}{M}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{year}{1956}
-      \field{dateera}{ce}
-      \keyw{Tompa1956}
-    \endentry
     \entry{Hildebrand1981}{article}{}{}
       \name{author}{1}{}{%
         {{hash=e537ebaad04a7d8db420164b30aeec2b}{%
@@ -658,8 +112,8 @@
       \strng{nameafullhash}{b64569c6d3262e1e65ed289d2440bf2a}
       \strng{nameafullhashraw}{b64569c6d3262e1e65ed289d2440bf2a}
       \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0002-7863}
@@ -721,8 +175,8 @@
       \strng{nameafullhash}{1bd92a70bd6bc6361b62d4e02cb46d3e}
       \strng{nameafullhashraw}{1bd92a70bd6bc6361b62d4e02cb46d3e}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{01999818}
@@ -783,8 +237,8 @@
       \strng{nameafullhash}{1bd92a70bd6bc6361b62d4e02cb46d3e}
       \strng{nameafullhashraw}{1bd92a70bd6bc6361b62d4e02cb46d3e}
       \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{01999818}
@@ -845,8 +299,8 @@
       \strng{nameafullhash}{b64569c6d3262e1e65ed289d2440bf2a}
       \strng{nameafullhashraw}{b64569c6d3262e1e65ed289d2440bf2a}
       \field{extraname}{3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{IN 19201 I directed attention to the fact that the solubility of solids, plotted as a logarithm of mole fraction against reciprocal temperature, gives a family of curves in the case of solutions “where no molecular changes are involved”. In 19272 I designated such solutions as ‘regular’ and in 19293 I discussed the thermodynamic significance of this regularity, stating, in part: “From our picture of a regular solution as one in which orienting and chemical effects are absent, and in which the distribution and orientations are random, just as in an ideal solution, we may conclude that the probability of X2 [species 2] is the same in the two solutions [ideal and actual] and, therefore, that the difference in entropy is zero. We cannot expect this conclusion to hold unless the random distribution of molecules persists. We may expect further that a small correction should be applied to take care of the change in entropy accompanying changes in volume, given by (∂S/∂V)T = (∂P/∂T)V; or we may state our principle in the following form. A regular solution is one involving no entropy change when a small amount of one of its components is transferred to it from an ideal solution of the same composition, the total volume remaining unchanged.”}
@@ -876,6 +330,150 @@
       \verb https://doi.org/10.1038/168868a0
       \endverb
       \keyw{Hildebrand1951}
+    \endentry
+    \entry{Bragg1934}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=fbe5fdedb0690d04c64476129af964cb}{%
+           family={Bragg},
+           familyi={B\bibinitperiod},
+           given={William\bibnamedelima Lawrence},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=26176e0bc0cec3b65bbf6e6d156a849d}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Evan\bibnamedelima James},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=fbe5fdedb0690d04c64476129af964cb}{%
+           family={Bragg},
+           familyi={B\bibinitperiod},
+           given={William\bibnamedelima Lawrence},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=26176e0bc0cec3b65bbf6e6d156a849d}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Evan\bibnamedelima James},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{353edf8799bbbf67e7cd871d19a08c85}
+      \strng{fullhash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{fullhashraw}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{bibnamehash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{authorbibnamehash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{authornamehash}{353edf8799bbbf67e7cd871d19a08c85}
+      \strng{authorfullhash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{authorfullhashraw}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{nameabibnamehash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{nameanamehash}{353edf8799bbbf67e7cd871d19a08c85}
+      \strng{nameafullhash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{nameafullhashraw}{aa20e16e438d50f6031dd7eb62b054fe}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society of London. Series A, Containing Papers of a Mathematical and Physical Character}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{note}{doi: 10.1098/rspa.1934.0132}
+      \field{number}{855}
+      \field{title}{The effect of thermal agitation on atomic arrangement in alloys}
+      \field{type}{Journal Article}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{145}
+      \field{year}{1934}
+      \field{dateera}{ce}
+      \field{pages}{699\bibrangedash 730}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1098/rspa.1934.0132
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1098/rspa.1934.0132
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1098/rspa.1934.0132
+      \endverb
+      \keyw{Bragg1934}
+    \endentry
+    \entry{Bragg1935}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=fbe5fdedb0690d04c64476129af964cb}{%
+           family={Bragg},
+           familyi={B\bibinitperiod},
+           given={William\bibnamedelima Lawrence},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=26176e0bc0cec3b65bbf6e6d156a849d}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Evan\bibnamedelima James},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=fbe5fdedb0690d04c64476129af964cb}{%
+           family={Bragg},
+           familyi={B\bibinitperiod},
+           given={William\bibnamedelima Lawrence},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=26176e0bc0cec3b65bbf6e6d156a849d}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Evan\bibnamedelima James},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{353edf8799bbbf67e7cd871d19a08c85}
+      \strng{fullhash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{fullhashraw}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{bibnamehash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{authorbibnamehash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{authornamehash}{353edf8799bbbf67e7cd871d19a08c85}
+      \strng{authorfullhash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{authorfullhashraw}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{nameabibnamehash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{nameanamehash}{353edf8799bbbf67e7cd871d19a08c85}
+      \strng{nameafullhash}{aa20e16e438d50f6031dd7eb62b054fe}
+      \strng{nameafullhashraw}{aa20e16e438d50f6031dd7eb62b054fe}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society of London. Series A - Mathematical and Physical Sciences}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{note}{doi: 10.1098/rspa.1935.0165}
+      \field{number}{874}
+      \field{title}{The effect of thermal agitaion on atomic arrangement in alloys—II}
+      \field{type}{Journal Article}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{151}
+      \field{year}{1935}
+      \field{dateera}{ce}
+      \field{pages}{540\bibrangedash 566}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1098/rspa.1935.0165
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1098/rspa.1935.0165
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1098/rspa.1935.0165
+      \endverb
+      \keyw{Bragg1935}
     \endentry
     \entry{Guggenheim1935}{article}{}{}
       \name{author}{1}{}{%
@@ -907,9 +505,9 @@
       \strng{nameanamehash}{eb4f41156a1684c11177fff3e650aaad}
       \strng{nameafullhash}{eb4f41156a1684c11177fff3e650aaad}
       \strng{nameafullhashraw}{eb4f41156a1684c11177fff3e650aaad}
-      \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Royal Society of London. Series A - Mathematical and Physical Sciences}
@@ -969,8 +567,8 @@
       \strng{nameanamehash}{0fad0bb9a3cc981bf9e1a410f9b25100}
       \strng{nameafullhash}{0fad0bb9a3cc981bf9e1a410f9b25100}
       \strng{nameafullhashraw}{0fad0bb9a3cc981bf9e1a410f9b25100}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Royal Society of London. Series A - Mathematical and Physical Sciences}
@@ -1031,8 +629,8 @@
       \strng{nameafullhash}{9518f69de91b93fe736323ff65ec0cf1}
       \strng{nameafullhashraw}{9518f69de91b93fe736323ff65ec0cf1}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Royal Society of London. Series A - Mathematical and Physical Sciences}
@@ -1092,8 +690,8 @@
       \strng{nameanamehash}{a43b3b95b966cf428927642bc9317b23}
       \strng{nameafullhash}{a43b3b95b966cf428927642bc9317b23}
       \strng{nameafullhashraw}{a43b3b95b966cf428927642bc9317b23}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{1. In a recent note I showed that Langmuir's adsorption isothermwhere θ is the fraction of the surface covered by adsorbed gas, p the gas pressure in equilibrium with it, and A (T) a specified function of the temperature, can be derived as a theorem in statistical mechanics without any appeal to the mechanism of deposition and re-evaporation. Necessary and sufficient assumptions for the truth of (1) are that the atoms (or molecules) of the gas are adsorbed as wholes on to definite points of attachment on the surface of the adsorber, that each point of attachment can accommodate one and only one adsorbed atom, and that the energies of the states of any adsorbed atom are independent of the presence or absence of other adsorbed atoms on neighbouring points of attachment. Under these assumptions the explicit form of (1) iswhere m is the mass of the adsorbed atom or molecule, bg(T) the partition function for its internal states in the gas phase, and vs(T) the partition function for its set of adsorbed states. These sets of states are to be so specified that the energy zero is assigned tot the lowest state of each set in constructing bg(T) and vs(T), and then X is the energy required to transfer a molecule from the lowest adsorbed state tot the lowest gas state. Quite another adsorption isotherm was shown to hold when adsorption of a molecule takes place as atoms and requires two or more points of attachment.}
@@ -1218,8 +816,8 @@
       \strng{nameafullhash}{cf44d40ebab9040b01739477709d066f}
       \strng{nameafullhashraw}{cf44d40ebab9040b01739477709d066f}
       \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Calculations are made to investigate the behaviour of ordering near the critical temperature for alloys with a superlattice of the type AB for various compositions. No fluctuation among the sites of the same kind, which may lead to the possible existence of some other types of superlattice, say, AB3, is considered. Results showing the change of ordering with T near Tc are plotted.The theory is also applied to the adsorption of gases upon a solid surface, where the sites of accommodation are regularly arranged. It is shown that under certain conditions, a superlattice formation in the adsorbed layer is possible.}
@@ -1281,8 +879,8 @@
       \strng{nameafullhash}{cf44d40ebab9040b01739477709d066f}
       \strng{nameafullhashraw}{cf44d40ebab9040b01739477709d066f}
       \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The possibility, pointed out in a previous paper, of superlattice formation in an adsorbed layer when the adsorbed atoms tend to repulse each other is developed in detail. Both Bragg and Williams's approximation and Bethe's approximation are used, but restricted to superlattices of the type AB. In a range of θ, the fraction of surface covered, a superlattice is found to be possible. Bragg and Williams's approximation shows further that the state with the lowest free energy is the one with a superlattice when the latter is possible. Rough kinetic expressions are also given. The equations derived from the principle necessary to preserve equilibrium are found to reduce to those of detailed balancing, and they also agree with the formula obtained statistically. As expected, all the corresponding results obtained from the two methods become the same when the number of nearest neighbours of a site approaches infinity, provided that the product of this number and the interaction potential of two adsorbed atoms occupying two neighbouring sites remains finite.The only significant result is the large value of the slope of isotherms (the rate of change of the pressure with respect to the fraction of adsorption) when there is a nearly complete superlattice.}
@@ -1344,8 +942,8 @@
       \strng{nameafullhash}{cf44d40ebab9040b01739477709d066f}
       \strng{nameafullhashraw}{cf44d40ebab9040b01739477709d066f}
       \field{extraname}{3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We consider an ideal problem of adsorption of single and double particles upon a solid surface which has its sites of accommodation regularly arranged, and by comparing the equilibrium properties obtained by Bethe's method with the ordinary statistical formulae, we obtain approximate expressions for:(1) g(N, n, X), the number of ways of arranging n particles upon N sites of a lattice so that the number of neighbouring sites occupied by the particles is X.(2) g2(N, n, X), the number of ways of arranging n double particles upon N sites so that each of the double particles takes up two adjacent sites and the number of neighbouring sites occupied by two different particles is X.Both these expressions are found to agree with the exact values when the N sites lie on a straight line. When we use the first expression to construct the configurational partition functions of certain physical assemblies and expand them in powers of 1/kT, they are found to agree with the corresponding rigorous expressions as far as (1/kT)3, which is the highest power which we can find rigorously at present. With the help of the first expression, formal equations for superlattice formation in an alloy with the composition 1: 1 and equations for the separation into phases of regular liquids are given. Lastly we show that atoms and molecules in a regular liquid may dissociate or recombine suddenly accompanied by a latent heat. This is a new cooperative phenomenon, which may bear some resemblance to the melting process between the solid and liquid states.}
@@ -1406,8 +1004,8 @@
       \strng{nameanamehash}{98bfdd256fc1e659a10492a73344ebd3}
       \strng{nameafullhash}{98bfdd256fc1e659a10492a73344ebd3}
       \strng{nameafullhashraw}{98bfdd256fc1e659a10492a73344ebd3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Royal Society of London. Series A - Mathematical and Physical Sciences}
@@ -1472,8 +1070,8 @@
       \strng{nameafullhash}{b854f13128090c57a3d9164099c5f1e0}
       \strng{nameafullhashraw}{b854f13128090c57a3d9164099c5f1e0}
       \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
@@ -1518,8 +1116,8 @@
       \strng{nameafullhash}{e70bb8eafeb170e9ab03b692c211b42e}
       \strng{nameafullhashraw}{e70bb8eafeb170e9ab03b692c211b42e}
       \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The quasi‐chemical method in the investigation of the equilibrium distribution of atoms in the pairs of neighboring sites in a superlattice is generalized by considering groups containing large numbers of sites. The generalized method may be used to obtain successive approximations of the free energy of the crystal. The labor of integration is avoided by the introduction of a Legendre transformation. In order to analyze the fundamental assumption underlying the method more closely, the number of arrangements of the atoms for given long‐distance order is calculated and the hypothesis of the non‐interference of local configurations discussed. The method is applied to the calculation of the free energy in the different approximations discussed in this paper, including Bethe's second approximation and a simple approximation for the face‐centered cubic crystal Cu3Au.}
@@ -1580,8 +1178,8 @@
       \strng{nameanamehash}{1e08ee819a466e4f1e9db597dc46e21c}
       \strng{nameafullhash}{1e08ee819a466e4f1e9db597dc46e21c}
       \strng{nameafullhashraw}{1e08ee819a466e4f1e9db597dc46e21c}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review}
@@ -1641,9 +1239,9 @@
       \strng{nameanamehash}{40688350d14f9ebdd684fbed521a7399}
       \strng{nameafullhash}{40688350d14f9ebdd684fbed521a7399}
       \strng{nameafullhashraw}{40688350d14f9ebdd684fbed521a7399}
-      \field{extraname}{3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0014-7672}
@@ -1713,8 +1311,8 @@
       \strng{nameanamehash}{9e8698e32181c124316e4a16410b374f}
       \strng{nameafullhash}{7d7e139f6fde34421b63f662dbb9e1cb}
       \strng{nameafullhashraw}{7d7e139f6fde34421b63f662dbb9e1cb}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0014-7672}
@@ -1775,8 +1373,8 @@
       \strng{nameafullhash}{cf44d40ebab9040b01739477709d066f}
       \strng{nameafullhashraw}{cf44d40ebab9040b01739477709d066f}
       \field{extraname}{4}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Royal Society of London. Series A. Mathematical and Physical Sciences}
@@ -1962,8 +1560,8 @@
       \strng{nameanamehash}{29a401f27ccff2425c0fe19ae658ae54}
       \strng{nameafullhash}{29a401f27ccff2425c0fe19ae658ae54}
       \strng{nameafullhashraw}{29a401f27ccff2425c0fe19ae658ae54}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0014-7672}
@@ -2023,9 +1621,9 @@
       \strng{nameanamehash}{eb4f41156a1684c11177fff3e650aaad}
       \strng{nameafullhash}{eb4f41156a1684c11177fff3e650aaad}
       \strng{nameafullhashraw}{eb4f41156a1684c11177fff3e650aaad}
-      \field{extraname}{4}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Royal Society of London. Series A. Mathematical and Physical Sciences}
@@ -2085,9 +1683,9 @@
       \strng{nameanamehash}{eb4f41156a1684c11177fff3e650aaad}
       \strng{nameafullhash}{eb4f41156a1684c11177fff3e650aaad}
       \strng{nameafullhashraw}{eb4f41156a1684c11177fff3e650aaad}
-      \field{extraname}{5}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{extraname}{4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Royal Society of London. Series A. Mathematical and Physical Sciences}
@@ -2116,6 +1714,55 @@
       \verb https://doi.org/10.1098/rspa.1944.0033
       \endverb
       \keyw{Guggenheim1944a}
+    \endentry
+    \entry{Guggenheim1952}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=40688350d14f9ebdd684fbed521a7399}{%
+           family={Guggenheim},
+           familyi={G\bibinitperiod},
+           given={E.\bibnamedelimi A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=40688350d14f9ebdd684fbed521a7399}{%
+           family={Guggenheim},
+           familyi={G\bibinitperiod},
+           given={E.\bibnamedelimi A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Clarendon Press}%
+      }
+      \strng{namehash}{40688350d14f9ebdd684fbed521a7399}
+      \strng{fullhash}{40688350d14f9ebdd684fbed521a7399}
+      \strng{fullhashraw}{40688350d14f9ebdd684fbed521a7399}
+      \strng{bibnamehash}{40688350d14f9ebdd684fbed521a7399}
+      \strng{authorbibnamehash}{40688350d14f9ebdd684fbed521a7399}
+      \strng{authornamehash}{40688350d14f9ebdd684fbed521a7399}
+      \strng{authorfullhash}{40688350d14f9ebdd684fbed521a7399}
+      \strng{authorfullhashraw}{40688350d14f9ebdd684fbed521a7399}
+      \strng{nameabibnamehash}{40688350d14f9ebdd684fbed521a7399}
+      \strng{nameanamehash}{40688350d14f9ebdd684fbed521a7399}
+      \strng{nameafullhash}{40688350d14f9ebdd684fbed521a7399}
+      \strng{nameafullhashraw}{40688350d14f9ebdd684fbed521a7399}
+      \field{extraname}{5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Mixtures}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1952}
+      \field{dateera}{ce}
+      \keyw{Guggenheim1952}
     \endentry
     \entry{Meyer1935}{article}{}{}
       \name{author}{2}{}{%
@@ -2157,8 +1804,8 @@
       \strng{nameanamehash}{561478339ee658bff15085cf1d34b1d0}
       \strng{nameafullhash}{f52aa37b5b3dce8cad3c52c45200278b}
       \strng{nameafullhashraw}{f52aa37b5b3dce8cad3c52c45200278b}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Abstract 1. Es wurde die Dampfdruckerniedrigung leicht flüchtiger Lösungsmittel durch langkettige Substanzen bekannter Konstitution studiert. Der Einfluss der Anziehungskräfte (?Solvatation??) wurde experimentell bestimmt und liess sich rechnerisch ausschalten.}
@@ -2219,8 +1866,8 @@
       \strng{nameanamehash}{957d9c9a63f5c66abd6ba8e707bd3904}
       \strng{nameafullhash}{957d9c9a63f5c66abd6ba8e707bd3904}
       \strng{nameafullhashraw}{957d9c9a63f5c66abd6ba8e707bd3904}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0372-8323}
@@ -2280,8 +1927,8 @@
       \strng{nameanamehash}{c57f8f5818d449ff0adadec9bb8a4b72}
       \strng{nameafullhash}{c57f8f5818d449ff0adadec9bb8a4b72}
       \strng{nameafullhashraw}{c57f8f5818d449ff0adadec9bb8a4b72}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Abstract 1° Nous avons mesuré, par la méthode calorimétrique, les chaleurs de formation des mélanges binaires: .}
@@ -2342,8 +1989,8 @@
       \strng{nameanamehash}{4f3c74cab8dbd1b66bce06983fb72a97}
       \strng{nameafullhash}{4f3c74cab8dbd1b66bce06983fb72a97}
       \strng{nameafullhashraw}{4f3c74cab8dbd1b66bce06983fb72a97}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0018-019X}
@@ -2403,8 +2050,8 @@
       \strng{nameanamehash}{b7b1f127a5e1ee532763c62081f43f41}
       \strng{nameafullhash}{b7b1f127a5e1ee532763c62081f43f41}
       \strng{nameafullhashraw}{b7b1f127a5e1ee532763c62081f43f41}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0021-9606}
@@ -2465,8 +2112,8 @@
       \strng{nameafullhash}{e6e776ba49a4a858c550bc29841e3879}
       \strng{nameafullhashraw}{e6e776ba49a4a858c550bc29841e3879}
       \field{extraname}{1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{journaltitle}{Current Contents}
       \field{langid}{english}
@@ -2513,8 +2160,8 @@
       \strng{nameafullhash}{e6e776ba49a4a858c550bc29841e3879}
       \strng{nameafullhashraw}{e6e776ba49a4a858c550bc29841e3879}
       \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0021-9606}
@@ -2595,8 +2242,8 @@
       \strng{nameafullhash}{8eef19cb886386e9da67268f0181b4ee}
       \strng{nameafullhashraw}{8eef19cb886386e9da67268f0181b4ee}
       \field{extraname}{1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0024-9297}
@@ -2667,8 +2314,8 @@
       \strng{nameanamehash}{6f3b2d951dfbc10211b5e88ee4ad83b3}
       \strng{nameafullhash}{1242403b436833cb5c37750e02d4262b}
       \strng{nameafullhashraw}{1242403b436833cb5c37750e02d4262b}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Advances in Chemical Physics}
@@ -2748,8 +2395,8 @@
       \strng{nameafullhash}{568e64cd0d497c1726c259ec37565405}
       \strng{nameafullhashraw}{568e64cd0d497c1726c259ec37565405}
       \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Advances in Chemical Physics}
@@ -2828,8 +2475,8 @@
       \strng{nameanamehash}{483243744e4416e3ed1e00bc767f6c6c}
       \strng{nameafullhash}{e8a5182de127694382cd55801b488c7b}
       \strng{nameafullhashraw}{e8a5182de127694382cd55801b488c7b}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Advances in Chemical Physics}
@@ -2898,8 +2545,8 @@
       \strng{nameanamehash}{d3ac9805c64190ab952c6d9d8d0fec9b}
       \strng{nameafullhash}{09ad27ecc5eb55092e149e25a6d0fcb7}
       \strng{nameafullhashraw}{09ad27ecc5eb55092e149e25a6d0fcb7}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0001-1541}
@@ -2969,8 +2616,8 @@
       \strng{nameanamehash}{6bdda3ae567bbd09db0de2405ac9b346}
       \strng{nameafullhash}{ff283b6116adce66bc9ca8a419c2b8c8}
       \strng{nameafullhashraw}{ff283b6116adce66bc9ca8a419c2b8c8}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0378-3812}
@@ -3050,8 +2697,8 @@
       \strng{nameanamehash}{9655107c9e103e83db22d683ef449ece}
       \strng{nameafullhash}{c19c0591725e14e7471151521e398f13}
       \strng{nameafullhashraw}{c19c0591725e14e7471151521e398f13}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0001-1541}
@@ -3080,139 +2727,6 @@
       \verb https://doi.org/10.1002/aic.690481023
       \endverb
       \keyw{Klamt2002}
-    \endentry
-    \entry{Sharp2015}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=5aede30c8e1c0517663ccaa8d94ebf26}{%
-           family={Sharp},
-           familyi={S\bibinitperiod},
-           given={Kim},
-           giveni={K\bibinitperiod}}}%
-        {{hash=c3cb28675408f92ff2bfd971ded391c3}{%
-           family={Matschinsky},
-           familyi={M\bibinitperiod},
-           given={Franz},
-           giveni={F\bibinitperiod}}}%
-      }
-      \name{namea}{2}{}{%
-        {{hash=5aede30c8e1c0517663ccaa8d94ebf26}{%
-           family={Sharp},
-           familyi={S\bibinitperiod},
-           given={Kim},
-           giveni={K\bibinitperiod}}}%
-        {{hash=c3cb28675408f92ff2bfd971ded391c3}{%
-           family={Matschinsky},
-           familyi={M\bibinitperiod},
-           given={Franz},
-           giveni={F\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{d358cf90e93255bbd26c7c5e7aac4b81}
-      \strng{fullhash}{f40b96862893859f2ce489580d14e23a}
-      \strng{fullhashraw}{f40b96862893859f2ce489580d14e23a}
-      \strng{bibnamehash}{f40b96862893859f2ce489580d14e23a}
-      \strng{authorbibnamehash}{f40b96862893859f2ce489580d14e23a}
-      \strng{authornamehash}{d358cf90e93255bbd26c7c5e7aac4b81}
-      \strng{authorfullhash}{f40b96862893859f2ce489580d14e23a}
-      \strng{authorfullhashraw}{f40b96862893859f2ce489580d14e23a}
-      \strng{nameabibnamehash}{f40b96862893859f2ce489580d14e23a}
-      \strng{nameanamehash}{d358cf90e93255bbd26c7c5e7aac4b81}
-      \strng{nameafullhash}{f40b96862893859f2ce489580d14e23a}
-      \strng{nameafullhashraw}{f40b96862893859f2ce489580d14e23a}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Translation of the seminal 1877 paper by Ludwig Boltzmann which for the first time established the probabilistic basis of entropy. Includes a scientific commentary.}
-      \field{issn}{1099-4300}
-      \field{journaltitle}{Entropy}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{number}{4}
-      \field{title}{Translation of Ludwig Boltzmann’s Paper “On the Relationship between the Second Fundamental Theorem of the Mechanical Theory of Heat and Probability Calculations Regarding the Conditions for Thermal Equilibrium” Sitzungberichte der Kaiserlichen Akademie der Wissenschaften. Mathematisch-Naturwissen Classe. Abt. II, LXXVI 1877, pp 373-435 (Wien. Ber. 1877, 76:373-435). Reprinted in Wiss. Abhandlungen, Vol. II, reprint 42, p. 164-223, Barth, Leipzig, 1909}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{17}
-      \field{year}{2015}
-      \field{dateera}{ce}
-      \field{pages}{1971\bibrangedash 2009}
-      \range{pages}{39}
-      \verb{doi}
-      \verb 10.3390/e17041971
-      \endverb
-      \verb{urlraw}
-      \verb https://www.mdpi.com/1099-4300/17/4/1971
-      \endverb
-      \verb{url}
-      \verb https://www.mdpi.com/1099-4300/17/4/1971
-      \endverb
-      \keyw{Sharp2015}
-    \endentry
-    \entry{Planck1901}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=b70f9b82b1387fb65567789c543a0c4c}{%
-           family={Planck},
-           familyi={P\bibinitperiod},
-           given={Max},
-           giveni={M\bibinitperiod}}}%
-      }
-      \name{namea}{1}{}{%
-        {{hash=b70f9b82b1387fb65567789c543a0c4c}{%
-           family={Planck},
-           familyi={P\bibinitperiod},
-           given={Max},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{b70f9b82b1387fb65567789c543a0c4c}
-      \strng{fullhash}{b70f9b82b1387fb65567789c543a0c4c}
-      \strng{fullhashraw}{b70f9b82b1387fb65567789c543a0c4c}
-      \strng{bibnamehash}{b70f9b82b1387fb65567789c543a0c4c}
-      \strng{authorbibnamehash}{b70f9b82b1387fb65567789c543a0c4c}
-      \strng{authornamehash}{b70f9b82b1387fb65567789c543a0c4c}
-      \strng{authorfullhash}{b70f9b82b1387fb65567789c543a0c4c}
-      \strng{authorfullhashraw}{b70f9b82b1387fb65567789c543a0c4c}
-      \strng{nameabibnamehash}{b70f9b82b1387fb65567789c543a0c4c}
-      \strng{nameanamehash}{b70f9b82b1387fb65567789c543a0c4c}
-      \strng{nameafullhash}{b70f9b82b1387fb65567789c543a0c4c}
-      \strng{nameafullhashraw}{b70f9b82b1387fb65567789c543a0c4c}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Annalen der Physik}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{number}{3}
-      \field{title}{Ueber das Gesetz der Energieverteilung im Normalspectrum}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{309}
-      \field{year}{1901}
-      \field{dateera}{ce}
-      \field{pages}{553\bibrangedash 563}
-      \range{pages}{11}
-      \verb{doi}
-      \verb https://doi.org/10.1002/andp.19013090310
-      \endverb
-      \verb{eprint}
-      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/andp.19013090310
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19013090310
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19013090310
-      \endverb
-      \keyw{Planck1901}
     \endentry
   \enddatalist
 \endrefsection

@@ -1,4 +1,11 @@
-\documentclass[zihao=5,linespread=1.3,a4paper,heading=true,twoside]{ctexbook}
+\documentclass[
+  zihao=5,
+  linespread=1.3,
+  a4paper,
+  heading=true,
+  twoside
+]{ctexbook}
+
 %\usepackage[utf8]{inputenc}
 \pagestyle{empty}
 % packages for page layout
@@ -12,7 +19,8 @@ top=25.4mm,
 \setlength{\headheight}{14.5pt}
 \setlength{\textwidth}{172mm}
 \usepackage{fancyhdr}
-\pagestyle{fancy}
+\usepackage{emptypage}
+
 \fancyhead{}
 \fancyhead[LE,RO]{\rightmark}
 \fancyhead[LO,RE]{\leftmark}
@@ -25,6 +33,7 @@ top=25.4mm,
 \ctexset{
     punct=kaiming
 }
+\newcommand{\YearMonth}{\number\year 年\number\month 月}
 
 % package for standard state symbol
 \usepackage{plimsoll}
@@ -37,6 +46,9 @@ top=25.4mm,
 
 % package for units
 \usepackage{siunitx}
+
+% package for chemistry
+\usepackage[version=4]{mhchem}
 
 % package for Chinese formatting
 \usepackage{CJKfntef}
@@ -87,7 +99,7 @@ sorting=none
 % packages for definitions, theorems, proofs.
 \usepackage{amsthm}
 
-% set styles for definitions, lemmata, theorems, proofs, examples
+% set styles for definitions, lemma, theorems, proofs, examples
 \theoremstyle{definition}
 \newtheorem{definition}{定义}
 \newtheorem*{definition*}{定义}
@@ -118,12 +130,13 @@ sorting=none
 %=====================================================================================================================
 \begin{document}
 \maketitle
+\frontmatter
+\pagestyle{fancy}
 \chapter*{前言}\label{sec:preface}
 \subfile{preface.tex}
 
-\newpage\tableofcontents
-
-\part{热力学基础}
+\tableofcontents
+\mainmatter
 \chapter{热力学从理论到应用}\label{sec:I_thermodynamic_relations}
 \subfile{I thermodynamic_relations.tex}
 
@@ -139,26 +152,31 @@ sorting=none
 \section{液态混合物热力学的典型问题}\label{sec:II.5 typical_problems}
 \subfile{II.5 typical_problems.tex}
 
-\part{高分子物理}
-\chapter{高分子溶液热力学}
+\chapter{非电解质溶液热力学}
+\subfile{III. introduction.tex}
+\section{初识格子模型}
+\subfile{III.1 lattice_model_intro.tex}
+\section{正规溶液}
+\subfile{III.2 regular_solution.tex}
+\section{高分子溶液}
+\subfile{III.3 polymer_solution.tex}
+\section{本章小节}
+\subfile{III.4 chapter_summary.tex}
+\section{本章内容的研究历史}
+\subfile{III.X lattice_model_history.tex}
 
-
-\part{高分子动力学和流变学}
-
-\part{附录}
-\chapter{数学}
-\section{线性代数基础}
-\section{多元函数微积分}
-\section{统计学}
+\part*{附录}
+\chapter{数学知识补充}
+% \section{线性代数基础}
+% \section{多元函数微积分}
+% \section{统计学}
 \subfile{A.I.1.tex}
-\chapter{物理学}
-\section{经典与量子力学基础}
-\section{平衡态统计力学}
+\chapter{物理学知识补充}
+% \section{经典与量子力学基础}
+\section{平衡态统计力学基础}
 \subfile{A.II.1.tex}
-\section{非平衡态统计力学}
-\section{电动力学基础}
-
-
+% \section{非平衡态统计力学}
+% \section{电动力学基础}
 
 \newpage\part*{参考文献}
 \printbibliography[heading=none]

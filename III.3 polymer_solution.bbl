@@ -1,0 +1,121 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Guggenheim1952}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=40688350d14f9ebdd684fbed521a7399}{%
+           family={Guggenheim},
+           familyi={G\bibinitperiod},
+           given={E.\bibnamedelimi A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=40688350d14f9ebdd684fbed521a7399}{%
+           family={Guggenheim},
+           familyi={G\bibinitperiod},
+           given={E.\bibnamedelimi A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Clarendon Press}%
+      }
+      \strng{namehash}{40688350d14f9ebdd684fbed521a7399}
+      \strng{fullhash}{40688350d14f9ebdd684fbed521a7399}
+      \strng{fullhashraw}{40688350d14f9ebdd684fbed521a7399}
+      \strng{bibnamehash}{40688350d14f9ebdd684fbed521a7399}
+      \strng{authorbibnamehash}{40688350d14f9ebdd684fbed521a7399}
+      \strng{authornamehash}{40688350d14f9ebdd684fbed521a7399}
+      \strng{authorfullhash}{40688350d14f9ebdd684fbed521a7399}
+      \strng{authorfullhashraw}{40688350d14f9ebdd684fbed521a7399}
+      \strng{nameabibnamehash}{40688350d14f9ebdd684fbed521a7399}
+      \strng{nameanamehash}{40688350d14f9ebdd684fbed521a7399}
+      \strng{nameafullhash}{40688350d14f9ebdd684fbed521a7399}
+      \strng{nameafullhashraw}{40688350d14f9ebdd684fbed521a7399}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Mixtures}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1952}
+      \field{dateera}{ce}
+      \keyw{Guggenheim1952}
+    \endentry
+    \entry{Tompa1956}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=c43d9019d77fb90097ba8a3fe90af706}{%
+           family={Tompa},
+           familyi={T\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=c43d9019d77fb90097ba8a3fe90af706}{%
+           family={Tompa},
+           familyi={T\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Butterworths Scientific Publications}%
+      }
+      \strng{namehash}{c43d9019d77fb90097ba8a3fe90af706}
+      \strng{fullhash}{c43d9019d77fb90097ba8a3fe90af706}
+      \strng{fullhashraw}{c43d9019d77fb90097ba8a3fe90af706}
+      \strng{bibnamehash}{c43d9019d77fb90097ba8a3fe90af706}
+      \strng{authorbibnamehash}{c43d9019d77fb90097ba8a3fe90af706}
+      \strng{authornamehash}{c43d9019d77fb90097ba8a3fe90af706}
+      \strng{authorfullhash}{c43d9019d77fb90097ba8a3fe90af706}
+      \strng{authorfullhashraw}{c43d9019d77fb90097ba8a3fe90af706}
+      \strng{nameabibnamehash}{c43d9019d77fb90097ba8a3fe90af706}
+      \strng{nameanamehash}{c43d9019d77fb90097ba8a3fe90af706}
+      \strng{nameafullhash}{c43d9019d77fb90097ba8a3fe90af706}
+      \strng{nameafullhashraw}{c43d9019d77fb90097ba8a3fe90af706}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Polymer Solutions}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1956}
+      \field{dateera}{ce}
+      \keyw{Tompa1956}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

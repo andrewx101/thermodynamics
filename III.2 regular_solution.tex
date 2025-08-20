@@ -1,0 +1,98 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+正规溶液相对于理想溶液的不同之处就是$\Delta_\text{mix}H\neq 0$。按照上一小节格子模型的讨论，这也是交换能$\Delta\varepsilon\neq 0$。按照交换能的意义，如果它不为零，那么分子在网格中排布的不同构形就有势能的差别。我们就不能视这些构形为概率均等的。按照统计力学基本理论，恒温体系的不同微观状态如果对应不能的能量，那么这些状态的概率服从玻尔兹曼分布。如果某一微观状态的总能量是$\varepsilon$，那么它的概率正比于$\exp\left(-\varepsilon/\left(k_\text{B}T\right)\right)$。
+
+如果不同构形的概率不均等，那么我们就不能简单地按照完全随机混合来考虑构形数。我们将会看到，\emph{平均场近似（mean-field approximation）}的做法，在承认$\Delta\varepsilon\neq 0$的同时，仍然假定分子排布的不同构形概率均等，来计算混合焓变。而\emph{准化学近似（quasi-chemical approximation）}则恰当地考虑了非零的交换能造成的构型概率变化。
+
+\subsection{平均场近似}
+如果考虑分子排布的不同构形概率均等，那么每个分子邻近格子是什么分子，就完全按照溶液中该种分子的浓度来决定。在总共$N$个格子的网格中，有$x_1N$个格子放了溶剂分子。如果我们考虑到每个放了溶剂的格子周围有$z$个格子，这些格子按平均场思想，就有$x_1$比例放了溶剂，于是$x_1 N\times z$这个数量，就把所有(1-1)恰好重复算了两次。所以所有(1-1)对的个数应是$zP_{11}=(1/2)x_1Nz$即$P_{11}=(1/2)x_1^2N$。同理有$P_{22}=(1/2)x_2^2N$和$P_{12}=x_1x_2N$。代入\eqref{eq:III.1_mixing_internal_energy_regular_solution}就得到
+\begin{equation}\label{eq:III.2_mixing_internal_energy_regular_solution_mean_field}
+  \Delta_\text{mix}H=zwx_1x_2N
+\end{equation}
+
+然后我们将通过\emph{吉布斯--亥姆霍兹方程（Gibbs--Helmholtz equation）}来推出混合吉布斯自由能。吉布斯--亥姆霍兹方程是热力学基本关系。将式\eqref{eq:I.1_first_order_partial_S}代入到吉布斯自由能的定义式，我们得到
+\begin{equation}\label{eq:III.2_gibbs_helmholtz_eq}
+  H=G-T\left.\frac{\partial G}{\partial T}\right|_{p,\left\{n_i\right\}}
+\end{equation}
+此即吉布斯--亥姆霍兹方程。应用时我们常把它改写成更方便使用的式：
+\[
+  \left.\frac{\partial\left(G/T\right)}{\partial T}\right|_{p,\left\{n_i\right\}}=-\frac{H}{T^2}
+\]
+和
+\[\left.\frac{\partial\left(G/T\right)}{\partial\left(1/T\right)}\right|_{p,\left\{n_i\right\}}=H\]
+这样的话，如果溶液的混合焓变关于温度的函数表达式是已知的，则混合自由能变就可由上式积分得到，即
+\[\frac{\Delta_\text{mix}G}{T}=\int\Delta_\text{mix}H\mathrm{d}\left(\frac{1}{T}\right)+C\]
+其中$C$是积分常数，它不依赖温度，但可能仍依赖压强和混合物组成。$C$的确定需再援引理由来确定，依赖具体问题的物理条件。
+
+在平均场假定下，我们享受到的简单情况是$\Delta_\text{mix}H$不依赖温度（式\eqref{eq:III.2_mixing_internal_energy_regular_solution_mean_field}），因此由上式
+\[\Delta_\text{mix}G=zx_1x_2N\Delta\varepsilon+CT\]
+要确定积分常数$C$，我们按照$\Delta\varepsilon=0$时体系理应是理想溶液的物理要求，可得到$C=-\Delta_\text{mix}S^\text{id}$（式\eqref{eq:II.4_ideal_mixture_mixing_function_nonzero}），代入上式我们就得到平均场近似下的正规溶液混合自由能变表达式：
+\begin{equation}
+  \Delta_\text{mix}G=RT\left(n_1\ln x_1+n_2\ln x_2+\chi_{12}n_1x_2\right)
+\end{equation}
+其中
+\[\chi_{12}=\frac{z\Delta\varepsilon}{RT}\]
+称作\emph{相互作用参数（interaction parameter）}。
+
+二元混合物的平均场近似一般称为\emph{布拉格--威廉斯平均场近似（Bragg--Williams mean-field approximation）}\cite{Bragg1934,Bragg1935}\footnote{威廉·亨利·布拉格爵士（Sir William Henry Bragg,1862年7月2日—1942年3月12日）是英国物理学家和X射线晶体学家，他与儿子劳伦斯·布拉格共同获得了1915年诺贝尔物理学奖，这是历史上唯一一次父子共同获奖的案例。该奖项的颁发是“为了表彰他们在利用X射线分析晶体结构方面的贡献”。埃文·詹姆斯·威廉姆斯爵士（Evan James Williams FRS，1903年6月8日—1945年9月29日）是一位威尔士实验物理学家，曾与同时代最杰出的物理学家合作，包括帕特里克·布莱克特、劳伦斯·布拉格、埃尔内斯特·卢瑟福和尼尔斯·玻尔。威廉姆斯在斯旺西大学获得学位，在曼彻斯特大学和剑桥大学获得博士学位，并在阿伯里斯特威斯大学担任教授。他深受同事们的尊敬，并于1939年当选为英国皇家学会会员。他因癌症去世，享年42岁。}，但类似的想法几乎同时出现在G. Borelius\cite{Borelius1934}\footnote{Gudmund Borelius（1889年4月18日—1985年10月1日），瑞典物理学家，专精于固体物理，尤其是金属物理领域。他长期担任瑞典皇家理工学院（KTH）物理学教授，并于1932年创立该校技术物理工程专业。因其在固体物理研究及技术物理教育方面的卓越贡献，曾获瑞典工程科学院金质奖章，并被授予KTH荣誉博士学位。}和U. Dehlinger\cite{Dehlinger1934}\footnote{Ulrich Dehlinger（1901年7月6日—1981年6月29日），德国物理学家，长期致力于金属物理研究。自1934年至1969年，他在凯撒·威廉及马普金属研究所担任部门主管，并于1938年至1969年出任斯图加特工业大学教授。}的论文当中。
+
+\subsection{准化学近似}
+正如本节一开始所说，既然$\Delta\varepsilon\neq 0$，那么不同构形的势能是有差别的。在恒温体系中，这些不同构形要通过它们的势能值按玻尔兹曼分布来加权平均。上一小节的平均场近似的做法是在计算混合焓的时候仍假定所有构型是等概率的，同时又认为$\Delta\varepsilon=0$，因此至多只能说这种近似仅适用于$\Delta\varepsilon$极小的情况。要比这种近似再精确些，就需要正视不同构型的势能差别对构型概率的影响。直接写出这种情况下各构型的概率分布是比较困难的。E. Guggenheim\footnote{爱德华·阿曼德·古根海姆（Edward Armand Guggenheim，1901年8月11日---1970年8月9日），英国物理化学家，曾在哥本哈根大学师从酸碱理论大师约翰内斯·尼古拉斯·布伦斯特（J. N. Brønsted），对化学热力学的发展作出奠基性贡献。他以吉布斯方法系统化现代热力学理论，推进了化学势、偏摩尔量等概念的严谨应用，并在非电解质溶液平衡、相图解析和统计力学推广中产生深远影响。他的研究不仅革新了教材体系，也影响了跨越化学与工程的实验设计与工业过程规划，奠定了20世纪中叶英国化学热力学的重要学派地位。}提出的
+准化学近似及后续推导逻辑简洁自洽。因此我们按照他的办法来讨论。
+
+所谓准化学近似或准化学平衡近似，就是视($i$-$j$)相邻对的平衡为类似以下化学反应的平衡：
+\[(1-1)+(2-2)\rightleftharpoons(1-2)+(2-1)\]
+且平衡常数按照交换能满足
+\begin{equation}\label{eq:III.2_quasichemical_approx}
+  \frac{P_{12}^2}{4P_{11}P_{22}}=\exp\left(-\frac{2\Delta\varepsilon}{RT}\right)
+\end{equation}
+记平均场近似的结果为$P^\text{mf}_{12}=x_1x_2N$, 一般情况下的$P_{12}=\kappa P^\text{mf}_{12}$，其中$\kappa$是用来表示偏离平均场近似的一个修正系数。再记
+\[\eta\equiv\exp\left(\frac{\Delta\varepsilon}{k_\text{B}T}\right)\]
+代入式\eqref{eq:III.2_quasichemical_approx}并整理可得到
+\begin{equation}\label{eq:III.2_kappa_eta_relation}
+  1-\kappa=\kappa^2x_1x_2\left(\eta^2-1\right)
+\end{equation}
+注意，由于(1-2)对的个数无论如何受溶剂和溶质分子数的限制，因此$\kappa$的取值范围是$0\leq\kappa\leq 2$，故上式作为关于$\kappa$的方程要在这个范围内的根才有物理意义，但是具体的解$\kappa=\kappa\left(\eta\right)$的表达式不必具体写出。
+
+带着参数$\kappa$，混合焓变按式\eqref{eq:III.1_mixing_internal_energy_regular_solution}就是
+\[\Delta_\text{mix}H=z\Delta\varepsilon P_{12}=z\Delta\varepsilon\kappa x_1x_2N\]
+这时我们利用吉布斯--亥姆霍兹方程的定积分可以得到：
+\[\frac{\Delta_\text{mix}G}{T}=\int z\Delta\varepsilon\kappa x_1x_2N\mathrm{d}\left(\frac{1}{T}\right)+C=z\Delta\varepsilon x_1 x_2 N\int\kappa\mathrm{d}\left(\frac{1}{T}\right)+C \]
+这里注意到只有$\kappa$是依赖温度的，因为$\kappa$与$\eta$有关，而$\eta$是依赖温度的。为了做上面这个不定积分，我们首先看到$\eta$关于温度的微分是
+\begin{align*}
+  \mathrm{d}\eta & =e^{\Delta\varepsilon/\left(k_\text{B}T\right)}\left(-\frac{1}{T^2}\right)\frac{\Delta\varepsilon}{k_\text{B}}\mathrm{d}T \\&=-\frac{\Delta\varepsilon}{k_\text{B}}\mathrm{d}\left(\frac{1}{T}\right)\\&=\frac{\mathrm{d}\eta}{\eta}=\frac{\Delta\varepsilon}{k_\text{B}}\mathrm{d}\left(\frac{1}{T}\right)
+\end{align*}
+另一方面，式\eqref{eq:III.2_kappa_eta_relation}可整理成
+\begin{align*}          & \left(1-\kappa x_1\right)\left(1-\kappa x_2\right)=\kappa^2x_1x_2\eta^2 \\\Rightarrow&\ln\left(1-\kappa x_1\right)+\ln\left(1-\kappa x_2\right)=2\ln\kappa+\ln x_1+\ln x_2+2\ln\eta
+\end{align*}
+两边求关于温度变化造成$\eta$和$\kappa$变化的微分：
+\[\left(-\frac{x_1}{1-\kappa x_1}-\frac{x_2}{1-\kappa x_2}\right)\mathrm{d}\kappa=\frac{2}{\kappa}\mathrm{d}\kappa+\frac{2}{\eta}\mathrm{d}\eta\]
+解得
+\[\frac{\kappa\mathrm{d}\eta}{\eta}=\frac{\kappa-2}{2\left(1-\kappa x_1\right)\left(1-\kappa x_2\right)}\mathrm{d}\kappa\]
+故
+\[\int\kappa\mathrm{d}\left(\frac{1}{T}\right)=\frac{k_\text{B}}{\Delta\varepsilon}\int\kappa\frac{\mathrm{d}\eta}{\eta}=\frac{k_\text{B}}{\Delta\varepsilon}\int\frac{\kappa-2}{2\left(1-\kappa x_1\right)\left(1-\kappa x_2\right)}\mathrm{d}\kappa\]
+注意到
+\[\frac{1}{1-\kappa x_1}+\frac{1}{1-\kappa x_2}=\frac{2-\kappa}{\left(1-\kappa x_1\right)\left(1-\kappa x_2\right)}\]
+其中用到了$x_1+x_2=1$，故原积分式可以写成
+\begin{align*}
+    & \frac{k_\text{B}}{\Delta\varepsilon}\int-\frac{1}{2}\left(\frac{1}{1-\kappa x_1}+\frac{1}{1-\kappa x_2}\right)\mathrm{d}\kappa         \\
+  = & \frac{k_\text{B}}{\Delta\varepsilon}\left[\frac{1}{x_1}\ln\left(1-\kappa x_1\right)+\frac{1}{x_2}\ln\left(1-\kappa x_2\right)\right]+C
+\end{align*}
+这里用到了不定积分公式
+\[\int\frac{1}{x}\mathrm{d}x=\ln\left|x\right|+C\]
+且被积函数分母大于零是可以讨论得出的。把以上不定积分结果代入吉布斯--亥姆霍兹方程的积分结果中，吉布斯自由能变就是
+\[\frac{\Delta_\text{mix}G}{k_\text{B}T}=\frac{1}{2}zx_2N\ln\left(1-\kappa x_1\right)+\frac{1}{2}zx_1N\ln\left(1-\kappa x_2\right)+C^\prime\]
+当$\Delta\varepsilon=0$即$\kappa=1$时上式应回到理想溶液的表达式，因此
+\[C^\prime+\frac{1}{2}zN_2\ln\left(1-x_1\right)+\frac{1}{2}zN_1\ln\left(1-x_2\right)=N_1\ln x_1+N_2\ln x_2\]
+这一条件确定了$C^\prime$故有
+\begin{equation}
+  \frac{\Delta_\text{mix}G}{RT}=n_1\ln x_1+n_2\ln x_2+\frac{1}{2}zx_2n\ln\left(1-\kappa x_1\right)+\frac{1}{2}zx_1\ln\left(1-\kappa x_2\right)
+\end{equation}
+通过式\eqref{eq:I.1_first_order_partial_S}我们发现，在准化学近似下，超额混合自由能变
+\[\frac{\Delta_\text{mix}G^\text{E}}{RT}=\frac{1}{2}zn_2\ln\left(1-\kappa x_1\right)+\frac{1}{2}zn_1\ln\left(1-\kappa x_2\right)=\frac{\Delta_\text{mix}H-T\Delta_\text{mix}S^\text{E}}{RT}\]
+其中$\Delta_\text{mix}H=z\Delta\varepsilon\kappa n_1 x_2 N_\text{A}$。也就是说，考虑了非零的交换能或说混合焓变后，溶液应有非零的超额混合熵变，反映了不同构形的势能差别对构形概率的影响。
+
+准化学近似考虑的化学平衡并非假想的，而是实际体系存在着的动态平衡。易验当$\Delta\varepsilon=0$时，$\eta=1$, $\kappa=1$, $P_{ij}$之间的关系回到上一小节平均场近似假设下的计数结果。
+
+准化学近似考虑且只考虑了最相邻两格子放置分子种类的条件概率$P_{ij}$的影响。直观地说，这是考虑了一个格子放置的分子种类对其相邻格子放置的分子种类的影响。但对更远的格子的影响，则未作考虑。我们原则上可以依次考虑更远程的相互作用对混合物热力学的贡献，但这仅增加数学计算上的复杂性，故不在此处讨论。
+\end{document}
