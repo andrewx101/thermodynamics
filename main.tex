@@ -35,6 +35,8 @@ top=25.4mm,
 }
 \newcommand{\YearMonth}{\number\year 年\number\month 月}
 
+
+
 % package for standard state symbol
 \usepackage{plimsoll}
 
@@ -99,7 +101,7 @@ sorting=none
 % packages for definitions, theorems, proofs.
 \usepackage{amsthm}
 
-% set styles for definitions, lemma, theorems, proofs, examples
+% set styles for definitions, lemmas, theorems, proofs, examples
 \theoremstyle{definition}
 \newtheorem{definition}{定义}
 \newtheorem*{definition*}{定义}
@@ -124,6 +126,12 @@ sorting=none
 \usepackage{subfiles}
 
 \usepackage{datetime2}
+
+% redefine equation reference to add CJK glue
+\AtBeginDocument{%
+  \let\OrigEqref\eqref
+  \renewcommand{\eqref}[1]{\CJKecglue\OrigEqref{#1}\CJKecglue}%
+}
     
 \title{高分子物理补充讲义}
 \author{孙尉翔\\mswxsun@scut.edu.cn}
@@ -152,7 +160,7 @@ sorting=none
 \section{液态混合物热力学的典型问题}\label{sec:II.5 typical_problems}
 \subfile{II.5 typical_problems.tex}
 
-\chapter{非电解质溶液热力学}
+\chapter{非极性非电解质溶液统计力学的格子理论}
 \subfile{III. introduction.tex}
 \section{初识格子模型}
 \subfile{III.1 lattice_model_intro.tex}
@@ -160,8 +168,8 @@ sorting=none
 \subfile{III.2 regular_solution.tex}
 \section{高分子溶液}
 \subfile{III.3 polymer_solution.tex}
-\section{本章小节}
-\subfile{III.4 chapter_summary.tex}
+% \section{本章小节}
+% \subfile{III.4 chapter_summary.tex}
 \section{本章内容的研究历史}
 \subfile{III.X lattice_model_history.tex}
 

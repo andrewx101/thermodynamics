@@ -268,6 +268,103 @@
       \endverb
       \keyw{Lewis1907}
     \endentry
+    \entry{Gibbs1902}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=8484b76dbd67345bc70482048e1d3430}{%
+           family={Gibbs},
+           familyi={G\bibinitperiod},
+           given={Josiah\bibnamedelima Willard},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=8484b76dbd67345bc70482048e1d3430}{%
+           family={Gibbs},
+           familyi={G\bibinitperiod},
+           given={Josiah\bibnamedelima Willard},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Charles Scribner's Sons}%
+      }
+      \strng{namehash}{8484b76dbd67345bc70482048e1d3430}
+      \strng{fullhash}{8484b76dbd67345bc70482048e1d3430}
+      \strng{fullhashraw}{8484b76dbd67345bc70482048e1d3430}
+      \strng{bibnamehash}{8484b76dbd67345bc70482048e1d3430}
+      \strng{authorbibnamehash}{8484b76dbd67345bc70482048e1d3430}
+      \strng{authornamehash}{8484b76dbd67345bc70482048e1d3430}
+      \strng{authorfullhash}{8484b76dbd67345bc70482048e1d3430}
+      \strng{authorfullhashraw}{8484b76dbd67345bc70482048e1d3430}
+      \strng{nameabibnamehash}{8484b76dbd67345bc70482048e1d3430}
+      \strng{nameanamehash}{8484b76dbd67345bc70482048e1d3430}
+      \strng{nameafullhash}{8484b76dbd67345bc70482048e1d3430}
+      \strng{nameafullhashraw}{8484b76dbd67345bc70482048e1d3430}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Elementary principles in statistical mechanics}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1902}
+      \field{dateera}{ce}
+      \keyw{Gibbs1902}
+    \endentry
+    \entry{Fowler1929}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=f1de892a9ffed658929acd0e811af7f0}{%
+           family={Fowler},
+           familyi={F\bibinitperiod},
+           given={Ralph\bibnamedelima Howard},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=f1de892a9ffed658929acd0e811af7f0}{%
+           family={Fowler},
+           familyi={F\bibinitperiod},
+           given={Ralph\bibnamedelima Howard},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{f1de892a9ffed658929acd0e811af7f0}
+      \strng{fullhash}{f1de892a9ffed658929acd0e811af7f0}
+      \strng{fullhashraw}{f1de892a9ffed658929acd0e811af7f0}
+      \strng{bibnamehash}{f1de892a9ffed658929acd0e811af7f0}
+      \strng{authorbibnamehash}{f1de892a9ffed658929acd0e811af7f0}
+      \strng{authornamehash}{f1de892a9ffed658929acd0e811af7f0}
+      \strng{authorfullhash}{f1de892a9ffed658929acd0e811af7f0}
+      \strng{authorfullhashraw}{f1de892a9ffed658929acd0e811af7f0}
+      \strng{nameabibnamehash}{f1de892a9ffed658929acd0e811af7f0}
+      \strng{nameanamehash}{f1de892a9ffed658929acd0e811af7f0}
+      \strng{nameafullhash}{f1de892a9ffed658929acd0e811af7f0}
+      \strng{nameafullhashraw}{f1de892a9ffed658929acd0e811af7f0}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Statistical mechanics}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1929}
+      \field{dateera}{ce}
+      \keyw{Fowler1929}
+    \endentry
     \entry{Hildebrand1951}{article}{}{}
       \name{author}{1}{}{%
         {{hash=b64569c6d3262e1e65ed289d2440bf2a}{%
@@ -299,8 +396,8 @@
       \strng{nameafullhash}{b64569c6d3262e1e65ed289d2440bf2a}
       \strng{nameafullhashraw}{b64569c6d3262e1e65ed289d2440bf2a}
       \field{extraname}{3}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{IN 19201 I directed attention to the fact that the solubility of solids, plotted as a logarithm of mole fraction against reciprocal temperature, gives a family of curves in the case of solutions “where no molecular changes are involved”. In 19272 I designated such solutions as ‘regular’ and in 19293 I discussed the thermodynamic significance of this regularity, stating, in part: “From our picture of a regular solution as one in which orienting and chemical effects are absent, and in which the distribution and orientations are random, just as in an ideal solution, we may conclude that the probability of X2 [species 2] is the same in the two solutions [ideal and actual] and, therefore, that the difference in entropy is zero. We cannot expect this conclusion to hold unless the random distribution of molecules persists. We may expect further that a small correction should be applied to take care of the change in entropy accompanying changes in volume, given by (∂S/∂V)T = (∂P/∂T)V; or we may state our principle in the following form. A regular solution is one involving no entropy change when a small amount of one of its components is transferred to it from an ideal solution of the same composition, the total volume remaining unchanged.”}
@@ -372,8 +469,8 @@
       \strng{nameafullhash}{aa20e16e438d50f6031dd7eb62b054fe}
       \strng{nameafullhashraw}{aa20e16e438d50f6031dd7eb62b054fe}
       \field{extraname}{1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Royal Society of London. Series A, Containing Papers of a Mathematical and Physical Character}
@@ -444,8 +541,8 @@
       \strng{nameafullhash}{aa20e16e438d50f6031dd7eb62b054fe}
       \strng{nameafullhashraw}{aa20e16e438d50f6031dd7eb62b054fe}
       \field{extraname}{2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Royal Society of London. Series A - Mathematical and Physical Sciences}
@@ -506,8 +603,8 @@
       \strng{nameafullhash}{eb4f41156a1684c11177fff3e650aaad}
       \strng{nameafullhashraw}{eb4f41156a1684c11177fff3e650aaad}
       \field{extraname}{1}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Royal Society of London. Series A - Mathematical and Physical Sciences}
@@ -567,8 +664,8 @@
       \strng{nameanamehash}{0fad0bb9a3cc981bf9e1a410f9b25100}
       \strng{nameafullhash}{0fad0bb9a3cc981bf9e1a410f9b25100}
       \strng{nameafullhashraw}{0fad0bb9a3cc981bf9e1a410f9b25100}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Royal Society of London. Series A - Mathematical and Physical Sciences}
@@ -629,8 +726,8 @@
       \strng{nameafullhash}{9518f69de91b93fe736323ff65ec0cf1}
       \strng{nameafullhashraw}{9518f69de91b93fe736323ff65ec0cf1}
       \field{extraname}{1}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Royal Society of London. Series A - Mathematical and Physical Sciences}
@@ -690,8 +787,9 @@
       \strng{nameanamehash}{a43b3b95b966cf428927642bc9317b23}
       \strng{nameafullhash}{a43b3b95b966cf428927642bc9317b23}
       \strng{nameafullhashraw}{a43b3b95b966cf428927642bc9317b23}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{1. In a recent note I showed that Langmuir's adsorption isothermwhere θ is the fraction of the surface covered by adsorbed gas, p the gas pressure in equilibrium with it, and A (T) a specified function of the temperature, can be derived as a theorem in statistical mechanics without any appeal to the mechanism of deposition and re-evaporation. Necessary and sufficient assumptions for the truth of (1) are that the atoms (or molecules) of the gas are adsorbed as wholes on to definite points of attachment on the surface of the adsorber, that each point of attachment can accommodate one and only one adsorbed atom, and that the energies of the states of any adsorbed atom are independent of the presence or absence of other adsorbed atoms on neighbouring points of attachment. Under these assumptions the explicit form of (1) iswhere m is the mass of the adsorbed atom or molecule, bg(T) the partition function for its internal states in the gas phase, and vs(T) the partition function for its set of adsorbed states. These sets of states are to be so specified that the energy zero is assigned tot the lowest state of each set in constructing bg(T) and vs(T), and then X is the energy required to transfer a molecule from the lowest adsorbed state tot the lowest gas state. Quite another adsorption isotherm was shown to hold when adsorption of a molecule takes place as atoms and requires two or more points of attachment.}
@@ -1311,8 +1409,8 @@
       \strng{nameanamehash}{9e8698e32181c124316e4a16410b374f}
       \strng{nameafullhash}{7d7e139f6fde34421b63f662dbb9e1cb}
       \strng{nameafullhashraw}{7d7e139f6fde34421b63f662dbb9e1cb}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0014-7672}
@@ -1373,8 +1471,8 @@
       \strng{nameafullhash}{cf44d40ebab9040b01739477709d066f}
       \strng{nameafullhashraw}{cf44d40ebab9040b01739477709d066f}
       \field{extraname}{4}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Royal Society of London. Series A. Mathematical and Physical Sciences}
@@ -1989,8 +2087,8 @@
       \strng{nameanamehash}{4f3c74cab8dbd1b66bce06983fb72a97}
       \strng{nameafullhash}{4f3c74cab8dbd1b66bce06983fb72a97}
       \strng{nameafullhashraw}{4f3c74cab8dbd1b66bce06983fb72a97}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0018-019X}

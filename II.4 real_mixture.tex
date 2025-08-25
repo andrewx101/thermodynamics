@@ -1,9 +1,9 @@
 \documentclass[main.tex]{subfiles}
 \begin{document}
-在第\ref{sec:I_thermodynamic_relations}章最后已经明确，完整确定一个混合物体系的热力学性质，需要其各组份的偏摩尔热容以及偏摩尔状态方程。后者来自体系的$pVTn_i$状态方程对$n_i$的偏导数。对于等温过程，混合物的$pVTn_i$状态方程是混合物体系的核心性质。对于均相真实混合物体系，无论物态是气、液还是固态，我们都可以引入两种衍生于$pVTn_i$状态方程的量：\emph{压缩因子（compressibility factor）}$Z$和\emph{逸度（fugacity）}$f$来描述。它们都是体系的强度性质。
+在第\ref{sec:I_thermodynamic_relations}章最后已经明确，完整确定一个混合物系统的热力学性质，需要其各组份的偏摩尔热容以及偏摩尔状态方程。后者来自系统的$pVTn_i$状态方程对$n_i$的偏导数。对于等温过程，混合物的$pVTn_i$状态方程是混合物系统的核心性质。对于均相真实混合物系统，无论物态是气、液还是固态，我们都可以引入两种衍生于$pVTn_i$状态方程的量：压缩因子和逸度来描述。它们都是系统的强度性质。
 
 \subsection{混合物的压缩因子}
-压缩因子的定义是
+\emph{压缩因子（compressibility factor）}的定义是
 \[Z\eqdef \frac{pV_\text{m}}{RT}=Z\left(X,Y,\left\{n_i\right\}\right)\]
 其中$X,Y$是$T$、$p$、$V_\text{m}$中的任意两个参量。我们常常取$\left(T,p\right)$或$\left(T,\rho\right)$，其中$\rho\equiv V^{-1}_\text{m}$。对于纯物质，写成关于$p$或$\rho$的函数时，对应不同形式的位力展开式：
 \begin{align*}
@@ -12,7 +12,7 @@
 \end{align*}
 这些位力展开式都保证了以下一致收敛性质
 \[\lim_{p\to 0}Z\left(T,p,\left\{n_i\right\}\right)=1,\quad\lim_{\rho\to 0}Z\left(T,\rho,\left\{n_i\right\}\right)=1\]
-即真实体系在压强极小时近似于理想气体\footnote{虽然这里讨论的真实体系未限定物态，但默认了任何体系在压强足够小时总是变成气态。}。若需强调组份$i$纯物质的压缩因子则记为$Z_i^*\eqdef pV_{\text{m},i}^*/RT=Z_i^*\left(T,p\right)$。
+即真实系统在压强极小时近似于理想气体\footnote{虽然这里讨论的真实系统未限定物态，但默认了任何系统在压强足够小时总是变成气态。}。若需强调组份$i$纯物质的压缩因子则记为$Z_i^*\eqdef pV_{\text{m},i}^*/RT=Z_i^*\left(T,p\right)$。
 
 由$Z$的定义，$nZ$才是广度性质，故相对应的偏摩尔量应从$nZ$定义：
 \[Z_i\eqdef\left.\frac{\partial\left(nZ\right)}{\partial n_i}\right|_{X,Y,\left\{n_{j\neq i}\right\}}\]
@@ -22,26 +22,26 @@
 根据各种压缩因子的定义，我们可以写它与各种体积的关系：
 \[V_i=\frac{RTZ_i}{p},\quad V_{\text{m},i}^*=\frac{RTZ_i^*}{p},\quad V_\text{m}=\frac{RTZ}{p}\]
 
-虽然，原则上一个状态方程可用于描述一个体系的三种物态（例如范德华气体状态方程可描述气液转变），但由于相变潜热效应很大，因此实践上同一体系在不同物态的条件范围内将采用仅适用于该物态的状态方程。而采用压缩因子表示的状态方程，更常用于描述气态体系。可以提前说的是，逸度和逸度因子也不方便用于液态混合物，原因将在把逸度的具体知识介绍完之后明确。
+虽然，原则上一个状态方程可用于描述一个系统的三种物态（例如范德华气体状态方程可描述气液转变），但由于相变潜热效应很大，因此实践上同一系统在不同物态的条件范围内将采用仅适用于该物态的状态方程。而采用压缩因子表示的状态方程，更常用于描述气态系统。可以提前说的是，逸度和逸度因子也不方便用于液态混合物，原因将在把逸度的具体知识介绍完之后明确。
 
 \subsection{逸度和逸度因子}
-\subsubsection{引入}
-我们可以令真实混合物的化学势取形如理想气体混合物的化学势的简单形式。定义组份$i$在混合物中的逸度$f_i$，以替代式\eqref{eq:II.3_def_ideal_gas_mixture_mu}中的$x_ip$，使得恒定$T$（$\mathrm{d}T=0$）下
+\subsubsection{逸度的引入}
+我们可以令真实混合物的化学势取形如理想气体混合物的化学势的简单形式。定义\emph{组份$i$在混合物中的逸度（fugacity of component $i$ in mixture）}$f_i$，以替代式\eqref{eq:II.3_def_ideal_gas_mixture_mu}中的$x_ip$，使得在恒定的温度下（$\mathrm{d}T=0$）
 \begin{align}\label{eq:II.4_def_fugacity_i}
   \mathrm{d}\mu_i=RT\mathrm{d}\ln f_i
 \end{align}
-此处$f_i=f_i\left(T,p,\left\{n_j\right\}\right)$。对于理想气体混合物，自然有$f_i^\text{ig}\equiv x_i p$。但我们也由经验知道，真实混合物在压强极低时近似理想气体混合物，故在定义逸度时还要求以下一致收敛性质：
+此处$f_i=f_i\left(T,p,\left\{n_j\right\}\right)$是混合物系统的状态函数。显然，仅对理想气体混合物，才有$f_i^\text{ig}\equiv x_i p$。但我们也由经验知道，真实混合物在压强极低时近似理想气体混合物，故在定义逸度时还要求以下一致收敛性质：
 \[\lim_{p\to 0}\frac{f_i\left(T,p,\left\{n_i\right\}\right)}{x_i p}=1\]
 
 定义式\eqref{eq:II.4_def_fugacity_i}在纯物质（$x_i=1$）时的形式就是（恒定$T$下）
 \begin{equation}\label{eq:II.4_def_fugacity_i*}
   \mathrm{d}\mu_i^*=RT\mathrm{d}\ln f_i^*
 \end{equation}
-其中$f_i^*=f_i^*\left(T,p\right)$是组份$i$纯物质的逸度，相应地它也满足在$p\rightarrow 0$时的一致收敛性质
+其中$f_i^*=f_i^*\left(T,p\right)$是\emph{组份$i$纯物质的逸度（fugacity of component $i$ in pure substance）}，相应地它也满足在$p\rightarrow 0$时的一致收敛性质
 \[\lim_{p\to 0}\frac{f_i^*\left(T,p\right)}{p}=1\]
 
-我们还可以为混合物体系定义其逸度$f$，它要满足:
-\begin{equation}\label{II.4_def_fugacity_f}
+我们还可以讨论\emph{混合物系统的逸度$f$（fugacity of mixture）}，它满足:
+\begin{equation}\label{eq:II.4_def_fugacity_f}
   \mathrm{d}G_\text{m}=RT\mathrm{d}\ln f
 \end{equation}
 其中$f=f\left(T,p,\left\{n_i\right\}\right)$，而且还满足以下一致收敛性质：
@@ -49,7 +49,8 @@
 
 各种定义下的逸度的量纲与压强相同。
 
-以上用来定义各逸度的微分式都是在$\mathrm{d}T=0$下的形式，不是的完整全微分式。以组份$i$在混合物中的化学势为例，它作为状态函数应该完整、独立地由$\left(T,p,\left\{n_i\right\}\right)$确定，故其完整的全微分式应该是
+\subsubsection{与逸度相关的Maxwell关系形式}
+以上用来定义各逸度的对化学势的微分式都是在$\mathrm{d}T=0$下的形式，不是这些化学势的完整全微分式。以组份$i$在混合物中的化学势为例，它作为状态函数应该完整、独立地由$\left(T,p,\left\{n_i\right\}\right)$确定，故其完整的全微分式应该是
 \begin{align*}
   \mathrm{d}\mu_i\left(T,p,\left\{n_i\right\}\right) & =-S_i\mathrm{d}T+RT\mathrm{d}\ln f_i                                                                                   \\
                                                      & =-S_i\mathrm{d}T+V_i\mathrm{d}p+\sum_j\left.\frac{\partial\mu_i}{\partial n_j}\right|_{T,p,\left\{n_{k\neq j}\right\}}
@@ -60,6 +61,9 @@
 \[\left.\frac{\partial\mu_i}{\partial n_j}\right|_{T,p,\left\{n_{k\neq j}\right\}}=\left.\frac{\partial\ln f_i}{\partial n_j}\right|_{T,\left\{n_{k\neq j}\right\}}\]
 类似地可得到
 \[V_\text{m,i}^*=\left.\frac{\partial\ln f_i^*}{\partial p}\right|_T,\quad V=\left.\frac{\partial\ln f}{\partial p}\right|_{T,\left\{n_i\right\}}\]
+这些关系是对表\ref{tab:Maxwell_relations}的补充。
+
+\subsubsection{逸度与压缩因子的关系}
 讨论恒温恒组成过程时（$\mathrm{d}T=\mathrm{d}n_i=0$）可直接写成
 \begin{align*}
   \mathrm{d}\mu_i^*     & =V_i^*\mathrm{d}p=RTZ_i^*\mathrm{d}\ln p=RT\mathrm{d}\ln f_i^* \\
@@ -77,6 +81,7 @@
 \end{align*}
 整个推导是在恒温恒组成条件下的，在推导过程中强调了完整的状态参数。最后得到的关系，对于$Z_i^*$与$f_i^*$、$Z_i$与$f_i$都以类似形式成立。
 
+\subsubsection{逸度因子的定义}
 $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的逸度因子。组份$i$在混合物中的\emph{逸度因子（fugacity factor）}$\varphi_i$定义为
 \begin{equation}\label{eq:II.4_def_fugacity_factor_i}
   \varphi_i\eqdef\frac{f_i}{x_ip}=\varphi_i\left(T,p,\left\{n_i\right\}\right)
@@ -88,7 +93,7 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
   \ln\varphi^*_i & =\int_0^p\left(Z_i^*-1\right)\mathrm{d}\ln p^\prime
 \end{align*}
 
-由混合物的逸度、逸度因子、压缩因子和偏摩尔体积之间的关系式可以看到，这些全是混合物体系的$pVTn_i$状态方程的等效表达形式。逸度或逸度因子可通过某体系的$p-V-T-n_i$数据表计算得到，也可通过某给定的$pVTn_i$状态方程的解析式得到。
+由混合物的逸度、逸度因子、压缩因子和偏摩尔体积之间的关系式可以看到，这些全是混合物系统的$pVTn_i$状态方程的等效表达形式。逸度或逸度因子可通过某系统的$p-V-T-n_i$数据表计算得到，也可通过某给定的$pVTn_i$状态方程的解析式得到。
 
 \subsubsection{逸度与逸度因子的加和性}
 值得注意的是，尽管$f$、$\varphi$是强度性质，但$f_i$、$\varphi_i$不是$nf$、$n\varphi$的偏摩尔量。与逸度相关的偏摩尔量对应关系是
@@ -133,7 +138,7 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 
 \subsection{混合物标准态}
 \subsubsection{混合物标准态的选择惯例}
-式\eqref{eq:II.3_def_ideal_gas_mixture_mu}这种微分形式的定义是不便直接使用的。我们经常需要选择一个参考状态，然后应用式\eqref{eq:I.1_integral_of_function}来写下一个状态函数的显式表达式。例如在\S\ref{sec:II.3 ideal_mixture.tex}中，我们在给出理想气体混合物化学势的微分式定义式\eqref{eq:II.3_def_ideal_gas_mixture_mu}之后，选择同温同组成下组份$i$在某选定压强$p^\circ$值下的状态为参考状态，而得到了式\eqref{eq:II.3_ideal_gas_mixture_mu_p0}。
+式\eqref{eq:II.3_def_ideal_gas_mixture_mu}或\eqref{eq:II.4_def_fugacity_i}至\eqref{eq:II.4_def_fugacity_f}这种微分形式的定义是不便直接用于代公式做题的。我们需要再选择一个参考状态，然后应用式\eqref{eq:I.1_integral_of_function}来写下一个状态函数的显式表达式。例如在\S\ref{sec:II.3 ideal_mixture.tex}中，我们在给出理想气体混合物化学势的微分式定义式\eqref{eq:II.3_def_ideal_gas_mixture_mu}之后，又再选择同温同组成下组份$i$在某选定压强$p^\circ$值下的状态为参考状态，从而得到了式\eqref{eq:II.3_ideal_gas_mixture_mu_p0}。
 
 这里我们一般性地讨论参考状态选择的三条惯例。
 
@@ -142,11 +147,11 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
   \mu_i\left(T,p,\left\{n_j\right\}\right)=\mu_i\left(T^\circ,p^\circ,\left\{n_j^\circ\right\}\right)+RT\ln\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i\left(T^\circ,p^\circ,\left\{n_i^\circ\right\}\right)}
 \end{equation*}
 
-第一条惯例是，在同一问题的讨论下，应固定参考态的选择。无论要表出哪一相、哪一组份，在什么状态下的化学势，都采用同一参考态的化学势表达式。这样在各类问题的计算中，表达式所含的参考态化学势将消掉或约掉。诚然，客观规律不会依赖参考态的主观选择。为了实现“消掉或约掉”的目的，不同具体问题可能需要灵活选择不同的状态作为参考态。
+第一条惯例是，\emph{在同一问题的讨论下，应固定参考态的选择}。无论要表出哪一相、哪一组份，在什么状态下的化学势，都采用选同一参考态的化学势表达式。这样在各类问题的计算中，表达式所含的参考态化学势将消掉或约掉。诚然，客观规律不会依赖参考态的主观选择。为了实现“消掉或约掉”的目的，不同具体问题可能需要灵活选择不同的状态作为参考态。
 
-第二条惯例是，我们在混合物热力学中我们常常考虑等温过程，特别是逸度的引入是通过恒温过程的化学势微分式，因此我们总是选择的与当前状态同温度的某压强和某组成为参考态，亦即参考温度$T^\circ=T$。这样的话，各类参考态性质至少都是依赖温度$T$的。
+第二条惯例是，我们在混合物热力学中常常考虑等温过程。特别地，逸度就是通过恒温过程的化学势微分式来定义的。\emph{我们总是选择的与当前状态同温度的某压强和某组成为参考态，亦即参考温度$T^\circ=T$。}这样的话，各类参考态性质至少都是依赖温度$T$的。
 
-第三条惯例就是要避开相变。我们之所以能使用式\eqref{eq:I.1_integral_of_function}，是假想了某条由参考态到当前态的可逆过程。这个变化过程中，体系有可能发生了物态变化或者相分离。比如，我们选择同温同组成下某压强$p^\circ$为参考状态。此状态下混合物体系为气态。如果在我们关心的压强$p$下混合物为液态，则由参考态到当前态的过程将发生气液相变。相比相变潜热造成的热力学性质变化，由组成变化造成的热力学性质变化将小到可以忽略，这不利于以后者为目的的研究。为了避免相变潜热主导，我们就希望所选定的参考状态与需要描述的当前状态体系保持物态相同，在这两个状态间的路径中不要发生相变。
+第三条惯例就是要\emph{避开相变}。我们之所以能使用式\eqref{eq:I.1_integral_of_function}，是假想了某条由参考态到当前态的可逆过程。如果参考态选择不当，这个变化过程中，系统有可能实际需要发生物态变化或者相分离。比如，我们选择同温同组成下某压强$p^\circ$为参考状态。此状态下混合物系统为气态。如果在我们关心的压强$p$下混合物为液态，则由参考态到当前态的过程将发生气液相变。相比相变潜热造成的热力学性质变化，由组成变化造成的热力学性质变化将小到可以忽略，这不利于以后者为目的的研究。为了避免相变潜热主导，我们就希望所选定的参考状态与需要描述的当前状态系统保持物态相同，在这两个状态间的路径中不要发生相变。
 
 总结这三条惯例，选择某参考态后，组份$i$在混合物中的化学势表达式总有如下形式
 \begin{equation}\label{eq:II.4_mu_standard_state}
@@ -155,28 +160,26 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 
 在混合物热力学中，为上述目的、按上述惯例规定的参考状态，称为\emph{组份$i$的混合物标准态（mixture standard state for component $i$）}。原则上，为每一组分$i$，可选择不同的状态作为其混合物标准态。但实际上我们常常为所有组分$i$统一某种选择方式。
 
-第一条惯例和第三条惯例经常是很难兼顾的。我们经常坚持第一条惯例，然后考虑到参考态的化学势一项反正会“消掉或约掉”的，那么它哪怕是假的也没关系，所以在第三条惯例中我们假想一个不发生相变的假想状态。例如明明在同温同组成下压强为$p^\circ$时混合物为气态，但我们却硬说选择一个假想的、在同温同组成下压强为$p^\circ$的液态混合物状态为参考态。同样的情况也见于选择同温同压下某组份纯物质为参考态的情况。实际上在同温同压下该组份纯物质与混合物物态已不同，我们就说选择的是一个同温同压下该纯物质与混合物物态相同的假想态。
+第一条惯例和第三条惯例经常是很难兼顾的。我们经常坚持第一条惯例，然后考虑到参考态的化学势一项反正会“消掉或约掉”的，那么它哪怕是假想的也没关系。在前面我们已经提过，尽管原则上我们可以用一个状态方程来描述一个系统的三种物态，但实际上我们总是为每一种物态选用不同的状态方程。所以，如果参考状态条件下，系统实际需要发生相变（从而涉及状态方程的更换），我们也可以假想系统在参考态下仍然服程当前状态的物态的状态方程。也就是说，我们假想了一个与实际系统不同的模型系统，这个模型系统在参考态和当前态之间的变化过程中不发生相变。这样，我们就可以坚持第一条惯例和第三条惯例。我们之所以选择这一状态方程，仅因为它适用于系统在我们所关心的当前状态范围内的行为；它未必需要适用于系统在我们所选择的参考状态下的行为，因为参考状态只用于写出表达式，计算时反正会消掉或约掉的。
 
-更直白地说，所谓“假想态”，就是我们所选用的$pVTn_i$状态方程无法描述实际所发生的相变，而仍以该状态方程在参考状态下得出的结果作为参比。而我们之所以选择这一状态方程，仅因为它适用于体系在我们所关心的当前状态范围内的行为；它未必需要适用于体系在我们所选择的参考状态下的行为，因为参考状态只用于写出表达式，计算时反正会消掉或约掉的。
-
-总之，采用微分式来表达热力学关系和定义模型体系，就是为了最大的一般性和灵活性。在实际问题当中，我们总是利用式\eqref{eq:I.1_integral_of_function}的精神，巧妙选择参考态来求算各种问题。
+总之，采用微分式来表达热力学关系和定义模型系统，就是为了最大的一般性和灵活性。在实际问题当中，我们总是利用式\eqref{eq:I.1_integral_of_function}的精神，巧妙选择参考态来求算各种问题。
 
 \subsubsection{活度与活度因子}
-我们可进一步把式\eqref{eq:II.4_mu_standard_state}中的逸度比定义为一个新的量。正式地，选定了某种混合物标准态后，组份$i$在混合物中的\emph{活度（activity）}是
+我们可进一步把式\eqref{eq:II.4_mu_standard_state}第二项中的逸度比定义为一个新的量。正式地，选定了某种混合物标准态后，\emph{组份$i$在混合物中的活度（activity of component $i$ in mixture）}是
 \begin{equation}
   a_i\left(T,p,\left\{n_j\right\}\right)\eqdef\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i\left(T,p^\circ,\left\{n_j^\circ\right\}\right)}
 \end{equation}
-\emph{活度因子（activity factor）}是
+\emph{组份$i$在混合物中的活度因子（activity factor of component $i$ in mixture）}是
 \begin{equation}
   \gamma_i\left(T,p,\left\{n_j\right\}\right)\eqdef\frac{a_i\left(T,p,\left\{n_j\right\}\right)}{x_i}
 \end{equation}
 
-逸度和逸度因子则是由化学势的微分式\eqref{eq:II.4_def_fugacity_i}和\eqref{eq:II.4_def_fugacity_factor_i}定义的概念。而活度和活度因子是规定了混合物标准态，把化学势写成式\eqref{eq:II.4_mu_standard_state}形式之后才衍生出来的概念。对于同一混合物体系，采用不同的混合物标准态选择方式，就有不同的活度和活度因子。
+相比而言，逸度和逸度因子是由化学势的微分式\eqref{eq:II.4_def_fugacity_i}和\eqref{eq:II.4_def_fugacity_factor_i}定义的概念，而活度和活度因子则是规定了混合物的标准态，并且把化学势写成式\eqref{eq:II.4_mu_standard_state}形式之后才衍生出来的概念。对于同一混合物系统，采用不同的混合物标准态选择方式，就有不同的活度和活度因子。
 
-我们从逸度和逸度因子的引入形式发现，由于$p\rightarrow 0$的一致收敛要求，它们在使用时常与压强$p$相比较。而压强在气态体系的实验中确实是可以方便地控制的。此时，选择同温同组成下的某固定压强值（例如$p\stst$）作为混合物标准态在处理实际问题的时候是方便的。但对于凝聚态体系，我们常常在定温定压下进行实验，这时常选择同温同压下某固定组成（例如纯物质）作为混合物标准态，这时坚持使用逸度的表达式将不提供便利，而采用活度或活度因子的表达式才是方便的。以下介绍两种常用于液态混合物的混合物标准态选择惯例。
+我们从逸度和逸度因子的引入形式发现，由于$p\rightarrow 0$的一致收敛要求，它们在使用时常与压强$p$相比较。而压强在气态系统的实验中确实是可以方便地控制的。此时，选择同温同组成下的某固定压强值（例如$p\stst$）作为混合物标准态在处理实际问题的时候是方便的。但对于凝聚态系统，我们常常在定温定压下进行实验，这时常选择同温同压下某固定组成（例如纯物质）作为混合物标准态，这时坚持使用逸度的表达式将不提供便利，而采用活度或活度因子的表达式才是方便的。以下介绍两种常用于液态混合物的混合物标准态选择惯例。
 
 \subsubsection{拉乌尔定律标准态}
-如果组份$i$纯物质在问题所关心的温度和压强范围内的物态与混合物相同，则可直接定义
+对于拉乌尔定律的标准态，不妨把标准态符号$\circ$记为R。如果组份$i$纯物质在问题所关心的温度和压强范围内的物态与混合物相同，则可直接定义
 \[p^\text{R}=p,\quad x^\text{R}_i=1\]
 即选择同温同压下组份$i$的纯物质态作为组份$i$的混合物标准态。此时，定温定压下
 \begin{align*}
@@ -190,7 +193,7 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 \end{align}
 
 \subsubsection{亨利定律标准态}
-如果组份$i$在混合物中的溶解度有限，无法从$x_i=1$连续地变至所关心的组成$x_i$；或者组份$i$纯物质在所关心的温压下的物态与混合物不同，我们就不方便选用拉乌尔定律标准态。此时可考虑选组份$i$无限稀（$x_i\rightarrow 0$）的极限状态为标准态，具体定
+对于亨利定律标准态，不妨把标准态符号$\circ$记为H。如果组份$i$在混合物中的溶解度有限，无法从$x_i=1$连续地变至所关心的组成$x_i$；或者组份$i$纯物质在所关心的温压下的物态与混合物不同，我们就不方便选用拉乌尔定律标准态。此时可考虑选组份$i$无限稀（$x_i\rightarrow 0$）的极限状态为标准态，具体定
 \[p^\text{H}=p,\quad f_i^\text{H}\equiv\lim_{x_i\to 0}\frac{f_i\left(T,p,\left\{n_i\right\}\right)}{x_i}\]
 其中$f_i^\text{H}=f_i^\circ\left(T,p,\left\{n_i\right\}\right)$是亨利定律标准态逸度。则定温定压下
 \begin{align*}
@@ -216,9 +219,7 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
   \mu_i\left(T,p,\left\{n_j\right\}\right)=\mu_i^\text{id}\left(T,p,\left\{n_j\right\}\right)+RT\ln\frac{\varphi_i^*\left(T,p\right)}{\varphi_i^\infty\left(T,p,\left\{n_j\right\}\right)}\gamma_i^\text{H}\left(T,p,\left\{n_j\right\}\right)
 \end{equation}
 
-《物理化学》中关于非理想稀溶液活度的内容是双组份混合物的特例。对于双组份混合物，视关心的组份B为“溶质”，则另一组份A为“溶剂”，$x_\text{B}$可以连续地趋于0，此极限无非是作为“溶剂”的组份A的纯物质状态（$x_\text{A}=1$）。
-
-我们注意到，本讲义中理想混合物的定义不依赖拉乌尔定律。上述两种标准态的规定，虽然分别称作“拉乌尔定律标准态”和“亨利定律标准态”，但是也没有直接利用相关的定律来定义。这些做法与《物理化学》课本不同。在下一节，我们将利用本节介绍的真实混合物描述方式，来得出理想混合物中的组份$i$在$x_i=1$时满足拉乌尔定律，以及在$x_i\rightarrow 0$时满足亨利定律的结论。
+《物理化学》中关于非理想稀溶液活度的内容是双组份混合物的特例。对于双组份混合物，若视关心的组份B为“溶质”，则另一组份A为“溶剂”，$x_\text{B}$可以连续地趋于0，此极限无非是作为“溶剂”的组份A的纯物质状态（$x_\text{A}=1$）。
 
 \subsection{理想混合物}
 理想混合物概念不限定混合物的物态。在引入它的定义之后，我们将看到，尽管理想气体混合物必为理想混合物，但一个一般的气态理想混合物未必是理想气体混合物。为引入理想混合物的概念，我们先选择拉乌尔标准态。此时由式\eqref{eq:I.1_integral_of_function}、\eqref{eq:II.4_def_fugacity_i}和\eqref{eq:II.4_mu_standard_state}有
@@ -228,41 +229,40 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 其中为了简洁，不求极限的状态参量没有明显写出。上式所表示的极限关系暗示了，在$p$足够小时，真实混合物的化学势可近似为
 \[\mu_i\left(T,p,\left\{n_j\right\}\right)\approx\mu_i^*\left(T,p\right)+RT\ln x_i\]
 
-上式是我们定义理想混合物的起点。我们正式地把理想混合物（ideal mixture）定义为上式精确取等号的模型体系，即理想混合物的每一组份的化学势都满足：
+上式是我们定义理想混合物的起点。我们正式地把\emph{理想混合物（ideal mixture）}定义为上式精确取等号的一种模型混合物系统，即理想混合物的每一组份的化学势都满足：
 \begin{equation}\label{eq:II.4_def_ideal_mixture_mu}
-  \mu_i^\text{id}\left(T,p,\left\{n_j\right\}\right)=\mu_i^*\left(T,p\right)+RT\ln x_i
+  \mu_i^\text{id}\left(T,p,\left\{n_j\right\}\right)=\mu_i^*\left(T,p\right)+RT\ln x_i,\quad i=1,2,\cdots
 \end{equation}
 其中上标“id”表示理想混合物。
 
 注意到，理想气体混合物就是理想混合物。由理想气体混合物的定义式\eqref{eq:II.3_def_ideal_gas_mixture_mu}应用式\eqref{eq:I.1_integral_of_function}作类似的定积分有
 \[\mu_i^\text{ig}\left(T,p,x_i\right)-\mu_i^{*,\text{ig}}\left(T,p\right)=RT\ln x_i\]
-与式\eqref{eq:II.4_def_ideal_mixture_mu}是相同的。但是，理想混合物比理想气体混合物具有更一般的属性。 具体地，$\mu_i^{*,\text{ig}}=\mu_i^{*,\text{ig}}\left(T\right)$遵循理想气体的性质，所以它才只依赖温度。而$\mu_i^*=\mu_i^*\left(T,p\right)$则未必按照理想气体性质而定，它只是组份$i$纯物质在$\left(T,p\right)$下的化学势，而此时体系甚至不是气态；它依赖我们为该混合物体系所选用的$pVTn_i$状态方程，而这一状态方程仅需不与式\eqref{eq:II.4_def_ideal_mixture_mu}冲突就属于理想混合物，而不必完全符合理想气体混合物的形式。
+与式\eqref{eq:II.4_def_ideal_mixture_mu}是相同的。但是，理想混合物比理想气体混合物具有更一般的属性。 具体地，$\mu_i^{*,\text{ig}}=\mu_i^{*,\text{ig}}\left(T\right)$遵循理想气体的性质，所以它才只依赖温度。而$\mu_i^*=\mu_i^*\left(T,p\right)$则未必按照理想气体性质而定，它只是组份$i$纯物质在$\left(T,p\right)$下的化学势，而此时系统甚至不一定是气态，更遑论是否理想气体；它依赖我们为该混合物系统所选用的$pVTn_i$状态方程，而这一状态方程仅需不与式\eqref{eq:II.4_def_ideal_mixture_mu}冲突就属于理想混合物，而不必完全符合理想气体混合物的形式。
 
 易知，理想混合物的逸度、逸度系数、活度、活度系数分别满足
 \[f_i^\text{id}=px_i,\quad\varphi_i^\text{id}=1,\quad a_i^\text{id}=x_i,\quad\gamma_i^\text{id}=1\]
 其中，理想混合物的活度和活度系数结论对任意混合物标准态选择方式都是一致的。
 
+我们注意到，本讲义中理想混合物的定义不依赖拉乌尔定律。上述两种标准态的规定，虽然分别称作“拉乌尔定律标准态”和“亨利定律标准态”，但是也没有直接利用相关的定律来定义。这些做法与《物理化学》课本不同。在下一节，我们将利用本节介绍的真实混合物描述方式，来得出理想混合物中的组份$i$在$x_i=1$时满足拉乌尔定律，以及在$x_i\rightarrow 0$时满足亨利定律的结论。
+
 \subsection{剩余函数与超额函数}
 \subsubsection{偏离函数的引入}
-在混合物热力学中常采用\emph{偏离函数（deviation function）}来描述真实混合物。偏离函数是指一类按照如下精神定义的函数。设$M$是混合物体系的某广度性质，$M=M\left(X,Y,\left\{n_i\right\}\right)$，$X$、$Y$是除组成外的其余状态参数，则我们把实际体系性质$M$与某模型在同状态下的性质$M^\text{mod}$之差定义为该体系的偏离函数，表征体系性质偏离相应模型预测的程度。
+在混合物热力学中常采用偏离函数来描述真实混合物。偏离函数是指一类按照如下精神定义的函数。设$M$是混合物系统的某广度性质，$M=M\left(X,Y,\left\{n_i\right\}\right)$，$X$、$Y$是除组成外的其余状态参数，则我们把实际系统性质$M$与某模型在同状态下的性质$M^\text{mod}$之差定义为该系统相对于该模型的\emph{偏离函数（deviation function）}，用来表征系统性质偏离相应模型预测的程度。易知，热力学状态函数的偏离函数之间仍保持相同的关系。第\ref{sec:I_thermodynamic_relations}章中的那些热力学关系中的状态函数全改成某种偏离函数，关系式仍成立。
 
-具体地，我们介绍两种状态参数的偏离函数：
+具体地，我们主要关心关于以下两组状态参数的偏离函数：
 \begin{align}
   M^\text{D} & \eqdef M-M^\text{mod}\left(T,p,\left\{n_i\right\}\right)\label{eq:II.4_def_deviation_function_D} \\
   M^\text{d} & \eqdef M-M^\text{mod}\left(T,V,\left\{n_i\right\}\right)\label{eq:II.4_def_deviation_function_d}
 \end{align}
 
-\subsubsection{两组状态参数的偏离函数之间的换算关系}
-同一体系处于同一状态时，体系的上列两种偏离函数之间存在换算关系。设在$\left(T,V,\left\{n_i\right\}\right)$下，体系的压强是$p$，则可尝试求
+同一系统处于同一状态时，系统的上列两种偏离函数之间存在普适的换算关系。设在$\left(T,V,\left\{n_i\right\}\right)$下，系统的压强是$p$，则可尝试讨论以下恒等关系的具体表达形式：
 \[M^\text{d}\left(T,V,\left\{n_i\right\}\right)-M^\text{D}\left(T,p,\left\{n_i\right\}\right)=M^\text{mod}\left(T,p,\left\{n_i\right\}\right)-M^\text{mod}\left(T,V,\left\{n_i\right\}\right)\]
-由于真实体系和模型一般是不同的，故在$\left(T,V,\left\{n_i\right\}\right)$和$\left(T,p,\left\{n_i\right\}\right)$两组状态参量下，虽然真实体系恰为同一状态（即这一组$T,p,V,\left\{n_i\right\}$取值满足真实体系的状态方程），但对模型体系则是不同的状态（即这一组$T,p,V,\left\{n_i\right\}$取值满足真实体系的状态方程，却不满足模型状态方程），因此上式等号右边一般不为零，而是
+由于真实系统和模型一般是不同的，故在$\left(T,V,\left\{n_i\right\}\right)$和$\left(T,p,\left\{n_i\right\}\right)$两组状态参量下，虽然真实系统恰为同一状态，但对模型系统则是不同的状态（即这一组$T,p,V,\left\{n_i\right\}$取值满足真实系统的状态方程，却不满足模型状态方程），因此上式等号右边一般不为零，而是要按式\eqref{eq:I.1_integral_of_function}写成
 \[\int_{p^\prime}^p\left.\frac{\partial M^\text{mod}\left(T,p^{\prime\prime},\left\{n_i\right\}\right)}{\partial p^{\prime\prime}}\right|_{T,\left\{n_i\right\}}\mathrm{d}p^{\prime\prime}\]
-其中$p^\prime$是使模型体系在$T,\left\{n_i\right\}$下体积为$V$的压强值。正式结论就是
+其中$p^\prime$是使模型系统在$T,\left\{n_i\right\}$下体积为$V$的压强值。正式结论就是
 \begin{equation}\label{eq:II.4_deviation_function_relation}
   M^\text{d}=M^\text{D}+\int_{p^\prime}^p\left.\frac{M^\text{mod}\left(T,p^{\prime\prime},\left\{n_i\right\}\right)}{\partial p^{\prime\prime}}\right|_{T,\left\{n_i\right\}}\mathrm{d}p^{\prime\prime}
 \end{equation}
-
-易知，热力学状态函数的偏离函数之间仍保持相同的关系。第\ref{sec:I_thermodynamic_relations}章中的那些热力学关系中的状态函数全改成某种偏离函数，关系式仍成立。
 
 \subsubsection{剩余函数和超额函数}
 理想气体混合物和理想混合物就是使用偏离函数来描述真实混合物的性质时常常选用的两个模型。我们具体又称选用理想气体混合物为模型时的偏离函数为\emph{剩余函数（residual function）}，称选用理想混合物为模型时的偏离函数为\emph{超额函数（excess function）}。由偏离函数的一般定义式\eqref{eq:II.4_def_deviation_function_D}和\eqref{eq:II.4_def_deviation_function_d}自然有
@@ -290,7 +290,7 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
   S^\text{r}            & =S^\text{R}-nR\ln Z             \\
   A^\text{r}-A^\text{R} & =G^\text{r}-G^\text{R}=nRT\ln Z
 \end{align*}
-其中$Z$是混合物体系的压缩因子。
+其中$Z$是混合物系统的压缩因子。
 
 理想混合物没有明显的状态方程形式，因此无法写出式\eqref{eq:II.4_deviation_function_relation}中积分下限的$p^\prime$的具体形式。$p^\prime$是理想混合物在$T$、$\left\{n_i\right\}$时体积为$V$的压强。而理想混合物的体积可通过偏摩尔量的加和性，由偏摩尔体积表出。利用式\eqref{eq:I.1_Maxwell_GTp}，
 \[V_i^\text{id}=\left.\frac{\partial \mu_i^\text{id}}{\partial p}\right|_{T,\left\{n_i\right\}}\]
@@ -302,7 +302,7 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 \[V\left(T,p,\left\{n_i\right\}\right)=\sum_in_iV_i^*\left(T,p^\prime,\left\{n_i\right\}\right)\]
 可见，两种状态参量下的超额函数之间的换算关系既需要理想混合物的状态方程（以便明确上式等号右边的表达式），也需要真实混合物的状态方程（以便明确上式等号左边的表达式），因此不如两种状态参量下的剩余函数之间的换算关系那般明确。
 
-气态体系的状态方程常以压缩因子的形式给出。各热力学函数的剩余函数，都能用偏摩尔压缩因子方程得到，具体结果列于表\ref{tab:residule_functions_compressibility_factor}。这些公式等号左边都是混合物体系的（平均）摩尔量。它们都是通过相应的偏摩尔量由加和性公式间接得到的，此时等号右边的压缩因子$Z$就要换成偏摩尔压缩因子$Z_i$。以$\left(T,p,\left\{n_i\right\}\right)$作为状态参数的情况为例，偏摩尔压缩因子$Z_i=Z_i\left(T,p,\left\{n_i\right\}\right)$这个函数在实际上是通过各组份在混合物中的偏摩尔体积$V_i$对温、压的依赖关系$V_i\left(T,p\right)$的测量得到的，而根据偏摩尔量的测量方法，测定某组份$i$的偏摩尔体积需要测定平均摩尔体积$V_\text{m}$随该组份在混合物中的摩尔分数$x_i$的的变化曲线，且由$\rho\equiv V^{-1}_\text{m}$，实验上往往是通过密度测定来完成的。
+气态系统的状态方程常以压缩因子的形式给出。各热力学函数的剩余函数，都能用偏摩尔压缩因子方程得到，具体结果列于表\ref{tab:residule_functions_compressibility_factor}。这些公式等号左边都是混合物系统的（平均）摩尔量。它们都是通过相应的偏摩尔量由加和性公式间接得到的，此时等号右边的压缩因子$Z$就要换成偏摩尔压缩因子$Z_i$。以$\left(T,p,\left\{n_i\right\}\right)$作为状态参数的情况为例，偏摩尔压缩因子$Z_i=Z_i\left(T,p,\left\{n_i\right\}\right)$这个函数在实际上是通过各组份在混合物中的偏摩尔体积$V_i$对温、压的依赖关系$V_i\left(T,p\right)$的测量得到的，而根据偏摩尔量的测量方法，测定某组份$i$的偏摩尔体积需要测定平均摩尔体积$V_\text{m}$随该组份在混合物中的摩尔分数$x_i$的的变化曲线，且由$\rho\equiv V^{-1}_\text{m}$，实验上往往是通过密度测定来完成的。
 \begin{longtable}{m{0.9\textwidth}}
   \caption{剩余函数的压缩因子表达式}                                   \label{tab:residule_functions_compressibility_factor}                                                                                                                                                  \\
   \hline
@@ -352,7 +352,7 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 混合物的超额函数可由上述偏摩尔超额函数通过加和性质得到（即《物理化学》\S4.12“超额函数”下的式(4.107)、(4.109)、(4.110)和(4.111)）。
 
 \subsection{混合函数}\label{sec:II.4.6 mixing_function}
-除了依靠与模型体系比较（偏离函数）以突出混合物的非理想性之外，我们还会拿混合物的性质与纯物质相应性质的加和相比较，来描述混合造成的额外效应。具体地，混合物体系某广度性质$M$的混合函数定义为：
+除了依靠与模型系统比较（偏离函数）以突出混合物的非理想性之外，我们还会拿混合物的性质与纯物质相应性质的加和相比较，来描述混合造成的额外效应。具体地，混合物系统某广度性质$M$的混合函数定义为：
 \begin{equation}\label{eq:II.4_def_mixing_function}
   \Delta_\text{mix}M\left(X,Y,\left\{n_i\right\}\right)\eqdef M\left(X,Y,\left\{n_i\right\}\right)-\sum_in_iM_i^*\left(X,Y\right)
 \end{equation}
