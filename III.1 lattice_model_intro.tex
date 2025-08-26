@@ -1,6 +1,6 @@
 \documentclass[main.tex]{subfiles}
 \begin{document}
-在混合物热力学的章节中，我们定义了理想混合物，并指出其各混合热力学函数的特点（\eqref{eq:II.4_ideal_mixture_mixing_function_zero}和\eqref{eq:II.4_ideal_mixture_mixing_function_nonzero}）。在这里定义一种简单的非理想溶液：对于液态混合物（溶液），如果其混合熵变与理想混合物相同，即
+在混合物热力学的章节中，我们定义了理想混合物，并指出其各混合热力学函数的特点（式\eqref{eq:II.4_ideal_mixture_mixing_function_zero}和\eqref{eq:II.4_ideal_mixture_mixing_function_nonzero}）。在这里定义一种简单的非理想溶液：对于液态混合物（溶液），如果其混合熵变与理想混合物相同，即
 \[\Delta_\text{mix}S=\Delta_\text{mix}S^\text{id}=-R\sum_in_i\ln x_i\]
 那么我们就称这种溶液是\emph{正规溶液（regular solution）}。正规溶液定义的另一种表述是超额混合熵变为零的溶液。我们将会看到，从格子模型的统计力学出发，正规溶液是溶质和溶剂分子大小相同，且混合前后相互作用势的差别非常小时的近似结果（平均场近似）。比平均场近似再精确些的准化学近似立即便给出非零超额混合熵变，从而偏离正规溶液行为。而就算混合前后相互作用势的差别为零，只要分子大小不相同，也会得出超额的混合熵变，同样偏离正规溶液行为。
 
@@ -31,7 +31,7 @@
   \label{fig:interaction_potential_energy}
 \end{figure}
 
-式\eqref{eq:III.1_potential_energy_sum_two_body}的双重求和，需要我们在每一瞬间的定格下，把每对粒子的位置所对应的$r_{ij}$代入$u\left(r_{ij}\right)$算出势能值，再把它们全加起来。这个行务的艰巨性是天文级的。为了简化，我们讨论一下相互作用势的距离截断。惯例上，相互作用势能$u\left(r\right)$一般规定在$r\rightarrow\infty$处绝对单调地趋于零，于是我们可以认为距离大于某个值的两个粒子的势能贡献小到可以忽略，从而少算很多对粒子。这就是所谓的相互作用势的距离截断。以下以两个典型的相互作用势为例进行考察。
+式\eqref{eq:III.1_potential_energy_sum_two_body}的双重求和，需要我们在每一瞬间的定格下，把每对粒子的位置所对应的$r_{ij}$代入$u\left(r_{ij}\right)$算出势能值，再把它们全加起来。这个任务的艰巨性是天文级的。为了简化，我们讨论一下相互作用势的距离截断。惯例上，相互作用势能$u\left(r\right)$一般规定在$r\rightarrow\infty$处绝对单调地趋于零，于是我们可以认为距离大于某个值的两个粒子的势能贡献小到可以忽略，从而少算很多对粒子。这就是所谓的相互作用势的距离截断。以下以两个典型的相互作用势为例进行考察。
 
 两个相同半径$a$的球形粒子间的范德华作用势是
 \[u_\text{vdW}\left(r\right)=-\frac{A_\text{H}a}{6r}\]

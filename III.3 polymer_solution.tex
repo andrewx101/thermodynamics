@@ -1,19 +1,17 @@
 \documentclass[main.tex]{subfiles}
 \begin{document}
 \subsection{高分子无热溶液}
-\begin{wrapfigure}{r}{0.333\textwidth}
-    \centering
-    \includegraphics[width=\linewidth]{../images/lattice_flory_huggins.pdf}
-    \caption{一条高分子链的链段在网格中的一种放置方式。}
-    \label{fig:lattice_flory_huggins}
-\end{wrapfigure}
-
 在前面几节，我们考虑的情况是溶质和溶剂分子大小相当，都占1个格子。在这种情况下，只要混合焓变为零，任一格子既可以放溶剂分子，也可以放溶质分子，溶液的位形数就是简单的二项式系数
 \[\left(\begin{array}{cc}N\\N_1\end{array}\right)=\frac{N!}{N_1!N_2!}\]
 由此我们得出了理想溶液的混合熵变。如果溶质分子比溶剂分子大，在格子模型中的效果是溶质分子占据多个格子，那么就算不考虑混合焓变，溶液位形数的计数也不会是简单的二项式系数，可以预见这将导致混合熵变的表达式偏离理想溶液的形式。也就是说，分子尺寸不同的组成，就算混合焓为零，也不是理想溶液。我们将这种情况称为\emph{无热溶液（athermal solution）}。“无热”是指$\Delta_\text{mix}H=0$，但仅此而已。一般地无热溶液的混合熵$\Delta_\text{mix}S\neq\Delta_\text{mix}S^\text{id}$，也就是其超额混合熵$\Delta_\text{mix}S^\text{E}\neq 0$。
 
 如图\ref{fig:lattice_flory_huggins}所示，考虑$N_1$个溶剂分子和$N_2$个聚合度为$r$的高分子，总格子数$N=N_1+rN_2$。这里我们把高分子视为占据$r$个相连格子的大分子，每个格子放置的称为高分子的一个“链段”。这里所谓“链段”仅具有格子模型下的意义，跟高分子物理中其他理论中的“链段”（例如库恩链段）没有直接的关系。
-
+\begin{wrapfigure}{r}{0.333\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{../images/lattice_flory_huggins.pdf}
+  \caption{一条高分子链的链段在网格中的一种放置方式。}
+  \label{fig:lattice_flory_huggins}
+\end{wrapfigure}
 仍记网格的配位数为$z$，则每个溶剂分子周围有$z$个相邻的分子或链段，但每个高分子周围相邻的格子数则不是$rz$，而是要比这个数少。我们先假定高分子是线形长链，那么它将有两个链端链段，每个有$z-1$个相邻的格子；同时有$r-2$个中间链段，每个中间链段周围有$z-2$个相邻格子。因此整个高分子周围的相邻格子数将是
 \[qz=2\left(z-1\right)+\left(r-2\right)\left(z-2\right)=rz-2r+2\]
 这里引入了参数$q$来表示上面的式子，不仅为了后续结果形式简洁，还可以概括除线形聚合物外的其他大分子拓扑结构造成的、未必可通过简单数格子得知的影响。注意到，至少上面这个式子也可以适用于支化的高分子。在一个支化高分子中，一个支化点链段，将比线形高分子的中间链段少$f-2$个相邻格子（$f$是这个支化点的官能度），但由于这个支化点的存在，整个高分子又会比线形高分子多$f-2$个链端，每个链端的相邻格子数是比线形高分子的中间链端多1个的，所以总是能扯平维持上式。
@@ -48,8 +46,8 @@
 \[\alpha\eqdef\frac{f\left(\overline{r\text{P}}\right)}{f\left(r\text{S}\right)}=\frac{K^\prime\phi_2}{\phi_1\xi_1^{r-1}}\]
 因为这个比值可通过一个假想的气液平衡问题和\emph{精细平衡（detailed balance）}原则来联系到这个溶液系统的热力学函数。精细平衡原则说，处于热力学平衡态的系统，任一假想过程的发生必伴随一个逆过程的发生，以保持实际处于稳定的平衡态。这里我们考虑以下这对互逆过程：
 \begin{enumerate}
-    \item 一个高分子从溶液相蒸发出去的同时，$r$个溶剂分子从气相凝聚回到溶液相。
-    \item $r$个溶剂分子从溶液相蒸发出去的同时，一个高分子从气相凝聚回到溶液相。
+  \item 一个高分子从溶液相蒸发出去的同时，$r$个溶剂分子从气相凝聚回到溶液相。
+  \item $r$个溶剂分子从溶液相蒸发出去的同时，一个高分子从气相凝聚回到溶液相。
 \end{enumerate}
 实际上，高分子几乎不蒸发，但这不影响现在这个讨论的逻辑。设$p_1$和$p_2$分别是溶剂和高分子在气相的分压。那么，$r$个溶剂从气相凝聚到液相这个过程的速率将正比于$p_1^r$。
 
@@ -75,8 +73,8 @@
 
 第三步，推算$\Delta_\text{mix}\mu_i$关于溶液组成的具体表达式。以下我们不再涉及气液平衡问题，讨论的都是液相性质，因此我们把上标“l”省略掉了。我们可以把$\Delta_\text{mix}\mu_i$写成定积分：
 \begin{align}
-    \Delta_\text{mix}\mu_i & = \mu_i\left(\phi_i\right) - \mu_i^*                             \notag \\
-                           & = \int_1^{\phi_i}\mathrm{d}\mu_i\label{eq:III.3 delta_mix_mu_integral}
+  \Delta_\text{mix}\mu_i & = \mu_i\left(\phi_i\right) - \mu_i^*                             \notag \\
+                         & = \int_1^{\phi_i}\mathrm{d}\mu_i\label{eq:III.3 delta_mix_mu_integral}
 \end{align}
 因此需要把$\mu_i$关于$\phi_i$的导数求出来。
 
@@ -92,8 +90,8 @@
 \[\ln\alpha=\ln K^\prime+\ln\phi_2-\ln\phi_1-\left(r-1\right)\ln\xi_1\]
 注意到，若记$\vartheta\equiv\phi_1+\left(q/r\right)\phi_2$,则有$\ln\xi_1=\ln\phi_1-\ln \vartheta$，所以
 \begin{align*}
-    \ln\alpha                                    & =\ln K^\prime+\ln\phi_2-r\ln\phi_1+\left(r-1\right)\ln\vartheta                           \\
-    \frac{\mathrm{d}\ln\alpha}{\mathrm{d}\phi_2} & =\phi_2^{-1}+\frac{r}{\phi_1}-\frac{\left(r-1\right)\left(q/r-1\right)}{\phi_1+q\phi_2/r}
+  \ln\alpha                                    & =\ln K^\prime+\ln\phi_2-r\ln\phi_1+\left(r-1\right)\ln\vartheta                           \\
+  \frac{\mathrm{d}\ln\alpha}{\mathrm{d}\phi_2} & =\phi_2^{-1}+\frac{r}{\phi_1}-\frac{\left(r-1\right)\left(q/r-1\right)}{\phi_1+q\phi_2/r}
 \end{align*}
 上式可按需表示成仅含$\phi_1$或$\phi_2$的形式，不再一一列出。把这个导数形式代入$\mathrm{d}\mu_i$的表达式中，
 \begin{align*}\mathrm{d}\mu_1 & =RT\left(\phi_1^{-1}+\frac{1-r}{q+\left(r-q\right)\phi_1}\right)\mathrm{d}\phi_1               \\
@@ -101,12 +99,12 @@
 \end{align*}
 再代入定积分表达式\eqref{eq:III.3 delta_mix_mu_integral}得到。
 \begin{align*}
-    \frac{\Delta_\text{mix}\mu_1}{RT} & =\ln\phi_1+\frac{z}{2}\ln\frac{\xi_1}{\phi_1}  \\
-    \frac{\Delta_\text{mix}\mu_2}{RT} & =\ln\phi_2+\frac{qz}{2}\ln\frac{\xi_2}{\phi_2}
+  \frac{\Delta_\text{mix}\mu_1}{RT} & =\ln\phi_1+\frac{z}{2}\ln\frac{\xi_1}{\phi_1}  \\
+  \frac{\Delta_\text{mix}\mu_2}{RT} & =\ln\phi_2+\frac{qz}{2}\ln\frac{\xi_2}{\phi_2}
 \end{align*}
 最后可以得到
 \begin{equation}\label{eq:III.3_athermal_polymer_solution_mixing_gibbs_free_energy}
-    \frac{\Delta_\text{mix} G^\text{a}}{RT}=n_1\ln\phi_1+n_2\ln\phi_2+\frac{z}{2}n_1\ln\frac{\xi_1}{\phi_1}+\frac{qz}{2}n_2\ln\frac{\xi_2}{\phi_2}
+  \frac{\Delta_\text{mix} G^\text{a}}{RT}=n_1\ln\phi_1+n_2\ln\phi_2+\frac{z}{2}n_1\ln\frac{\xi_1}{\phi_1}+\frac{qz}{2}n_2\ln\frac{\xi_2}{\phi_2}
 \end{equation}
 我们从这个混合自由能表达式可以考察出，$\Delta_\text{mix}G^\text{a}=-T\Delta_\text{mix}S^\text{a}$，即$\Delta_\text{mix}H^\text{a}=0$。因此这确实是无热熔液的行为。在这里我们用上标“a”表示无热条件。
 
@@ -140,53 +138,53 @@ $P_{11}$和$P_{22}$可用$P_{12}$表示，再利用上式，我们可以得到
 \[P_{11}=\frac{1}{2}\xi_1\left(1-\kappa\xi_2\right)\left(N_1+qN_2\right),\quad P_{22}=\frac{1}{2}\xi_2\left(1-\kappa\xi_1\right)\left(N_1+qN_2\right)\]
 从而
 \begin{equation}\label{III.3 mixing_enthalpy_with_kappa}
-    \Delta_\text{mix}H=z\Delta\varepsilon P_{12}=z\Delta\varepsilon\kappa\xi_1\xi_2\left(N_1+qN_2\right)
+  \Delta_\text{mix}H=z\Delta\varepsilon P_{12}=z\Delta\varepsilon\kappa\xi_1\xi_2\left(N_1+qN_2\right)
 \end{equation}
 
 后续计算也是类似正规溶液一节的做法——由吉布斯--杜亥姆关系做不定积分得出混合吉布斯自由能，其中积分常数要用$\Delta\varepsilon=0$的状态来确定。但这里我们需要注意，对于高分子溶液，$\Delta\varepsilon=0$的状态并非理想溶液，而是无热溶液。具体的推导留作练习，应该能得到
 \begin{equation}\label{eq:III.3_polymer_solution_mixing_gibbs_free_energy}
-    \frac{\Delta_\text{mix}G}{RT} = \frac{\Delta_\text{mix}G^\text{a}}{RT} + \frac{1}{2} z n_1 \ln \frac{1-\kappa\xi_2}{\xi_1} + \frac{1}{2}z q n_2 \ln \frac{1-\kappa\xi_1}{\xi_2}
+  \frac{\Delta_\text{mix}G}{RT} = \frac{\Delta_\text{mix}G^\text{a}}{RT} + \frac{1}{2} z n_1 \ln \frac{1-\kappa\xi_2}{\xi_1} + \frac{1}{2}z q n_2 \ln \frac{1-\kappa\xi_1}{\xi_2}
 \end{equation}
 这里的$\Delta_\text{mix}G^\text{a}$是式\eqref{eq:III.3_athermal_polymer_solution_mixing_gibbs_free_energy}中的无热高分子溶液混合自由能。
 
 回忆到正规溶液的讨论我们说过，$\Delta\varepsilon\neq 0$必定使混合熵在$\Delta\varepsilon=0$的情况（此处即无热溶液的情况）之上再产生超额混熵贡献。因此精确地$\kappa=1$就是无热溶液。但平均场近似的结果却形如$\Delta\varepsilon=0$时的混合熵变（即无热溶液）加上一个假定混合概率不受相互作用势能差别影响的混合焓变，即式\eqref{eq:III.3_polymer_solution_mixing_enthalpy_mf}，因此平均场近似下的高分子溶液混合自由能是
 \begin{equation}
-    \label{eq:III.3_polymer_solution_mixing_gibbs_free_energy_mf}
-    \frac{\Delta_\text{mix}G^\text{mf}}{RT}=\frac{\Delta_\text{mix}G^\text{a}}{RT}+\frac{z\Delta\varepsilon}{RT}\xi_1\xi_2\left(N_1+qN_2\right)
+  \label{eq:III.3_polymer_solution_mixing_gibbs_free_energy_mf}
+  \frac{\Delta_\text{mix}G^\text{mf}}{RT}=\frac{\Delta_\text{mix}G^\text{a}}{RT}+\frac{z\Delta\varepsilon}{RT}\xi_1\xi_2\left(N_1+qN_2\right)
 \end{equation}
 
 常见于常规教科书的Flory--Huggins结果，其实是配位数$z\rightarrow\infty$的极限，加上平均场近似。对式
 \eqref{eq:III.3_athermal_polymer_solution_mixing_gibbs_free_energy}和\eqref{eq:III.3_polymer_solution_mixing_gibbs_free_energy_mf}取$z\to\infty$的极限，$\xi_i\to \phi_i$，$q\to r$，我们可以得到\footnote{在$z\to\infty$时类似$z\ln f\left(z\right)$的式子都收敛到0，其中$\lim_{z\to\infty}f\left(z\right)=0$。}
 \begin{equation}\label{eq:III.3_polymer_solution_mixing_gibbs_free_energy_flory_huggins}
-    \frac{\Delta_\text{mix}G^\text{FH}}{RT}=n_1\ln\phi_1+n_2\ln\phi_2+\chi_{12}n_1\phi_2
+  \frac{\Delta_\text{mix}G^\text{FH}}{RT}=n_1\ln\phi_1+n_2\ln\phi_2+\chi_{12}n_1\phi_2
 \end{equation}
 其中
 $\chi_{12}=z\Delta\varepsilon/\left(k_\text{B}T\right)$是相互作用参数。
 
 这时我们可以进一步理解《高分子物理》书中p.57一段话：
 \begin{quotation}
-    “高分子溶液的热力学性质与理想溶液的偏差有两个方面：首先是溶剂分子之间，高分子重复单元之间以及溶剂与重复单元之间的相互作用能都不相等，所以混合热$\Delta H_M\neq 0$；……”
+  “高分子溶液的热力学性质与理想溶液的偏差有两个方面：首先是溶剂分子之间，高分子重复单元之间以及溶剂与重复单元之间的相互作用能都不相等，所以混合热$\Delta H_M\neq 0$；……”
 \end{quotation}
 这里我们进一步知道，混合焓不为零同时还会造成混合熵偏离理想或无热情况（除非采用平均场近似）。书中p.59的这段话也明确了这一点：
 \begin{quotation}
-    “……在此并没有考虑在溶解过程中由于高分子与溶剂分子相互作用变化所引起的熵变。”
+  “……在此并没有考虑在溶解过程中由于高分子与溶剂分子相互作用变化所引起的熵变。”
 \end{quotation}
 书中p.57继续说：
 \begin{quotation}
-    “……其次是因为高分子是由许多重复单元组成的长链分子，……这就意味着混合熵$\Delta S_M>\Delta S_M^i$。”
+  “……其次是因为高分子是由许多重复单元组成的长链分子，……这就意味着混合熵$\Delta S_M>\Delta S_M^i$。”
 \end{quotation}
 这里指的其实就是无热溶液的混合熵与理想溶液的混合熵的差别。
 
 \begin{figure}[ht]
-    \centering
-    \includegraphics{../images/coordinate_number_dependence.pdf}
-    \caption{无热溶液溶剂活度对溶质体积分数的曲线，不同$z$值的结果\cite{Tompa1956}。}
-    \label{fig:coordinate_number_dependence}
+  \centering
+  \includegraphics{../images/coordinate_number_dependence.pdf}
+  \caption{无热溶液溶剂活度对溶质体积分数的曲线，不同$z$值的结果\cite{Tompa1956}。}
+  \label{fig:coordinate_number_dependence}
 \end{figure}
 
 后世保持使用Flory--Huggins形式的惯例，有一定的合理之处。一般液体的平均配位数$z>6$。而数值计算结果表明无热溶液行为在$z>4$之后的差别很小（见图\ref{fig:coordinate_number_dependence}）。因而混合熵部分采用Flory--Huggins形式有简洁方便的优势。至于混合焓部分，$q$与$r$的差别是否也总是可忽略？对于线形聚合物来说，
 \[
-    \frac{q}{r}=\left\{\begin{array}{ll}\left(z-1\right)/z,& r=2\\\left(z-2\right)/z,&r\to\infty\end{array}\right.
+  \frac{q}{r}=\left\{\begin{array}{ll}\left(z-1\right)/z,& r=2\\\left(z-2\right)/z,&r\to\infty\end{array}\right.
 \]
 因此考虑到实际$z<12$, 上面这样的比值不算特别接近1。可是，哪怕是逻辑自洽得到的式\eqref{eq:III.3_polymer_solution_mixing_gibbs_free_energy}，也与大量实际体系的实验结果差别很大，主要来自仅考虑相邻作用势的假定。因此$q/r$是否足够近似于1的问题已经不重要。实践上常把式\eqref{eq:III.3_polymer_solution_mixing_gibbs_free_energy_flory_huggins}中的$\chi_{12}$视为一个唯象的可调参数，从而Flory--Huggins式成了至今大量采用的形式。
 \end{document}
