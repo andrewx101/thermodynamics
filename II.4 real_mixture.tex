@@ -179,17 +179,17 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 我们从逸度和逸度因子的引入形式发现，由于$p\rightarrow 0$的一致收敛要求，它们在使用时常与压强$p$相比较。而压强在气态系统的实验中确实是可以方便地控制的。此时，选择同温同组成下的某固定压强值（例如$p\stst$）作为混合物标准态在处理实际问题的时候是方便的。但对于凝聚态系统，我们常常在定温定压下进行实验，这时常选择同温同压下某固定组成（例如纯物质）作为混合物标准态，这时坚持使用逸度的表达式将不提供便利，而采用活度或活度因子的表达式才是方便的。以下介绍两种常用于液态混合物的混合物标准态选择惯例。
 
 \subsubsection{拉乌尔定律标准态}
-对于拉乌尔定律的标准态，不妨把标准态符号$\circ$记为R。如果组份$i$纯物质在问题所关心的温度和压强范围内的物态与混合物相同，则可直接定义
-\[p^\text{R}=p,\quad x^\text{R}_i=1\]
+对于拉乌尔定律的标准态，不妨把标准态符号$\circ$记为Ra。如果组份$i$纯物质在问题所关心的温度和压强范围内的物态与混合物相同，则可直接定义
+\[p^\text{Ra}=p,\quad x^\text{Ra}_i=1\]
 即选择同温同压下组份$i$的纯物质态作为组份$i$的混合物标准态。此时，定温定压下
 \begin{align*}
-  a_i^\text{R}\left(T,p,\left\{n_j\right\}\right)      & =\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i^*\left(T,p\right)}    \\
-  \gamma_i^\text{R}\left(T,p,\left\{n_j\right\}\right) & =\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{x_if_i^*\left(T,p\right)}
+  a_i^\text{Ra}\left(T,p,\left\{n_j\right\}\right)      & =\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i^*\left(T,p\right)}    \\
+  \gamma_i^\text{Ra}\left(T,p,\left\{n_j\right\}\right) & =\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{x_if_i^*\left(T,p\right)}
 \end{align*}
 式\eqref{eq:II.4_mu_standard_state}就变成
 \begin{align}
-  \mu_i\left(T,p,\left\{n_j\right\}\right) & =\mu_i^*\left(T,p\right)+RT\ln a_i^\text{R}\left(T,p,\left\{n_j\right\}\right)\label{eq:II.4_Raoult_standard_state_activity}                                       \\
-                                           & =\mu_i^\text{id}\left(T,p,\left\{n_j\right\}\right)+RT\ln\gamma_i^\text{R}\left(T,p,\left\{n_j\right\}\right)\label{eq:II.4_Raoult_standard_state_activity_factor}
+  \mu_i\left(T,p,\left\{n_j\right\}\right) & =\mu_i^*\left(T,p\right)+RT\ln a_i^\text{Ra}\left(T,p,\left\{n_j\right\}\right)\label{eq:II.4_Raoult_standard_state_activity}                                       \\
+                                           & =\mu_i^\text{id}\left(T,p,\left\{n_j\right\}\right)+RT\ln\gamma_i^\text{Ra}\left(T,p,\left\{n_j\right\}\right)\label{eq:II.4_Raoult_standard_state_activity_factor}
 \end{align}
 
 \subsubsection{亨利定律标准态}
@@ -209,11 +209,13 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 是组份$i$在亨利定律标准态下的化学势。
 
 这两种标准态选择的活度和活度因子之间有转换关系。注意到定温定压下
-\begin{align*}
-  \gamma_i^\text{R}\left(T,p,\left\{n_j\right\}\right)              & =\frac{\varphi_i\left(T,p,\left\{n_j\right\}\right)}{\varphi_i^*\left(T,p\right)}                                                                                                                                                       \\
-  \lim_{x_i\to 0}\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{x_i} & =p\lim_{x_i\to 0}\varphi_i\left(T,p,\left\{n_j\right\}\right)\equiv p\varphi_i^\infty\left(T,p,\left\{n_j\right\}\right),\quad\gamma_i^\text{H}=\frac{\varphi_i\left(T,p,\left\{n_j\right\}\right)}{\varphi_i^\infty\left\{n_j\right\}} \\
-  \gamma_i^\text{H}                                                 & =\frac{\varphi_i^\infty\left(T,p,\left\{n_j\right\}\right)}{\varphi_i^*\left(T,p\right)}\gamma_i^\text{R}
-\end{align*}
+\[\gamma_i^\text{Ra}\left(T,p,\left\{n_j\right\}\right)              =\frac{\varphi_i\left(T,p,\left\{n_j\right\}\right)}{\varphi_i^*\left(T,p\right)}\]
+若记$\varphi_i^\infty$满足以下极限关系的量：
+\[  \lim_{x_i\to 0}\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{x_i}  =p\lim_{x_i\to 0}\varphi_i\left(T,p,\left\{n_j\right\}\right)\equiv p\varphi_i^\infty\left(T,p,\left\{n_j\right\}\right)\]
+那么亨利定律标准态的活度因子又可表示为：
+\[\gamma_i^\text{H}=\frac{\varphi_i\left(T,p,\left\{n_j\right\}\right)}{\varphi_i^\infty\left\{n_j\right\}}\]
+两种标准态的活度因子之间的转换关系就可以表示为
+\[\gamma_i^\text{H}                                                  =\frac{\varphi_i^\infty\left(T,p,\left\{n_j\right\}\right)}{\varphi_i^*\left(T,p\right)}\gamma_i^\text{R}\]
 其中$\varphi_i$的两个极限——$\varphi_i^*$和$\varphi_i^\infty$——可通过$\varphi_i$与$Z_i$的关系式，转变为求$Z_i$的相应极限得到。由这一转换关系，组份$i$在混合物中的化学势又可表示成
 \begin{equation}\label{eq:II.4_Henry_standardstate_activity_factor}
   \mu_i\left(T,p,\left\{n_j\right\}\right)=\mu_i^\text{id}\left(T,p,\left\{n_j\right\}\right)+RT\ln\frac{\varphi_i^*\left(T,p\right)}{\varphi_i^\infty\left(T,p,\left\{n_j\right\}\right)}\gamma_i^\text{H}\left(T,p,\left\{n_j\right\}\right)
@@ -360,12 +362,12 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 \[\Delta_\text{mix}M=\sum_in_i\left(M_i-M_i^*\right)\]
 结合式\eqref{eq:II.4_Raoult_standard_state_activity}，混合函数适合采用拉乌尔标准态的表达式的活度来表达。以$\left(T,p,\left\{n_i\right\}\right)$为状态参数时，
 \begin{align}
-  \mu_i-\mu_i^* & =RT\ln a_i                                                                                                                                                       \\
-  V_i-V_i^*     & =RT\left.\frac{\partial\ln a_i}{\partial p}\right|_{T,\left\{n_j\right\}}                                                                                        \\
-  S_i-S_i^*     & =-R\ln a_i-RT\left.\frac{\partial\ln a_i}{\partial T}\right|_{p,\left\{n_j\right\}}                                                                              \\
-  H_i-H_i^*     & =-RT^2\left.\frac{\partial\ln a_i}{\partial T}\right|_{p,\left\{n_j\right\}}                                                                                     \\
-  U_i-U_i^*     & =-RT\left(T\left.\frac{\partial\ln a_i}{\partial T}\right|_{p,\left\{n_j\right\}}+p\left.\frac{\partial\ln a_i}{\partial p}\right|_{T,\left\{n_j\right\}}\right) \\
-  A_i-A_i^*     & =RT\left(\ln a_i-p\left.\frac{\partial\ln a_i}{\partial p}\right|_{T,\left\{n_j\right\}}\right)
+  \mu_i-\mu_i^* & =RT\ln a_i\label{eq:II.4_chemical_potential_mixing_activity_expression}                                                                                                                                              \\
+  V_i-V_i^*     & =RT\left.\frac{\partial\ln a_i}{\partial p}\right|_{T,\left\{n_j\right\}}\label{eq:II.4_partial_V_mixing_activity_expression}                                                                                        \\
+  S_i-S_i^*     & =-R\ln a_i-RT\left.\frac{\partial\ln a_i}{\partial T}\right|_{p,\left\{n_j\right\}}\label{eq:II.4_partial_S_mixing_activity_expression}                                                                              \\
+  H_i-H_i^*     & =-RT^2\left.\frac{\partial\ln a_i}{\partial T}\right|_{p,\left\{n_j\right\}}\label{eq:II.4_partial_H_mixing_activity_expression}                                                                                     \\
+  U_i-U_i^*     & =-RT\left(T\left.\frac{\partial\ln a_i}{\partial T}\right|_{p,\left\{n_j\right\}}+p\left.\frac{\partial\ln a_i}{\partial p}\right|_{T,\left\{n_j\right\}}\right)\label{eq:II.4_partial_U_mixing_activity_expression} \\
+  A_i-A_i^*     & =RT\left(\ln a_i-p\left.\frac{\partial\ln a_i}{\partial p}\right|_{T,\left\{n_j\right\}}\right)\label{eq:II.4_partial_A_mixing_activity_expression}
 \end{align}
 
 特别地，对于理想混合物，代入$a_i^\text{id}=x_i$，可以得到

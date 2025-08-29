@@ -19,6 +19,105 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
+    \entry{Sander2022}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=2a00b963a7c8e6cc25a66979c69be35d}{%
+           family={Sander},
+           familyi={S\bibinitperiod},
+           given={Rolf},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c9f8950fa7d4fa9aecc754737c1965db}{%
+           family={Acree},
+           familyi={A\bibinitperiod},
+           given={William\bibnamedelima E.},
+           giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=6362cd400fcb1ef0fc01e2d436cee730}{%
+           family={Visscher},
+           familyi={V\bibinitperiod},
+           given={Alex\bibnamedelima De},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=820eee3e61026564be24e65a27a1f2c0}{%
+           family={Schwartz},
+           familyi={S\bibinitperiod},
+           given={Stephen\bibnamedelima E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=2f3d1be2468334cb2f24575b5db99611}{%
+           family={Wallington},
+           familyi={W\bibinitperiod},
+           given={Timothy\bibnamedelima J.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \name{namea}{5}{}{%
+        {{hash=2a00b963a7c8e6cc25a66979c69be35d}{%
+           family={Sander},
+           familyi={S\bibinitperiod},
+           given={Rolf},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c9f8950fa7d4fa9aecc754737c1965db}{%
+           family={Acree},
+           familyi={A\bibinitperiod},
+           given={William\bibnamedelima E.},
+           giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=6362cd400fcb1ef0fc01e2d436cee730}{%
+           family={Visscher},
+           familyi={V\bibinitperiod},
+           given={Alex\bibnamedelima De},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=820eee3e61026564be24e65a27a1f2c0}{%
+           family={Schwartz},
+           familyi={S\bibinitperiod},
+           given={Stephen\bibnamedelima E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=2f3d1be2468334cb2f24575b5db99611}{%
+           family={Wallington},
+           familyi={W\bibinitperiod},
+           given={Timothy\bibnamedelima J.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{0eff4424f6b6fff0bcb41b87ae0e750c}
+      \strng{fullhash}{54ebc0d3a9a1b5c6d485a4a8975b5fd9}
+      \strng{fullhashraw}{54ebc0d3a9a1b5c6d485a4a8975b5fd9}
+      \strng{bibnamehash}{356baca49d3fd3291aec8bfb0e53e2a2}
+      \strng{authorbibnamehash}{356baca49d3fd3291aec8bfb0e53e2a2}
+      \strng{authornamehash}{0eff4424f6b6fff0bcb41b87ae0e750c}
+      \strng{authorfullhash}{54ebc0d3a9a1b5c6d485a4a8975b5fd9}
+      \strng{authorfullhashraw}{54ebc0d3a9a1b5c6d485a4a8975b5fd9}
+      \strng{nameabibnamehash}{356baca49d3fd3291aec8bfb0e53e2a2}
+      \strng{nameanamehash}{0eff4424f6b6fff0bcb41b87ae0e750c}
+      \strng{nameafullhash}{54ebc0d3a9a1b5c6d485a4a8975b5fd9}
+      \strng{nameafullhashraw}{54ebc0d3a9a1b5c6d485a4a8975b5fd9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Pure and Applied Chemistry}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{Henry’s law constants (IUPAC Recommendations 2021)}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{94}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{71\bibrangedash 85}
+      \range{pages}{15}
+      \verb{doi}
+      \verb doi:10.1515/pac-2020-0302
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1515/pac-2020-0302
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1515/pac-2020-0302
+      \endverb
+      \keyw{Sander2022}
+    \endentry
     \entry{Mollerup2009}{article}{}{}
       \name{author}{2}{}{%
         {{hash=b0b73ddd156d922b0929ea550e6f9fa1}{%
@@ -59,8 +158,8 @@
       \strng{nameanamehash}{33e487aa4e7c74e30c7403b9f299869f}
       \strng{nameafullhash}{be6826dc4d51d14035bf3bd1cc5ed643}
       \strng{nameafullhashraw}{be6826dc4d51d14035bf3bd1cc5ed643}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The osmotic second virial coefficient is a key parameter in light scattering, protein crystallisation, self-interaction chromatography, and osmometry. The interpretation of the osmotic second virial coefficient depends on the solution theory. On the macroscopic level an expansion of the osmotic pressure is employed. A common statistical interpretation of the osmotic second virial coefficient of the expansion employs the McMillan–Mayer framework and the potential of mean force to characterise the solute–solute interaction. Supplementary to the statistical interpretation, it may be advantageous to develop the McMillan–Mayer framework in a classical thermodynamic context for which we develop the relationship between the state function of the McMillan–Mayer framework and the Helmholtz state function. A Taylor expansion method can be applied to the osmotic pressure of a solution which is dilute with respect to at least one solute component. This offers the possibility for an interpretation and correlation of the osmotic second virial coefficient utilising a McMillan–Mayer state function derived from a Helmholtz state function.}

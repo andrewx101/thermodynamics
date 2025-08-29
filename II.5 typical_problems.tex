@@ -237,4 +237,58 @@ $V_{\text{m},i}^{\alpha,*}-V_i^\text{L}$是组份$i$纯物质在$\alpha$相的�
 在半透膜问题中人们习惯把溶质视为“气体分子”，而把渗透压视为“气体压强”，讨论渗透压关于溶质浓度的函数形式
 \[\Pi=\frac{RT}{V}\left(c_\text{B}+B_2c_\text{B}^2+\cdots\right)\]
 并把这个式子也叫做“位力展开”。渗透压的位力展开的二次项系数，也被称为溶质B在溶剂$A$中的第二位力系数。这是与纯物质的$pVT$状态方程的第二位力系数不同的概念。纯物质$pVT$状态方程的第二位力系数来自纯物质处于相应物态时分子间的二体相互作用势。而溶质在溶液中的第二位力系数则反映溶质分子之间的二体相互作用势与溶质-溶剂二体相互作用势的差别。它的具体表达式将在后面的章节介绍。此处值得提示的是，如果想用热力学关系式来表达出第二位力系数，则本讲义采用的基于逸度、标准态、活度等概念的描述框架（称Lewis--Randall框架）是不方便或不直接的。采用McMillan--Mayer框架，则可以比较直接地表示出第二位力系数\cite{Mollerup2009}。这里就不作详细介绍了。
+
+\subsection{绝热混合过程}
+还有一种常见的典型问题是求在绝热条件下混合前后的温度变化。常见的实验条件下，我们的系统往往是与环境大热源保持热交换。如果混合前后都达到平衡态，那么这两个平衡态之间的热力学过程就不是一个绝热过程。我们讨论绝热过程，除了直接对应绝热条件的实验外，还常作为一种极限过程来预测虽有导热边界，但混合极快、系统还来不及与环境交换热的短时间内的情况。
+
+绝热混合过程可以分为绝热等容混合和绝热等压混合两种情况。我们以绝热等容混合为例讨论。在这个问题中，确定系统平衡状态的变量是温度、体积（或压强）和组成，我们实验控制的是体积和组成，在混合前后系统的温度会变化。假定在混合前，每个组份纯物质相的温度都达到了$T_0$，混合后的系统的温度是$T$。为与偏摩尔量的记号作区分，我们把组份$i$纯物质的广度量$M$记为$M_{,i}^*$，那么混合前各组份纯物质相的体积是$V_{,i}^\text{*,前}$，从而容器体积$V\equiv\sum_iV_{,i}^\text{*,前}$。再假定是刚性容器\footnote{非刚性容器条件涉及形变，是连续介质力学问题。}，此时系统不做功。结合绝热条件，由热力学第一定律，混合前后内能变化为零：
+\[\Delta_\text{mix}^\text{绝热等容}U=U^\text{后}-U^\text{前}=0\]
+其中，混合前容器内大系统的总内能就等于各组份纯物质相的内能的加和：
+\[U^\text{前}=\sum_i U_{,i}^*\left(T_0,V_{,i}^\text{*,前},n_i\right)=\sum_in_iU_i^*\left(T_0,V_{,i}^\text{*,前}\right)\]
+混合后系统的内能就是混合物体系在$T$、$V$、$\left\{n_i\right\}$下的内能
+\[U^\text{后}=U\left(T,V,\left\{n_i\right\}\right)\]
+
+我们可以把这个过程分解成一个在$T_0$下的等温等容混合过程，以及由$T_0$到$T$的等容等组成变温过程，后一个过程的内能变化可表示为：
+\[U^\text{后}=U\left(T_0,V,\left\{n_i\right\}\right)+\int_{T_0}^TC_V\left(T^\prime,V,\left\{n_i\right\}\right)\mathrm{d}T^\prime\]
+联立上列等式可以得到
+\begin{align*}
+  \int_{T_0}^TC_V\left(T^\prime,V,\left\{n_i\right\}\right)\mathrm{d}T^\prime & =\sum_i n_i\left[U_i^*\left(T_0,V_{,i}^\text{*,前}\right)-U_i\left(T_0,V,\left\{n_i\right\}\right)\right] \\
+                                                                              & =-\Delta_\text{mix}^\text{等温等容}U\left(T_0,V,\left\{n_i\right\}\right)
+\end{align*}
+其中$C_V$是混合物体系的等容热容，一般地它仍是温度的函数。它是系统的响应函数，可以通过实验测量得到，也可以选择恰当的模型来计算。现在我们还要把等号右边的等温等容混合内能变化表示成可测量的响应函数，尤其是要用在等温等压条件下定义的活度来表示。这些必然也要联系到各组份的热容和$pVTn_i$关系。为此，我们必须先让各组份的压强与混合后的压强相同，再让它们发生等温等压混合，以便获得一个等温等压混合函数，从而利用式\eqref{eq:II.4_partial_V_mixing_activity_expression}至\eqref{eq:II.4_partial_A_mixing_activity_expression}最终写成活度表达式。假定混合物的$pVTn_i$关系的压强表达式是$p=p\left(T,V,\left\{n_i\right\}\right)$，那么混合后的压强是
+\[p_\text{mix}\equiv p\left(T_0,V,\left\{n_i\right\}\right)\]
+这就是为了进行等温等压混合各纯物质相需要先达到的压强值，在这个状态下的内能是：
+\[U_{,i}^*\left(T_0,p_\text{mix}\right)=U_{,i}^*\left(T_0,V_{,i}^*\left(T_0,p_\text{mix}\right)\right)\]
+其中$V_{,i}^*\left(T,p\right)$是组份$i$纯物质的$pVT$状态方程的体积表达式。上式等号左右两边是同一状态下的内能，等号左边是用$T$、$p$为状态变量的内能函数表示，等号右边是以$T$、$V$为状态变量的内能函数表示。所以各组份就是需要从它们起始体积$V_{,i}^\text{*,前}$等温绝热地膨胀或压缩到体积$V_{,i}^*\left(T_0,p_\text{mix}\right)$。要求这个过程的内能变化，我们需要把内能表示成关于$T$和$V$的全微分式，由热力学基本关系易得：
+\[\mathrm{d}U=C_V\mathrm{d}T+\left(T\beta_V-p\right)\mathrm{d}V\]
+将上式用于各组份的等温膨胀（压缩）过程（$\mathrm{d}T=0$）就是
+\[\mathrm{d}U_{,i}^*=\left(T_0\beta_{V,i}^*-p_{,i}^*\right)\mathrm{d}V\]
+其中$p_{,i}^*=p_{,i}^*\left(T,V\right)$是组份$i$纯物质的$pVT$状态方程的压强表达式，$\beta_{V,i}^*=\beta_{V,i}^*\left(T,V\right)$是组份$i$纯物质的等容压强系数（见表\ref{tab:response_functions}）。于是由式\eqref{eq:I.1_integral_of_function}这个过程的内能变化就是
+\[U_{,i}^*\left(T_0,p_\text{mix}\right)-U_{,i}^*\left(T_0,V_{,i}^\text{*,前}\right)=\int_{V_{,i}^\text{*,前}}^{V_{,i}^*\left(T_0,p_\text{mix}\right)}\left(T_0\beta_{V,i}^*-p_{,i}^*\right)\mathrm{d}V\]
+结合所有这些关系式，就得到
+\begin{align*}
+  \Delta_\text{mix}^\text{等温等容}U & =-\sum_in_i\left[U_i\left(T_0,V,\left\{n_i\right\}\right)-U_i^*\left(T_0,V_{,i}^\text{*,前}\right)\right]                                                                                                                               \\
+                                 & =\sum_i n_i\left[U_i\left(T_0,p_\text{mix},\left\{n_i\right\}\right)-U_i^*\left(T_0,p_\text{mix}\right)\right]+\sum_i\int_{V_{,i}^\text{*,前}}^{V_{,i}^*\left(T_0,p_\text{mix}\right)}\left(T_0\beta_{V,i}^*-p_{,i}^*\right)\mathrm{d}V
+\end{align*}
+注意到上式第一个求和项就是$\Delta_\text{mix}^\text{等温等压}U\left(T_0,p_\text{mix},\left\{n_i\right\}\right)$，所以
+\begin{align*}
+  \int_{T_0}^TC_V\left(T^\prime,V,\left\{n_i\right\}\right)\mathrm{d}T^\prime & =-\Delta_\text{mix}^\text{等温等容}U\left(T_0,V,\left\{n_i\right\}\right)                                                                                                                                                 \\
+                                                                              & =-\left(\Delta_\text{mix}^\text{等温等压}U\left(T_0,p_\text{mix},\left\{n_i\right\}\right)+\sum_i\int_{V_{,i}^\text{*,前}}^{V_{,i}^*\left(T_0,p_\text{mix}\right)}\left(T_0\beta_{V,i}^*-p_{,i}^*\right)\mathrm{d}V\right)
+\end{align*}
+$\Delta_\text{mix}^\text{等温等压}U$，可以通过式\eqref{eq:II.4_partial_U_mixing_activity_expression}表示成含各组份活度系数的形式，所以有：
+\begin{align*}
+  \int_{T_0}^TC_V\left(T^\prime,V,\left\{n_i\right\}\right)\mathrm{d}T^\prime & =RT\left(T\left.\frac{\partial\ln a_i}{\partial T}\right|_{p_\text{mix},\left\{n_j\right\}}+p\left.\frac{\partial\ln a_i}{\partial p}\right|_{T_0,\left\{n_j\right\}}\right) \\
+                                                                              & -\sum_i\int_{V_{,i}^\text{*,前}}^{V_{,i}^*\left(T_0,p_\text{mix}\right)}\left(T_0\beta_{V,i}^*-p_{,i}^*\right)\mathrm{d}V
+\end{align*}
+也可以利用写成
+\[\int_{T_0}^TC_V\left(T^\prime,V,\left\{n_i\right\}\right)\mathrm{d}T^\prime=-\left(\Delta_\text{mix}^\text{等温等压}H+p_\text{mix}\Delta_\text{mix}^\text{等温等压}V+\sum_i\int_{V_{,i}^\text{*,前}}^{V_{,i}^*\left(T_0,p_\text{mix}\right)}\left(T_0\beta_{V,i}^*-p_{,i}^*\right)\mathrm{d}V\right)\]
+上式的$\Delta_\text{mix}^\text{等温等压}$都指在初态温度$T_0$和终态压强$p_\text{mix}$下的混合函数。这两个式子就是一般的最终结果。等号左边的热容积分是关于$T$的积分上限函数，在已知$C_V$的温度函数时是确定形式的函数。等号右边只与$T_0$有关，不依赖$T$。所以它们隐含地确定了终态温度$T$；也就是说，终态温度是上列关于$T$的方程的根。
+
+以下我们逐步讨论理想系统的情况。假定所涉及到的组份的混合物是理想混合物，则由式\eqref{eq:II.4_ideal_mixture_mixing_function_zero}可知上式的等温等压混合内能变化为零，等号右边就只剩下体积变化积分项。若进一步假定各组份纯物质是理想气体，则这个体积变化积分项也为零。
+
+按相同的分析方法，可以比上列讨论快得多地得到绝热等压混合的结果。设混合前后的压强都是$p$，则
+\[\int_{T_0}^TC_p\left(T^\prime,p,\left\{n_i\right\}\right)\mathrm{d}T^\prime=-\left(\Delta_\text{mix}^\text{等温等压}H+p\Delta_\text{mix}^\text{等温等压}V\right)\]
+其中等号右边的$\Delta_\text{mix}$都指在初态温度$T_0$和混合过程的压强$p$下的定温定压混合函数。上式同样隐含地确定了终态温度$T$。显然如果是理想混合物，等号右边直接为零。
+
+本节开头就说过，稳定平衡状态的均相系统$C_V>0$，由表\ref{tab:response_functions}最后一式可知$C_p>C_V$，因所以如果等号右边很小或为零，只可能是终态温度$T$非常接近始态温度$T_0$。以上讨论能够给我们一个大致物理印象是：\emph{混合热效应主要来自混合物的非理想性}。对于凝聚态（常假定不可压缩）且体积变化可忽略$\Delta_\text{mix}V\approx 0$的情况，混合瞬时升降温情况主要由混合焓的符号和绝对值大小所决定。这也是为什么，惯例上也常把$\Delta_\text{mix}H$称作\emph{“混合热”（heat of mixing）}；诚然，一般地对于只做体积功的等压过程，由热力学第一定律总有$\Delta H=\Delta_\text{rev}Q$。
 \end{document}
