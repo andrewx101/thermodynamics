@@ -4,7 +4,7 @@
 
 对于液体混合物（或称溶液）系统，最核心的热力学函数是混合吉布斯自由能$\Delta_\text{mix} G$（由式\eqref{eq:II.4_def_mixing_function}定义，详见\S\ref{sec:II.4.6 mixing_function}）。一旦获得$\Delta_\text{mix} G$，诸多应用便可顺理成章地推出，例如渗透压、化学势与相平衡判据等；相关内容已在\S\ref{sec:II.5 typical_problems}介绍。
 
-值得说明的是，\S\ref{sec:II.5 typical_problems}貌似给出了各类问题的一些具体表达式（例如给出了拉乌尔定律、亨利定律、范托夫定律等），但是它们都是在特定的限制条件下的。例如，在\S\ref{sec:II.5.2 vapor-liquid_equilibrium}“气液共存”中，最一般地我们只能得到逸度之间的关系\eqref{eq:II.5_vapor-liquid_equilibrium_fugacity}。而由逸度的定义，它无非是化学势的另一种表达方式，而并不给出更多的系统细节。后来我们之所以得到了“可以用来做题”的拉乌尔定律，是依靠了“液相是不可压缩的理想液体混合物”以及“气相是理想气体混合物”的假定。实际上，考虑这样的理想混合物，无非就是抹去了系统的化学特异性的理想系统，当然就不需要统计力学了。一旦化学特异性被引入，它的实际行为就不可能又是普适的，而必然依赖化学（微观）变量；此时，基本热力学关系是不负责给出化学特异性的；唯有引入化学特异性后的微观模型，依赖统计力学，才可能完成。在\S\ref{sec:II.5.3 non_volatile_solute}和\S\ref{sec:II.5.4_semipermeable_membrane}中，溶液的依数性和渗透压的一些具体表达式，都是极稀溶液的情况，也就是溶质-溶质相互作用可以忽略的情况，这也等于抹去了溶质分子的化学特异性。总之，热力学理论是负责给出普适关系的。因此，它要么无法解释具体系统化学特异性造成的行为差异，要么就是在化学特异性不明显的限定条件或理想情况下给出仍然普适但具体明显的表达式。
+值得说明的是，\S\ref{sec:II.5 typical_problems}貌似给出了各类问题的一些具体表达式（例如给出了拉乌尔定律、亨利定律、范托夫定律等），但是它们都是在特定的限制条件下的。例如，在\S\ref{sec:II.5.2 vapor-liquid_equilibrium}“气液共存”中，最一般地我们只能得到逸度之间的关系\eqref{eq:II.5_vapor-liquid_equilibrium_fugacity}。而由逸度的定义，它无非是化学势的另一种表达方式，而并不给出更多的系统细节。后来我们之所以得到了“可以用来做题”的拉乌尔定律，是依靠了“液相是不可压缩的理想液体混合物”以及“气相是理想的气体混合物”的假定。实际上，考虑这样的理想混合物，无非就是抹去了系统的化学特异性的理想系统，当然就不需要统计力学了。一旦化学特异性被引入，它的实际行为就不可能又是普适的，而必然依赖化学（微观）变量；此时，基本热力学关系是不负责给出化学特异性的；唯有引入化学特异性后的微观模型，依赖统计力学，才可能完成。在\S\ref{sec:II.5.3 non_volatile_solute}和\S\ref{sec:II.5.4_semipermeable_membrane}中，溶液的依数性和渗透压的一些具体表达式，都是极稀溶液的情况，也就是溶质-溶质相互作用可以忽略的情况，这也等于抹去了溶质分子的化学特异性。总之，热力学理论是负责给出普适关系的。因此，它要么无法解释具体系统化学特异性造成的行为差异，要么就是在化学特异性不明显的限定条件或理想情况下给出仍然普适但具体明显的表达式。
 
 用于构建凝聚态物质理论的统计力学理论大致可以分为两种出发点：格子模型和连续空间模型。
 
@@ -12,15 +12,15 @@
 
 本章仅介绍格子模型。以下列出一些连续空间模型的参考书，对这种统计力学理论感兴趣的同学可以去阅读。其中粒子统计的代表性著作有——
 \begin{itemize}
-    \item 孙民华, 牛丽. 液态物理概论[M]. 北京:科学出版社, 2013
-    \item S. Rice, P. Gray (1965), \emph{The Statistical Mechanics of Simple Liquids}, Interscience
-    \item J.-P. Hansen, I. McDonlad (2013), \emph{Theory of Simple Liquids, 4th ed.}, Academic Press
-    \item 山川裕巳/Hiromi Yamakawa (1971), \emph{Modern Theory of Polymer Solutions}, Harper \& Row
+  \item 孙民华, 牛丽. 液态物理概论[M]. 北京:科学出版社, 2013
+  \item S. Rice, P. Gray (1965), \emph{The Statistical Mechanics of Simple Liquids}, Interscience
+  \item J.-P. Hansen, I. McDonlad (2013), \emph{Theory of Simple Liquids, 4th ed.}, Academic Press
+  \item 山川裕巳/Hiromi Yamakawa (1971), \emph{Modern Theory of Polymer Solutions}, Harper \& Row
 \end{itemize}
 场论统计的代表性著作有——
 \begin{itemize}
-    \item H. Kleinert (1995), \emph{Path Integrals in Quantum Mechanics, Statistics, and Polymer Physics, 2nd ed.}, World Scientific
-    \item 藤田博/Hiroshi Fujita (1990), \emph{Polymer Solutions}, Elsevier
+  \item H. Kleinert (1995), \emph{Path Integrals in Quantum Mechanics, Statistics, and Polymer Physics, 2nd ed.}, World Scientific
+  \item 藤田博/Hiroshi Fujita (1990), \emph{Polymer Solutions}, Elsevier
 \end{itemize}
 
 所谓“非电解质”的设定，实际意思是排除了分子或原子间的静电相互作用势。这是一种作用距离比较长的相互作用。我们将会看到，本章只近似考虑最邻近两分子间的相互作用势，如果有静电相互作用，这是不够的。具有极性的分子间的相互作用势有分子方向的依赖性（或称各向异性），这也是本章介绍的理论不考虑的。换句话说本章的模型讨论最适用于分子之间只存在色散力的混合物系统。

@@ -41,9 +41,9 @@
 \end{equation}
 其中，$f_i^{*,\alpha}$是组份$i$纯物质在不同相态下的逸度，它们直接联系到组份$i$纯物质不同相态下的状态方程。
 
-以下我们逐步往理想系统靠拢。首先如果各相是理想混合物（但气相暂未必是理想气体混合物），则上式化为
+以下我们逐步往理想系统靠拢。首先如果各相是理想混合物（但气相暂未必是理想的气体混合物），则上式化为
 \[\ln x_i^\text{V}+\ln\frac{f_i^{*,\text{V}}\left(T,p\right)}{f_i^{*,\text{V}}\left(T,p_i^{*,\text{vap}}\right)}=\ln x_i^\text{L}+\ln\frac{f_i^{*,\text{L}}\left(T,p\right)}{f_i^{*,\text{L}}\left(T,p_i^{*,\text{vap}}\right)},\quad i=1,2,\cdots\]
-其中用到了理想混合物活度系数等于1的条件。气态纯物质保持使用逸度是因为气态虽是理想混合物但不是理想气体混合物，所以至少有些组分纯物质气态不遵守理想气体状态方程。由逸度与（偏）摩尔体积的关系，有
+其中用到了理想混合物活度系数等于1的条件。气态纯物质保持使用逸度是因为气态虽是理想混合物但不是理想的气体混合物，所以至少有些组分纯物质气态不遵守理想气体状态方程。由逸度与（偏）摩尔体积的关系，有
 \[\ln\frac{f_i^{*,\alpha}\left(T,p\right)}{f_i^{*,\alpha}\left(T,p_i^{*,\text{vap}}\right)}=\int_{p_i^{*,\text{vap}}}^p\frac{V_{\text{m},i}^{*,\alpha}\left(T,p^\prime\right)}{RT}\mathrm{d}p^\prime,\quad i=1,2,\cdots,\quad \alpha=\text{V},\text{L}\]
 则各相均为理想混合物情况的关系式变为
 \[\ln x_i^\text{V}+\int_{p_i^{*,\text{vap}}}^{p}\frac{V_{\text{m},i}^{*,\text{V}}\left(T,p^\prime\right)}{RT}\mathrm{d}p^\prime=\ln x_i^\text{L}+\int_{p_i^{*,\text{vap}}}^{p}\frac{V_{\text{m},i}^{*,\text{L}}\left(T,p^\prime\right)}{RT}\mathrm{d}p^\prime,\quad i=1,2,\cdots\]
@@ -52,22 +52,22 @@
 \[V_{\text{m},i}^{*,\text{V}}\left(T,p\right)=RT/p\]
 则对这个组份$i$就有
 \[\ln x_i^\text{V}+\ln\frac{p}{p_i^{*,\text{vap}}}=\ln x_i^\text{L}+\int_{p_i^{*,\text{vap}}}^{p}\frac{V_{\text{m},i}^{*,\text{L}}\left(T,p^\prime\right)}{RT}\mathrm{d}p^\prime \]
-若各组份$i$纯物质的气态都是理想气体（即混合物系统的气态是理想气体混合物），则上式对各组份$i=1,2,\cdots$均成立。
+若各组份$i$纯物质的气态都是理想气体（即混合物系统的气态是理想的气体混合物），则上式对各组份$i=1,2,\cdots$均成立。
 
 若考虑液态的体积随压强的变化很小，则等号右边的积分也可以略掉，我们就得到
 \[x_i^\text{V}p=x_i^\text{L}p_i^{*,\text{vap}},\quad i=1,2,\cdots\]
-再加上气相是理想气体混合物，满足道尔顿分压定律，上式左边是组份$i$在气相中的分压$p^\text{V}_i=x_i^\text{V}p$，故上式又进一步写成
+再加上气相是理想的气体混合物，满足道尔顿分压定律，上式左边是组份$i$在气相中的分压$p^\text{V}_i=x_i^\text{V}p$，故上式又进一步写成
 \[p_i^\text{V}=x_i^\text{L}p_i^{*,\text{vap}},\quad i=1,2,\cdots\]
 这就是\emph{拉乌尔定律（Raoult's law）}。
 
 可见，拉乌尔定律包括以下假定：
 \begin{itemize}
-  \item 气相是理想气体混合物；
+  \item 气相是理想的气体混合物；
   \item 液相是理想混合物；
   \item 液相不可压缩。
 \end{itemize}
 
-我们如果不为了“消掉”而给两相选择统一的标准态，保持液相是理想混合物、气相是理想气体混合物的条件，按照各相通常的参考态选择方式，组份$i$在各相的化学势可以写成
+我们如果不为了“消掉”而给两相选择统一的标准态，保持液相是理想混合物、气相是理想的气体混合物的条件，按照各相通常的参考态选择方式，组份$i$在各相的化学势可以写成
 \begin{align*}
   \mu_i^\text{V,ig}\left(T,p,\left\{n_j^\text{V}\right\}\right) & =\mu_i^\text{V,*,ig}\left(T,p^\circ\right)+RT\ln\frac{p}{p^\circ}+RT\ln x_i^\text{V}, \\
   \mu_i^\text{L,id}\left(T,p,\left\{n_j^\text{L}\right\}\right) & =\mu_i^\text{L,*,id}\left(T,p\right)+RT\ln x_i^\text{L},                              \\
@@ -83,7 +83,7 @@
 \[p_i^\text{V}=k_ix_i^\text{L}\]
 这就是\emph{亨利定律（Henry's law）}。与拉乌尔定律相比较可见，拉乌尔定律中的比例系数是组份$i$纯物质在温度$T$下的蒸气压$p_i^{*,\text{vap}}=p_i^{*,\text{vap}}\left(T\right)$，仅为温度的函数；而亨利定律中的比例系数$k_i=k_i\left(T,p\right)$是温度和压强的函数，且其数值依赖所选定的参考压强值$p^\circ$。这个差别是推导亨利定律没有采用推导拉乌尔定律时使用的“液相不可压缩”的等效后果。
 
-值得注意的是，混合物在各相内的各组份摩尔分数$x_i$满足$\sum_ix_i\equiv 1$的约束。由于这一约束，我们以下将推出，对于液相是理想混合物、气相是理想气体混合物的系统，如果确定了除组份$i$外的其余组份$j\neq i$的亨利系数，则剩下的这个组份$i$的气液相分配也就已被确定。由
+值得注意的是，混合物在各相内的各组份摩尔分数$x_i$满足$\sum_ix_i\equiv 1$的约束。由于这一约束，我们以下将推出，对于液相是理想混合物、气相是理想的气体混合物的系统，如果确定了除组份$i$外的其余组份$j\neq i$的亨利系数，则剩下的这个组份$i$的气液相分配也就已被确定。由
 \[x_j^\text{V}p=k_jx_j^\text{L},\quad j\neq i\]
 和各组份的相平衡条件
 \[\mu_k^\text{L}=\mu_k^\text{V}\Leftrightarrow \mathrm{d}\mu_k^\text{L}=\mathrm{d}\mu_k^\text{V},\quad k=1,2,\cdots\]
@@ -102,7 +102,7 @@
 \[\frac{\mathrm{d}x_i^\text{L}}{x_i^\text{L}}=\mathrm{d}\ln\left(x_i^\text{V}p\right)\]
 利用$x_i^\text{L}=1$时$x_i^\text{V}=1$的条件解上列方程得
 \[x_i^\text{L}p\left(x_i^\text{V}= 1\right)=p x_i^\text{L}\Leftrightarrow x_i^\text{L}p_i^{*,\text{vap}}=p^\text{V}_i\]
-即组份$i$满足拉乌尔定律。与之前得到的所有组份满足拉乌尔定律相比较，这里的结论是仅一个组份满足拉乌尔定律，其余组份满足亨利定律，这是不需要依靠“液相不可压缩”条件，仅基于液相是理想混合物、气相是理想气体混合物就能得到的结论。如果把组份$j\neq i$称作“溶质”，则组份$i$就是溶剂，于是也就得到通常《物理化学》教科书中，所谓“理想溶液”\footnote{“溶液”一词专用于讨论混合物时区分溶质和溶剂的情况。除此之外，若不再加其他说明，那么“理想溶液”就应就等价于“理想混合物”。但既然对“理想溶液”的溶质溶剂遵守这两个定律的陈述，那似乎又认为“理想溶液”在气液共存时气态总是理想气体混合物，而不仅只是处于气态的理想混合物。这是普通的《物理化学》课本不够严谨的地方。}的溶剂满足拉乌尔定律（而无需要求其液相不可压缩）、溶质满足亨利定律的结论。
+即组份$i$满足拉乌尔定律。与之前得到的所有组份满足拉乌尔定律相比较，这里的结论是仅一个组份满足拉乌尔定律，其余组份满足亨利定律，这是不需要依靠“液相不可压缩”条件，仅基于液相是理想混合物、气相是理想的气体混合物就能得到的结论。如果把组份$j\neq i$称作“溶质”，则组份$i$就是溶剂，于是也就得到通常《物理化学》教科书中，所谓“理想溶液”\footnote{“溶液”一词专用于讨论混合物时区分溶质和溶剂的情况。除此之外，若不再加其他说明，那么“理想溶液”就应就等价于“理想混合物”。但既然对“理想溶液”的溶质溶剂遵守这两个定律的陈述，那似乎又认为“理想溶液”在气液共存时气态总是理想的气体混合物，而不仅只是处于气态的理想混合物。这是普通的《物理化学》课本不够严谨的地方。}的溶剂满足拉乌尔定律（而无需要求其液相不可压缩）、溶质满足亨利定律的结论。
 
 常见热力学教科书还常介绍\emph{杜安--马居尔方程（Duhem-Margules equation）}。对于双组份混合物在定温定压下的气液平衡，由吉布斯--杜安方程有（只应用于液相）：
 \[x_1^\text{L}\mathrm{d}\mu_1^\text{L}+x_2^\text{L}\mathrm{d}\mu_2^\text{L}=0\]
@@ -114,7 +114,7 @@
 \[x_1^\text{L}\left.\frac{\partial\ln f_1^\text{V}}{\partial x_1^\text{L}}\right|_{T,p}=x_2^\text{L}\left.\frac{\partial\ln f_2^\text{V}}{\partial x_2^\text{L}}\right|_{T,p}\]
 结合气液平衡条件，又可表示成
 \[\left.\frac{\partial\ln\gamma_1^\text{L}}{\partial\ln x_1^\text{L}}\right|_{T,p}=\left.\frac{\partial\ln\gamma_2^\text{L}}{\partial\ln x_2^\text{L}}\right|_{T,p}\]
-以上的活度系数均为拉乌尔定律标准态的活度系数。推导过程留作练习。当气相是理想气体混合物时，以上方程可以化为
+以上的活度系数均为拉乌尔定律标准态的活度系数。推导过程留作练习。当气相是理想的气体混合物时，以上方程可以化为
 \[x_1^\text{L}\left.\frac{\partial \ln p_1}{\partial x_1^\text{L}}\right|_{T,p}=x_2^\text{L}\left.\frac{\partial\ln p_2}{\partial x_2^\text{L}}\right|_{T,p}\]
 其中$p_i$是组份$i$在气相中的分压。这是常见于教科书中的杜安--马居尔方程形式。
 
@@ -290,5 +290,5 @@ $\Delta_\text{mix}^\text{等温等压}U$，可以通过式\eqref{eq:II.4_partial
 \[\int_{T_0}^TC_p\left(T^\prime,p,\left\{n_i\right\}\right)\mathrm{d}T^\prime=-\left(\Delta_\text{mix}^\text{等温等压}H+p\Delta_\text{mix}^\text{等温等压}V\right)\]
 其中等号右边的$\Delta_\text{mix}$都指在初态温度$T_0$和混合过程的压强$p$下的定温定压混合函数。上式同样隐含地确定了终态温度$T$。显然如果是理想混合物，等号右边直接为零。
 
-本节开头就说过，稳定平衡状态的均相系统$C_V>0$，由表\ref{tab:response_functions}最后一式可知$C_p>C_V$，因所以如果等号右边很小或为零，只可能是终态温度$T$非常接近始态温度$T_0$。以上讨论能够给我们一个大致物理印象是：\emph{混合热效应主要来自混合物的非理想性}。对于凝聚态（常假定不可压缩）且体积变化可忽略$\Delta_\text{mix}V\approx 0$的情况，混合瞬时升降温情况主要由混合焓的符号和绝对值大小所决定。这也是为什么，惯例上也常把$\Delta_\text{mix}H$称作\emph{“混合热”（heat of mixing）}；诚然，一般地对于只做体积功的等压过程，由热力学第一定律总有$\Delta H=\Delta_\text{rev}Q$。
+本节开头就说过，稳定平衡状态的均相系统$C_V>0$，由表\ref{tab:response_functions}最后一式可知$C_p>C_V$，所以如果等号右边很小或为零，只可能是终态温度$T$非常接近始态温度$T_0$。以上讨论能够给我们一个大致物理印象是：\emph{混合热效应主要来自混合物的非理想性}。对于凝聚态（常假定不可压缩）且体积变化可忽略$\Delta_\text{mix}V\approx 0$的情况，混合瞬时升降温情况主要由混合焓的符号和绝对值大小所决定。这也是为什么，惯例上也常把$\Delta_\text{mix}H$称作\emph{“混合热”（heat of mixing）}；诚然，一般地对于只做体积功的等压过程，由热力学第一定律总有$\Delta H=\Delta_\text{rev}Q$。
 \end{document}

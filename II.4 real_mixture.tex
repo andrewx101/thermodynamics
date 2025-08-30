@@ -26,11 +26,11 @@
 
 \subsection{逸度和逸度因子}
 \subsubsection{逸度的引入}
-我们可以令真实混合物的化学势取形如理想气体混合物的化学势的简单形式。定义\emph{组份$i$在混合物中的逸度（fugacity of component $i$ in mixture）}$f_i$，以替代式\eqref{eq:II.3_def_ideal_gas_mixture_mu}中的$x_ip$，使得在恒定的温度下（$\mathrm{d}T=0$）
+我们可以令真实混合物的化学势取形如理想的气体混合物的化学势的简单形式。定义\emph{组份$i$在混合物中的逸度（fugacity of component $i$ in mixture）}$f_i$，以替代式\eqref{eq:II.3_def_ideal_gas_mixture_mu}中的$x_ip$，使得在恒定的温度下（$\mathrm{d}T=0$）
 \begin{align}\label{eq:II.4_def_fugacity_i}
   \mathrm{d}\mu_i=RT\mathrm{d}\ln f_i
 \end{align}
-此处$f_i=f_i\left(T,p,\left\{n_j\right\}\right)$是混合物系统的状态函数。显然，仅对理想气体混合物，才有$f_i^\text{ig}\equiv x_i p$。但我们也由经验知道，真实混合物在压强极低时近似理想气体混合物，故在定义逸度时还要求以下一致收敛性质：
+此处$f_i=f_i\left(T,p,\left\{n_j\right\}\right)$是混合物系统的状态函数。显然，仅对理想的气体混合物，才有$f_i^\text{ig}\equiv x_i p$。但我们也由经验知道，真实混合物在压强极低时近似理想的气体混合物，故在定义逸度时还要求以下一致收敛性质：
 \[\lim_{p\to 0}\frac{f_i\left(T,p,\left\{n_i\right\}\right)}{x_i p}=1\]
 
 定义式\eqref{eq:II.4_def_fugacity_i}在纯物质（$x_i=1$）时的形式就是（恒定$T$下）
@@ -138,7 +138,7 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 
 \subsection{混合物标准态}
 \subsubsection{混合物标准态的选择惯例}
-式\eqref{eq:II.3_def_ideal_gas_mixture_mu}或\eqref{eq:II.4_def_fugacity_i}至\eqref{eq:II.4_def_fugacity_f}这种微分形式的定义是不便直接用于代公式做题的。我们需要再选择一个参考状态，然后应用式\eqref{eq:I.1_integral_of_function}来写下一个状态函数的显式表达式。例如在\S\ref{sec:II.3 ideal_mixture.tex}中，我们在给出理想气体混合物化学势的微分式定义式\eqref{eq:II.3_def_ideal_gas_mixture_mu}之后，又再选择同温同组成下组份$i$在某选定压强$p^\circ$值下的状态为参考状态，从而得到了式\eqref{eq:II.3_ideal_gas_mixture_mu_p0}。
+式\eqref{eq:II.3_def_ideal_gas_mixture_mu}或\eqref{eq:II.4_def_fugacity_i}至\eqref{eq:II.4_def_fugacity_f}这种微分形式的定义是不便直接用于代公式做题的。我们需要再选择一个参考状态，然后应用式\eqref{eq:I.1_integral_of_function}来写下一个状态函数的显式表达式。例如在\S\ref{sec:II.3 ideal_mixture.tex}中，我们在给出理想的气体混合物化学势的微分式定义式\eqref{eq:II.3_def_ideal_gas_mixture_mu}之后，又再选择同温同组成下组份$i$在某选定压强$p^\circ$值下的状态为参考状态，从而得到了式\eqref{eq:II.3_ideal_gas_mixture_mu_p0}。
 
 这里我们一般性地讨论参考状态选择的三条惯例。
 
@@ -224,7 +224,7 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 《物理化学》中关于非理想稀溶液活度的内容是双组份混合物的特例。对于双组份混合物，若视关心的组份B为“溶质”，则另一组份A为“溶剂”，$x_\text{B}$可以连续地趋于0，此极限无非是作为“溶剂”的组份A的纯物质状态（$x_\text{A}=1$）。
 
 \subsection{理想混合物}
-理想混合物概念不限定混合物的物态。在引入它的定义之后，我们将看到，尽管理想气体混合物必为理想混合物，但一个一般的气态理想混合物未必是理想气体混合物。为引入理想混合物的概念，我们先选择拉乌尔标准态。此时由式\eqref{eq:I.1_integral_of_function}、\eqref{eq:II.4_def_fugacity_i}和\eqref{eq:II.4_mu_standard_state}有
+理想混合物概念不限定混合物的物态。在引入它的定义之后，我们将看到，尽管理想的气体混合物必为理想混合物，但一个一般的气态理想混合物未必是理想的气体混合物。为引入理想混合物的概念，我们先选择拉乌尔标准态。此时由式\eqref{eq:I.1_integral_of_function}、\eqref{eq:II.4_def_fugacity_i}和\eqref{eq:II.4_mu_standard_state}有
 \[\mu_i\left(T,p,\left\{n_j\right\}\right)=\mu_i^*\left(T,p\right)+RT\ln\frac{f_i\left(T,p,\left\{n_j\right\}\right)}{f_i^*\left(T,p\right)}\]
 我们再对该式取$p\rightarrow 0$的极限，由逸度定义所规定的一致收敛行为，有
 \[\lim_{p\to 0}\left[\mu_i\left(T,p,\left\{n_i\right\}\right)-\mu_i^*\left(T,p\right)\right]=RT\lim_{p\to 0}\left[\ln\frac{f_i\left(p\right)}{x_ip}-\ln\frac{f_i^*\left(p\right)}{p}+\ln x_i\right]=RT\ln x_i\]
@@ -237,9 +237,9 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 \end{equation}
 其中上标“id”表示理想混合物。
 
-注意到，理想气体混合物就是理想混合物。由理想气体混合物的定义式\eqref{eq:II.3_def_ideal_gas_mixture_mu}应用式\eqref{eq:I.1_integral_of_function}作类似的定积分有
+注意到，理想的气体混合物就是理想混合物。由理想的气体混合物的定义式\eqref{eq:II.3_def_ideal_gas_mixture_mu}应用式\eqref{eq:I.1_integral_of_function}作类似的定积分有
 \[\mu_i^\text{ig}\left(T,p,x_i\right)-\mu_i^{*,\text{ig}}\left(T,p\right)=RT\ln x_i\]
-与式\eqref{eq:II.4_def_ideal_mixture_mu}是相同的。但是，理想混合物比理想气体混合物具有更一般的属性。 具体地，$\mu_i^{*,\text{ig}}=\mu_i^{*,\text{ig}}\left(T\right)$遵循理想气体的性质，所以它才只依赖温度。而$\mu_i^*=\mu_i^*\left(T,p\right)$则未必按照理想气体性质而定，它只是组份$i$纯物质在$\left(T,p\right)$下的化学势，而此时系统甚至不一定是气态，更遑论是否理想气体；它依赖我们为该混合物系统所选用的$pVTn_i$状态方程，而这一状态方程仅需不与式\eqref{eq:II.4_def_ideal_mixture_mu}冲突就属于理想混合物，而不必完全符合理想气体混合物的形式。
+与式\eqref{eq:II.4_def_ideal_mixture_mu}是相同的。但是，理想混合物比理想的气体混合物具有更一般的属性。 具体地，$\mu_i^{*,\text{ig}}=\mu_i^{*,\text{ig}}\left(T\right)$遵循理想气体的性质，所以它才只依赖温度。而$\mu_i^*=\mu_i^*\left(T,p\right)$则未必按照理想气体性质而定，它只是组份$i$纯物质在$\left(T,p\right)$下的化学势，而此时系统甚至不一定是气态，更遑论是否理想气体；它依赖我们为该混合物系统所选用的$pVTn_i$状态方程，而这一状态方程仅需不与式\eqref{eq:II.4_def_ideal_mixture_mu}冲突就属于理想混合物，而不必完全符合理想的气体混合物的形式。
 
 易知，理想混合物的逸度、逸度系数、活度、活度系数分别满足
 \[f_i^\text{id}=px_i,\quad\varphi_i^\text{id}=1,\quad a_i^\text{id}=x_i,\quad\gamma_i^\text{id}=1\]
@@ -267,7 +267,7 @@ $f/p$、$f_i^*/p$、$f_i/\left(x_ip\right)$都将定义为相应讨论对象的�
 \end{equation}
 
 \subsubsection{剩余函数和超额函数}
-理想气体混合物和理想混合物就是使用偏离函数来描述真实混合物的性质时常常选用的两个模型。我们具体又称选用理想气体混合物为模型时的偏离函数为\emph{剩余函数（residual function）}，称选用理想混合物为模型时的偏离函数为\emph{超额函数（excess function）}。由偏离函数的一般定义式\eqref{eq:II.4_def_deviation_function_D}和\eqref{eq:II.4_def_deviation_function_d}自然有
+理想的气体混合物和理想混合物就是使用偏离函数来描述真实混合物的性质时常常选用的两个模型。我们具体又称选用理想的气体混合物为模型时的偏离函数为\emph{剩余函数（residual function）}，称选用理想混合物为模型时的偏离函数为\emph{超额函数（excess function）}。由偏离函数的一般定义式\eqref{eq:II.4_def_deviation_function_D}和\eqref{eq:II.4_def_deviation_function_d}自然有
 \begin{align}
   M^\text{R} & \eqdef M-M^\text{ig}\left(T,p,\left\{n_i\right\}\right) \\
   M^\text{r} & \eqdef M-M^\text{ig}\left(T,V,\left\{n_i\right\}\right) \\

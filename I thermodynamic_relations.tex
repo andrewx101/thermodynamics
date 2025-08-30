@@ -57,7 +57,7 @@
 \subsection{状态函数的微积分}
 热力学理论认为，一个物体在没有外界影响的条件下必将趋近于一个称为\emph{平衡态（equilibrium state）}的状态。平衡态是这样一种状态：在没有外界影响的条件之下，物体的各部分在长时间内不发生任何变化。这里的“任何”一词意味着，系统所有能观察到的性质都不随时间改变。
 
-热力学理论进一步认为，两个物体之间能通过接触而相互影响，由它们原本各已处于的不同的平衡态，达到它们共同的新的平衡态。普遍来说，不管有多少个物体互相接触互相影响，只要时间够长，又没有外界影响，它们最后必定达到一个共同的平衡态。
+热力学理论进一步认为，两个物体之间能通过接触而相互影响，由它们原本各已处于的不同平衡状态，达到它们共同的新的平衡态\footnote{所谓“共同的平衡态”，是指这两个物体要么融为一体、要么互相影响而无法独立变化。}。在后一种情况下，它们的性质甚至未必逐一都相同。普遍来说，不管有多少个物体互相接触互相影响，只要时间够长，又没有外界影响，它们最后必定达到一个共同的平衡态。
 
 以上论断，都是大量经验的总结，但在热力学理论的体系中要当作公设。
 
@@ -254,7 +254,7 @@ $U$、$S$、$H$、$A$、$G$等热力学函数（及其偏导数）是无法直�
 \subsubsection{Tobolsky方法}
 有了这些关系，我们就总是能够利用已知系统的状态方程解析式或实验测量的$pVTn_i$数据，把式\eqref{eq:I.1_first_law_multicomp}至\eqref{eq:I.1_dG}表示成仅含可测量的形式，再由式\eqref{eq:I.1_integral_of_function}得到系统的任何平衡态热力学行为，实现“想算什么就算什么”的自由。其中一种常见的套路就是Tobolsky方法。
 
-例如，我们随便要求算一个古怪的偏导数：$\left.\frac{\partial H}{\partial A}\right|_{S}$。从这个偏导数形式上看，它来自由$\left(A,S\right)$所独立而完整确定的形式$H=H\left(A,S\right)$，是单组分系统。故令$X\equiv\left.\frac{\partial H}{\partial F}\right|_{S}$、$Y\equiv\left.\frac{\partial H}{\partial S}\right|_{A}$，则$H$的全微分可表示成
+例如，我们随便要求算一个古怪的偏导数：$\left.\left(\partial H\middle/\partial A\right)\right|_{S}$。从这个偏导数形式上看，它来自由$\left(A,S\right)$所独立而完整确定的形式$H=H\left(A,S\right)$，是单组分系统。故令$X\equiv\left.\left(\partial H\middle/\partial F\right)\right|_{S}$、$Y\equiv\left.\left(\partial H\middle/\partial S\right)\right|_{A}$，则$H$的全微分可表示成
 \[\mathrm{d}H=X\mathrm{d}A+Y\mathrm{d}S\]
 但是$H$自己有作为特性函数的微分式\eqref{eq:I.1_dH}（单组分系统$\mathrm{d}n_i=0$），故可联系而得到以下式子：
 \[X\mathrm{d}A+Y\mathrm{d}S=T\mathrm{d}S+V\mathrm{d}p\]
